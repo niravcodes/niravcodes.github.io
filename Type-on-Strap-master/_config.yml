@@ -1,21 +1,21 @@
 # SITE CONFIGURATION
-baseurl: "/"
-url: "https://nirav.com.np"
+baseurl: "/Type-on-Strap"
+url: "https://sylhare.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Nirav's blog
+  title: Type on Strap
   avatar: assets/img/triangle.svg
   favicon: assets/favicon.ico
-# gravatar: # Email MD5 hash
-  description: "My personal blog." # used by search engines
+  gravatar: # Email MD5 hash
+  description: "A website with blog posts and pages" # used by search engines
 
   # Header and footer text
   header_text: >
-     <p>Hey. I'm Nirav and I like computers. This is my blog where I will document my adventures inside this digital prision.</p>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-     <p>I am from Nepal and study computer engineering.</p>
+     <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
   header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
