@@ -58,6 +58,7 @@ header {
         color: $feature-image-text-color;
     }
     header {
+        @extend .header-txt-shadow;
         color: $feature-image-text-color;
         background-size: $feature-image-size;
         margin-bottom: 0;

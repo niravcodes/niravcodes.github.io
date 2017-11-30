@@ -24,8 +24,8 @@
     .site-title {
         float: left;
         font-weight: bold;
-        font-size: 1em;
-        line-height: 1.5;
+        font-size: 1.4em;
+        line-height: 1.35;
     }
 
     nav {
@@ -36,16 +36,17 @@
             margin: 0;
             padding: 0;
             list-style: none;
-            line-height: 1.5;
+            line-height: 2;
             float: right;
             text-align: right;
         }
         li {
             display: inline;
             float: left;
-            margin-right: 0.4em;
+            margin-right: 1.3em;
         }
         a {
+            font-family:$font-family-headings;
             &:hover {
                 color: $link-color;
             }

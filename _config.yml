@@ -48,7 +48,7 @@ theme_settings:
   disqus_shortname:
   katex: true # Enable if using math markup
   portfolio: false
-  search: false
+  search: true
   tags: true
   
   
@@ -65,13 +65,13 @@ theme_settings:
 
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
+  google_fonts: "Lora:400,400i|Work+Sans:800"
 
   # Post navigation
   post_navigation: false
 
 # PAGINATION
-paginate: 6
+paginate: 5
 paginate_path: "blog/page:num"
 
 # PORTFOLIO
@@ -88,4 +88,4 @@ sass:
   style: :compressed
 plugins: [jekyll-paginate, jekyll-seo-tag]
 #theme: type-on-strap # If using the theme as a jekyll theme gem
-exclude: ["Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png"]
+exclude: ["Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "CNAME"]
