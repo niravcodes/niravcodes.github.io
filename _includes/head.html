@@ -1,6 +1,16 @@
 <head>
-    {% if page.url == "/" %}
-    <title>Nirav's blog</title>
+    {% if page.path contains '_posts' %}
+    <title>{{ page.title }} | nirav's blog</title>
+    {% else %}
+        {% if page.url == "/" %}
+        <title>nirav's blog</title>
+        {% endif %}
+        {% if page.url == "/about/" %}
+        <title>About | nirav's blog</title>
+        {% endif %}
+        {% if page.url == "/tags/" %}
+        <title>Tags | nirav's blog</title>
+        {% endif %}
     {% endif %}
 
     <meta charset="utf-8">

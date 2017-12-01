@@ -2,9 +2,11 @@
     
     <!-- Logo and title -->
 	<div class="branding">
+		{% if site.theme_settings.avatar %}
 		<a href="{{ site.baseurl }}/">
 			<img class="avatar" src="{{ site.baseurl }}/{{ site.theme_settings.avatar }}" alt=""/>
 		</a>
+		{% endif %}
 
 		<h1 class="site-title">
 			<a href="{{ site.baseurl }}/">{{ site.theme_settings.title }}</a>

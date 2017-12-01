@@ -6,32 +6,31 @@ url: "http://nirav.com.np"
 theme_settings:
   # Meta
   title: Nirav's blog
-  avatar: assets/img/triangle.svg
+#  avatar: assets/img/owl.svg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
   description: "" # used by search engines
 
   # Header and footer text
   header_text: >
-     <p>Hey. I'm Nirav and I like computers. This is my blog where I will document my adventures inside this digital prision.</p>
-
-     <p>I am from Nepal and study computer engineering.</p>
+     <p>Hey.</p><p>I'm Nirav. A computer engineering student from Nepal.</p>
+     <p>I like to tinker around with with electronics, computers, art, design, music and suchlike. You could call me a jack of all trades. </p>
   header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+   &copy; Nirav Nikhil. <a href="/about/">About/Contact me.</a> Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
   # Icons
   rss: false
-  email_address: # Full email address, e.g. "sam@example.com"
+  email_address: niravnikhil@gmail.com
   behance:
   bitbucket:
   dribbble:
   facebook:
   flickr:
   gitlab:
-  github: "sylhare"
+  github: "mynameistakenisalsotaken"
   google_plus:
-  instagram:
+  instagram: "kawaii.hermit"
   linkedin:  # Full URL
   pinterest:
   reddit:
@@ -39,14 +38,14 @@ theme_settings:
   stack_exchange:  # Full URL
   steam:
   tumblr:
-  twitter: "twitter"
+  twitter: 
   wordpress:
   youtube:
 
   # Scripts / Features 
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
   disqus_shortname:
-  katex: true # Enable if using math markup
+  katex: false # Enable if using math markup
   portfolio: false
   search: false
   tags: true
