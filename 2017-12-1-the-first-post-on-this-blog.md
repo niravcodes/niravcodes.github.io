@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: This is the first post on the site
 tags: [random]
 ---
-
+Hello world!
