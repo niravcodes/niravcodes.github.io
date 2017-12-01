@@ -4,7 +4,7 @@ published: true
 title: nirav goes to party
 tags:
   - random
-feature-img: '{{site.baseurl}}/assets/img/pexels/book-coffee.jpeg'
+feature-img: /assets/img/pexels/book-coffee.jpeg
 thumbnail: '{{site.baseurl}}/assets/img/pexels/book-coffee.jpeg'
 ---
 I'd like to start by saying: **Hello World!*
