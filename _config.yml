@@ -79,6 +79,64 @@ collections:
     output: true
     permalink: /:collection/:name
 
+#Prose configuration
+prose:
+  rooturl: "_posts"
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+  siteurl: "http://nirav.com.np"
+  media: "assets/img/images"
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          alterable: true
+          options:
+          - name: "Random"
+            value: "random"
+          - name: "Linux"
+            value: "linux"
+          - name: "Web design"
+            value: "web-design"
+          - name: "Article"
+            value: "article"
+          - name: "Review"
+            value: "review"
+          - name: "Code"
+            value: "code"
+          - name: "Thoughts"
+            value: "thoughts"
+          - name: "Python"
+            value: "python"
+      - name: "feature-img"
+        field:
+          element: "text"
+          placeholder: "/assets/img/images/image.jpg"
+          label: "Link for the featured image of this post"
+          value: ""
+      - name: "thumbnail"
+        field:
+          element: "text"
+          placeholder: "/assets/img/thumbnails/thumb.jpg"
+          label: "Thumbnail for the featured image"
+          value: ""
+
+
 # BUILD SETTINGS
 markdown: kramdown
 highlighter: rouge
