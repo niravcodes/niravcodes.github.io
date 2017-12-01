@@ -3,11 +3,9 @@ layout: page
 title: About
 permalink: /about/
 feature-img: "assets/img/pexels/circuit.jpeg"
-tags: [About, Test]
+tags: [About]
 ---
 
-Type on Strap is based on Type Theme, a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+Hey. I am Nirav Nikhil. I am a computer engineering student from Nepal. My hobbies include reading (Murakami is my favorite author), coding, drawing, designing, and playing my guitar in free time. You can read about my endeavors here on this blog.
 
-Head over to the [theme's documentation](https://github.io/sylhare/Type-on-Strap) for much more information about Type on Strap or to install this theme on your own Jekyll site.
-
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
+Visit [byteraptor.com](http://byteraptor.com/] to see my professional side.
