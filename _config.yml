@@ -13,7 +13,7 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-     <p>Hey.</p><p>I'm Nirav. A computer engineering student from Nepal.</p>
+     <p>Hey.</p><p>I'm Nirav. I'm a computer engineering student from Nepal.</p>
      <p>I like to tinker around with with electronics, computers, art, design, music and suchlike. You could call me a jack of all trades. </p>
   header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
