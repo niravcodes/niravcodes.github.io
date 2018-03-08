@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: The Cursed Child sucks
 tags:
   - random
@@ -17,4 +17,4 @@ The characters were so off center. Just look at Ron making stupid jokes that fel
 Come on trolley Witch, you can't use blasting food and spikes in hand to stop children who are already running away.
 What the hell Hermione? What happened to that purse of yours? Why the fuck would you keep the time turner inside an attacking bookshelf with riddles that can be solved by a 13 year old? WHY NOT A SIMPLE PASSWORD?
 And I point blank refuse to beleive that time can be tampered with so easily. Why was a flying witch not noticed by the audience or the patrolling teachers? How could they disarm Cedric NEAR THE FUCKING DRAGON with no one noticing?
-And the kids. The stupid kids. Man ... it fells like all my good memories of Harry Potter are trashed. 
+And the kids. The stupid kids. Man ... it fells like all my good memories of Harry Potter are trashed.
