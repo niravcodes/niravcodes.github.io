@@ -1,7 +1,12 @@
 ---
 layout: post
-published: false
+published: true
 title: 'Acknowledge me, DS1307 senpai!'
+tags:
+  - random
+  - code
+  - ATtiny
+  - Electronics
 ---
 I might be one of the few people who find 2 ICs talking to each other absolutely cute, but so be it.
 
