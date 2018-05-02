@@ -1,7 +1,9 @@
 ---
 layout: post
-published: false
+published: true
 title: The logical shifts are illogical the world is falling to pieces HELP
+tags:
+  - code
 ---
 *+1 for the clickbaity title. Ding!*
 
