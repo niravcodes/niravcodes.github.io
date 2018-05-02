@@ -47,7 +47,7 @@ It was because I was new to electronics, I had already unconsciously decided tha
 
 Any logical person would think that the == operator has to be applied last. You can not check if 2 expressions are equal without evaluating them first. For instance 2+2=4 evaluating to 2+(2==4) makes no sense. Well, it turns out, that is exactly how bitwise operators are treated. In short, `PINB & 0x08 == 0` is treated like `PINB & (0x08 == 0)`. This is ridiculous.
 
-So in the end, after several sad days of contemplating the melancholy Chopin and furiously banging my head on the  wall because of tears in my eyes, I looked back at the code. I made 2 changes, both of them I thought to be redundant. BUT IT WORKED.
+So in the end, after several sad days of contemplating the melancholy Chopin and furiously banging my head on the  wall with tears in my eyes, I looked back at the code. I made 2 changes, both of them I thought to be redundant. BUT IT WORKED.
 
 	#define F_CPU 1200000
     #include <avr/io.h>
@@ -66,6 +66,6 @@ So in the end, after several sad days of contemplating the melancholy Chopin and
         }
     }
     
-With tears of happiness welling up in my eyes, I thought, "Ohh, so 1 does not evaluate to a true with avr-gcc! The while loop wasn't working."
+With tears of happiness welling up in my eyes, I thought, "Ohh, so maybe 1 does not evaluate to a true with avr-gcc! The while loop wasn't working." See, intuition can hurt sometimes.
 
-No. Okay most of this story is exaggerated but it was quite frustrating. And I was stupid. But well, that is what it is and I have most definitely learnt my lesson. Time to dream of more cool spy equipment I can make with this.
+Yes most of this story is exaggerated but it was quite frustrating. And I was stupid. But well, that is what it is and I have most definitely learnt my lesson. Time to dream of more cool spy equipment I can make with this.
