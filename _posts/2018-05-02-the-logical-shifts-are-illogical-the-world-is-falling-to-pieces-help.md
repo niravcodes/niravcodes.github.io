@@ -13,7 +13,7 @@ logical = ~logical;
 
 My naïvety, perhaps coupled with my stupidity, cost me my entire afternoon debugging through a trivial program that accumulates the MSBs of 4 bytes into one byte. I needed it to convert a recording to 2 bits so that I could store it in my tiny attiny. Naturally that meant using the logical shifts, particularly the right shift.
 
-So as it turns out, depending on whether the datatype(char in my case) is signed or unsigned, these "logical" operators can either be actually logical or change into the ugly arthimetic shifts(see notes section of the [wikipedia page](https://en.wikipedia.org/wiki/Arithmetic_shift)). The thing about these ugly arthimetic shifts is that they are not logical at all. Arthimetic shifts essentially mean division by powers of two whereas logical shifts mean shifting a bit pattern whether left or right padded by either 0 or 1. 
+So as it turns out, depending on whether the datatype(char in my case) is signed or unsigned, these "logical" operators can either be actually logical or change into the ugly arthimetic shifts(see notes section of the [wikipedia page](https://en.wikipedia.org/wiki/Arithmetic_shift)). The thing about these ugly arthimetic shifts is that they are not logical at all. Arthimetic shifts essentially mean division or multiplication by powers of two(refer to the wikipedia page) whereas logical shifts mean shifting a bit pattern whether left or right padded by either 0 or 1. 
 
 So when the bitwise operators are named "logical" shifts, I don't see why there has to be any complication at all with regards to what kind of shift the programmer wants performed. This world has let me down again.
 
