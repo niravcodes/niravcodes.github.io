@@ -68,4 +68,4 @@ So in the end, after several sad days of contemplating the melancholy Chopin and
     
 With tears of happiness welling up in my eyes, I thought, "Ohh, so maybe 1 does not evaluate to a true with avr-gcc! The while loop wasn't working." See, intuition can hurt sometimes.
 
-Yes most of this story is exaggerated but it was quite frustrating. And I was stupid. But well, that is what it is and I have most definitely learnt my lesson. Time to dream of more cool spy equipment I can make with this.
+Yes most of this story is exaggerated but it was quite frustrating. And I was stupid. But well, that is what it is and I have most definitely learnt my lesson.
