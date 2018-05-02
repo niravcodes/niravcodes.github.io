@@ -9,7 +9,7 @@ theme_settings:
 #  avatar: assets/img/owl.svg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
-  description: "" # used by search engines
+  description: "Blog of a computer engineer in the making. Various projects, thoughts and rants will be posted here on various subjects like electronics, art, programming and so on." # used by search engines
 
   # Header and footer text
   header_text: >
