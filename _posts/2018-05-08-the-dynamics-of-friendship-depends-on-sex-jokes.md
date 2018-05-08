@@ -13,6 +13,6 @@ Furthermore, a study conducted in the world suggests that for male-female friend
 
 Hence, if you are a 5 foot 4.5 inch female and you find yourself bored and need of a friend, don't hesitate when some male friend calls for action.
 
-Also, it is extremely unfriendly to disappear into the void when texting with friends. In fact, numerous studies have consistently proved that if there is one thing that makes people ugly and stupid and forever alone in a dingy cockroach infested half room, it is abandoning friends (this specially applies to females who are over 5 foot and 4.4 inches in height. In short, this jingle will remind you how important it is not to leave your bored friend typing stupid shit on his blog. "It doesn't matter if the battery runs out of your phone, butterfly. If you want to fly, than you better reply! Thats a universal truth of life."
+Also, it is extremely unfriendly to disappear into the void when texting with friends. In fact, numerous studies have consistently proved that if there is one thing that makes people ugly and stupid and forever alone in a dingy cockroach infested half room, it is abandoning friends (this specially applies to females who are over 5 foot and 4.4 inches in height). In short, this jingle will remind you how important it is not to leave your bored friend typing stupid shit on his blog. "It doesn't matter if the battery runs out of your phone, butterfly. If you want to fly, than you better reply! Thats a universal truth of life."
 
 -love, Barney
