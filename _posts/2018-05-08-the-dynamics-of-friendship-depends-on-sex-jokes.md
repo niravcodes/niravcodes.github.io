@@ -1,7 +1,9 @@
 ---
 layout: post
-published: false
+published: true
 title: The dynamics of friendship depends on sex jokes
+tags:
+  - random
 ---
 Yea, since it is written on my blog, its true. The whole friendship thing exists because of mutual swearing and constant ugly sex jokes.
  
