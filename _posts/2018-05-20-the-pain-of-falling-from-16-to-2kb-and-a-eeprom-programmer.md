@@ -258,4 +258,4 @@ On a merrier note, here is the code I wrote to program the EEPROM chip I have (A
 
     }
    
-It uses the I2C library provided by http://dsscircuits.com/articles/arduino-i2c-master-library
+It uses the I2C library provided on http://dsscircuits.com/articles/arduino-i2c-master-library
