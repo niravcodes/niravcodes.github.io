@@ -7,6 +7,6 @@ So EEPROM sizes are measured in bits... who knew. I spent the last several days 
 
 But, when I revisited the datasheets yesterday, I realized that the B in KB actually stood for bits. Ahh, the pain of falling from 16 kilobytes down to two.
 
-One must, however, learn to improvise overcome adapt hence I downsampled the audio down to 4khz and truncated the sound sample down to 2 kb. It hurt.
+One must, however, learn to improvise overcome adapt hence I downsampled the audio to 4khz and truncated the sound sample down to 2 kb. It hurt.
 
 Here is the code I wrote to program the EEPROM chip I have (AT24C16A)
