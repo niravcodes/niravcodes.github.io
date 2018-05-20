@@ -1,7 +1,11 @@
 ---
 layout: post
-published: false
+published: true
 title: The pain of falling from 16 to 2KB and a EEPROM PROGRAMMER
+tags:
+  - code
+  - EEPROM
+  - Electronics
 ---
 So EEPROM sizes are measured in bits... who knew. I spent the last several days doused in the happy illusion that I had EEPROM chips capable of holding 16KB of data. With 16KB, I can store about 4 seconds of 4 bit data sampled at 8000 khz, which is enough for my little sound playing project.
 
@@ -12,7 +16,7 @@ One must, however, learn to improvise overcome adapt hence I downsampled the aud
 On a merrier note, here is the code I wrote to program the EEPROM chip I have (AT24C16A)
 
     #include <I2C.h>
-
+	//oppai sound from High School DXD as a tribute XD
     const char oppai[1912] PROGMEM = {
     0x88, 
     0x88, 0x88, 0x99, 0x88, 0x78, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 
