@@ -9,4 +9,4 @@ But, when I revisited the datasheets yesterday, I realized that the B in KB actu
 
 One must, however, learn to improvise overcome adapt hence I downsampled the audio to 4khz and truncated the sound sample down to 2KB. It hurt.
 
-Here is the code I wrote to program the EEPROM chip I have (AT24C16A)
+On a merrier note, here is the code I wrote to program the EEPROM chip I have (AT24C16A)
