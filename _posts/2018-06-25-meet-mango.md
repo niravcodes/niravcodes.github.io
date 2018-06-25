@@ -7,11 +7,11 @@ Yes. Mango is a dumbwatch. It uses 2 leds to display time (in a cryptic binary f
 
 This is the thing I am working on right now. A few cool things about mango:
 
-1. This is the first circuit board I have printed in my life. I did everything: cutting, filing, toner transfer and etching to create a nice circular board that fits in the watch.
+1.This is the first circuit board I have printed in my life. I did everything: cutting, filing, toner transfer and etching to create a nice circular board that fits in the watch.
 
-2. It will probably run for months on a tiny lithium battery.
+2.It will probably run for months on a tiny lithium battery.
 
-3. It takes input in a morse coded binary string with just one pushbutton
+3.It takes input in a morse coded binary string with just one pushbutton
 
 I have uploaded a pic of what I have so far below:
 ![A picture of various components of Mango]({{site.baseurl}}/assets/img/images/20180622_163330.jpg)
