@@ -14,7 +14,7 @@ This is the thing I am working on right now. A few cool things about mango:
     It takes input in a morse coded binary string with just one pushbutton
 
 I have uploaded a pic of what I have so far below:
-        PIC
 
-A little technical descripzion:
-        It has an ATtiny13 as the main MCU which takes time from a DS1302 RTC. It runs on a CR2032.
+![A picture of various components of Mango]({{site.baseurl}}/assets/img/images/20180622_163330.jpg)![20180622_163330.jpg]({{site.baseurl}}/assets/img/images/20180622_163330.jpg)
+
+So far, I have printed a PCB and come up with a nice way to take inputs using just one button. Now all thats left is to breadboard the components, write the programs and solder the thing.
