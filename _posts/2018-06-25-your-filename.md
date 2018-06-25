@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Meet Mango - A Dumbwatch
 ---
 Yes. Mango is a dumbwatch. It uses 2 leds to display time (in a cryptic binary format that takes several seconds to comprehend). It is not pretty. It probably isn't waterproof (I'm obviously not gonna try dousing it) ... so on and so forth.
