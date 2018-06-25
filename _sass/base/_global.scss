@@ -47,6 +47,9 @@ h3 {
 h4 {
   font-size: 1.15em;
 }
+li p{
+ display:inline; 
+}
 blockquote {
     border-left: 2px solid darken($blockquote-color, 20%);
     margin: 1em 1em;
