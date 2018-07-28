@@ -9,15 +9,15 @@ theme_settings:
 #  avatar: assets/img/owl.svg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
-  description: "Blog of a computer engineer in the making. Various projects, thoughts and rants will be posted here on various subjects like electronics, art, programming and so on." # used by search engines
+  description: "Blog of an engineering student who doesn't do much (because I procastinate)" # used by search engines
 
   # Header and footer text
   header_text: >
-     <p>Hey.</p><p>I'm Nirav. I'm a computer engineering student from Nepal.</p>
-     <p>I like to tinker around with with electronics, computers, art, design, music and suchlike. You could call me a jack of all trades. </p>
+     <p>Hey.</p><p>I'm Nirav, a computer engineering student from Nepal.</p>
+     <p>I like to play around with with electronics, computers, art, design, music and suchlike. You could call me a jack of all trades and master of procastination. </p>
   header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
-   &copy; Nirav Nikhil. <a href="/about/">About/Contact me.</a> Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+   &copy; Nirav Nikhil. <a href="/about/">About/Contact me.</a> 
 
   # Icons
   rss: false
@@ -70,7 +70,7 @@ theme_settings:
   post_navigation: false
 
 # PAGINATION
-paginate: 5
+paginate: 7
 paginate_path: "blog/page:num"
 
 # PORTFOLIO
@@ -123,6 +123,14 @@ prose:
             value: "thoughts"
           - name: "Python"
             value: "python"
+	  - name: "Electronics"
+	    value: "electronics"
+	  - name: "Project"
+	    value: "Project"
+	  - name: "Tinkering"
+	    value: "tinkering"
+	  - name: "Experiment"
+	    value: "experiment"
       - name: "feature-img"
         field:
           element: "text"
