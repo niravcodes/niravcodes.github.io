@@ -158,31 +158,31 @@ I have done all the experiments I need. I now just need to build a little librar
 
 And the read code is here.
 
-  //Experiment #5 where I test if the byte was written
+  	//Experiment #5 where I test if the byte was written
 
-  #define F_CPU 1200000UL
+ 	 #define F_CPU 1200000UL
 
-  #include <avr/io.h>
-  #include <util/delay.h>
+	  #include <avr/io.h>
+	  #include <util/delay.h>
 
-  #define FREQUENCY 1000	//frequency of i2c data transfer
-  #define SDA	PB3
-  #define SCL	PB4
+	  #define FREQUENCY 1000	//frequency of i2c data transfer
+	  #define SDA	PB3
+	  #define SCL	PB4
 
-  void clockon();
-  void clockoff();
-  void sendzero();
-  void sendone();
-  void sendbit0();
-  void sendbit1();
-  void dance();
-  void wait();
-  void ledon();
-  void ledoff();
-  void cry();
-  void waithalf();
-  int getreading();
-  int main(){
+	  void clockon();
+	  void clockoff();
+	  void sendzero();
+	  void sendone();
+	  void sendbit0();
+	  void sendbit1();
+	  void dance();
+	  void wait();
+	  void ledon();
+	  void ledoff();
+	  void cry();
+	  void waithalf();
+	  int getreading();
+	  int main(){
       DDRB = 1<<SCL | 1<<PB0 | 1 << SDA; //SCL ALWAYS IN OUTPUT MODE
 
       PORTB = 0x00 ; //sda has intern4al pull up resistor enabled
