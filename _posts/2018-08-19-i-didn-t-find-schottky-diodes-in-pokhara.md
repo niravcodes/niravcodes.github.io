@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: I didn't find schottky diodes in Pokhara
 tags:
   - thoughts
