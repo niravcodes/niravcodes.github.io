@@ -7,10 +7,10 @@ tags:
   - electronics
   - tinkering
 ---
-Long story short, I made charge pump. This is very exciting to me because:
+Long story short, I made charge pump. This is exciting to me because:
 
 1. this is my first time making a DC-DC voltage converter.
-2. I made a transistor based oscillator to generate clock signal.
+2. I made a transistor based oscillator for it's sake.
 
 This whole quest started when I decided that I wanted to make my circuits work with just one AA battery. There is something so elegant about a single AA battery. It is just a cylinder that can make circuits come alive. When you use 2 of them in an AA battery holder, it loses that simplicity.
 
@@ -32,5 +32,3 @@ The problem was that I was using 1n4007 diodes in the charge pump. These diodes 
 Schottky diodes have a voltage drop of around 0.3 volts. So the obvious solution to this would be to replace the diodes with schottkys. So I set off the next day to buy schottky diodes. And trust me when I say this, I DIDN'T FIND THEM. Nowhere. No schottkys in Pokhara.
 
 I mean, sure, there are loads of things you can't find in Pokhara. But come on, why would electronics repair shops not have schottky diodes? I returned disappointed. I might look into using mosfets wired as ideal diodes but two mosfets would cost the same as a boost converter module so they are not ideal.
-
-So in the end, what I learnt from this is that I can probably just wire up transistors on a double sided pcb to do things I have been doing with a microcontroller.
