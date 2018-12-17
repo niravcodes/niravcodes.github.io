@@ -24,8 +24,15 @@ fields:
 - type: select
   config:
     source:
-      type: documents
+      type: simple
     required: true
+    options:
+    - Experiment
+    - Electronics
+    - Coding
+    - Random
+    - Rant
+    - AVR
   label: tags
   name: tags
 pages:
