@@ -30,3 +30,5 @@ fields:
   description: Thumbnail for the post
   config:
     maxSize: '10'
+pages:
+- _posts/something-about-inactivity-and-future-resolutons.md
