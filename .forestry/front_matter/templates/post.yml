@@ -31,5 +31,4 @@ fields:
   config:
     maxSize: '10'
 pages:
-- _posts/2018-12-17-testing-forestry-app.md
 - _posts/2018-12-17-shit.md
