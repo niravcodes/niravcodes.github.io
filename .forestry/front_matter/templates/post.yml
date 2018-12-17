@@ -28,3 +28,5 @@ fields:
     required: true
   label: tags
   name: tags
+pages:
+- _posts/testing-forestry-app.md
