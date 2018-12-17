@@ -5,8 +5,8 @@ published: 'true'
 date: 2018-12-17 17:59:50 +0000
 tags:
 - Random
-feature-img: assets/img/pexels/disco-full.jpeg
-thumbnail: assets/img/pexels/search-map.jpeg
+feature-img: http://nirav.com.np/assets/img/sample2.png
+thumbnail: http://nirav.com.np/assets/img/pexels/circuit.jpeg
 
 ---
 Hello there, the angel from my nightmare! sdkj
