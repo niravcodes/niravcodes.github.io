@@ -1,0 +1,30 @@
+---
+label: post
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: layout
+  name: layout
+  default: post
+  hidden: true
+- type: text
+  label: published
+  name: published
+  default: 'true'
+  config:
+    required: true
+  description: Publish or Draft?
+- type: text
+  label: title
+  name: title
+  description: Title of the blog post
+  config:
+    required: true
+- type: select
+  config:
+    source:
+      type: documents
+    required: true
+  label: tags
+  name: tags
