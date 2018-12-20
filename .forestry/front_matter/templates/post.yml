@@ -31,4 +31,5 @@ fields:
   config:
     maxSize: '10'
 pages:
+- _posts/on-sound-and-audio-generation-using-atmega-microcontrollers.md
 - _posts/something-about-inactivity-and-future-resolutons.md
