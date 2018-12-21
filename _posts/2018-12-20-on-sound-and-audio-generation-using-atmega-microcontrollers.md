@@ -26,3 +26,5 @@ I also found this nifty code to reverse bit order in a byte:
     }
 
 This is better than looping 8 times or something and also looks beautiful. Win-win. (I have no idea how this function works, though)
+
+That is about all. The demo went nicely too.
