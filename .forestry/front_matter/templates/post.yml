@@ -8,6 +8,8 @@ fields:
   name: layout
   default: post
   hidden: true
+  config:
+    required: true
 - type: text
   label: title
   name: title
