@@ -3,8 +3,8 @@ layout: post
 title: Love blossoms in Winter
 tags:
 - writing
-feature-img: assets/img/9538432_winter-flowers-a.jpg
-thumbnail: assets/img/9538432_winter-flowers-a.jpg
+feature-img: assets/img/9538432_winter-flowers-a.png
+thumbnail: ''
 date: 2018-12-22 03:19:25 +0000
 
 ---
