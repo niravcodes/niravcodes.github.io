@@ -1,5 +1,5 @@
 ---
-layout: ''
+layout: post
 title: On sound and audio generation using Atmega microcontrollers
 tags:
 - Electronics
