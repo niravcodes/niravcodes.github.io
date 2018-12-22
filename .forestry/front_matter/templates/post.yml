@@ -7,9 +7,10 @@ fields:
   label: Layout
   name: layout
   default: post
-  hidden: true
+  hidden: false
   config:
     required: true
+  description: Always post. ALWAYS POST!!
 - type: text
   label: title
   name: title
