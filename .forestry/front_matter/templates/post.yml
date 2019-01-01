@@ -34,6 +34,7 @@ fields:
   config:
     maxSize: '10'
 pages:
+- _posts/rainfall.md
 - _posts/2018-12-20-on-sound-and-audio-generation-using-atmega-microcontrollers.md
 - _posts/2018-12-22-looking-at-mern-stack.md
 - _posts/love-blossoms-in-winter.md
