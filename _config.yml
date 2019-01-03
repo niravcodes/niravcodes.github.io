@@ -15,7 +15,7 @@ theme_settings:
   header_text: >
      <p>Hey.</p><p>I'm Nirav. I study computer engineering in Nepal.</p>
      <p>I dabble with electronics, programming, art, design, music and everything in between. You could call me a jack of all trades. </p>
-  header_text_feature_image: assets/img/pexels/triangular.jpeg
+  header_text_feature_image: assets/img/background-blur-clean-531880.jpg
   footer_text: >
    &copy; Nirav Nikhil. <a href="/about/">About/Contact me.</a> 
 
@@ -70,7 +70,7 @@ theme_settings:
   post_navigation: false
 
 # PAGINATION
-paginate: 8
+paginate: 6
 paginate_path: "blog/page:num"
 
 # PORTFOLIO
