@@ -46,3 +46,5 @@ Watching movies set in New York in the late 90's makes me very nostalgic, no ide
 # Mr. & Mrs. Smith
 
 ![](https://nirav.com.np/assets/img/mrmrs.jpg)
+
+I had fun watching this one. _Mr. & Mrs. Smith_ is great setting that lends itself to several of funny moments and witty dialogues. 
