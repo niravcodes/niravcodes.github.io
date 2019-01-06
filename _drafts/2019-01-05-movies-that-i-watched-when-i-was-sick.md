@@ -13,7 +13,7 @@ Don't you sometimes get nostalgic about being sick as a child and not going to s
 
 I should mention beforehand that I'm not the movie watching kind of person. I feel uncomfortable watching any scene that's sad, painful, embarrassing, cringe-worthy, or disgusting. For that reason, it has been at least a year since I last watched a new movie.
 
-I watch movies to escape, not for art or plot or story, so I have no problems fast-forwarding through anything that gets in the way of my way. You will find that most of the movies below fall in the comedy or romcom genre. That's premeditated. 
+I watch movies to escape, not for art or plot or story, so I have no problems fast-forwarding through anything that gets in the way of my way. You will find that most of the movies below fall in the comedy or romcom genre. That's premeditated.
 
 I thought I'd post my list because I went to great lengths to make sure that the movies had happy endings and non-melancholic tones before I watched them. These movies, you'll find, are generally bright and comic.
 
@@ -31,7 +31,7 @@ But in a lot of places the movie adds to the book. I loved the images of English
 
 # 500 Days Of Summer
 
-![](https://nirav.com.np/assets/img/500-summer.jpg)This movie is one of those instant favorites. All characters are very endearing and the setting is interesting. I specially loved the non-linear narrative and the use of _(500)_ as a counter. _500 Days Of Summer_ is funny, romantic and I'm definitely going to watch it many times again.
+![](https://nirav.com.np/assets/img/500-summer.jpg)This movie is one of those instant favorites. All characters are very endearing and the setting is interesting. I loved the non-linear narrative and the use of _(500)_ as a counter. _500 Days Of Summer_ is funny, romantic and I'm definitely going to watch it many times again.
 
 # When Harry Met Sally
 
@@ -41,4 +41,8 @@ Watching movies set in New York in the late 90's makes me very nostalgic, no ide
 
 # Pretty Woman
 
-If you are okay with fast forwarding through some sappy dialogue then this is a good movie. Your average millionaire falls in love with a hooker. _Pretty Woman_ is warm and funny, and I enjoyed it when I watched it. But ... I don't know. At some level, its just a rich guy throwing expensive gifts till a girl he has bought for the week falls in love. This must have been new in the 90's but in 2019 I can't help comparing _Pretty Woman_ with the movies that it probably inspired.
+![](https://nirav.com.np/assets/img/pretty-woman.jpeg)If you are okay with fast forwarding through some sappy dialogue then this is a good movie. Your average millionaire falls in love with a hooker movie. _Pretty Woman_ is warm and funny, and I enjoyed it when I watched it. But ... I don't know. At some level, its just a rich guy throwing expensive gifts till a girl he has bought for the week falls in love. This must have been new in the 90's but in 2019 I can't help comparing _Pretty Woman_ with the movies that it probably inspired.
+
+# Mr. & Mrs. Smith
+
+![](https://nirav.com.np/assets/img/mrmrs.jpg)
