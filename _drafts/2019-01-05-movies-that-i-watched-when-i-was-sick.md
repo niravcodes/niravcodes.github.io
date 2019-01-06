@@ -21,4 +21,12 @@ I thought I'd post my list because I went to great lengths to make sure that the
 
 # Pride and Prejudice
 
-![](https://nirav.com.np/assets/img/prideprejudice.jpg)I finished reading _Pride and Prejudice_ when sick and I really enjoyed the book. It is set in the Regency era in Britain of which I know next to nothing. So I decided to watch the movie.
+![](https://nirav.com.np/assets/img/prideprejudice.jpg)I finished reading _Pride and Prejudice_ when sick and I really enjoyed it. It is set in the Regency era in Britain of which I know next to nothing so I decided to also watch the movie. The movie, as it turns out, is not set in the regency era but it is a good movie nonetheless.
+
+Having read the book, I ended up skipping a lot. Mrs. Bennett makes it specially hard to watch. I couldn't stand to watch her make a fool of herself so I ended up just skipping any scene she is in. I also skipped most of the ballroom scenes and any part involving Mr. Collins or Lady Catherine. I liked the book better.
+
+But in a lot of places the movie adds to the book. I loved the images of English countryside: the farms and animals, the streams and rivulets, the incredibly photogenic trees, the meadows and so on. In the end, watching the movie just gave me a lot of images and settings that I want to place the characters against by rereading the book. Also, watching this movie makes me want to reread _I Capture The Castle_.
+
+# 500 Days Of Summer
+
+![](https://nirav.com.np/assets/img/500-summer.jpg)This movie has become one of my favorites. 
