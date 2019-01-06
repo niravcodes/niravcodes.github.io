@@ -47,7 +47,7 @@ theme_settings:
   disqus_shortname:
   katex: false # Enable if using math markup
   portfolio: false
-  search: false
+  search: true
   tags: true
   
   
