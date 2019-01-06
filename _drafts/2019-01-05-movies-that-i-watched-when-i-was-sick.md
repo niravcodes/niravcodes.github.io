@@ -17,7 +17,7 @@ I thought I'd post my list because I went to great lengths to make sure that the
 
 # Harold and Kumar
 
-![](https://nirav.com.np/assets/img/haroldkumar.jpg "Harold and Kumar snapshot")I loved _Harold and Kumar_. It is about two friends' adventure to a restaurant while high. Along the way they perform a surgery, smoke weed with and then ride on a cheetah, get their car stolen by Neil Patrick Harris and use a glider to escape a cop. This kind of outlandish plot and the comedy makes _Harold and Kumar_ greatly enjoyable; and while there are **several** movies of this type that overdo these ideas and end up being just ugly, _Harold and Kumar_ manages to make everything work together. I specially loved the character of Kumar, and I think Kal Penn played him extremely well. There were a few scenes that I thought were way too disgusting to be funny, though, and I just fast-forwarded through them.
+![](https://nirav.com.np/assets/img/haroldkumar.jpg "Harold and Kumar snapshot")I loved _Harold and Kumar_. It is about two friends' adventure to a restaurant while high. Along the way they perform a surgery, smoke weed with and then ride on a cheetah, get their car stolen by Neil Patrick Harris and use a glider to escape a cop. This kind of outlandish plot and the comedy makes _Harold and Kumar_ greatly enjoyable; and while there are **several** movies of this type that overdo these ideas and end up being just ugly, _Harold and Kumar_ manages to make everything work together. I specially loved the character of Kumar as a brilliant slacker, and I think Kal Penn played him charmingly. There were a few scenes that I thought were way too disgusting to be funny, though, and I just fast-forwarded through them.
 
 # Pride and Prejudice
 
@@ -25,8 +25,14 @@ I thought I'd post my list because I went to great lengths to make sure that the
 
 Having read the book, I ended up skipping a lot. Mrs. Bennett makes it specially hard to watch. I couldn't stand to watch her make a fool of herself so I ended up just skipping any scene she is in. I also skipped most of the ballroom scenes and any part involving Mr. Collins or Lady Catherine. I liked the book better.
 
-But in a lot of places the movie adds to the book. I loved the images of English countryside: the farms and animals, the streams and rivulets, the incredibly photogenic trees, the meadows and so on. In the end, watching the movie just gave me a lot of images and settings that I want to place the characters against by rereading the book. Also, watching this movie makes me want to reread _I Capture The Castle_.
+But in a lot of places the movie adds to the book. I loved the images of English countryside: the farms and animals, the streams and rivulets, the incredibly photogenic trees, the meadows and so on. In the end, watching the movie supplied me with many images and settings that I want to place the characters of the book against by reading it again. Also, watching this movie makes me want to reread _I Capture The Castle_, which is also set in the English countryside.
 
 # 500 Days Of Summer
 
-![](https://nirav.com.np/assets/img/500-summer.jpg)This movie has become one of my favorites. 
+![](https://nirav.com.np/assets/img/500-summer.jpg)This movie is one of those instant favorites. All characters are very endearing and the setting is interesting. I specially loved the non-linear narrative and the use of _(500)_ as a counter. _500 Days Of Summer_ is funny, romantic and I'm definitely going to watch it many times again. 
+
+# When Harry Met Sally
+
+![](https://nirav.com.np/assets/img/harrysally2.jpg)
+
+Watching movies set in New York in the late 90's just makes me nostalgic. 
