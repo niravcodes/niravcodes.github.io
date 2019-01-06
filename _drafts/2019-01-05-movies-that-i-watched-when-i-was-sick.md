@@ -37,7 +37,7 @@ But in a lot of places the movie adds to the book. I loved the images of English
 
 ![](https://nirav.com.np/assets/img/harrysally2.jpg)
 
-Watching movies set in New York in the late 90's makes me very nostalgic, no idea why. And this movie is the epitome of New York in the 90's. I loved it. At times it gets cheesy but give me cheesy over sad any day. Also, Meg Ryan is beautiful.
+Watching movies set in New York in the late 90's makes me very nostalgic, no idea why. And this movie is the epitome of New York in the 90's. I loved it. At times it gets cheesy but give me cheesy over sad any day. Also, Meg Ryan (was?) is beautiful.
 
 # Pretty Woman
 
@@ -47,4 +47,14 @@ Watching movies set in New York in the late 90's makes me very nostalgic, no ide
 
 ![](https://nirav.com.np/assets/img/mrmrs.jpg)
 
-I had fun watching this one. _Mr. & Mrs. Smith_ is great setting that lends itself to several of funny moments and witty dialogues. 
+I had fun watching this one. _Mr. & Mrs. Smith_ has a great setting that lends itself well to witty dialogue and bickering. The lead characters are cool and funny. I didn't expect any realistic action scenes going into the movie and wasn't disappointed. The endless stream of bullets just didn't touch Pitt and Jolie.
+
+Watching this movie, however, I was reminded of how much I don't like watching action movies. I don't think I will watch _Mr. and Mrs. Smith_ again, even though I enjoyed it greatly (it's not the movie, it's me).
+
+# The Sure Thing
+
+![](https://nirav.com.np/assets/img/surething.jpg)
+
+I enjoyed **every second** the two leads were together, and very little else. Well that's a good thing because they are together for most of the screen time. I also must confess that I think Allison is (was? she's 60 now) very cute. 
+
+I'd like to add here that I found it hilarious how hard the movie tries to sell Walter as a deep character when his motive the entire movie has been to get laid. I find myself smiling at the remark, "You're too complicated for them anyway" made by his friend after he finishes counting the times he has had sex in the past and laments on how he isn't getting to have any in the present. You can have shallow characters be likable too, you know, movie. This is just a minor criticism, however, and we do get to see him develop into a mature character. At any rate, I'd love to watch this movie again when I'm sick again.
