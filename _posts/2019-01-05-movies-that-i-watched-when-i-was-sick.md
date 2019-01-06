@@ -17,7 +17,7 @@ I thought I'd post my list because I went to great lengths to make sure that the
 
 # Harold and Kumar
 
-![](assets/img/haroldkumar.jpg)
+![](https://nirav.com.np/assets/img/haroldkumar.jpg "Harold and Kumar snapshot")
 
 I loved _Harold and Kumar_. It is about two friends' adventure to a restaurant while high. Along the way they perform a surgery, smoke weed with and then ride on a cheetah, get their car stolen by Neil Patrick Harris and use a glider to escape a cop. This kind of outlandish plot and the comedy makes this really enjoyable; and while there are **several** movies of this type that overdo these ideas and end up being just ugly, _Harold and Kumar_ manages to make everything work together. I specially loved the character of Kumar, and I think Kal Penn played him extremely well. There were a few scenes that I thought were way too disgusting to be funny, though, and I just fast-forwarded through them.
 
@@ -25,4 +25,4 @@ I loved _Harold and Kumar_. It is about two friends' adventure to a restaurant w
 
 ![](assets/img/prideprejudice.jpg)
 
-I finished reading _Pride and Prejudice_ when sick, and decided that I knew far too little about the regency period 
+I finished reading _Pride and Prejudice_ when sick, and decided that I knew far too little about the regency period
