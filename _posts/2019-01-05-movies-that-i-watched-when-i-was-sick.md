@@ -63,7 +63,7 @@ Watching this movie, however, I was reminded of how much I don't like watching a
 
 ![](https://nirav.com.np/assets/img/surething.jpg)
 
-I enjoyed **every second** the two leads were together, and very little else. Trust me, that's a good thing because they are together for most of the screen time. I also must confess that I think Allison is (was? she's almost 60 now) very cute. 
+I enjoyed **every second** the two leads were together, and very little else. Trust me, that's a good thing because they are together for most of the screen time. I also must confess that I think Allison is (was? she's almost 60 now) very cute.
 
 I'd like to add here that I found it hilarious how hard the movie tries to sell Walter as a deep character when his motive the entire movie has been to get laid. I find myself smiling at the remark, "You're too complicated for them anyway" made by his friend after he finishes counting the times he has had sex in the past and laments on how he isn't getting to have any in the present. You can have shallow characters be likable too, you know, movie. This is just a minor criticism, however, and we do get to see him develop into a mature character. At any rate, I'd love to watch this movie again when I'm sick.
 
@@ -71,6 +71,22 @@ I'd like to add here that I found it hilarious how hard the movie tries to sell 
 
 ![](https://nirav.com.np/assets/img/maxresdefault.jpg)
 
-When you go looking for funny teen movies, you find _Easy A_ repeated on almost every list. I had also been meaning to watch this movie since the last time I binge watched movies like this (a long time ago). 
+When you go looking for funny teen movies, you find _Easy A_ repeated on almost every list. I had also been meaning to watch this movie since the last time I binge watched movies like this (a long time ago).
 
-Emma Stone is witty, her family is endearing and some of her friends are interesting. The movie is funny for the first half, which I really enjoyed. But then the slut shaming begins and the movie stops being interesting. I skipped many parts after that because after reading and watching as many YA novels and movies as I have, I can see it in my mind's eye. Again, nothing's wrong with the movie, it's me. On a side note, I liked Marianne as a character, she made me laugh.
+Emma Stone is witty, her family is endearing and some of her friends are interesting. The movie is funny for the first half, which I really enjoyed. But then the slut shaming begins and the movie stops being interesting. I skipped many parts after that because after reading and watching as many YA novels and movies as I have, I can see it in my mind's eye. Again, nothing's wrong with the movie, it's me. On a side note, I liked Marianne as a character: she made me laugh.
+
+# The Late Bloomer
+
+![](https://nirav.com.np/assets/img/the-late-bloomer.jpg)
+
+The movie bloomed with promise but ended up withering before the movie was half over. They reduced a successful man, going through puberty at 27, to just another romantic drama. Also, his friends were kinda jerks. Still, it was fun to watch once. 
+
+Seriously. This man is going through puberty at 27. Don't make him just fall in love like every other sappy romcom character. Don't make him piss off his friends and then send him back to apologize. Everyone does that. Do something original.
+
+# Austin Powers
+
+![](https://nirav.com.np/assets/img/austin-powers.jpg)
+
+I don't know, I just didn't laugh as much as my roommate had laughed a few months back when watching this movie. Also, as I said, I can't watch characters embarrassing themselves and this movie is at least 40% about Austin Powers doing just that. Just didn't float my boat.
+
+On the plus side, I loved how this movie makes fun of old spy movies. And I must mention that the milk pouring scene in the end was brilliant.
