@@ -11,7 +11,7 @@ date: 2019-01-05 16:08:09 +0000
 ---
 Don't you sometimes get nostalgic about being sick as a child and not going to school and being mostly home alone  watching movies on TV? I do too. Few days ago I came down with fever and took this chance to go back home and watch loads of movies. I chose most of them from the late 90's and early 00's to evoke that general sense of nostalgia.
 
-It must be noted that I am not a movie watching kind of person. I feel uncomfortable watching any scene that's sad, painful, embarrassing, cringe-worthy, or disgusting. For that reason, it has been at least a year since I last watched a new movie.
+I should mention beforehand that I'm not the movie watching kind of person. I feel uncomfortable watching any scene that's sad, painful, embarrassing, cringe-worthy, or disgusting. For that reason, it has been at least a year since I last watched a new movie.
 
 I thought I'd post my list because I went to great lengths to make sure that the movies had happy endings and non-melancholic tones before I watched them. These movies, you'll find, are generally bright and comic.
 
@@ -21,4 +21,4 @@ I thought I'd post my list because I went to great lengths to make sure that the
 
 # Pride and Prejudice
 
-![](https://nirav.com.np/assets/img/prideprejudice.jpg)I finished reading _Pride and Prejudice_ when sick and it was a good book. The book is set in the Regency era in Britain, since I don't know anything about that period, I thought it would be interesting to watch the movie too.
+![](https://nirav.com.np/assets/img/prideprejudice.jpg)I finished reading _Pride and Prejudice_ when sick and I really enjoyed the book. It is set in the Regency era in Britain, since I don't know anything about that period, I thought it would be interesting to watch the movie too. 
