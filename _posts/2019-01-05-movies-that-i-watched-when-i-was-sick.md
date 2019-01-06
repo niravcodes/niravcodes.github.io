@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Watching Movies When Sick
+title: Binge Watching Movies When Sick
 tags:
 - random
 - thoughts
@@ -11,9 +11,9 @@ date: 2019-01-05 16:08:09 +0000
 ---
 Don't you sometimes get nostalgic about being sick as a child and not going to school and being mostly home alone  watching movies on TV? I do too. Few days ago I came down with fever and took this chance to go back home and watch loads of movies. I chose most of them from the late 90's and early 00's to evoke that general sense of nostalgia.
 
-I should mention beforehand that I'm not the movie watching kind of person. I feel uncomfortable watching any scene that's sad, painful, embarrassing, cringe-worthy, or disgusting. For that reason, it has been at least a year since I last watched a new movie.
+I should mention beforehand that I'm not the movie watching kind of person. I feel uncomfortable watching any scene that's sad, painful to watch, embarrassing, cringe-worthy, or disgusting. That is one of the reasons why it's been more than a year since I watched a new movie.
 
-I watch movies to escape, not for art or plot or story, so I have no problems fast-forwarding through anything that gets in the way of my way. You will find that most of the movies below fall in the comedy or romcom genre. That's premeditated.
+I watch movies to escape, not for art or plot or story, so I have no problems fast-forwarding through anything that gets in the way of my way. It also means that I like movies that are more 'slice-of-life' and comedy better. You will find that most of the movies below fall in the comedy or romcom genre. That's premeditated.
 
 I thought I'd post my list because I went to great lengths to make sure that the movies had happy endings and non-melancholic tones before I watched them. These movies, you'll find, are generally bright and comic.
 
@@ -55,6 +55,14 @@ Watching this movie, however, I was reminded of how much I don't like watching a
 
 ![](https://nirav.com.np/assets/img/surething.jpg)
 
-I enjoyed **every second** the two leads were together, and very little else. Well that's a good thing because they are together for most of the screen time. I also must confess that I think Allison is (was? she's 60 now) very cute. 
+I enjoyed **every second** the two leads were together, and very little else. Trust me, that's a good thing because they are together for most of the screen time. I also must confess that I think Allison is (was? she's almost 60 now) very cute. 
 
-I'd like to add here that I found it hilarious how hard the movie tries to sell Walter as a deep character when his motive the entire movie has been to get laid. I find myself smiling at the remark, "You're too complicated for them anyway" made by his friend after he finishes counting the times he has had sex in the past and laments on how he isn't getting to have any in the present. You can have shallow characters be likable too, you know, movie. This is just a minor criticism, however, and we do get to see him develop into a mature character. At any rate, I'd love to watch this movie again when I'm sick again.
+I'd like to add here that I found it hilarious how hard the movie tries to sell Walter as a deep character when his motive the entire movie has been to get laid. I find myself smiling at the remark, "You're too complicated for them anyway" made by his friend after he finishes counting the times he has had sex in the past and laments on how he isn't getting to have any in the present. You can have shallow characters be likable too, you know, movie. This is just a minor criticism, however, and we do get to see him develop into a mature character. At any rate, I'd love to watch this movie again when I'm sick.
+
+# Easy A
+
+![](https://nirav.com.np/assets/img/maxresdefault.jpg)
+
+When you go looking for funny teen movies, you find _Easy A_ repeated on almost every list. I had also been meaning to watch this movie since the last time I binge watched movies like this (a long time ago). 
+
+Emma Stone is witty, her family is endearing and some of her friends are interesting. The movie is funny for the first half, which I really enjoyed. But then the slut shaming begins and the movie stops being interesting. I skipped many parts after that because after reading and watching as many YA novels and movies as I have, I can see it in my mind's eye. Again, nothing's wrong with the movie, it's me. On a side note, I liked Marianne as a character, she made me laugh.
