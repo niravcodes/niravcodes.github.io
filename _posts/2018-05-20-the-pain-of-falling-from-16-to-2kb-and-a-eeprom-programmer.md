@@ -1,11 +1,11 @@
 ---
 layout: post
-published: true
 title: The pain of falling from 16 to 2KB and a EEPROM PROGRAMMER
 tags:
-  - code
-  - EEPROM
-  - Electronics
+- code
+- EEPROM
+- Electronics
+
 ---
 So EEPROM sizes are measured in bits... who knew. I spent the last several days in the happy illusion that I had EEPROM chips capable of holding 16KB of data. With 16KB, I can store about 4 seconds of 4 bit data sampled at 8000 khz, which is enough for my little sound playing project.
 
@@ -15,90 +15,92 @@ One must, however, learn to improvise adapt overcome hence I downsampled the aud
 
 On a merrier note, here is the code I wrote to program the EEPROM chip I have (AT24C16A)
 
-    #include <I2C.h>
-	//oppai sound from High School DXD as a tribute XD
-    const char oppai[1912] PROGMEM = {
-    	// put the bytes here
-    };
-    void setup() {
-      // put your setup code here, to run once:
-      I2c.begin();
-      I2c.setSpeed(true);
-      Serial.begin(38400);
-    }
-    /*void loop() {
-      char data[16]  = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 16, 15};
-      I2c.write(0x50, 0x00, *data);
-      while(1);
-    }*/
+{% highlight c linenos %}
+#include <I2C.h>
+//oppai sound from High School DXD as a tribute XD
+const char oppai[1912] PROGMEM = {
+	// put the bytes here
+};
+void setup() {
+	// put your setup code here, to run once:
+	I2c.begin();
+	I2c.setSpeed(true);
+	Serial.begin(38400);
+}
+/*void loop() {
+  char data[16]  = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 16, 15};
+  I2c.write(0x50, 0x00, *data);
+  while(1);
+  }*/
 
 
-    void loop(){
-      delay(2000); // in case I accidentally power arduino and corrupt data
-      /*
-      char data[16];
-      bool dataexhausted = false;
-      for (unsigned char  i = 0; i < 128; i++){
+void loop(){
+	delay(2000); // in case I accidentally power arduino and corrupt data
+	/*
+	   char data[16];
+	   bool dataexhausted = false;
+	   for (unsigned char  i = 0; i < 128; i++){
 
-          //put 16 bytes from progmem into data here
-          for (unsigned char x = 0; x < 16; x++){
+	//put 16 bytes from progmem into data here
+	for (unsigned char x = 0; x < 16; x++){
 
-                data[x] = pgm_read_byte(&(oppai[i << 4 | x]));
-                if ( (i*16 + x)>=sizeof(oppai) ) {
-                  for (unsigned char m = x; m < 16; m++){
-                      data[m] = 0;
-                  }
-                  dataexhausted = true;
-                  break;
-                }
-          }
+	data[x] = pgm_read_byte(&(oppai[i << 4 | x]));
+	if ( (i*16 + x)>=sizeof(oppai) ) {
+	for (unsigned char m = x; m < 16; m++){
+	data[m] = 0;
+	}
+	dataexhausted = true;
+	break;
+	}
+	}
 
-          //compute the device and word address here
-          char device_address = 0x50 | (0x07 & (i >> 4 ));
-          char dwordaddress = i << 4;
+	//compute the device and word address here
+	char device_address = 0x50 | (0x07 & (i >> 4 ));
+	char dwordaddress = i << 4;
 
-          //perform the final write here.
-          /* debug information 
-          Serial.print("I2c.write("); 
-          Serial.print(device_address, HEX);
-          Serial.print(", ");
-          Serial.print(dwordaddress, HEX);
-          Serial.print(", ");
-          for (int j = 0; j < 16; j++) {Serial.print(data[j], HEX); Serial.println(", ");}
-          Serial.println(")");
-          Serial.println(i, DEC);
-          Serial.println("-------------------------------");
-          Serial.println("");
+	//perform the final write here.
+	/* debug information 
+	Serial.print("I2c.write("); 
+	Serial.print(device_address, HEX);
+	Serial.print(", ");
+	Serial.print(dwordaddress, HEX);
+	Serial.print(", ");
+	for (int j = 0; j < 16; j++) {Serial.print(data[j], HEX); Serial.println(", ");}
+	Serial.println(")");
+	Serial.println(i, DEC);
+	Serial.println("-------------------------------");
+	Serial.println("");
 
 
-          I2c.write(device_address, dwordaddress, data, 16);
+	I2c.write(device_address, dwordaddress, data, 16);
 
-          //debug information
-          Serial.print(i);
-          Serial.println(" written");
+	//debug information
+	Serial.print(i);
+	Serial.println(" written");
 
-          delay(12);
+	delay(12);
 
-          //if data finishes before eeprom storage does (as it should) break the loop
-          if (dataexhausted == true) break;
-      }
-      Serial.println("Finished!");
-      Serial.println("echoing back bytes");
-    */
+	//if data finishes before eeprom storage does (as it should) break the loop
+	if (dataexhausted == true) break;
+	}
+	Serial.println("Finished!");
+	Serial.println("echoing back bytes");
+	 */
 
-       I2c.read(0x50, 0x00, 16) ;
-       for (unsigned char i = 0; i < 128; i++){
-          for (char j = 0; j < 16; j++) Serial.println(I2c.receive(), HEX);
-          I2c.read(0x50, 16) ;
-       }
+	I2c.read(0x50, 0x00, 16) ;
+	for (unsigned char i = 0; i < 128; i++){
+		for (char j = 0; j < 16; j++) Serial.println(I2c.receive(), HEX);
+		I2c.read(0x50, 16) ;
+	}
 
-      /*I2c.read(0x50,0x00,16);
-      for (char i = 0; i < 16; i++){
-        Serial.println(I2c.receive());
-      }*/
+	/*I2c.read(0x50,0x00,16);
+	  for (char i = 0; i < 16; i++){
+	  Serial.println(I2c.receive());
+	  }*/
 
-      while (1) ;
+	while (1) ;
 
-    }
-   
+}
+{% endhighlight %}
+
 It uses the I2C library provided on [dsscircuits.com](http://dsscircuits.com/articles/arduino-i2c-master-library).
