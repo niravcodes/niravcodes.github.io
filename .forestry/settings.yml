@@ -4,19 +4,19 @@ auto_deploy: true
 admin_path: ''
 webhook_url: 
 sections:
-- type: directory
-  path: _portfolio
-  label: Projects
-  create: all
-  match: "**/*"
-  templates:
-  - post
-- type: jekyll-pages
-  label: Pages
-  create: all
 - type: jekyll-posts
   label: Posts
   create: all
+- type: jekyll-pages
+  label: Pages
+  create: all
+- type: directory
+  path: _portfolio
+  label: Projects
+  create: documents
+  match: "**/*"
+  templates:
+  - post
 upload_dir: assets/img
 public_path: https://nirav.com.np/assets/img
 front_matter_path: ''
