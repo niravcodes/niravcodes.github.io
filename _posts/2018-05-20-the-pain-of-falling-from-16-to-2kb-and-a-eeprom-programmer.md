@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The pain of falling from 16 to 2KB and a EEPROM PROGRAMMER
+title: The pain of falling from 16 to 2KB and an EEPROM Programmer in Arduino
 tags:
 - code
 - electronics
@@ -14,12 +14,13 @@ But, when I revisited the datasheets yesterday, I realized that the B in KB actu
 
 One must, however, learn to improvise adapt overcome hence I downsampled the audio to 4khz and truncated the sound sample down to 2KB. It hurt.
 
-On a merrier note, here is the code I wrote to program the EEPROM chip I have (AT24C16A)
+On a merrier note, here is the code I wrote to program the EEPROM chip I have (AT24C16A) in arduino.
 
 {% highlight c linenos %}
 #include <I2C.h>
 //oppai sound from High School DXD as a tribute XD
-const char oppai[1912] PROGMEM = {
+unsigned int data_len = 0; // Define your length here
+const char oppai[data_len] PROGMEM = {
 	// put the bytes here
 };
 void setup() {
@@ -28,12 +29,6 @@ void setup() {
 	I2c.setSpeed(true);
 	Serial.begin(38400);
 }
-/*void loop() {
-  char data[16]  = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 16, 15};
-  I2c.write(0x50, 0x00, *data);
-  while(1);
-  }*/
-
 
 void loop(){
 	delay(2000); // in case I accidentally power arduino and corrupt data
