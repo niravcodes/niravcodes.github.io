@@ -5,7 +5,7 @@ tags:
 - random
 - thoughts
 feature-img: assets/img/harrysally.jpg
-thumbnail: ''
+thumbnail: https://nirav.com.np/assets/img/500-summer.jpg
 date: 2019-01-05 16:08:09 +0000
 
 ---
@@ -79,7 +79,7 @@ Emma Stone is witty, her family is endearing and some of her friends are interes
 
 ![](https://nirav.com.np/assets/img/the-late-bloomer.jpg)
 
-The movie bloomed with promise but ended up withering before the movie was half over. They reduced a successful man, going through puberty at 27, to just another romantic drama. Also, his friends were kinda jerks. Still, it was fun to watch once. 
+The movie bloomed with promise but ended up withering before the movie was half over. They reduced a successful man, going through puberty at 27, to just another romantic drama. Also, his friends were kinda jerks. Still, it was fun to watch once.
 
 Seriously. This man is going through puberty at 27. Don't make him just fall in love like every other sappy romcom character. Don't make him piss off his friends and then send him back to apologize. Everyone does that. Do something original.
 
