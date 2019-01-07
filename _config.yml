@@ -2,15 +2,15 @@
 baseurl: ""
 url: "https://nirav.com.np"
 title: Nirav's Blog 
-description: "Personal blog of a computer obsessed computer engineering student." # used by search engines
+description: "" # used by search engines
 
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Niravs' Blog # blog's title
+  title: Nirav's Blog # blog's title
   avatar: assets/img/triangle.svg
-  favicon: assets/favicon.ico
+  # favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
 
   header_text: >
