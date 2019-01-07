@@ -245,7 +245,7 @@ int main(){
 	sendbit0();
 	sendbit1();
 
-	sendone(); // wait for ack... I mean sendone should have been named release. It would make loads of sense
+	sendone(); // wait for ack... I mean sendone should have been named release. that would've made sense
 
 	clockon();
 	if ((PINB & 1<<SDA) == 0 ) {ledon(); wait(); ledoff();}
