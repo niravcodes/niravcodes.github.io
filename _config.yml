@@ -61,7 +61,7 @@ theme_settings:
     email: true
 
   # Scripts / Features 
-  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  google_analytics:  UA-131574406-1  # Tracking ID, e.g. "UA-000000-01"
   disqus_shortname: nirav-2
   katex: true # Enable if using math markup
   
