@@ -4,9 +4,11 @@ title: Binge Watching Movies When Sick
 tags:
 - random
 - thoughts
+- lists
 feature-img: assets/img/harrysally.jpg
 thumbnail: https://nirav.com.np/assets/img/500-summer.jpg
 date: 2019-01-05 16:08:09 +0000
+excerpt_separator: ''
 
 ---
 Don't you ever get nostalgic about being sick as a child and not going to school and being mostly home alone  watching movies on TV? I do too. Few days ago I came down with fever and took this chance to go back home and watch loads of movies. I chose most of them from the late 90's and early 00's to evoke that general sense of nostalgia.
@@ -44,6 +46,8 @@ This movie is one of those instant favorites. All characters are very endearing 
 ![](https://nirav.com.np/assets/img/harrysally2.jpg)
 
 Watching movies set in New York in the late 90's makes me very nostalgic, no idea why. And this movie is the epitome of New York in the 90's. I loved it. At times it gets cheesy but give me cheesy over sad any day. Also, Meg Ryan (was?) is beautiful.
+
+I'm looking forward to watching this movie after I have forgotten the details (which doesn't take very long for me).
 
 # Pretty Woman
 
