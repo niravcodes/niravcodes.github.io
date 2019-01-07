@@ -6,7 +6,7 @@ url: "https://nirav.com.np"
 theme_settings:
   # Meta
   title: Nirav's blog
-#  avatar: assets/img/owl.svg
+  avatar: assets/img/owl.svg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
   description: "Blog of an engineering student who doesn't do much" # used by search engines
@@ -17,7 +17,7 @@ theme_settings:
      <p>I dabble with electronics, programming, art, design, music and everything in between. You could call me a jack of all trades. </p>
   header_text_feature_image: "assets/img/astrology-astronomy-background-image-956981 (1).jpg"
   footer_text: >
-   &copy; Nirav Nikhil. <a href="/about/">About/Contact me.</a> 
+   &copy; Nirav Nikhil. <a href="/about/">About me.</a> 
 
   # Icons
   rss: true
@@ -28,7 +28,7 @@ theme_settings:
   facebook:
   flickr:
   gitlab:
-  github: "mynameistakenisalsotaken"
+  github: "niravcodes"
   google_plus:
   instagram: "kawaii.hermit"
   linkedin:  # Full URL
@@ -47,7 +47,7 @@ theme_settings:
   disqus_shortname: nirav-2
   katex: false # Enable if using math markup
   portfolio: true
-  search: false
+  search: true 
   tags: true
   
   
