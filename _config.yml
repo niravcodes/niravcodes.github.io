@@ -44,7 +44,7 @@ theme_settings:
 
   # Scripts / Features 
   google_analytics: UA-131574406-1 # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
+  disqus_shortname: nirav-2
   katex: false # Enable if using math markup
   portfolio: true
   search: false
