@@ -17,7 +17,7 @@ Next, I learnt that CR2032 batteries don't last long. I really don't know how it
 
 I also found this nifty code to reverse bit order in a byte:
 
-{{ highlight c linenos }}
+{{ highlight scss linenos }}
 unsigned char reverse( unsigned char x )
 {
  	x = ((x >> 1) & 0x55) | ((x << 1) & 0xaa);
