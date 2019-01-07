@@ -4,7 +4,8 @@ title: The Cursed Child sucks
 tags:
 - random
 - thoughts
-- Harry Potter
+- harry potter
+feature-img: https://nirav.com.np/assets/img/cursedchild.jpg
 
 ---
 It is 2 am in the morning. I have EDC assessments tomorrow (today). I spent the last several hours reading Harry Potter:The cursed child.
