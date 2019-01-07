@@ -25,7 +25,7 @@ unsigned char reverse( unsigned char x )
    	x = ((x >> 4) & 0x0f) | ((x << 4) & 0xf0);
    	return x;
 }
-{% endghighlight %}
+{% endhighlight %}
 
 This is better than looping 8 times or something and also looks beautiful. Win-win. (I have no idea how this function works, though)
 
