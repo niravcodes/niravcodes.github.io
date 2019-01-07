@@ -30,15 +30,9 @@
     <div style="position: absolute; left: 35%;">
     {% if paginator.previous_page %}
         <!-- << -->
-        {% if paginator.previous_page != 1 %}
-        <a alt="{{ site.theme_settings.str_previous_page }}"
-           href="{{ '/' | relative_url }}" style="margin-right:0" class="button">
-          <i class="fa fa-angle-double-left"></i>
-        </a>
-        {% endif %}   
         <!-- < previous -->
         <a href="{{ paginator.previous_page_path | relative_url }}" {% if paginator.previous_page != 1 %}style="margin-left:0"{% endif %} class="button">
-          <i class="fa fa-chevron-left"></i>
+          &lt;
           {{ site.theme_settings.str_previous_page }}
         </a>
     {% endif %}
@@ -57,14 +51,9 @@
         <a alt="{{ site.theme_settings.str_next_page }}" 
            href="{{ paginator.next_page_path | relative_url }}" {% if paginator.next_page != paginator.total_pages %}style="margin-right:0"{% endif %} class="button">
           {{ site.theme_settings.str_next_page }}
-          <i class="fa fa-chevron-right"></i>
+          &gt;
         </a>
         <!-- >> -->
-        {% if paginator.next_page != paginator.total_pages %}
-        <a href="{{ site.paginate_path | relative_url | replace: ':num', paginator.total_pages }}" style="margin-left:0" class="button">
-          <i class="fa fa-angle-double-right"></i>
-        </a>
-        {% endif %}
     {% endif %}
     </div>     
 </div>
