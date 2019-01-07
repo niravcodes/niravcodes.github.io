@@ -2,10 +2,9 @@
 layout: post
 title: Acknowledge me, DS1307 senpai!
 tags:
-- random
 - code
-- ATtiny
-- Electronics
+- electronics
+- avr
 
 ---
 I might be one of the few people who find 2 ICs talking to each other absolutely cute, but so be it.
