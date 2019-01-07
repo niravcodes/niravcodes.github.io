@@ -16,7 +16,7 @@ theme_settings:
   header_text: >
      <p>Hey.</p><p>I'm Nirav. I study computer engineering in Nepal.</p>
      <p>I dabble with electronics, programming, art, design, music and everything in between. You could call me a jack of all trades. </p>
-  header_text_feature_image: "assets/img/astrology-astronomy.jpg"
+  header_text_feature_image: assets/img/astrology-astronomy.jpg
   footer_text: >
    &copy; Nirav Nikhil. <a href="/about/">About me.</a>
 
