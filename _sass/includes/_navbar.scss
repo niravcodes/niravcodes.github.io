@@ -33,11 +33,20 @@
     .site-title {
         float: left;
         font-weight: bold;
-        font-size: 1.2em;
-        line-height: 1.5;
+	font-size: 1.2em;
+	line-height: 1.5;
 	padding: 0 0 0 50px;
+	@media screen and (max-width: $break){
+		padding:0;
+	}
 
-    }
+	@media screen and (max-width: $sm_break){
+		font-size:0.8em;
+	}
+
+
+
+}
 
     nav {
         list-style: none;
