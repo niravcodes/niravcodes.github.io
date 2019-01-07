@@ -46,6 +46,11 @@
 
 // Post listing
 .posts {
+	.post-link{
+		font-size:1.4em;
+	}
+
+
     .post-teaser {
         @extend %padding-regular;
         width: 100%;
