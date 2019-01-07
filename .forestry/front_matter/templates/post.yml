@@ -33,6 +33,12 @@ fields:
   description: Thumbnail for the post
   config:
     maxSize: '10'
+- type: text
+  label: Separator Text
+  name: excerpt_separator
+  description: Delimiter for excerpt
+  config:
+    required: false
 pages:
 - _posts/2018-12-22-looking-at-mern-stack.md
 - _posts/2019-01-05-movies-that-i-watched-when-i-was-sick.md
