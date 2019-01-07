@@ -40,8 +40,8 @@
 		padding:0;
 	}
 
-	@media screen and (max-width: $sm_break){
-		font-size:0.8em;
+	@media screen and (max-width: $sm-break){
+		font-size:0.8em !important;
 	}
 
 
