@@ -17,13 +17,15 @@ Next, I learnt that CR2032 batteries don't last long. I really don't know how it
 
 I also found this nifty code to reverse bit order in a byte:
 
-    unsigned char reverse( unsigned char x )
-    {
-    	x = ((x >> 1) & 0x55) | ((x << 1) & 0xaa);
-    	x = ((x >> 2) & 0x33) | ((x << 2) & 0xcc);
-    	x = ((x >> 4) & 0x0f) | ((x << 4) & 0xf0);
-    	return x;
-    }
+```c
+unsigned char reverse( unsigned char x )
+{
+ 	x = ((x >> 1) & 0x55) | ((x << 1) & 0xaa);
+   	x = ((x >> 2) & 0x33) | ((x << 2) & 0xcc);
+   	x = ((x >> 4) & 0x0f) | ((x << 4) & 0xf0);
+   	return x;
+}
+```
 
 This is better than looping 8 times or something and also looks beautiful. Win-win. (I have no idea how this function works, though)
 
