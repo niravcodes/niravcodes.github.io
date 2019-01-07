@@ -2,10 +2,10 @@
 layout: post
 title: The Long Sad Story Of How My Life Was Ruined By Precedence In C
 tags:
-- random
 - code
 - thoughts
-- ATtiny
+- avr
+- attiny
 
 ---
 Did you know that the equality (==) operator takes precedence over bitwise operators(&, \|) in c? You probably did, because you must have memorized the precedence table in the first semester. Being a lazy ass, however, I didn't. Now, at that time, I didn't think much of it because I could use parenthesis whenever I was confused about precedence. I was wrong.
