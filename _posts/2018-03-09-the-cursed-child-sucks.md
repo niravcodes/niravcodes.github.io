@@ -7,14 +7,14 @@ tags:
 - harry potter
 feature-img: https://nirav.com.np/assets/img/cursedchild.jpg
 thumbnail: ''
-excerpt_separator: "-- -- --"
+excerpt_separator: "<!--more-->"
 
 ---
 It is 2 am in the morning. I have EDC assessments tomorrow (today). I spent the last several hours reading Harry Potter:The cursed child.
 
 I am writing this because I have to say it to someone. And since my roommate, who is listening to a weird song and studying as I type, is not a very good candidate, I am posting here.
 
-\-- -- --
+<!--more-->
 
 **The thing sucks.**
 
