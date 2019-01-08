@@ -4,14 +4,6 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
-  label: Layout
-  name: layout
-  default: post
-  hidden: false
-  config:
-    required: true
-  description: Always post. ALWAYS POST!!
-- type: text
   label: title
   name: title
   description: Title of the blog post
@@ -21,6 +13,13 @@ fields:
   name: tags
   label: Tags
   description: Pick few tags for this post
+- type: text
+  label: Separator Text
+  name: excerpt_separator
+  description: Delimiter for excerpt
+  config:
+    required: true
+  default: "-- -- --"
 - type: file
   name: feature-img
   label: Feature Image
@@ -34,11 +33,13 @@ fields:
   config:
     maxSize: '10'
 - type: text
-  label: Separator Text
-  name: excerpt_separator
-  description: Delimiter for excerpt
+  label: Layout
+  name: layout
+  default: post
+  hidden: false
   config:
     required: true
+  description: Always post. ALWAYS POST!!
 pages:
 - _posts/2018-12-22-looking-at-mern-stack.md
 - _posts/2019-01-05-movies-that-i-watched-when-i-was-sick.md
