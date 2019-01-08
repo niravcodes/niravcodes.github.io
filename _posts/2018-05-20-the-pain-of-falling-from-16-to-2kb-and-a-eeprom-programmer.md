@@ -19,7 +19,7 @@ On a merrier note, here is the code I wrote to program the EEPROM chip I have (A
 Note that the data writing part is commented out. I should have taken some time to format and automate the code, but that's how it ended up.
 
 {% highlight c linenos %}
-\#include <I2C.h>
+#include <I2C.h>
 //oppai sound from High School DXD as a tribute XD
 unsigned int data_len = 0; // Define your length here
 const char oppai\[data_len\] PROGMEM = {
