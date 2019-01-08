@@ -19,7 +19,7 @@ fields:
   description: Delimiter for excerpt
   config:
     required: true
-  default: "-- -- --"
+  default: "<!--more-->"
 - type: file
   name: feature-img
   label: Feature Image
