@@ -1,0 +1,18 @@
+---
+label: Project
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Project Title
+  description: The name or title of project
+  config:
+    required: true
+- type: text
+  label: Layout
+  name: layout
+  description: Always post. Don't bother changing
+  config:
+    required: true
+  default: post
