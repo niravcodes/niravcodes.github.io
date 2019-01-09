@@ -109,6 +109,6 @@ _Paterson_ is a charming movie. I'll definitely watch it again, albeit when not 
 
 ![](https://nirav.com.np/assets/img/amanda.png)
 
-I enjoyed this movie a lot more than I thought I would. The move is funny, has a comic setting and is fairly interesting. Amanda is adorable as Viola; it was pleasant to watch her various antics and expressions. Near the very end the story gets a little too cheesy for my taste but of course, better cheesy than sad.
+I enjoyed this movie a lot more than I thought I would. The move is funny, has a comic setting and is fairly interesting. Amanda is adorable as Viola; it was pleasant to watch her various antics and expressions. Near the very end the story gets a little too cheesy for my taste but of course, cheesy is always better than sad.
 
 I'd love to watch _She's The Man_ again someday.
