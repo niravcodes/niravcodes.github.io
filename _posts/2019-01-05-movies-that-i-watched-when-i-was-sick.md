@@ -33,7 +33,7 @@ I loved _Harold and Kumar_. It is about two friends' adventure to a restaurant w
 
 I finished reading _Pride and Prejudice_ when sick and I really enjoyed it. It is set in the Regency era in Britain of which I know next to nothing so I decided to also watch the movie. The movie, as it turns out, is not set in the regency era but it is a good movie nonetheless.
 
-Having read the book, I ended up skipping a lot. Mrs. Bennett makes it specially hard to watch. I couldn't stand to watch her make a fool of herself so I ended up just skipping any scene she is in. I also skipped most of the ballroom scenes and any part involving Mr. Collins or Lady Catherine. I liked the book better.
+Having read the book, I ended up skipping a lot. Mrs. Bennett makes it specially hard to watch. I couldn't stand to watch her make a fool of herself so I skipped almost every scene she is in. I also skipped most of the ballroom scenes and any part involving Mr. Collins or Lady Catherine. Needless to say, I liked the book better.
 
 But in a lot of places the movie adds to the book. I loved the images of English countryside: the farms and animals, the streams and rivulets, the incredibly photogenic trees, the meadows and so on. In the end, watching the movie supplied me with many images and settings that I want to place the characters of the book against by reading it again. Also, watching this movie makes me want to reread _I Capture The Castle_, which is also set in the English countryside.
 
@@ -96,3 +96,19 @@ Seriously. This man is going through puberty at 27. Don't make him just fall in 
 I don't know, I just didn't laugh as much as my roommate had laughed a few months back when watching this movie. Also, as I said, I can't watch characters embarrassing themselves and this movie is at least 40% about Austin Powers doing just that. Just didn't float my boat.
 
 On the plus side, I loved how this movie makes fun of old spy movies. And I must mention that the milk pouring scene in the end was brilliant.
+
+# Paterson
+
+![](https://nirav.com.np/assets/img/patersi.jpg)
+
+The atmosphere is so poignant, the tone so somber. The music is cheerless. This is not the kind of movie you want to watch when sick. All the same, _Paterson_ is a beautiful film and I'm glad that I watched it. I could relate to the movie in that I had gone through a similar phase in high school when I walked alone and wrote a lot of poems, observing the world around me with that general feeling of serenity. I published the poems in a private blog and later deleted it. How I wish I hadn't. 
+
+_Paterson_ is a charming movie. I'll definitely watch it again, albeit when not sick.
+
+# She's The Man
+
+![](https://nirav.com.np/assets/img/amanda.png)
+
+I enjoyed this movie a lot more than I thought I would. The move is funny, has a comic setting and is fairly interesting. Amanda is adorable as Viola; it was pleasant to watch her various antics and expressions. Near the very end the story gets a little too cheesy for my taste but of course, better cheesy than sad.
+
+I'd love to watch _She's The Man_ again someday.
