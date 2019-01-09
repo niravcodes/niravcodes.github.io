@@ -13,7 +13,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
-  - post
+  - project
 - type: directory
   path: pages
   label: Pages
