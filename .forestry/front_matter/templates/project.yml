@@ -9,6 +9,15 @@ fields:
   description: The name or title of project
   config:
     required: true
+- type: tag_list
+  name: tags
+  label: Tags
+- type: file
+  name: img
+  label: Project Image
+- type: file
+  label: Feature Image
+  name: feature-img
 - type: text
   label: Layout
   name: layout
