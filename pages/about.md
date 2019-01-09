@@ -4,7 +4,7 @@ title: About
 permalink: "/about/"
 feature-img: assets/img/pexels/circuit.jpeg
 tags:
-- About
+- about
 
 ---
 Hey. I am Nirav, a computer engineering student from Nepal. You're on my personal website where I generally write about what I'm up to.
