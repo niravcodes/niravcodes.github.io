@@ -47,7 +47,7 @@ This movie is one of those instant favorites. All characters are very endearing 
 
 ![](https://nirav.com.np/assets/img/harrysally2.jpg)
 
-Watching movies set in New York in the late 90's makes me very nostalgic, no idea why. And this movie is the epitome of New York in the 90's. I loved it. At times it gets cheesy but give me cheesy over sad any day. Also, Meg Ryan (was?) is beautiful.
+Watching movies set in New York in the late 90's makes me very nostalgic, no idea why. And this movie is the epitome of New York in the 90's. I loved it. At times it gets cheesy but give me cheesy over sad any day. Also, Meg Ryan is beautiful.
 
 I'm looking forward to watching this movie after I have forgotten the details (which doesn't take very long for me).
 
@@ -101,7 +101,7 @@ On the plus side, I loved how this movie makes fun of old spy movies. And I must
 
 ![](https://nirav.com.np/assets/img/patersi.jpg)
 
-The atmosphere is so poignant, the tone so somber. The music is cheerless. This is not the kind of movie you want to watch when sick. All the same, _Paterson_ is a beautiful film and I'm glad that I watched it. I could relate to the movie in that I had gone through a similar phase in high school when I walked alone and wrote a lot of poems, observing the world around me with that general feeling of serenity. I published the poems in a private blog and later deleted it. How I wish I hadn't. 
+The atmosphere is so poignant, the tone so somber. The music is cheerless. This is not the kind of movie you want to watch when sick. All the same, _Paterson_ is a beautiful film and I'm glad that I watched it. I could relate to the movie in that I had gone through a similar phase in high school when I walked alone and wrote a lot of poems, observing the world around me with that general feeling of serenity. I published the poems in a private blog and later deleted it. How I wish I hadn't.
 
 _Paterson_ is a charming movie. I'll definitely watch it again, albeit when not sick.
 
@@ -112,3 +112,11 @@ _Paterson_ is a charming movie. I'll definitely watch it again, albeit when not 
 I enjoyed this movie a lot more than I thought I would. The move is funny, has a comic setting and is fairly interesting. Amanda is adorable as Viola; it was pleasant to watch her various antics and expressions. Near the very end the story gets a little too cheesy for my taste but of course, cheesy is always better than sad.
 
 I'd love to watch _She's The Man_ again someday.
+
+# You've Got Mail
+
+![](https://nirav.com.np/assets/img/youvegotmail.jpg)
+
+I had a wide grin plastered on my face the entire time I watched this movie. It has got that charm that lures you in from the first scene. The premise is alluring, the actors are endearing, the music is used to great effect and it is relaxing to watch. Also, Meg Ryan is absolutely adorable. If I ever make a list of feel-good movies, _You've Got Mail_ is going on the top.
+
+I had been avoiding this movie for some time because it had Tom Hanks in it. I don't know, I always had the impression that he only ever starred in heavy, emotional movies about war and death, and tragic endings. Now that I know, I can go watch Sleepless in Seattle too. 
