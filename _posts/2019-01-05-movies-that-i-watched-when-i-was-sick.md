@@ -119,4 +119,12 @@ I'd love to watch _She's The Man_ again someday.
 
 I had a wide grin plastered on my face the entire time I watched this movie. It has got that charm that lures you in from the first scene. The premise is alluring, the actors are endearing, the music is used to great effect and it is relaxing to watch. Also, Meg Ryan is absolutely adorable. If I ever make a list of feel-good movies, _You've Got Mail_ is going on the top.
 
-I had been avoiding this movie for some time because it had Tom Hanks in it. I don't know, I always had the impression that he only ever starred in heavy, emotional movies about war and death, and tragic endings. Now that I know, I can go watch Sleepless in Seattle too. 
+I had been avoiding this movie for some time because it had Tom Hanks in it. I don't know, I always had the impression that he only ever starred in heavy, emotional movies about war and death, and tragic endings. Now that I know, I can go watch Sleepless in Seattle too.
+
+# Sleepless In Seattle
+
+![](https://nirav.com.np/assets/img/sleeplessseattle.jpg)
+
+The name is so pretty, _Sleepless In Seattle_. [Roger Ebert](https://www.rogerebert.com/reviews/sleepless-in-seattle-1993 "Roger Ebert on Sleepless in Seattle") writes, "as ephemeral as a talk show, as contrived as the late show, and yet so warm and gentle I smiled the whole way through." I agree with him. I don't feel like repeating myself so I'll just say that everything I wrote about _You've Got Mail_ applies to this movie too.
+
+# FIN
