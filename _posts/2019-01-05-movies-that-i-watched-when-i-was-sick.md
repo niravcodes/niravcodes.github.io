@@ -5,6 +5,7 @@ tags:
 - random
 - thoughts
 - lists
+- movies
 feature-img: assets/img/harrysally.jpg
 thumbnail: https://nirav.com.np/assets/img/zooey.jpg
 date: 2019-01-05 16:08:09 +0000
@@ -15,7 +16,7 @@ Don't you ever get nostalgic about being sick as a child and not going to school
 
 <!--more-->
 
-I should mention beforehand that I'm not the movie watching kind of person. I feel uncomfortable watching any scene that's sad, painful to watch, embarrassing, cringe-worthy, or disgusting. That is one of the reasons why it's been more than a year since I watched a new movie.
+I should mention beforehand that I'm not the movie watching kind of person. I feel uncomfortable watching melancholic, embarrassing, cringe-worthy, or crass movies. That is one of the reasons why it's been more than a year since I watched a new movie.
 
 I watch movies to escape, not for art or plot or story, so I have no problems fast-forwarding through anything that gets in the way. It also means that I like movies that are more 'slice-of-life' and comedy better. You will find that most of the movies below fall in the comedy or romcom genre. That's premeditated.
 
@@ -49,21 +50,21 @@ This movie is one of those instant favorites. All characters are very endearing 
 
 Watching movies set in New York in the late 90's makes me very nostalgic, no idea why. And this movie is the epitome of New York in the 90's. I loved it. At times it gets cheesy but give me cheesy over sad any day. Also, Meg Ryan is beautiful.
 
-I'm looking forward to watching this movie after I have forgotten the details (which doesn't take very long for me).
+I'm definitely going to watch it the next time I get sick.
 
 # Pretty Woman
 
 ![](https://nirav.com.np/assets/img/pretty-woman.jpeg)
 
-If you are okay with fast forwarding through some sappy dialogue then this is a good movie. Your average millionaire falls in love with a hooker movie. _Pretty Woman_ is warm and funny, and I enjoyed it when I watched it. But ... I don't know. At some level, its just a rich guy throwing expensive gifts till a girl he has bought for the week falls in love. This must have been new in the 90's but in 2019 I can't help comparing _Pretty Woman_ to the movies that it probably inspired.
+If you are okay with fast forwarding through some sappy dialogue then this is a good your-average-millionaire-falls-in-love-with-a-hooker movie. _Pretty Woman_ is warm and funny, and I enjoyed it when I watched it. But ... I don't know. At some level, its just a rich guy throwing expensive gifts till a girl he has bought for the week falls in love. This must have been new in the 90's but in 2019 I can't help comparing _Pretty Woman_ to the movies that it probably inspired.
 
 # Mr. & Mrs. Smith
 
 ![](https://nirav.com.np/assets/img/mrmrs.jpg)
 
-I had fun watching this one. _Mr. & Mrs. Smith_ has a great setting that lends itself well to witty dialogue and bickering. The lead characters are cool and funny. I didn't expect any realistic action scenes going into the movie and wasn't disappointed. The endless stream of bullets just didn't touch Pitt and Jolie.
+I had fun watching this one. _Mr. & Mrs. Smith_ has a great setting that lends itself well to witty dialogue and banter between the leads. The characters are cool and funny. I didn't expect any realistic action scenes going into the movie and wasn't disappointed. The endless stream of bullets just didn't touch Pitt and Jolie.
 
-Watching this movie, however, I was reminded of how much I don't like watching action movies. I don't think I will watch _Mr. and Mrs. Smith_ again, even though I enjoyed it greatly (it's not the movie, it's me).
+Watching this movie, however, I was reminded of how much I don't like watching action movies. I don't think I will watch _Mr. and Mrs. Smith_ again, even though I enjoyed it.
 
 # The Sure Thing
 
@@ -85,7 +86,7 @@ Emma Stone is witty, her family is endearing and some of her friends are interes
 
 ![](https://nirav.com.np/assets/img/the-late-bloomer.jpg)
 
-The movie bloomed with promise but ended up withering before the movie was half over. They reduced a successful man, going through puberty at 27, to just another romantic drama. Also, his friends were kinda jerks. Still, it was fun to watch once.
+The movie bloomed with promise but ended up withering before the movie was half over. They reduced a successful man, going through puberty at 27, to just another romantic drama. Also, his friends were kinda jerks. Still, it was fun to watch.
 
 Seriously. This man is going through puberty at 27. Don't make him just fall in love like every other sappy romcom character. Don't make him piss off his friends and then send him back to apologize. Everyone does that. Do something original.
 
@@ -103,7 +104,7 @@ On the plus side, I loved how this movie makes fun of old spy movies. And I must
 
 The atmosphere is so poignant, the tone so somber. The music is cheerless. This is not the kind of movie you want to watch when sick. All the same, _Paterson_ is a beautiful film and I'm glad that I watched it. I could relate to the movie in that I had gone through a similar phase in high school when I walked alone and wrote a lot of poems, observing the world around me with that general feeling of serenity. I published the poems in a private blog and later deleted it. How I wish I hadn't.
 
-_Paterson_ is a charming movie. I'll definitely watch it again, albeit when not sick.
+_Paterson_ is a charming movie, one that I want to revisit to pay more attention to it's subtleties.
 
 # She's The Man
 
@@ -111,7 +112,7 @@ _Paterson_ is a charming movie. I'll definitely watch it again, albeit when not 
 
 I enjoyed this movie a lot more than I thought I would. The move is funny, has a comic setting and is fairly interesting. Amanda is adorable as Viola; it was pleasant to watch her various antics and expressions. Near the very end the story gets a little too cheesy for my taste but of course, cheesy is always better than sad.
 
-I'd love to watch _She's The Man_ again someday.
+Definitely goes on my list of movies to watch when sick.
 
 # You've Got Mail
 
