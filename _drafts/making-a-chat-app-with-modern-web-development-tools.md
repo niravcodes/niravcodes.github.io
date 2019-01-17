@@ -22,4 +22,4 @@ talk about the changed landscape of web world
 
 <!--more-->
 
-email needed
+email id_htd to myself to access the thing
