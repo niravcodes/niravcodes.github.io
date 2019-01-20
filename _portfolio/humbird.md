@@ -27,9 +27,15 @@ When making Humbird, I had the following objectives in mind:
 2. Learn to make an API with NodeJS, ExpressJS and MongoDB
 3. Learn to use something like Fetch or Axios to communicate with the server
 4. Learn to work with dynamic subdomains
+5. Learn to deploy to the cloud
+6. Learn all about HTTPS and use it in the site
 
-The webapp essentially allows you to set up a chatroom for two people. It then provides you with a custom subdomain to access the chatroom. After you've registered your subdomain, you can send and receive text messages with the other user. 
+The webapp essentially allows you to set up a chatroom for two people. It then provides you with a custom URL to access the chatroom. After you've registered your subdomain, you can send and receive text messages with the other user. 
 
 ![](https://nirav.com.np/assets/img/sshot.png)
 
-On visiting <yoursubdomain>.<humbird>.com, you are greeted with a login page. You type in your username to access the chatbox. Notice that there is no password protection for the chatroom. I suppose I need to add that extremely crucial feature sometime soon. 
+On visiting <chatroom>.nirab.me, you are greeted with a login page. You type in your username to access the chatbox. Notice that there is no password protection for the chatroom. I think  that to secure anything reliably, you need to learn many different types of attacks, and proper defenses against them. That is a deep topic and I didn't think a few days of intermittent attention would have done it justice. I intend to read up on security the next time I have a huge block of free time.
+
+![](https://nirav.com.np/assets/img/sshot-2.png)
+
+The design of this webapp is not something I am proud of. 
