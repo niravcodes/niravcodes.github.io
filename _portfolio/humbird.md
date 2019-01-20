@@ -39,3 +39,5 @@ On visiting <chatroom>.nirab.me, you are greeted with a login page. You type in 
 ![](https://nirav.com.np/assets/img/sshot-2.png)
 
 The design of this webapp is not something I am proud of. It looks okay I guess, but there are so many subtle nuances and expressions that I could have put in but I didn't. This is of course in line with my objectives but I still feel bad. I console myself thinking that I'm saving my best UI/UX work for the software engineering project, merely using this as a stepping stone.
+
+I decided to completely use HTTPS for this project. I used letsencrypt to generate the certificates and verify the domain. Letsencrypt is surprisingly easy to set up for single domains. I even set up a cron job to auto-renew my expiring certificates. But wildcard subdomains presented a hassle. My DNS provider's API was not supported for automatic renewal so I had to get down and dirty. I suppose if I really wanted to, I could write it but this project is not serious enough to warrant that.
