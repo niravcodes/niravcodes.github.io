@@ -7,6 +7,6 @@ tags:
 - about
 
 ---
-Hey. I am Nirav, a computer engineering student from Nepal. You're on my personal website where I generally write about what I'm up to.
+Hey. I am Nirav, a computer engineering student from Nepal. You're on my personal website where I generally write about what I'm up to. My intention is to publicly document my projects and experiments.
 
-My hobbies include reading (Murakami is one of my favorites), coding, drawing, designing, and playing my guitar in free time. You can read about my endeavours here on this blog.
+My hobbies include reading fiction (Murakami, García Márquez and Ginsberg are some writers I revere), coding, drawing, designing, and playing my guitar in free time. That said, I consider my skills at best tolerable in all fields. 
