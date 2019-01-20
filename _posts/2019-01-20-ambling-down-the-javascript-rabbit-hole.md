@@ -20,10 +20,10 @@ Over NodeJS, there is ExpressJS which allows you to set up a server on NodeJS an
 
 MongoDB sits alongside ExpressJS and talks to the MongoDB server to read from and write to our DB. I had been using plain old MongoDB driver to test things out but my friend Bhuban introduced me to Mongoose. Mongoose brilliantly solves so many issues I hadn't even predicted or noticed and provides a pleasant interface to MongoDB.
 
-Finally there's Vue. There are a few alternatives to Vue, most notably Angular and React. I picked Vue because I had been told that I Vue has a lot less friction than other frameworks. I can't attest to that because all I've ever used is Vue, but I must say that it's very pleasant to work with VueJS. It took me about 10 days to learn javascript, Vue, it's tooling and CLI, and make a small chat application with it's Single Page Application spec.
+Finally there's Vue. There are a few alternatives to Vue, most notably Angular and React. I picked Vue because I had been told that I Vue has a lot less friction than other frameworks. I can't attest to that because Vue is all I've ever used, but I must say that Vue is a pleasant, wonderful experience. It took me about 10 days to learn javascript, Vue, it's tooling and CLI, and make a small chat application with it's Single Page Application spec.
 
 ![](https://nirav.com.np/assets/img/sshot.png)
 
-I will talk more about this little project of mine on another post. For now, suffice it to say that I'm really enjoying this wonderland of javascript and all it's nuances and pitfalls. I was a happy C++ programmer for a long time, and I had thought that I'd be uncomfortable giving up the control that C++ provided. Turns out I have no problems trading control for expression. 
+I will talk more about this little project of mine on another post. For now, suffice it to say that I'm really enjoying this wonderland of javascript and all it's nuances and pitfalls. I was a happy C++ programmer for a long time, and I had thought that I'd be uncomfortable giving up the control that C++ provided. Turns out I have no problems trading control for expression.
 
 I was also introduced to cloud computing around this time and I have been experimenting with various combinations of web technologies, tools and cloud services. I'm fascinated by all stuff, and I think the best thing to do now is to take a break from embedded electronics to dive into the cloud and web development (which incidentally aligns with my field of study as an computer engineer).
