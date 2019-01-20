@@ -24,4 +24,6 @@ Finally there's Vue. There are a few alternatives to Vue, most notably Angular a
 
 ![](https://nirav.com.np/assets/img/sshot.png)
 
-I will talk more about this little project of mine on some other post. 
+I will talk more about this little project of mine on another post. For now, suffice it to say that I'm really enjoying this wonderland of javascript and all it's nuances and pitfalls. I was a happy C++ programmer for a long time, and I had thought that I'd be uncomfortable giving up the control that C++ provided. Turns out I have no problems trading control for expression. 
+
+I was also introduced to cloud computing around this time and I have been experimenting with various combinations of web technologies, tools and cloud services. I'm fascinated by all stuff, and I think the best thing to do now is to take a break from embedded electronics to learn about the cloud and web development (which incidentally aligns with my field of study).
