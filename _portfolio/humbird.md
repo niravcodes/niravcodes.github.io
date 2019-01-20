@@ -30,7 +30,7 @@ When making Humbird, I had the following objectives in mind:
 5. Learn to deploy to the cloud
 6. Learn all about HTTPS and use it in the site
 
-The webapp essentially allows you to set up a chatroom for two people. It then provides you with a custom URL to access the chatroom. After you've registered your subdomain, you can send and receive text messages with the other user. 
+The webapp essentially allows you to set up a chatroom for two people. It then provides you with a custom URL to access the chatroom. After you've registered your subdomain, you can send and receive text messages with the other user.
 
 ![](https://nirav.com.np/assets/img/sshot.png)
 
@@ -38,4 +38,6 @@ On visiting <chatroom>.nirab.me, you are greeted with a login page. You type in 
 
 ![](https://nirav.com.np/assets/img/sshot-2.png)
 
-The design of this webapp is not something I am proud of. 
+The UI/UX is not something I am proud of. It looks okayish, but due to lack of subtle indications and animations, and the blatant lack of loaders, it feels so clunky and unresponsive. I am saving my best UI/UX work for the college project I am prepping for, using this project as a stepping stone.
+
+screenshot of codesandbox and some code.
