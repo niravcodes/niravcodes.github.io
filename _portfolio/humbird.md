@@ -7,18 +7,10 @@ tags:
 - cloud
 - aws
 img: https://nirav.com.np/assets/img/sshot-1.png
-feature-img: https://nirav.com.np/assets/img/vue2.jpg
+feature-img: https://nirav.com.np/assets/img/pexels-photo-37728.jpeg
 date: 2019-01-20 07:46:50 +0000
 
 ---
-Things to talk about:
-
-1. what the project does
-2. the design decisions
-3. challanges : https, subdomain ...
-4. what you'd like to add
-5. wanderings in the cloud (nubivagant) and things learned
-
 Humbird is a little chat application I made to gain more understanding of latest web technologies and cloud services. It took me a few days of sporadic effort to make and has given me a lot of insight into how things are made in the web these days. Humbird is not meant to be used seriously because I chose not to deal with the errors and exceptions that might occur.
 
 When making Humbird, I had the following objectives in mind:
@@ -48,4 +40,4 @@ I had a few questions about provision of dynamic subdomains. My first thought wa
 
 I did all the client side coding on an online platform called [codesandbox.io](https://codesandbox.io/ "codesandbox") because I was back home and didn't have my laptop with me. Code Sandbox was amazing and I enjoyed using it. The prettify-on-save still makes my heart leap with joy. 
 
-I also learnt a great deal about clouds in general. I went from not knowing what exactly the cloud is to completely falling in love with it in a few days. I am hosting the backend (expressjs on node) on an Amazon EC2 instance and the database is hosted on Azure cosmosdb. I fiddled around with many services offered by aws and I'm lovin' it.
+I also learnt a great deal about clouds in general. I went from not knowing what exactly the cloud is to completely falling in love with it in a few days. I am hosting the backend (expressjs on node) on an Amazon EC2 instance and the database is hosted on Azure cosmosdb. I fiddled around with many services offered by aws and I think they are great.
