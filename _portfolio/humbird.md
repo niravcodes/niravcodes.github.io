@@ -38,4 +38,4 @@ On visiting <chatroom>.nirab.me, you are greeted with a login page. You type in 
 
 ![](https://nirav.com.np/assets/img/sshot-2.png)
 
-The design of this webapp is not something I am proud of. 
+The design of this webapp is not something I am proud of. It looks okay I guess, but there are so many subtle nuances and expressions that I could have put in but I didn't. This is of course in line with my objectives but I still feel bad. I console myself thinking that I'm saving my best UI/UX work for the software engineering project, merely using this as a stepping stone.
