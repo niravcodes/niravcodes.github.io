@@ -42,4 +42,10 @@ The design of this webapp is not something I am proud of. It looks okay I guess,
 
 I decided to completely use HTTPS for this project. I used letsencrypt to generate the certificates and verify the domain. Letsencrypt is surprisingly easy to set up for single domains. I even set up a cron job to auto-renew my expiring certificates. But wildcard subdomains presented a hassle. My DNS provider's API was not supported for automatic renewal so I had to get down and dirty. I suppose if I really wanted to, I could write it but this project is not serious enough to warrant that.
 
-I had a few questions about provision of dynamic subdomains. My first thought was to use the DNS provider's API to update DNS records every time a chat was registered. Digging a little deeper I found that directly modifying DNS records was not necessary as long as the subdomains redirected to inside the main site. I was quite resolved to go down that path with finally I realized that for my small project, it wasn't remotely necessary to handle anything serverside. I could just use
+I had a few questions about provision of dynamic subdomains. My first thought was to use the DNS provider's API to update DNS records every time a chat was registered. Digging a little deeper I found that directly modifying DNS records was not necessary as long as the subdomains redirected to inside the main site. I was quite resolved to go down that path with finally I realized that for my small project, it wasn't remotely necessary to handle anything serverside. I finally decided on complete client side logic for subdomain rerouting. I'm pleased with how great it performs.
+
+![](https://nirav.com.np/assets/img/socde.png)
+
+I did all the client side coding on an online platform called [codesandbox.io](https://codesandbox.io/ "codesandbox") because I was back home and didn't have my laptop with me. Code Sandbox was amazing and I enjoyed using it. The prettify-on-save still makes my heart leap with joy. 
+
+I also learnt a great deal about clouds in general. I went from not knowing what exactly the cloud is to completely falling in love with it in a few days. I am hosting the backend (expressjs on node) on an Amazon EC2 instance and the database is hosted on Azure cosmosdb. I fiddled around with many services offered by aws and I'm lovin' it.
