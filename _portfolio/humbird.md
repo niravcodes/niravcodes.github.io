@@ -41,3 +41,5 @@ I had a few questions about provision of dynamic subdomains. My first thought wa
 I did all the client side coding on an online platform called [codesandbox.io](https://codesandbox.io/ "codesandbox") because I was back home and didn't have my laptop with me. Code Sandbox was amazing and I enjoyed using it. The prettify-on-save still makes my heart leap with joy. 
 
 I also learnt a great deal about clouds in general. I went from not knowing what exactly the cloud is to completely falling in love with it in a few days. I am hosting the backend (expressjs on node) on an Amazon EC2 instance and the database is hosted on Azure cosmosdb. I fiddled around with many services offered by aws and I think they are great.
+
+I will put the full source code on [github](https://github.com/niravcodes/humbird) if you want to muck around with my code.
