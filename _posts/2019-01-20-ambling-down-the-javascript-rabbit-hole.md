@@ -10,11 +10,11 @@ thumbnail: ''
 date: 2019-01-20 06:42:55 +0000
 
 ---
-I'm finally getting somewhere. After a week of learning JS fundamentals, I decided to make a test app using modern web frameworks and technologies. More specifically, I picked the MEVN stack (MongoDB, ExpressJS, VueJS and NodeJS). Note that this stack is entirely based on javascript which is one of its touted benefits.
+I'm finally getting somewhere. After a week of learning JS fundamentals, I decided to make a test app using modern web frameworks and technologies. More specifically, I picked the MEVN stack (MongoDB, ExpressJS, VueJS and NodeJS). Notice that this stack is entirely based on javascript which is one of its touted benefits.
 
 <!--more-->
 
-As a newcomer to the whole JS landscape, I must note that I find this whole ecosystem incredibly rich and intricate right now, lest I forget as I gain experience. First there is NodeJS which essentially provides runtime environment for javascript code outside of browsers. Over Node, vast assortment of programs have been written, which is managed and distributed over Node Package Manager (npm). These programs, among other things, easily integrate with your javascript code on Nodejs and allow you programmatic control over them. Using packages like webpack and babel you can create complex tooling and build systems that automatically compile your SCSS down to CSS, transpile your ES5 javascript code, minify your codebase, gzip it and so on.
+As a newcomer to the whole JS landscape, I must write down that I find this whole ecosystem incredibly rich and intricate, lest I forget as I gain experience. First there is NodeJS which essentially provides runtime environment for javascript code outside of browsers. Over Node, vast assortment of programs have been written, which is managed and distributed over Node Package Manager (npm). These programs, among other things, easily integrate with your javascript code on Nodejs and allow you programmatic control over them. Using packages like webpack and babel you can create complex tooling and build systems that automatically compile your SCSS down to CSS, transpile your ES5 javascript code, minify your codebase, gzip it and so on.
 
 Over NodeJS sits ExpressJS which allows you to set up a server on NodeJS and efficiently respond to HTTP requests. It was sort of eye opening to realize that the relation between URL paths (example.com/path/to/something) and actual filesystem is completely arbitrary. That is to say, I can easily parse the URL using Express and return whatever I will for whichever URL with no relation to the file hierarchy. I suppose it is because I come from the world of PHP and Apache that I found it surprising.
 
