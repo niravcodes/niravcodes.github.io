@@ -34,3 +34,5 @@ fields:
   config:
     required: true
   default: 'false'
+pages:
+- pages/it-rains-here-in-pokhara.md
