@@ -40,6 +40,12 @@ fields:
   config:
     required: true
   description: Always post. ALWAYS POST!!
+- type: text
+  name: hide
+  label: Hide
+  config:
+    required: true
+  default: 'false'
 pages:
 - _posts/2018-12-22-looking-at-mern-stack.md
 - _posts/2019-01-20-ambling-down-the-javascript-rabbit-hole.md
