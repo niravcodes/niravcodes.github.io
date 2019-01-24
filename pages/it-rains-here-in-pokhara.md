@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: It rains here in Pokhara
 hide: 'true'
 tags: []
