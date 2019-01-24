@@ -40,4 +40,4 @@ The crowd has thinned, there is barely anyone in the cafe now. Thoughts of Shrad
 
 I go up to the counter and feel for my wallet - it isn't there! I'm struck for a moment (the guy on the counter notices this) then I realize that I had slipped it into my bag in the bus. Relief washes over, and I'm out of there as soon as I can.
 
-The rain is still falling; dusk has settled itself over the cityscape. I decide to walk a little further. Rain falls on the streets and the puddles; and on my blue umbrella. Had she been walking by my side, I would have told her that rainy twilight hurt even more.
+The rain is still falling; dusk has settled itself over the cityscape. I decide to walk a little further. Rain falls on the streets and the puddles; and on my blue umbrella. Had she been walking by my side, I would have told her that a rainy twilight hurts even more.
