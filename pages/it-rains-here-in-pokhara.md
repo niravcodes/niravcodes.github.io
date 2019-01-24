@@ -1,7 +1,7 @@
 ---
 layout: page
-title: It rains here in Pokhara
-hide: 'true'
+title: It Rains Here in Pokhara
+hide: true
 tags: []
 feature-img: https://nirav.com.np/assets/img/mahendrapul.jpg
 permalink: "/rains-in-pokhara"
