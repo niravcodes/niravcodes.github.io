@@ -4,7 +4,7 @@ title: It rains here in Pokhara
 hide: 'true'
 tags: []
 feature-img: ''
-permalink: "/rains-in-pokhara/"
+permalink: "/rains-in-pokhara"
 date: 2019-01-24 09:03:55 +0000
 
 ---
