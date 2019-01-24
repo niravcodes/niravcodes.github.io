@@ -28,11 +28,8 @@ fields:
   type: text
   hidden: false
   default: ''
-- type: text
+- type: boolean
   name: hide
   label: Hide
-  config:
-    required: true
-  default: 'false'
 pages:
 - pages/it-rains-here-in-pokhara.md
