@@ -31,9 +31,9 @@ I used to love the rain. My old journals are full of cheesy poems I had written 
 
 The barista is a pleasant man a few years older than me. He has a smile ready for every occasion and uses it to great effect. He brings a cup of warm water as soon as I'm seated. A little later he brings me the coffee, his happy smile firmly in place.
 
-Sipping my coffee, I contemplate the melancholy atmosphere here in this cafe. The aroma of freshly ground coffee interweaves itself with the charming melody playing through the speakers; thin drops of water hit the window pane and leisurely converge; the coffee machine whirs intermittently; and the everyday chatter and bustle of other people add to the ambiance. These last few days have had a peculiar quality to them. A quality that invokes poignant reflections and makes you want to smoke cigarette after cigarette in some dirty roadside restaurant.
+Sipping my coffee, I contemplate the melancholy atmosphere here in this cafe. The aroma of freshly ground coffee interweaves itself with the charming melody playing through the speakers; thin drops of water hit the window pane and leisurely converge; the coffee machine whirs intermittently; and the everyday chatter and bustle of other people add to the ambiance. These last few days have had a peculiar quality to them. A quality that invokes poignant reflections and makes you want to smoke cigarette after cigarette in some dirty roadside restaurant. I say peculiar because I have never smoked before.
 
-I say peculiar because I have never smoked before.
+Shraddha. Her name brings to mind red hibiscus flowers atop a copper plate and the fragrance of incense. My mind wanders to early morning temple visits, thin mist in the air 
 
 At some point the barista sets down a plate with a cinnamon roll on it. I'm knocked out of my reverie. When I question him with a look, he explains, "on the house". Then he gives a wide toothy grin and I know that he won't go away until I smile back. I've found this quality charismatic at times, though right now I feel a strong urge to hit him on the head with a pan. Nevertheless I muster a small reply. He goes away satisfied.
 
