@@ -1,10 +1,10 @@
 ---
 layout: page
-title: A drizzle in Pokhara d2
+title: A drizzle in Pokhara
 hide: true
 tags: []
 feature-img: https://nirav.com.np/assets/img/mahendrapul.jpg
-permalink: "/rains-in-pokhara"
+permalink: "/rains-in-pokhara2"
 date: 2019-01-24 09:03:55 +0000
 published: false
 
