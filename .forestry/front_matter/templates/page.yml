@@ -32,4 +32,5 @@ fields:
   name: hide
   label: Hide
 pages:
+- pages/a-drizzle-in-pokhara-d2.md
 - pages/it-rains-here-in-pokhara.md
