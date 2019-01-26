@@ -8,4 +8,4 @@ tags:
 - random
 
 ---
-I will populate my projects page the next time I have some free time. Thanks for checking.
+I will populate my projects page the next time I have a huge block of free time. Thanks for checking.
