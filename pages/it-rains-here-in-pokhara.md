@@ -10,7 +10,7 @@ date: 2019-01-24 09:03:55 +0000
 ---
 If you think being madly in love with your best friend's girlfriend is unfortunate, try sitting next to him during a Microprocessor lecture having to listen to him describe the sex they had the day before. What's more, Microprocessor is one of the few subjects I actually enjoy. My friend is normally a level-headed person who doesn't speak much. But it seems that the excitement of the first time is grand enough for him to break character. Needless to say, I'm miserable.
 
-I look out the window, if only to somehow communicate my lack of enthusiasm to him. It does not work. The class goes on for another forty minutes in which he fills me in on the color of the curtains, flavor of the condom, state of the bed sheets after they were done and what not. I don't want to advertise my best friend as an idiot here, but he's acting like one today. I try very hard to pretend to be listening while mentally reciting Howl.
+I look out the window, if only to somehow communicate my lack of enthusiasm to him. It does not work. The class goes on for another forty minutes in which he fills me in on the color of the curtains, flavor of the condom, state of the bed sheets after they were done and what not. In an effort to not betray my revulsion, I pretend to listen. I've chosen the coward's way again.
 
 The day is overcast and a thin fog has sucked the life off colors. Leafless trees stand tall and somber, they evoke images of giant skeletons elegant against the foggy backdrop. In a distance, I see the new ICTC building as it's being constructed. From afar it looks like tiny ant-men are scurrying about, assembling the universe one breadcrumb at a time.
 
