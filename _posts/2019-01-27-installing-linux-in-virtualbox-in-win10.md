@@ -4,7 +4,7 @@ layout: post
 title: Installing Linux in VirtualBox in WIN10
 tags:
 - tutorial
-feature-img: ''
+feature-img: https://nirav.com.np/assets/img/ubuntu-1710-default-wallpaper-artful.jpg
 thumbnail: ''
 date: 2019-01-27 16:08:17 +0000
 
