@@ -34,8 +34,8 @@ FSF : Free Software Foundation
   Your main operating system. The OS that your computer boots into after you press the power button. It has sole control of your hardware and bears full responsibility.
 * **Guest OS**  
   The OS that runs on the virtual system conjured by VBox. Several guest OSes can coexist on a single host OS.
-* **Distribution  
-  **Also known as a distro. Technically the word Linux refers only to the _kernel._ A kernel provides programmatic interface to efficiently access the various components of the computer. There is not much you can do with the kernel unless there are programs running on top of it. The kernel combined with various GNU tools and libraries is called the GNU/Linux. When GNU/Linux is packaged with all the programs that run on top of it (a graphical interface, desktop managers, network managers, browsers and suchlike), it's called a distro.
+* **Distribution**   
+  Also known as a distro. Technically the word Linux refers only to the _kernel._ A kernel provides programmatic interface to efficiently access the various components of the computer. There is not much you can do with the kernel unless there are programs running on top of it. The kernel combined with various GNU tools and libraries is called the GNU/Linux. When GNU/Linux is packaged with all the programs that run on top of it (a graphical interface, desktop managers, network managers, browsers and suchlike), it's called a distro.
 * **GNU/Linux**  
   Long story short, at some point in the 90's, the [FSF](https://www.fsf.org/) had all components of an OS except for the kernel. At around the same time, Linus Torvalds had written a kernel he called Linux. At some point they decided to merge the two. The rest is history.
 * **Ubuntu**  
