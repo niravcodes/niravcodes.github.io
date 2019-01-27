@@ -25,19 +25,23 @@ HDD : Hard Disk Drive
 
 ## Technical Terms
 
-* **Linux  
-  \**An OS just like Windows. The OS sits over your hardware and exposes only high level functions (files, IO, virtual memory ...) while abstracting away the low level details (interrupts, memory management, allocation tables ...). Linux is targeted developers and people who work closely with the hardware whereas Windows primarily targets the people who simply want to run things on top of it (games, MS Office, browsers and so on).
-* **Virtual Box  
-  \**OSes are meant to have singular control over your hardware and resources by definition. There is no way of having more than one OS working with the same set of hardware and resources unless the system is specifically engineered for that purpose (see also: Type-1 [hypervisor](https://en.wikipedia.org/wiki/Hypervisor "https://en.wikipedia.org/wiki/Hypervisor")). VBox is a special software that works on the OS like any other software program and it allows another OS to run on top of it. The guest OS runs over the VBox, and the VBox provides the guest OS with a simulated hardware set (IO devices, virtual HDD, RAM and so on) which is often referred to as a VM. An astute reader will notice that the host OS will always outperforms the guest OS.
-* **Host OS  
-  \**Your main operating system. The OS that you boot into after pressing the Power button. It has sole control of your hardware and bears full responsibility.
-* **Guest OS  
-  \**The OS that runs on the virtual system conjured by VBox. Several guest OSes can coexist on a single host OS.
+* **Linux**  
+  An OS just like Windows. The OS sits over your hardware and exposes only high level functions (files, IO, virtual memory ...) while abstracting away the low level details (interrupts, memory management, allocation tables ...). Linux is targeted towards developers and people who work closely with the hardware whereas Windows primarily targets the people who simply want to run programs on top of it (aka the layperson). Which means that while Windows might be the best OS for your dad to do his spreadsheets in and for your sister to watch Korean dramas, it certainly won't help you much to learn the inner workings of the computer system.
+* **Virtual Box**  
+  OSes are meant to have singular control over your hardware by definition. There is no way to simultaneously run more than one OS on the same set of hardware and resources unless the system is specifically engineered for that purpose (see also: Type-1 [hypervisor](https://en.wikipedia.org/wiki/Hypervisor "https://en.wikipedia.org/wiki/Hypervisor")). VBox is a special software that works on the OS like any other software program and it allows another OS to run on top of it. The guest OS runs over the VBox, and the VBox provides the guest OS with a simulated hardware set (IO devices, virtual HDD, virtual RAM and so on). This conjured set of resources is often referred to as a VM. An astute reader will notice that the host OS will always outperform the guest OS.
+* **Host OS**  
+  Your main operating system. The OS that your computer boots into after you press the power button. It has sole control of your hardware and bears full responsibility.
+* **Guest OS**  
+  The OS that runs on the virtual system conjured by VBox. Several guest OSes can coexist on a single host OS.
+* **Distribution  
+  **Also known as a distro. Technically the word Linux refers only to the _kernel._ A kernel provides programmatic interface to efficiently access the various components of the computer. There is not much you can do with the kernel unless there are programs running on top of it. The kernel combined with various GNU tools and libraries is called the GNU/Linux. When GNU/Linux is packaged with all the programs that run on top of it (a graphical interface, desktop managers, network managers, browsers and suchlike), it's called a distro.
+* **Ubuntu**  
+  Ubuntu is one of many _distributions_ of the Linux system. Other distributions include Debian, Arch, Fedora and so on.
 
 ## Assumptions
 
-1. You have a computer with at least 2 GB RAM, 30 GB free HDD space and a decent processor, running WIN10.
-2. You want to install Linux on VBox.
+1. You have a computer with at least 2 GB RAM, 30 GB free HDD space and a decent processor, running Win10 (maybe also Win7 but prefer the former).
+2. You want to install Ubuntu on VBox.
 
 ## Steps
 
