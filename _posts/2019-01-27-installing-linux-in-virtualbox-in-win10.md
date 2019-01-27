@@ -11,6 +11,8 @@ date: 2019-01-27 16:08:17 +0000
 ---
 _Written for the participants of the "Transitioning from Windows to Linux" program organised by iCES._
 
+<!--more-->
+
 ## List of abbreviations
 
 OS : Operating System  
@@ -59,4 +61,4 @@ The process is detailed in this video. Go ahead and watch it full.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QbmRXJJKsvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-After watching this video, you should feel confident about the whole process. Follow it thoroughly and if you encounter problems, we'll be there for you on the (and only on the) first day.
+After watching this video, you should feel confident about the whole process. Follow it thoroughly and if you encounter problems, we'll be there for you on the first day. After that, 
