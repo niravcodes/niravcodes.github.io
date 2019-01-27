@@ -21,7 +21,8 @@ VBox : Virtual Box
 IO : Input/Output  
 MS : Microsoft  
 NTC : Nepal Telecom  
-HDD : Hard Disk Drive
+HDD : Hard Disk Drive  
+FSF : Free Software Foundation
 
 ## Technical Terms
 
@@ -35,6 +36,8 @@ HDD : Hard Disk Drive
   The OS that runs on the virtual system conjured by VBox. Several guest OSes can coexist on a single host OS.
 * **Distribution  
   **Also known as a distro. Technically the word Linux refers only to the _kernel._ A kernel provides programmatic interface to efficiently access the various components of the computer. There is not much you can do with the kernel unless there are programs running on top of it. The kernel combined with various GNU tools and libraries is called the GNU/Linux. When GNU/Linux is packaged with all the programs that run on top of it (a graphical interface, desktop managers, network managers, browsers and suchlike), it's called a distro.
+* **GNU/Linux**  
+  Long story short, at some point in the 90's, the [FSF](https://www.fsf.org/) had all components of an OS except for the kernel. At around the same time, Linus Torvalds had written a kernel he called Linux. At some point they decided to merge the two. The rest is history.
 * **Ubuntu**  
   Ubuntu is one of many _distributions_ of the Linux system. Other distributions include Debian, Arch, Fedora and so on.
 
@@ -65,4 +68,4 @@ The process is detailed in this video. Go ahead and watch it full.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QbmRXJJKsvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-After watching this video, you should feel confident about the whole process. Follow it thoroughly and if you encounter problems, we'll be there for you on the first day. After that, 
+After watching this video, you should feel confident about the whole process. Follow it thoroughly and if you encounter problems, we'll be there for you on the first day. After that, you're on your own, bud.
