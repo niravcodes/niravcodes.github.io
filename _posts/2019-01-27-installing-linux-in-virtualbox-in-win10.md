@@ -61,8 +61,8 @@ The actual process of installation is fairly involved. It consists of the follow
    \-  _What amount of RAM and CPU do you want to set aside for the VM? Too little will make the guest OS slow. Too much and the host OS will be rendered unstable, thus also destabilizing the guest OS. Aim for a solid middle._  
    ii. creation of Virtual HDD for the VM  
    \-  _The guest OS requires a different virtual HDD, possibly with a different file system. You need to provision space for this._
-2. **Install the guest OS (Ubuntu)  
-   \**You essentially boot up the virtual machine, load the Ubuntu system image (the ISO you downloaded earlier) and install the OS. This process required you to already be familiar with the Linux system. As such, we will cover this in the first day of the program. At any rate, familiarize yourself with the interface if you have the time and incentive. If you manage to successfully install Ubuntu on your VBox without our help, you will be fully qualified to boast about it on the first day and we'll think you are a cool person.
+2. **Install the guest OS (Ubuntu)**  
+   You essentially boot up the virtual machine, load the Ubuntu system image (the ISO you downloaded earlier) and install the OS. This process required you to already be familiar with the Linux system. As such, we will cover this in the first day of the program. At any rate, familiarize yourself with the interface if you have the time and incentive. If you manage to successfully install Ubuntu on your VBox without our help, you will be fully qualified to boast about it on the first day and we'll think you are a cool person.
 
 The process is detailed in this video. Go ahead and watch it full.
 
