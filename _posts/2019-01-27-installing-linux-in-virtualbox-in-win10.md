@@ -39,7 +39,7 @@ FSF : Free Software Foundation
 * **GNU/Linux**  
   Long story short, at some point in the 90's, the [FSF](https://www.fsf.org/) had all components of an OS except for the kernel. At around the same time, Linus Torvalds had written a kernel he called Linux. At some point they decided to merge the two. The rest is history. (see also: [Richard Stallman](https://en.wikipedia.org/wiki/Richard_Stallman "https://en.wikipedia.org/wiki/Richard_Stallman"))
 * **Ubuntu**  
-  Ubuntu is one of many _distributions_ of the Linux system. Other distributions include Debian, Arch, Fedora and so on. Ubuntu is the best distro to start with, but we expect you to experiment, mix-n-match, fool around and find other distros that fit your needs.
+  Ubuntu is one of many _distributions_ of the Linux system. Other distributions include Debian, Arch, Fedora and so on. Ubuntu is considered the best distro to start with, but we expect you to experiment, mix-n-match, fool around and find other distros that fit your needs.
 
 ## Assumptions
 
