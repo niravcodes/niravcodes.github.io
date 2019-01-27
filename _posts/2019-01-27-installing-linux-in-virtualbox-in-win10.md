@@ -1,7 +1,7 @@
 ---
 excerpt_separator: "<!--more-->"
 layout: post
-title: Installing Linux in VirtualBox in WIN10
+title: Installing Linux in VirtualBox in Windows 10
 tags:
 - tutorial
 feature-img: https://nirav.com.np/assets/img/ubuntu-1710-default-wallpaper-artful.jpg
@@ -27,19 +27,19 @@ FSF : Free Software Foundation
 ## Technical Terms
 
 * **Linux**  
-  An OS just like Windows. The OS sits over your hardware and exposes only high level functions (files, IO, virtual memory ...) while abstracting away the low level details (interrupts, memory management, allocation tables ...). Linux is targeted towards developers and people who work closely with the hardware whereas Windows primarily targets the people who simply want to run programs on top of it (aka the layperson). Which means that while Windows might be the best OS for your dad to do his spreadsheets in and for your sister to watch Korean dramas, it certainly won't help you much to learn the inner workings of the computer system.
+  An OS just like Windows. The OS sits over your hardware and exposes only high level functions (files, IO, virtual memory ...) while abstracting away the low level details (interrupts, memory management, allocation tables ...). Linux is targeted towards developers and people who work closely with the hardware whereas Windows primarily targets the people who simply want to run programs on top of it (aka the layperson). Which means that while Windows might be the best OS for your dad to do his spreadsheets in and for your sister to watch Korean dramas in, it certainly won't help you much to learn the inner workings of the computer system.
 * **Virtual Box**  
-  OSes are meant to have singular control over your hardware by definition. There is no way to simultaneously run more than one OS on the same set of hardware and resources unless the system is specifically engineered for that purpose (see also: Type-1 [hypervisor](https://en.wikipedia.org/wiki/Hypervisor "https://en.wikipedia.org/wiki/Hypervisor")). VBox is a special software that works on the OS like any other software program and it allows another OS to run on top of it. The guest OS runs over the VBox, and the VBox provides the guest OS with a simulated hardware set (IO devices, virtual HDD, virtual RAM and so on). This conjured set of resources is often referred to as a VM. An astute reader will notice that the host OS will always outperform the guest OS.
+  OSes are meant to have singular control over your hardware by definition. There is no way to simultaneously run more than one OS on the same set of hardware and resources unless the system is specifically engineered for that purpose (see also: Type-1 [hypervisor](https://en.wikipedia.org/wiki/Hypervisor "https://en.wikipedia.org/wiki/Hypervisor")). VBox is a special software that works on the OS like any other software program and it allows another OS to run on top of it. The guest OS runs over the VBox, and the VBox provides the guest OS with a simulated hardware set (IO devices, virtual HDD, virtual RAM and so on). This conjured set of resources is often referred to as a VM. An astute reader will notice that the host OS always outperforms the guest OS.
 * **Host OS**  
-  Your main operating system. The OS that your computer boots into after you press the power button. It has sole control of your hardware and bears full responsibility.
+  Your main operating system. The OS that your computer boots into after you press the power button. It has sole control of your hardware and bears its full responsibility.
 * **Guest OS**  
   The OS that runs on the virtual system conjured by VBox. Several guest OSes can coexist on a single host OS.
-* **Distribution**   
+* **Distribution**  
   Also known as a distro. Technically the word Linux refers only to the _kernel._ A kernel provides programmatic interface to efficiently access the various components of the computer. There is not much you can do with the kernel unless there are programs running on top of it. The kernel combined with various GNU tools and libraries is called the GNU/Linux. When GNU/Linux is packaged with all the programs that run on top of it (a graphical interface, desktop managers, network managers, browsers and suchlike), it's called a distro.
 * **GNU/Linux**  
   Long story short, at some point in the 90's, the [FSF](https://www.fsf.org/) had all components of an OS except for the kernel. At around the same time, Linus Torvalds had written a kernel he called Linux. At some point they decided to merge the two. The rest is history. (see also: [Richard Stallman](https://en.wikipedia.org/wiki/Richard_Stallman "https://en.wikipedia.org/wiki/Richard_Stallman"))
 * **Ubuntu**  
-  Ubuntu is one of many _distributions_ of the Linux system. Other distributions include Debian, Arch, Fedora and so on.
+  Ubuntu is one of many _distributions_ of the Linux system. Other distributions include Debian, Arch, Fedora and so on. Ubuntu is the best distro to start with, but we expect you to experiment, mix-n-match, fool around and find other distros that fit your needs.
 
 ## Assumptions
 
