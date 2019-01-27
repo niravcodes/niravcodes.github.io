@@ -68,4 +68,4 @@ The process is detailed in this video. Go ahead and watch it full.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QbmRXJJKsvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-After watching this video, you should feel confident about the whole process. Follow it thoroughly and if you encounter problems, we'll be there for you on the first day. After that, you're on your own, bud.
+After watching this video, you should feel confident about the whole process. Follow it thoroughly and if you encounter problems, we'll be there for you on the first day. After that you're on your own, bud.
