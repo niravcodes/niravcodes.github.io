@@ -37,7 +37,7 @@ FSF : Free Software Foundation
 * **Distribution**   
   Also known as a distro. Technically the word Linux refers only to the _kernel._ A kernel provides programmatic interface to efficiently access the various components of the computer. There is not much you can do with the kernel unless there are programs running on top of it. The kernel combined with various GNU tools and libraries is called the GNU/Linux. When GNU/Linux is packaged with all the programs that run on top of it (a graphical interface, desktop managers, network managers, browsers and suchlike), it's called a distro.
 * **GNU/Linux**  
-  Long story short, at some point in the 90's, the [FSF](https://www.fsf.org/) had all components of an OS except for the kernel. At around the same time, Linus Torvalds had written a kernel he called Linux. At some point they decided to merge the two. The rest is history.
+  Long story short, at some point in the 90's, the [FSF](https://www.fsf.org/) had all components of an OS except for the kernel. At around the same time, Linus Torvalds had written a kernel he called Linux. At some point they decided to merge the two. The rest is history. (see also: [Richard Stallman](https://en.wikipedia.org/wiki/Richard_Stallman "https://en.wikipedia.org/wiki/Richard_Stallman"))
 * **Ubuntu**  
   Ubuntu is one of many _distributions_ of the Linux system. Other distributions include Debian, Arch, Fedora and so on.
 
