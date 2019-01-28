@@ -77,6 +77,6 @@ We expect you to at least have the following when you come to the program:
 
 1. A laptop
 2. Virtual Box (version 6.0.2) downloaded and installed
-3. A copy of the Ubuntu (version 18.04.1 LTS Bionic Beaver) system image (.iso file). Make sure the image is not corrupted, specially if you have a slow/unstable internet connection. (Download the Microsoft hash tool here and read up on it's usage here.)  
+3. A copy of the Ubuntu (version 18.04.1 LTS Bionic Beaver) system image (.iso file). Make sure the image is not corrupted, specially if you have a slow/unstable internet connection. (read more [here](https://www.maketecheasier.com/verify-md5-sha-1-sha-256-checksum-windows10/))  
    `f430da8fa59d2f5f4262518e3c177246 *ubuntu-18.04.1-desktop-amd64.iso (MD5 Sum)`  
-   `5748706937539418ee5707bd538c4f5eabae485d17aa49fb13ce2c9b70532433 *ubuntu-18.04.1-desktop-amd64.iso (SHA256 Sum)`
+   `5748706937539418ee5707bd538c4f5eabae485d17aa49fb13ce2c9b70532433 *ubuntu-18.04.1-desktop-amd64.iso (SHA256 Sum)` 
