@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: "/about/"
-feature-img: assets/img/pexels/circuit.jpeg
+feature-img: https://nirav.com.np/assets/img/20180414_174835.jpg
 tags:
 - about
 
