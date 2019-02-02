@@ -7,6 +7,6 @@ tags:
 - about
 
 ---
-Hey. I am Nirav, a computer engineering student from Nepal. You're on my personal website where I generally write about whatever I'm up to. My intention is to publicly document my projects and experiments.
+Hey. I am Nirav, a computer engineering student from Nepal. You're on my personal website where I generally write about things I'm up to. My intention is to publicly document my projects and experiments.
 
 My hobbies include programming, reading fiction (Murakami, García Márquez and Ginsberg are ones I'm particularly fond of), and playing sad tunes on my guitar.
