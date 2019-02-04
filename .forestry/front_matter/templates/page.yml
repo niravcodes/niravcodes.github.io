@@ -31,5 +31,3 @@ fields:
 - type: boolean
   name: hide
   label: Hide
-pages:
-- pages/it-rains-here-in-pokhara.md
