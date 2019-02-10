@@ -16,4 +16,4 @@ Pride. It makes people do stupid things. It drove Colonel Aureliano Buendía int
 
 <!--more-->
 
-What the heck am I talking about? Well, first I bit a lot **lot** more than I could chew, but then procrastinated away for months so that now, when the deadline is knocking, I'm having to chew and chew and chew and chew. Pride won't let me spit, and deadline is knocking on the door like my own decrepit self is banging his head on the wall.
+What the heck am I talking about? Well, first I bit a lot **lot** more than I could chew, but then procrastinated away for months so that now, when the deadline is knocking, I'm having to chew and chew and chew and chew. Pride won't let me spit, and deadline is knocking on the door like my own decrepit self banging his head on the wall.
