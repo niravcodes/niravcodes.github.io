@@ -10,7 +10,7 @@ thumbnail: ''
 date: 2019-02-12 17:11:38 +0000
 
 ---
-I have been programming in 8-bit AVRs exclusively for some time to make things like huge Dot-Matrix Displays, self-balancing robots and DACs. And as it turns out, I have been unwittingly picking up the conventions specific to embedded programming and 8-bit devices.
+I have been programming in 8-bit AVRs exclusively for some time to make things like huge dot-matrix displays, self-balancing robots and DACs. And as it turns out, I have been unwittingly picking up the conventions specific to embedded programming and 8-bit devices.
 
 The one that cost me some amount of consternation lately is the habit of using `unsigned char` instead of `int` when I can. On 8-bit AVRs, this is an important thing to do because they have extremely limited memories (counted in bytes!). It doesn't help that I often select the cheapest and least powerful chip in my box to do a job (which, incidentally, means that I find myself programming for the 8051 much often than I'd like).
 
@@ -35,13 +35,13 @@ tree::node *alphabets;
 unsigned char top;
 
 public:
-priority_queue();
-\~priority_queue();
-bool is_empty();
+priority_queue();  
+_\~priority_queue()_;
+bool _s_empty();
 void enqueue(tree::node &);
 unsigned element_count();
 tree::node dequeue();
-};
+}_;
 {% endhighlight %}
 
 And to prevent cyclically overwriting data in case of overflow, I wrote my enqueue code as thus:
@@ -77,6 +77,5 @@ So after I realized that I had fallen victim to the textbook example of prematur
 
 At any rate, the long and short of this post is that it will happen to you too, if it hasn't already. I end with the lines from Andrew Motion's poem _Run_.
 
-> and you had just died
->
+> and you had just died  
 > so I was excited, still thinking your death was a thing apart
