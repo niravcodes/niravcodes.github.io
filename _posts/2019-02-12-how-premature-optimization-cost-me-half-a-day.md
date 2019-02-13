@@ -25,22 +25,22 @@ Of course, processors and compilers are complex beasts and the only way of being
 
 What actually happened was this. I was programming a [Huffman compression program](https://github.com/niravcodes/huffman_compression "github link to huffman compression"). I will talk about it a little more in a future post but for now suffice it to say that my implementation required a priority queue.
 
-Since I was sure that the priority queue was not going to have more than 256 items, I decided to use an `unsigned char` to represent the number of elements (`top`). 
+Since I was sure that the priority queue was not going to have more than 256 items, I decided to use an `unsigned char` to represent the number of elements (`top`).
 
 {% highlight c++ linenos %}
 class priority_queue
 {
 private:
-  tree::node *alphabets;
-  unsigned char top;
+tree::node *alphabets;
+unsigned char top;
 
 public:
-  priority_queue();
-  ~priority_queue();
-  bool is_empty();
-  void enqueue(tree::node &);
-  unsigned element_count();
-  tree::node dequeue();
+priority_queue();
+\~priority_queue();
+bool is_empty();
+void enqueue(tree::node &);
+unsigned element_count();
+tree::node dequeue();
 };
 {% endhighlight %}
 
@@ -49,26 +49,34 @@ And to prevent cyclically overwriting data in case of overflow, I wrote my enque
 {% highlight c++ linenos %}
 priority_queue::priority_queue()
 {
-    alphabets = new tree::node[256];
-    top = 0;
+alphabets = new tree::node\[256\];
+top = 0;
 }
 void priority_queue::enqueue(tree::node &lf)
 {
-    if (top == 255)
-        return;
-    alphabets[top++] = lf;
+if (top == 255)
+return;
+alphabets\[top++\] = lf;
 }
 {% endhighlight %}
 
 The problem with this code is that it tries to solve a problem that it created itself. There was virtually no reason for the `top` variable to be `unsigned char`. Yet, it is, because of the my eagerness to micro-optimize. This is what intelligent people call 'premature optimization'. To prevent the queue from overwriting previous data, enqueue is not performed if the queue is deemed full. But notice that the `top` pointer is overloaded. It has two distinct jobs to perform. One of them is obvious: to store the index of the array where next insertion is supposed to take place. i.e if `top` is 10, it means that next element is to be inserted at the 10th position.
 
-The other is somewhat hidden. `top` is also used to infer if the queue is empty or full. This is actually an elegant way to repurpose the same counter for two purposes, and this idea can be represented eloquently using the increment and decrement operators in C++. But it fails in this case because `top` is not big enough to do both things at once. The `unsigned char` `top` can encode 256 values. If the array is empty, then the value of `top` is 0. If array is full, then the value is 256. From 0 through 256 there are actually 257 values. So using `unsigned char` won't be enough to encode both pieces of informaton at once. In other words, we won't be able to tell if the array is full or empty. They call this the Pigeonhole theorem.
+The other is somewhat hidden. `top` is also used to infer if the queue is empty or full. This is actually an elegant way to repurpose the same counter for two purposes, and this idea can be represented eloquently using the increment and decrements operators in C++. But it fails in this case because `top` is not big enough to do both things at once. The `unsigned char` `top` can encode 256 values. If the array is empty, then the value of `top` is 0. If array is full, then the value is 256. From 0 through 256 there are actually 257 values. So using `unsigned char` won't be enough to encode both pieces of information at once. In other words, we won't be able to tell if the array is full or empty. They call this the Pigeonhole theorem.
 
 At any rate, this means that the naively placed code
 
 {% highlight c++ %}
 if (top == 255)
-        return;
+return;
 {% endhighlight %}
 
-doesn't help prevent the overflow. Instead, it simply refuses to insert the last element in the array. Which is what I failed to realize for half a day as I looked here and there to find the bug that occured in another part of the system that used the queue.
+doesn't help prevent the overflow. Instead, it simply refuses to insert the last element in the array. Which is what I failed to realize for half a day as I looked here and there to find the bug that occurred in another part of the system that used the queue.
+
+So after I realized that I had fallen victim to the textbook example of premature optimization, I rushed to write about it. I was actually excited about it because I have read about premature optimization before but had assumed that I would never have to deal with it. As it often happens, people think they are immune to the affliction until it befalls them.
+
+At any rate, the long and short of this post is that it will happen to you too, if it hasn't already. I end with the lines from Andrew Motion's poem Run.
+
+> and you had just died
+>
+> so I was excited, still thinking your death was a thing apart
