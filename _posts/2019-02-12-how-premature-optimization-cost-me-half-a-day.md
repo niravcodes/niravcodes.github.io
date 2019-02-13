@@ -36,12 +36,12 @@ unsigned char top;
 
 public:
 priority_queue();  
-_\~priority_queue()_;
-bool _s_empty();
+~priority_queue();
+bool s_empty();
 void enqueue(tree::node &);
 unsigned element_count();
 tree::node dequeue();
-}_;
+};
 {% endhighlight %}
 
 And to prevent cyclically overwriting data in case of overflow, I wrote my enqueue code as thus:
@@ -49,14 +49,14 @@ And to prevent cyclically overwriting data in case of overflow, I wrote my enque
 {% highlight c++ linenos %}
 priority_queue::priority_queue()
 {
-alphabets = new tree::node\[256\];
+alphabets = new tree::node[256];
 top = 0;
 }
 void priority_queue::enqueue(tree::node &lf)
 {
 if (top == 255)
 return;
-alphabets\[top++\] = lf;
+alphabets[top++] = lf;
 }
 {% endhighlight %}
 
