@@ -37,7 +37,7 @@ unsigned char top;
 
 public:
 priority_queue();  
-~priority_queue();
+\~priority_queue();
 bool s_empty();
 void enqueue(tree::node &);
 unsigned element_count();
@@ -50,14 +50,14 @@ And to prevent cyclically overwriting data in case of overflow, I wrote my enque
 {% highlight c++ linenos %}
 priority_queue::priority_queue()
 {
-alphabets = new tree::node[256];
+alphabets = new tree::node\[256\];
 top = 0;
 }
 void priority_queue::enqueue(tree::node &lf)
 {
 if (top == 255)
 return;
-alphabets[top++] = lf;
+alphabets\[top++\] = lf;
 }
 {% endhighlight %}
 
@@ -72,11 +72,11 @@ if (top == 255)
 return;
 {% endhighlight %}
 
-doesn't help prevent the overflow. Instead, it simply refuses to insert the last element in the array. Which is what I failed to realize for half a day as I looked here and there to find the bug that occurred in another part of the system that used the queue. In trying to save a few bytes, I had written a code which was much more susceptible to oversights like this. 
+doesn't help prevent the overflow. Instead, it simply refuses to insert the last element in the array. Which is what I failed to realize for half a day as I looked here and there to find the bug that occurred in another part of the system that used the queue. In trying to save a few bytes, I had written a code which was much more susceptible to oversights like this.
 
 So after realizing that I had fallen victim to the textbook example of premature optimization, I rushed to write about it. I was really excited about it because I have read about premature optimization before but had assumed that I would never have to deal with it. As it often happens, people think they are immune to the affliction until it befalls them.
 
-At any rate, the long and short of this post is that it's okay to make the computer work a little harder to simplify your job as a programmer. I end with the lines from Andrew Motion's poem _Run_.
+In any case, the long and short of this post is that it's okay to make the computer work a little harder to simplify your job as a programmer. I end with the lines from Andrew Motion's poem _Run_.
 
 > and you had just died  
 > so I was excited, still thinking your death was a thing apart
