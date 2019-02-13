@@ -11,6 +11,7 @@ date: 2019-02-12 17:11:38 +0000
 
 ---
 I have been programming in 8-bit AVRs exclusively for some time to make things like huge dot-matrix displays, self-balancing robots and DACs. And as it turns out, I have been unwittingly picking up the conventions specific to embedded programming and 8-bit devices.
+<!--more-->
 
 The one that cost me some amount of consternation lately is the habit of using `unsigned char` instead of `int` when I can. On 8-bit AVRs, this is an important thing to do because they have extremely limited memories (counted in bytes!). It doesn't help that I often select the cheapest and least powerful chip in my box to do a job (which, incidentally, means that I find myself programming for the 8051 much often than I'd like).
 
