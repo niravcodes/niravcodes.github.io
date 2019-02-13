@@ -5,7 +5,7 @@ title: How premature optimization cost me half a day
 tags:
 - thoughts
 - coding
-feature-img: https://nirav.com.np/assets/img/abstract-background-canvas-249798.jpg
+feature-img: https://nirav.com.np/assets/img/business-code-coding-943096.jpg
 thumbnail: ''
 date: 2019-02-12 17:11:38 +0000
 
@@ -75,7 +75,7 @@ doesn't help prevent the overflow. Instead, it simply refuses to insert the last
 
 So after I realized that I had fallen victim to the textbook example of premature optimization, I rushed to write about it. I was actually excited about it because I have read about premature optimization before but had assumed that I would never have to deal with it. As it often happens, people think they are immune to the affliction until it befalls them.
 
-At any rate, the long and short of this post is that it will happen to you too, if it hasn't already. I end with the lines from Andrew Motion's poem Run.
+At any rate, the long and short of this post is that it will happen to you too, if it hasn't already. I end with the lines from Andrew Motion's poem _Run_.
 
 > and you had just died
 >
