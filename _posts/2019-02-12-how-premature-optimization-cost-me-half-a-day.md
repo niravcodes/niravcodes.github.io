@@ -5,7 +5,7 @@ title: How premature optimization cost me half a day
 tags:
 - thoughts
 - coding
-feature-img: ''
+feature-img: https://nirav.com.np/assets/img/abstract-background-canvas-249798.jpg
 thumbnail: ''
 date: 2019-02-12 17:11:38 +0000
 
