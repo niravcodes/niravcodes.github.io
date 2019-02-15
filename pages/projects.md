@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-permalink: "/Projects/"
+permalink: "/project"
 feature-img: assets/img/pexels/computer.jpeg
 tags:
 - archive
