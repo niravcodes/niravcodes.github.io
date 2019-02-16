@@ -27,3 +27,4 @@ fields:
   default: post
 pages:
 - _portfolio/humbird.md
+- _portfolio/huffman-compression.md
