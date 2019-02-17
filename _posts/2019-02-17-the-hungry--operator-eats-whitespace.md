@@ -1,7 +1,7 @@
 ---
 excerpt_separator: "<!--more-->"
 layout: post
-title: Meet the silent whitespace stealer
+title: 'Say Hi to >> : The Whitespace Thief '
 tags:
 - coding
 - random
