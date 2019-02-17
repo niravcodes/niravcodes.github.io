@@ -1,12 +1,12 @@
 ---
 excerpt_separator: "<!--more-->"
 layout: post
-title: The >> ate my whitespace
+title: Meet the silent whitespace stealer. Meet >>
 tags:
 - coding
 - random
 - c++
-feature-img: ''
+feature-img: https://nirav.com.np/assets/img/animal-birds-clouds-62667.jpg
 thumbnail: ''
 date: 2019-02-17 16:36:55 +0000
 
@@ -34,14 +34,27 @@ On execution, say you type in `10 20 30 40` and hit `↵`. The >> operator takes
 
 Yeah, pretty much. That is, until you get so comfortable that you start doing this:
 
-{% highlight c++ %}
-	struct stat stat_buf;
-    long filesize = stat(filename.c_str(), &stat_buf).st_size;
-    
+{% highlight c++ linenos %}
+	struct stat stat_buf; //"man -s 2 stat" for more on this
+    int rc = stat(filename.c_str(), &stat_buf);
+    if (rc == 0)
+    	long filesize = stat_buf.st_size;
+    else
+    	return 1;
+        
     ifstream in;
+    char x;
     in.open(filename, ios::binary | ios::in);
-	
-    for (
 
-    
+    for (long i = 0; i < filesize; i++){
+    	in >> x;
+    	// ...
+        // insert your favourite
+        // complicated and
+        // hard to debug code here
+        // ...
+    }
 {% endhighlight %}
+
+I wrote something similar to this in my huffman coding program. Two key things to note here are that the ifstream is in binary mode, and that a byte is extracted from ifstream every iteration with the >> operator.
+
