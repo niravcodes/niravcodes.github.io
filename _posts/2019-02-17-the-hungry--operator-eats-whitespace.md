@@ -11,7 +11,7 @@ thumbnail: ''
 date: 2019-02-17 16:36:55 +0000
 
 ---
-Oh >>. You lovely little monster. You yellow sunshine and soggy cloudbrust. You 90° rotation of the nubivagant VV. You avian symbol of death. You ugly angular whitespace eater. You forward-facing time-stealing progressive peckerhead. You suck! I don't like you anymore. From now onward, I devote my unwavering loyalty to the archaic get().
+Oh >>. You lovely little monster. You yellow sunshine and soggy cloudbrust. You 90° rotation of the nubivagant VV. You avian symbol of death. You ugly angular whitespace eater. You forward-facing time-stealing progressive peckerhead. You race track of nitrous nonsense. You suck! I don't like you anymore. From now onward, I devote my unwavering loyalty to the archaic get().
 <!--more-->
 
 What did it do to me, you ask? It ate away my whitespace. But we'll get to that in a moment.
