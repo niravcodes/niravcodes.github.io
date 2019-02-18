@@ -11,8 +11,7 @@ thumbnail: ''
 date: 2019-02-17 16:36:55 +0000
 
 ---
-Oh >>. You lovely little monster. You yellow sunshine and soggy cloudbrust. You 90° rotation of the nubivagant VV. You avian symbol of death. You ugly angular whitespace eater. You forward-facing time-stealing progressive peckerhead. You race track of nitrous nonsense. You suck! I don't like you anymore. From now onward, I devote my unwavering loyalty to the archaic get().
-<!--more-->
+Oh >>. You lovely little monster. You yellow sunshine and soggy cloudburst. You 90° rotation of the nubivagant VV. You avian symbol of death. You ugly angular whitespace eater. You forward-facing time-stealing progressive peckerhead. You race track of nitrous nonsense. You suck! I don't like you anymore. From now onward, I devote my unwavering loyalty to the archaic get(). <!--more-->
 
 What did it do to me, you ask? It ate away my whitespace. But we'll get to that in a moment.
 
@@ -40,29 +39,29 @@ Yeah, pretty much. That is, until you get so comfortable that you start doing th
 struct stat stat_buf; //"man -s 2 stat" for more on this
 int rc = stat(filename.c_str(), &stat_buf);
 if (rc == 0)
-    long filesize = stat_buf.st_size;
+long filesize = stat_buf.st_size;
 else
-    return 1;
+return 1;
 
 ifstream in;
 char x;
 in.open(filename, ios::binary | ios::in);
-    
+
 for (long i = 0; i < filesize; i++){
-    in >> x;
-    // ...
-    // insert your favourite
-    // complicated and
-    // hard to debug code here
-    // ...
+in >> x;
+// ...
+// insert your favourite
+// complicated and
+// hard to debug code here
+// ...
 }
 {% endhighlight %}
 
 I wrote something similar to this in my [huffman compression program](https://github.com/niravcodes/huffman_compression). Two key things to note here are that the ifstream is in **binary** mode, and that a byte is extracted with >> every iteration. In binary mode, you don't have whitespaces. You don't have any meaningful data. You just have a vast desert of soulless bytes.
 
-So I guess I trusted the convenient >> operator to have enough common sense to not treat whitespaces separately on binary mode. I mean, whitespaces are an interpretation of the byte stream independent from the byte stream itself. They are just the empty hallucinations of the good old ASCII. 
+So I guess I trusted the convenient >> operator to have enough common sense to not treat whitespaces separately on binary mode. I mean, whitespaces are an interpretation of the byte stream independent from the byte stream itself. They are just the empty hallucinations of the good old ASCII.
 
-Why then, for any reason other than to make me beat my head on the wall several thousand times, did >> ignore the whitespace characters? Maybe to be consistent with itself? Maybe. But what kind of douchebag would it have to be to sacrifice pragmatism for self-consistency? By ignoring arbitrary bytes, the >> operator loses all meaning in the binary mode. 
+Why then, for any reason other than to make me beat my head on the wall several thousand times, did >> ignore the whitespace characters? Maybe to be consistent with itself? Maybe. But what kind of douchebag would it have to be to sacrifice pragmatism for self-consistency? By ignoring arbitrary bytes, the >> operator loses all meaning in the binary mode.
 
 So I spent many hours today trying to find out why the files decompressed by my program kind of resembled the actual files but not really. I burnt my time looking for bugs in the strange corners of my room, in fragrant flower gardens, in busy sidewalks, between the folds of my blanket, in the sorrowful eyes of my girlfriend, in the poems of Eliot and inside my own desolate heart. In my delirium I talked to ghosts of missed semicolons and segmentation faults, I wandered lost in the maze of memory dumps, I conjured transparent butterflies and burnt them, and I chanted the bitter incantations of the UNIX source code out loud on the streets of Birauta, Pokhara-17 complete with syntax highlighting. Rest in peace, Mr Riche. I will miss you.
 
