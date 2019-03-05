@@ -11,9 +11,7 @@ date: 2019-03-05 13:18:16 +0000
 ---
 It was a strange afternoon, no doubt. The sun grinned from the west, making shadows in strange corners and bouncing off whitewashed walls while the eastern sky was dark and premonitory with a sinister turbulence. I was walking home contemplating this contrast and hoping for a rainbow.
 
-First an apprehensive drop hit fell on my ear. I continued to walk. The next landed on my cheek. The women coming out of the shop held out their palm and lightheartedly exclaimed, "Hurry! It will rain!". I continued to walk. I felt a drop on the eyebrow, then on my nose, then two drops at once and before I could register that I had lost count, it had started to rain.
-
-<!--more-->
+First an apprehensive drop hit my earlobe. I continued to walk. The next landed on my cheek. The women coming out of the shop held out their palm and lightheartedly exclaimed, "Hurry! It's starting to rain!". I continued to walk. I felt a drop on my eyebrow, then on my nose, then two drops at once and before I could register that I had lost count, it had started to rain.
 
 In the ephemeral darkness of a blink, the world composed it self from scratch. The veil of twilight fell upon reality. Dark manly clouds roamed the skies with silent domination. I was walking in a ghost town lack-love and abandoned even by the colorful clothes on the wires. The rain fell, making mirror of the endless river of dead asphalt. The storm agitated benign trees with murderous intent. There will be no rainbow, the thunder roared.
 
