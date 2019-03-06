@@ -9,6 +9,8 @@ tags:
 ---
 ![](https://nirav.com.np/assets/img/nirav.png)
 
-Hey. I am Nirav, a computer engineering student from Nepal. You're on my personal website where I generally write about things I'm up to. My intention is to publicly document my projects and experiments.
+Hi! I'm Nirav. I'm a computer engineering student from Nepal. I am interested in computers, electronics, programming, art, music and everything in between. This blog is a public documentation of the many things I learn when I indulge in my endeavors and tinkerings.
 
-My hobbies include programming, reading fiction (Murakami, García Márquez and Ginsberg are ones I'm particularly fond of), and playing sad tunes on my guitar.
+My hobbies include writing software, reading fiction (Murakami, García Márquez and Ginsberg are ones I'm particularly fond of), and playing sad tunes on my guitar. Check out my [GitHub profile](https://github.com/niravcodes "github niravcodes").
+
+> I want to make beautiful things, even if nobody cares.
