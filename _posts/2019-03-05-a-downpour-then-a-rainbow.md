@@ -15,7 +15,7 @@ First an apprehensive drop hit my earlobe. I continued to walk. The next landed 
 
 <!--more-->
 
-In the ephemeral darkness of a blink, the world composed it self from scratch. A veil of twilight fell upon reality. Dark manly clouds roamed the skies with silent dominion. I was walking in a ghost town lack-love and abandoned even by the colorful clothes hanging on the wires. The rain fell, making mirror of the endless river of dead asphalt. The storm agitated benign trees with murderous intent. There will be no rainbow, the thunder roared.
+In the ephemeral darkness of a blink, the world composed itself from scratch. A veil of twilight fell upon reality. Dark manly clouds roamed the skies with silent dominion. I was walking in a ghost town lack-love and abandoned even by the colorful clothes hanging on the wires. The rain fell, making mirror of the endless river of dead asphalt. The storm agitated benign trees with murderous intent. There will be no rainbow, the thunder roared.
 
 When drops fell, a pestilential mist rose from the ground like apparitions from the dead land. I was enveloped in the silence of the collective suicide of millions of drops ending the journey conceived in the celestial womb with one futile splat. In that moment I was simultaneously nowhere and everywhere. Someone had taken my essence and stirred it into the soul of the universe. I was an inanimate boulder sitting by an ocean. I was the turbulence of the tides. I was the widowed wind. I was a speck of dust in the Sahara. I was simultaneously nothing and everything.
 
