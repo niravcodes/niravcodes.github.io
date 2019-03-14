@@ -14,6 +14,8 @@ date: 2019-02-14 13:05:22 +0000
 ---
 Da Vinci is quoted saying, "Art is never finished, only abandoned". I don't see why it should be any different for code. With that said, I'd like to declare my latest project: an [implementation of huffman's algorithm](https://github.com/niravcodes/huffman_compression "Huffman Compression Implementation by Nirav"), finis— abandoned. I meant to say abandoned. Missed my chance.
 
+<!--more-->
+
 So anyway, I've been working on it for about a week. I started a day before my Data Communication assessment inspired by a chapter on the Information Theory. There I was, at 11 in the night, having read for the first time in my life about huffman's algorithm and **I was thrilled!** I decided then, in the spur of the moment, to pull an all-nighter and write code for the huffman algorithm. Then I boiled some water, made myself a cup of strong coffee.
 
 And then I fell asleep.
@@ -83,3 +85,12 @@ Applied to the BANANA example, the prefix constraint results in the following co
 Notice how, in this system, no codeword is the prefix of another codeword. BANANA now compresses to `110100100`. This can be deterministically recovered to BANANA.
 
 And this is what the huffman compression does. Given a set of symbols and their respective frequencies, it churns out the smallest prefix codewords to represent them all. That is the huffman compression. And there are other algorithms to do this, most notably Shannon-Fano algorithm (which they also expect me to memorize for exams), but as wikipedia says, "[Shannon–Fano](https://en.wikipedia.org/wiki/Shannon%E2%80%93Fano_coding) is almost never used; [Huffman coding](https://en.wikipedia.org/wiki/Huffman_coding "Huffman coding") is almost as computationally simple and produces prefix codes that always achieve the lowest expected code word length \[as opposed to Shannon-Fano\]".
+
+When I set out to implement Huffman's algorithm, I had two main objectives:
+
+1. Compare it with gzip to see how well it fares.
+   * I can tell you right away that compared to gzip, huffman sucks. There is a huge difference. If you want to try for yourself, [clone the repo from github](https://github.com/niravcodes/huffman_compression). But that is not the whole story, because gzip is itself a combination of LZ77 followed by huffman compression. Gzip is built with huffman compression as one of it's pillars (see also: [DEFLATE](https://en.wikipedia.org/wiki/DEFLATE)).
+2. See if it is feasible in memory constrained embedded systems (like atmega or at89c205x)
+   * It seems doable. Huffman decompression doesn't require a lot of RAM (with the compression table in PROGMEM) and it doesn't matter if the decompression is slow because it's okay to do it one sample at a time, every 1/8000th of a second. This might be my next project after the exams end.
+
+I learnt a **lot** of things with this project. This was my first time playing with binary files. 
