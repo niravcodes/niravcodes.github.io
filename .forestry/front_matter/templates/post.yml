@@ -40,6 +40,7 @@ fields:
     required: true
   description: Always post. ALWAYS POST!!
 pages:
+- _posts/animating-a-skeleton-in-pixel-art.md
 - _posts/writing-huffman-compression-in-cpp.md
 - _posts/2019-03-05-a-downpour-then-a-rainbow.md
 - _posts/2019-02-17-the-hungry--operator-eats-whitespace.md
