@@ -9,7 +9,7 @@ tags:
 - project
 feature-img: https://nirav.com.np/assets/img/Webp.net-resizeimage (1).jpg
 thumbnail: ''
-date: 2019-02-14 13:05:22 +0000
+date: '2019-02-14T13:05:22+00:00'
 
 ---
 Da Vinci is quoted saying, "Art is never finished, only abandoned". I don't see why it should be any different for code. With that said, I'd like to declare my latest project: an [implementation of the huffman's algorithm](https://github.com/niravcodes/huffman_compression "Huffman Compression Implementation by Nirav"), abandoned. It works well as it is, but it can be made a lot better. I just don't want to be the one doing that.
@@ -99,6 +99,8 @@ How huffman's algorithm does that is actually pretty interesting too. I am far t
 # The Implementation
 
 The implementation is really the simplest I could find. It is very slow and not optimized for anything. The alphabets are _always_ bytes, for the sake of simplicity. This means that the 'chunk of data' that I talked about is always a single byte.
+
+Follow [this link](https://github.com/niravcodes/huffman_compression) to see the full code in GitHub.
 
 Here is how it compressed a file:
 
