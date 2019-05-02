@@ -17,4 +17,5 @@ I have the following goals in terms of site structure and implementation:
 * Responsive design.
 * Attention to Typesetting
 * Designed for Speed
-* 
+
+I will also make my own CMS because Forestry, while great, still has a long way to go and even then it won't be cater to my particular needs.
