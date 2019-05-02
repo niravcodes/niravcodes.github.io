@@ -6,7 +6,7 @@ tags:
 - writing
 feature-img: https://nirav.com.np/assets/img/Webp.net-resizeimage.jpg
 thumbnail: ''
-date: 2019-03-05 13:18:16 +0000
+date: '2019-03-05T13:18:16+00:00'
 
 ---
 It was a strange afternoon, no doubt. The sun grinned from the west, making shadows in strange corners and bouncing off whitewashed walls, while the eastern sky was dark and premonitory with a sinister turbulence. I was walking home contemplating this contrast and hoping for a rainbow.
@@ -21,6 +21,6 @@ When drops fell, a pestilential mist rose from the ground like apparitions from 
 
 I was in that violent whirlpool when I felt your tap on my shoulder. I navigated back through the various shades of darkness, through the various depths of the ocean, through the relentless currents, through the heart of boulders and through the very soul of the universe back to the reality of downpour. I realized that I had forgotten that I was walking or that I had feet or that warm blood still circulated through my arteries. I realized that I was drenched down to my bones and I had been shivering. The real world was sad with a bittersweet nostalgia for the sun. The collective longing of mankind for a warm cup of coffee, for a dry towel and for an inviting blanket was as palpable as the fragrance of your neck.
 
-With that shock, the first thing I noticed was your blue umbrella. Next, I noticed how you extended the horizons of that sky that was your blue umbrella and sheltered me from the many angry needles which had dived from the the empyrean imagination only to land on the wet hair of a clumsy boy deep in his madness. I noticed how your shoulder bumped against mine with a wink. I noticed how, with a small smile, you extended your definition of solitude to contain me. I noticed how you promised eternal complicity.
+With that shock, the first thing I noticed was your blue umbrella. Next, I noticed how you extended the horizons of that sky that was your blue umbrella and sheltered me from the many angry needles which had dived from the empyrean imagination only to land on the wet hair of a clumsy boy deep in his madness. I noticed how your shoulder bumped against mine with a wink. I noticed how, with a small smile, you extended your definition of solitude to contain me. I noticed how you promised eternal complicity.
 
-It was when you smiled, and when I smiled back, that I decided the little sky of your umbrella was too small for two people. So squeezed you into my being. In my arms, I noticed how you were the glorious bouquet of every flower in the universe, how you were the fragrance of the forbidden apple, how your lips blossomed with the smile of rainbows and how you were God's favorite memory. Without really noticing it, I noticed how you became my warm coffee, my dry towel, my blanket and my bed. You became my own stretch of a cloudless blue sky forever over my head.
+It was when you smiled, and when I smiled back, that I decided the little sky of your umbrella was too small for two people. So I squeezed you into my being. In my arms, I noticed how you were the glorious bouquet of every flower in the universe, how you were the fragrance of the forbidden apple, how your lips blossomed with the smile of rainbows and how you were God's favorite memory. Without really noticing it, I noticed how you became my warm coffee, my dry towel, my blanket and my bed. You became my own stretch of a cloudless blue sky forever over my head.
