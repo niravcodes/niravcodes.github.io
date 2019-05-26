@@ -30,3 +30,5 @@ fields:
 - type: boolean
   name: hide
   label: Hide
+pages:
+- pages/draft.md
