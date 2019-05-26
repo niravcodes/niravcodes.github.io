@@ -3,6 +3,7 @@ layout: post
 title: Draft
 tags: []
 feature-img: ''
+permalink: draft
 hide: true
 
 ---
