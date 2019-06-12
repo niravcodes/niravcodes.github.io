@@ -25,5 +25,5 @@ fields:
     required: true
   default: post
 pages:
-- _portfolio/humbird.md
 - _portfolio/huffman-compression.md
+- _portfolio/humbird.md
