@@ -12,4 +12,4 @@ feature-img: ''
 thumbnail: ''
 
 ---
-I was asked to make a dot-matrix
+I was asked to animate a dot-matrix display for the robotics club recently. They wanted something that said "Robotics Club" to hang over their door. We had some old P10 (1r) DMDs which I had worked on in the past. Plus, even though I suck at it, I love animating things
