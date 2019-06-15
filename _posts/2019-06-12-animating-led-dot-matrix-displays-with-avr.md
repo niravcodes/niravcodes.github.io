@@ -18,11 +18,11 @@ I was asked to animate a dot-matrix display for the robotics club recently. They
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zjk1e-JFNFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Yes. That's a little Wall-E looking at you. After thinking long and hard about it, I decided that Wall-E would be the best robot to look over us all while we do our stuff. 
+Yes. That's a little Wall-E looking at you. After thinking long and hard about it, I decided that Wall-E would be the best robot to look over us all while we do our stuff.
 
-I wanted to animate some other things too, like a gear train driven by a hamster, and GIR from Invader Zim (remember that show?). But of course, a monochrome 32x32 matrix doesn't give you much space to play with. 
+I wanted to animate some other things too, like a gear train driven by a hamster, and GIR from Invader Zim (remember that show?). But of course, a monochrome 32x32 matrix doesn't give you much space to play with.
 
-I was also limited by time. I'm working almost full time on our [minor project](), and I also have to attend my classes. For the next version, I'm planning a much cooler animation, that takes up the whole 32x32 screen. 
+I was also limited by time. I'm working almost full time on our [minor project](), and I also have to attend my classes. For the next version, I'm planning a much cooler animation, that takes up the whole 32x32 screen.
 
 I'm going to talk about all the things I did to make the thing.
 
@@ -32,4 +32,15 @@ I made all the electronics for the project last semester with [Bhuwan](https://b
 
 ![](https://nirav.com.np/assets/img/one.jpg)
 
-The board is straightforward. It's an Atmega32A with it's support systems (oscillators, decoupling capacitors and such) and a bunch of headers: one for connecting the In-System Programmer, one for connecting to a control remote, and one for the Dot-Matrix Display.
+The board is straightforward. It's an Atmega32A with it's support circuitry (oscillators, decoupling capacitors and such) and a bunch of headers: one for connecting the In-System Programmer, one for connecting to a control remote, and one for the Dot-Matrix display.
+
+The display itself (`P10(1r)-V70`) is a matrix of LEDs all connected to a bunch of `74HC595` shift registers in series. I had worked with these in the past, so I understood the mechanism of the board very easily. The DMD takes the following inputs:
+
+1. Output Enable (O`̅`E`̅`)
+2. Row Selectors (A and B)
+3. A data line (D)
+4. A clock line (CLK)
+5. A Latch line (SCLK)
+6. A ground
+
+Output Enable needs to be 
