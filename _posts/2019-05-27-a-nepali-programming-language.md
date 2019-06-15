@@ -24,6 +24,8 @@ Of course, designing a new programming language and building  compiler for it is
 
 And we still have a few other problems to tackle, the most pressing one being the text processing for UTF-8 encoded Devanagari text. There is a C++ library called International Components for Unicode that we want to use but the documentation is not as straightforward as I had hoped. Then there is the problem of input method. In Linux, I am using a custom made input method for typing in Nepali. I'm not sure what chops I'll have to bust to get it working in windows.
 
+The prototype I am building is on [GitHub on this link](https://github.com/niravcodes/Devanagari_LexerParser).
+
 I'll keep you updated on the interesting things I run into.
 
 _The feature image of a Devanagari scripture was photographed by_ [_Ms Sarah Welch_](//commons.wikimedia.org/wiki/User:Ms_Sarah_Welch "Ms Sarah Welch") _and is licensed_ [_CC BY-SA 4.0_](https://creativecommons.org/licenses/by-sa/4.0/)
