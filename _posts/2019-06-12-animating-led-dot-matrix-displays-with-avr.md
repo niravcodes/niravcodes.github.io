@@ -59,32 +59,31 @@ I used the same firmware I had written a semester ago. The code itself is straig
 // Slightly altered from original
 // for readablity
 void clock_selected_lines (char selector){
-for (int i = 0 ; i < (WIDTH/8); i++)
-for (int j = 3; j >= 0; j--)
-clockbyte(display\[j*4 + selector\]\[i\]);
-setselector(selector);
-sendpulse(LATCH);
-
+  for (int i = 0 ; i < (WIDTH/8); i++)
+    for (int j = 3; j >= 0; j--)
+      clockbyte(display[j*4 + selector][i]);
+  setselector(selector);
+  sendpulse(LATCH);
 }
+
 int main(){
-init();
-OCR0 = 0xff;
-TIMSK = 2;
-TCCR0 = 0X0b;
-sei();
+  init();
+  OCR0 = 0xff;
+  TIMSK = 2;
+  TCCR0 = 0X0b;
+  sei();
 
-    int frame = 0;
-    	while (1){
-    		cli();
-            disableoutput();
-            assign_to_display(frame++);
-            enableoutput();
-            sei();
-            
-            if (frame >= framecount) frame = 0;
-         	_delay_ms(10);
-         }
-
+  int frame = 0;
+  while (1){
+    cli();
+    disableoutput();
+    assign_to_display(frame++);
+    enableoutput();
+    sei();
+          
+    if (frame >= framecount) frame = 0;
+      _delay_ms(10);
+  }
 }
 {% endhighlight %}
 
