@@ -31,3 +31,5 @@ I'm going to talk about all the things I did to make the thing.
 I made all the electronics for the project last semester with [Bhuwan](https://bhuwanadhikari.com.np/). We made the circuit board by hand, doing everything from hack-sawing the PCBs, etching the copper traces with a fumigating solution of FeCl<sub>3</sub>, drilling the boards and soldering the components. That process, while manual, was very enjoyable.
 
 ![](https://nirav.com.np/assets/img/one.jpg)
+
+The board is straightforward. It's an Atmega32A with it's support systems (oscillators, decoupling capacitors and such) and a bunch of headers: one for connecting the In-System Programmer, one for connecting to a control remote, and one for the Dot-Matrix Display.
