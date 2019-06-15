@@ -16,6 +16,8 @@ _Reminder to myself to compress the images_
 
 I was asked to animate a dot-matrix display for the robotics club recently. They wanted something that said "Robotics Club" to hang over their door. We had some old P10 (1r) DMDs which I had worked on in the past. Plus, even though I suck at it, I really love making animations. So I decided to give it a shot. This is the final result:
 
+<!--more-->
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zjk1e-JFNFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Yes. That's a little Wall-E looking at you. After thinking long and hard about it, I decided that Wall-E would be the best robot to look over us all while we do our stuff.
@@ -36,11 +38,11 @@ The board is straightforward. It's an Atmega32A with it's support circuitry (osc
 
 The display itself (`P10(1r)-V70`) is a matrix of LEDs all connected to a bunch of `74HC595` shift registers in series. I had worked with these in the past, so I understood the mechanism of the board very easily. The DMD takes the following inputs:
 
-1. Output Enable (O‾E‾)
+1. Output Enable (OE)
 2. Row Selectors (A and B)
 3. A data line (D)
 4. A clock line (CLK)
 5. A Latch line (SCLK)
 6. A ground
 
-The data line D inputs the data serially, clocked by the CLK line. On the rising edge of the SCLK pin, the data shifted in is displayed on the LEDs. So far, it is exactly as if we were using the 74HC595 directly. But the row selectors complicate things slightly. The people who designed this board have done something really cool. Perhaps to reduce part count, or to keep the board layout simple, or maybe because of fanout issues, they have connected every fourth row of the LEDs to the same set of shift registers. Which row of the matrix you are addressing depends on the inputs to the selector pins. That is, for A = LOW, B = LOW, the first of the four rows is selected. For A = LOW, B = HIGH, the second, and so on.
+The data line D inputs the data serially, clocked by the CLK line. On the rising edge of the SCLK pin, the data shifted in is displayed on the LEDs. So far, it is exactly as if we were using the 74HC595 directly. But the row selectors complicate things slightly. The people who designed this board have done something really cool. Perhaps to reduce part count, or to keep the board layout simple, or maybe because of fanout issues, they have connected every fourth row of the LEDs to the same set of shift registers. Which row of the matrix you are addressing depends on the inputs to the selector pins. That is, for A = LOW, B = LOW, the first of the four rows is selected; for A = LOW, B = HIGH, the second; and so on.
