@@ -36,11 +36,11 @@ The board is straightforward. It's an Atmega32A with it's support circuitry (osc
 
 The display itself (`P10(1r)-V70`) is a matrix of LEDs all connected to a bunch of `74HC595` shift registers in series. I had worked with these in the past, so I understood the mechanism of the board very easily. The DMD takes the following inputs:
 
-1. Output Enable (O`̅`E`̅`)
+1. Output Enable (O‾E‾)
 2. Row Selectors (A and B)
 3. A data line (D)
 4. A clock line (CLK)
 5. A Latch line (SCLK)
 6. A ground
 
-Output Enable needs to be 
+The data line D inputs the data serially, clocked by the CLK line. On the rising edge of the SCLK pin, the data shifted in is displayed on the LEDs. So far, it is exactly as if we were using the 74HC595 directly. But the row selectors complicate things slightly. The people who designed this board have done something really cool. Perhaps to reduce part count, or to keep the board layout simple, or maybe because of fanout issues, they have connected every fourth row of the LEDs to the same set of shift registers. 
