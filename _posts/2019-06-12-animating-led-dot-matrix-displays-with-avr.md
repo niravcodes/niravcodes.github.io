@@ -18,9 +18,9 @@ I was asked to animate a dot-matrix display for the robotics club recently. They
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zjk1e-JFNFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Yeah, that's a little Wall-E looking at you. After thinking long and hard about it, I decided that Wall-E is the best robot to look over us all while we do our robotics stuff. Wall-E was also, thanks to his angular design and distinctly recognizable shape, much better suited to a low resolution display than some other things I wanted to do. 
+Yeah, that's a little Wall-E looking at you. After thinking long and hard about it, I decided that Wall-E is the best robot to look over us all while we do our robotics stuff. Wall-E was also, thanks to his angular design and distinctly recognizable shape, much better suited to a low resolution display than some other things I wanted to do.
 
-Another thing I animated was a little man who carries a balloon and strolls into the DMD where "Robotics Club" is written and just stands there idly for a while, then goes away. I thought it was a cool idea, but no one else agreed. So I reluctantly scrapped that idea. I also wanted to animate some other things, like a gear train driven by a hamster, and GIR from Invader Zim (remember that show?). But of course, a monochrome 32x32 matrix doesn't give you much space to play with. I was also limited by time. I'm working almost full time on our [minor project](https://nirav.com.np/2019/05/27/a-nepali-programming-language.html), and I also have to attend my classes. For the next version of this screen, I'm planning a much cooler animation, that uses the whole 32x32 screen and the whole 32KB of the AVR program space, and maybe also some form of compression. In this post, I document all the major portions of the project, while also trying to be helpful to people designing DMDs.
+Another thing I animated was a little man who carries a balloon and strolls into the DMD where "Robotics Club" is written and just stands there idly for a while, then goes away. I thought it was a cool thing to do, but no one else agreed. So I reluctantly scrapped that idea. I also wanted to animate some other things, like a gear train driven by a hamster, and GIR from Invader Zim (remember that show?). But of course, a monochrome 32x32 matrix doesn't give you much space to play with. I was also limited by time. I'm working almost full time on our [minor project](https://nirav.com.np/2019/05/27/a-nepali-programming-language.html), and I also have to attend my classes. For the next version of this screen, I'm planning a much cooler animation, that uses the whole 32x32 screen and the whole 32KB of the AVR program space, and maybe also some form of compression. In this post, I document all the major portions of the project, while also trying to be helpful to people designing DMDs.
 
 # Electronics
 
@@ -59,23 +59,23 @@ I used the same firmware I had written a semester ago. The code itself is straig
 // Slightly altered from original
 // for readablity
 void clock_selected_lines (char selector){
-	for (int i = 0 ; i < (WIDTH/8); i++)
-		for (int j = 3; j >= 0; j--)
-			clockbyte(display[j*4 + selector][i]);
-	setselector(selector);
-	sendpulse(LATCH);
+for (int i = 0 ; i < (WIDTH/8); i++)
+for (int j = 3; j >= 0; j--)
+clockbyte(display\[j*4 + selector\]\[i\]);
+setselector(selector);
+sendpulse(LATCH);
 
 }
 int main(){
-	init();
-	OCR0 = 0xff;
-	TIMSK = 2;
-	TCCR0 = 0X0b;
-	sei();
+init();
+OCR0 = 0xff;
+TIMSK = 2;
+TCCR0 = 0X0b;
+sei();
 
-	int frame = 0;
-		while (1){
-			cli();
+    int frame = 0;
+    	while (1){
+    		cli();
             disableoutput();
             assign_to_display(frame++);
             enableoutput();
@@ -84,6 +84,7 @@ int main(){
             if (frame >= framecount) frame = 0;
          	_delay_ms(10);
          }
+
 }
 {% endhighlight %}
 
@@ -103,4 +104,4 @@ But there is one decision that I regret immensely. In hindsight, it would have b
 
 In the next version, I also think it would be awesome if I could implement some form of compression in the animation data. I'm interested in performing some kind of Run-Length Encoding on the delta frames. What I mean is, unless you are animating a moving checkerboard, very little actually changes between a frame and the next. So, if we calculate the delta matrix between every frame and it's successor, we should get a sequence of sparse matrices which we can encode with RLE or some other compression algorighm to achieve good compression on the frames while also being very simple to decompress sequencially. The 2KB RAM on the AVR system should be more than enough.
 
-**The whole project is available on my GitHub [here](https://github.com/niravcodes/Animator-inator)**
+**The whole project is available on my GitHub** [**here**](https://github.com/niravcodes/Animator-inator)
