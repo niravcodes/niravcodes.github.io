@@ -36,7 +36,7 @@ I made all the electronics for the project last semester with [Bhuwan](https://b
 
 The board is straightforward. It's an Atmega32A with it's support circuitry (oscillators, decoupling capacitors and such) and a bunch of headers: one for connecting the In-System Programmer, one for connecting to a control remote, and one for the Dot-Matrix display.
 
-The display itself (`P10(1r)-V70`) is a matrix of LEDs all connected to a bunch of `74HC595` shift registers in series. I had worked with these in the past, so I understood the mechanism of the board very easily. The DMD takes the following inputs:
+The display itself (`P10(1r)-V70`) is a matrix of LEDs all connected to a bunch of `74HC595` shift registers in series. The DMD takes the following inputs:
 
 1. Output Enable (OE)
 2. Row Selectors (A and B)
@@ -54,8 +54,23 @@ For various reasons, I had to write the animation software myself. The last time
 This time, I took a whole day to make the program. It is still bad code, and is very inefficient in all respects. But because it is a means to an end, I allowed myself to take shortcuts. The result is the screenshot below.  
 ![](https://nirav.com.np/assets/img/Screenshot-2019-6-15 Animator-inator.png)
 
-This is the software I made
+It was so fun to make animations in my own animation program. Plus, it has a rudimentary undo feature, frame copy and paste, save and open mechanism (that relies on the JSON stringify and parse methods) and even supports onion skinning! Onion Skin displays a faint copy of the previous 
 
 # The Firmware
 
-The firmware was very simple to write. But 
+I used the same firmware I had written a semester ago. The code is very simple and straightforward. But I remember it took me a long time to write it, because I didn't have a lot of documentation on the DMD I was using to consult. So I had to sit there, with the board and it's various pins and chips, and I had to prod this and poke that to figure it out, rather like a puzzle. Thankfully I had worked with the shift registers before, so it took a lot less work than it otherwise would have.
+
+ 
+{% highlight c linenos %}
+void clock_sel_line(char selector){
+         disableoutput();
+         for (int i = 0 ; i < (WIDTH/8); i++){
+                 for (int j = 3; j >= 0; j--){
+                         clockbyte(display\[j*4 + selector \]\[ i \]);
+                 }
+         }
+         setselector(sel);
+         sendpulse(LATCH);
+         enableoutput();
+}
+{% endhighlight %}
