@@ -62,7 +62,7 @@ I used the same firmware I had written a semester ago. The code is very simple a
 
  
 {% highlight c linenos %}
-void clock_sel_line(char selector){
+void clock_selected_line (char selector){
          disableoutput();
          for (int i = 0 ; i < (WIDTH/8); i++){
                  for (int j = 3; j >= 0; j--){
