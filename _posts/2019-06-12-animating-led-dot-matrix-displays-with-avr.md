@@ -12,8 +12,6 @@ feature-img: https://nirav.com.np/assets/img/tow.jpg
 thumbnail: ''
 
 ---
-_Reminder to myself to compress the images_
-
 I was asked to animate a dot-matrix display for the robotics club recently. They wanted something that said "Robotics Club" to hang over their door. We had some old P10 (1r) DMDs which I had worked on in the past to make a little scoreboard for a robot football match. And, even though I am not very good at it, I really love animating things. So I decided to give it a shot.
 
 <!--more-->
