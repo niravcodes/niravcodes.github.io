@@ -58,19 +58,39 @@ It was so fun to make animations in my own animation program. Plus, it has a rud
 
 # The Firmware
 
-I used the same firmware I had written a semester ago. The code is very simple and straightforward. But I remember it took me a long time to write it, because I didn't have a lot of documentation on the DMD I was using to consult. So I had to sit there, with the board and it's various pins and chips, and I had to prod this and poke that to figure it out, rather like a puzzle. Thankfully I had worked with the shift registers before, so it took a lot less work than it otherwise would have.
+I used the same firmware I had written a semester ago. The code is very simple and straightforward. But I remember it took me a long time to write it, because I didn't have a lot of documentation on the DMD I was using to consult. So I had to sit there, with the board and it's various pins and chips, and I had to prod this and poke that to figure it out, rather like a puzzle. Thankfully I had worked with the shift registers before, so it took a lot less work than it otherwise would have. This piece of code below is pretty much the only part of the code that counts. From the bit-matrix `display`, it extracts the selected lines and sends it via serial into the DMD.
 
  
 {% highlight c linenos %}
-void clock_selected_line (char selector){
-         disableoutput();
+// Slightly altered from original 
+// for readablity
+void clock_selected_lines (char selector){
          for (int i = 0 ; i < (WIDTH/8); i++){
                  for (int j = 3; j >= 0; j--){
-                         clockbyte(display\[j*4 + selector \]\[ i \]);
+                         clockbyte(display[j*4 + selector][ i ]);
                  }
          }
          setselector(sel);
          sendpulse(LATCH);
-         enableoutput();
 }
+
+int main(){
+        init();
+        OCR0 = 0xff;
+        TIMSK = 2;
+        TCCR0 = 0X0b;
+        sei();
+        
+        int frame = 0;
+        while (1){
+        	cli();
+            disableoutput();
+            assign_to_display(frame++);
+            enableoutput();
+            sei();
+            
+            if (frame >= framecount) frame = 0;
+         }
+}
+
 {% endhighlight %}
