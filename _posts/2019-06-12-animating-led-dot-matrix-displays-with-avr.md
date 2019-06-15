@@ -45,7 +45,7 @@ The display itself (`P10(1r)-V70`) is a matrix of LEDs all connected to a bunch 
 5. A Latch line (SCLK)
 6. A ground
 
-The data line D inputs the data serially, clocked by the CLK line. On the rising edge of the SCLK pin, the data shifted in is displayed on the LEDs. So far, it is exactly as if we were using the 74HC595 directly. But the row selectors complicate things slightly. The people who designed this board have done something really cool. Perhaps to reduce part count, or to keep the board layout simple, or maybe because of fanout issues, they have connected every fourth row of the LEDs to the same set of shift registers. Which row of the matrix you are addressing depends on the inputs to the selector pins. That is, for A = LOW, B = LOW, the first of the four rows is selected; for A = LOW, B = HIGH, the second; and so on.
+The data line D inputs the data serially, clocked by the CLK line. On the rising edge of the SCLK pin, the data shifted in is displayed on the LEDs. So far, it is exactly as if we were using the 74HC595 directly. But the row selectors complicate things slightly. The people who designed this board have done something really cool. Perhaps to reduce part count, or to keep the board layout simple, or maybe because of fanout issues, they have connected 4 consecutive LEDs to the same set of shift registers. Which rows of the matrix you are addressing depends on the inputs to the selector pins. That is, for A = LOW, B = LOW, the first of the four rows is selected; for A = LOW, B = HIGH, the second; and so on. I will talk more about this further below.
 
 # The Animation Software
 
@@ -54,26 +54,23 @@ For various reasons, I had to write the animation software myself. The last time
 This time, I took a whole day to make the program. It is still bad code, and is very inefficient in all respects. But because it is a means to an end, I allowed myself to take shortcuts. The result is the screenshot below.  
 ![](https://nirav.com.np/assets/img/Screenshot-2019-6-15 Animator-inator.png)
 
-It was so fun to make animations in my own animation program. Plus, it has a rudimentary undo feature, frame copy and paste, save and open mechanism (that relies on the JSON stringify and parse methods) and even supports onion skinning! Onion Skin displays a faint copy of the previous 
+It was so fun to make animations in my own animation program. Plus, it has a rudimentary undo feature, frame copy and paste, save and open mechanism (that relies on the JSON stringify and parse methods) and even supports onion skinning! Onion Skin displays the previous frame faintly under the current canvas so that you know where to put your pixels when animating.
 
 # The Firmware
 
-I used the same firmware I had written a semester ago. The code is very simple and straightforward. But I remember it took me a long time to write it, because I didn't have a lot of documentation on the DMD I was using to consult. So I had to sit there, with the board and it's various pins and chips, and I had to prod this and poke that to figure it out, rather like a puzzle. Thankfully I had worked with the shift registers before, so it took a lot less work than it otherwise would have. This piece of code below is pretty much the only part of the code that counts. From the bit-matrix `display`, it extracts the selected lines and sends it via serial into the DMD.
-
+I used the same firmware I had written a semester ago. The code is very simple and straightforward. But I remember it took me a long time to write it, because I didn't have a lot of documentation on the DMD I was using to consult. So I had to sit there, with the board and it's various pins and chips, and I had to prod this and poke that to figure it out, rather like a puzzle. Thankfully I had worked with the shift registers before, so it took a lot less work than it otherwise would have. This piece of code below is pretty much the only part of the code that counts. 
  
 {% highlight c linenos %}
 // Slightly altered from original 
 // for readablity
 void clock_selected_lines (char selector){
-         for (int i = 0 ; i < (WIDTH/8); i++){
-                 for (int j = 3; j >= 0; j--){
-                         clockbyte(display[j*4 + selector][ i ]);
-                 }
-         }
-         setselector(sel);
-         sendpulse(LATCH);
-}
+     for (int i = 0 ; i < (WIDTH/8); i++)
+     	for (int j = 3; j >= 0; j--)
+        	clockbyte(display[j*4 + selector][ i ]);
 
+     setselector(selector);
+     sendpulse(LATCH);
+}
 int main(){
         init();
         OCR0 = 0xff;
@@ -90,7 +87,14 @@ int main(){
             sei();
             
             if (frame >= framecount) frame = 0;
+         	_delay_ms(10);
          }
 }
-
 {% endhighlight %}
+
+The `clock_selected_lines()` function takes a value from 0 to 3, and based on that value, extracts the relevant bits from the `display` bit matrix to send into the DMD. Keep in mind that, at one time, only 4 rows (every fourth row) of the 16 total rows in the DMD can be activated. This is because every group of 4 LEDs, row-wise, is connected to the same pin in the same shift register. Which of the 4 connected LED lights up is controlled by the 2 selector pins A and B. To show a complete picture, we have to cycle between the four SEL pins fast enough that it is below the persistence of vision (10 ms). And each time we switch rows, we also have to clock in the data in those rows. I know it sounds complicated, but if you think about it, this little design ingenuity reduced the part count in the board by a factor of four and minimized the signal propagation delay inherent in such shift registor based system.
+
+That process is called time-multiplexing, and is used in many kinds of displays throught electronics. The slow mo guys have an amazing video on how displays work. Definitely watch the video, even if you don't see yourself working with displays any time soon. It gives you a unique perspective on time itself.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3BJU2drrtCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
