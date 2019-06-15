@@ -49,8 +49,13 @@ The data line D inputs the data serially, clocked by the CLK line. On the rising
 
 # The Animation Software
 
-For various reasons, I had to write the animation software for myself. The last time, I had
+For various reasons, I had to write the animation software myself. The last time, I had written an animation program on Python using Tkinter. Actually, 'written' is a bad verb to describe that process. I had jerrybuilt the whole system in an hour. And over the course of the next week, I had haphazardly stuck various appendages and functions which made the code very difficult to navigate. On top of that, the program itself was very ugly. So this time, I picked a language I have worked with a little before: JavaScript. I had never gotten a chance to play with the HTML5 canvas API, but it literally takes [5 minutes]() to get the hang of it. 
 
+This time, I took a whole day to make the program. It is still bad code, and is very inefficient in all respects. But because it is a means to an end, I allowed myself to take shortcuts. The result is the screenshot below.  
 ![](https://nirav.com.np/assets/img/Screenshot-2019-6-15 Animator-inator.png)
 
 This is the software I made
+
+# The Firmware
+
+The firmware was very simple to write. But 
