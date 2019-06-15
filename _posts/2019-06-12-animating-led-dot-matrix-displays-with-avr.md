@@ -20,6 +20,7 @@ I was asked to animate a dot-matrix display for the robotics club recently. They
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zjk1e-JFNFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
 Yeah, that's a little Wall-E looking at you. After thinking long and hard about it, I decided that Wall-E is the best robot to look over us all while we do our robotics stuff. Wall-E was also, thanks to his angular design and distinctly recognisable shape, much better suited to a low resolution display than some other things I wanted to do.
 
 Anyway, I wanted to animate some other things too, like a gear train driven by a hamster, and GIR from Invader Zim (remember that show?). But of course, a monochrome 32x32 matrix doesn't give you much space to play with. I was also limited by time. I'm working almost full time on our [minor project](https://nirav.com.np/2019/05/27/a-nepali-programming-language.html), and I also have to attend my classes. For the next version of this screen, I'm planning a much cooler animation, that uses the whole 32x32 screen and the whole 32KB of the AVR program space. In this post, I document all the major portions of the project, while also trying to be helpful to people designing DMDs.
@@ -45,12 +46,13 @@ The data line D inputs the data serially, clocked by the CLK line. On the rising
 
 # The Animation Software
 
-For various reasons, I had to write the animation software myself. The last time, I had written an animation program on Python using Tkinter. Actually, 'written' is a bad verb to describe that process. I had jerrybuilt the whole system in an hour. And over the course of the next week, I had haphazardly stuck various appendages and functions which made the code very difficult to navigate. On top of that, the program itself was very ugly. So this time, I picked a language I have worked with a little before: JavaScript. I had never gotten a chance to play with the HTML5 canvas API, but it literally takes [5 minutes](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) to get the hang of it. 
+For various reasons, I had to write the animation software myself. The last time, I had written an animation program on Python using Tkinter. Actually, 'written' is a bad verb to describe that process. I had jerrybuilt the whole system in an hour. And over the course of the next week, I had haphazardly stuck various appendages and functions which made the code very difficult to navigate. On top of that, the program itself was very ugly. 
 
-This time, I took a whole day to make the program. It is still bad code, and is very inefficient in all respects. But because it is a means to an end, I allowed myself to take shortcuts. The result is the screenshot below.  
+This time, I decided to go with a HTML canvas based approach because I didn't want to download a GUI designer for python, and I sure as heck wasn't going to sit around and waste my precious time learning Tkinter's packs and grids and what not. So anyway, I surprised myself by jerrybuilding the entire system in a few hours, complete with animation frames, onion skinning and the undo feature. The [canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) was so simple, and JavaScript so forgiving, that I didn't even run into any time consuming bug. And the most interesting part? The complete HTML file (with JS and CSS in the same document) is 500 lines of code! It is still bad code, and is very inefficient in many respects. But because it is a means to an end, I allowed myself to take shortcuts. The result is the screenshot below.
+
 ![](https://nirav.com.np/assets/img/Screenshot-2019-6-15 Animator-inator.png)
 
-It was so fun to make animations in my own animation program. It has a rudimentary undo feature, frame copy and paste, save and open mechanism (that relies on the JSON stringify and parse methods) and even supports onion skinning! Onion Skin displays the previous frame faintly under the current canvas so that you know where to put your pixels when animating. The only seriously desirable feature that this lacks is the select and move feature. The old python version actually had that feature. But I was already pressed for time so I didn't implement it.
+It was so fun to make animations in my own animation program. The only seriously desirable feature that this program lacks is the select and the move feature. The old python version actually had that feature. But I was already pressed for time so I didn't implement it.
 
 # The Firmware
 
@@ -94,6 +96,13 @@ That process is called time-multiplexing, and is used in many kinds of displays 
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3BJU2drrtCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+
 # Final thoughts
 
 I enjoyed making this. This DMD gave me a much needed break from the extremely formal and dry world of compiler literature which I have been poring over for weeks in order to make the [साक्षर compiler](https://nirav.com.np/2019/05/27/a-nepali-programming-language.html).
+
+But there is one decision that I regret immensely. In hindsight, it would have been much better if I had written a program to convert any GIF file into a data format suitable for the DMD. It would have been much less glamorous to work on, sure, but it would have given me the free license to work with any pixel based animation software that already exists, and already supports select, move, multi-level undo and all that fancy stuff.
+
+In the next version, I also think it would be awesome if I could implement some form of compression in the animation data. I'm interested in performing some kind of Run-Length Encoding on the delta frames. What I mean is, unless you are animating a moving checkerboard, very little actually changes between a frame and the next. So, if we calculate the delta matrix between every frame and it's successor, we should have get a sequence of sparse matrices which we can encode with RLE or some other compression algorighm to get maximum compression. 
+
