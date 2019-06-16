@@ -4,7 +4,7 @@ title: 'DRAFT : On the Nepali Language and Unicode'
 tags: []
 feature-img: ''
 permalink: "/draft2/"
-hide: false
+hide: true
 
 ---
 _Notes: The numbers starting with ‘0x’ are Hexadecimal numbers._
