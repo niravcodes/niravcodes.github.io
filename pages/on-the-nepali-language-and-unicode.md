@@ -15,11 +15,7 @@ It's as they say, “whoever controls the media controls the mind”. And the me
 
 ...
 
-Now don’t get me wrong here. I am not saying that at some point Nepali will just disappear into oblivion. What I’m saying is that, without even knowing it, we’ll wake up one day to find our own language so detached, so out of sync from the everyday reality which we live in, that it will just stop meaning anything important. And that, when we finally realize it, we will not feel दुःखि or even चिन्तित. We’ll feel ‘depressed’. So no, I’m not saying that it will be forgotten.
-
-(1) Much worse. It will fall into the little space between the bed and the wall, and we’ll just leave it there. Neglected, like a little pencil.
-
-(2) Much worse. It will be neglected, much like one of those pencils which fall into the space between the bed and the wall and which we just leave there.
+Now don’t get me wrong here. I am not saying that at some point Nepali will just disappear into oblivion. What I’m saying is that, without even knowing it, we’ll wake up one day to find our own language so detached, so out of sync from the everyday reality which we live in, that it will just stop meaning anything important. And that, when we finally realize it, we will not feel दुःखि or even चिन्तित. We’ll feel ‘depressed’. So no, I’m not saying that it will be forgotten. Much worse. It will be neglected, much like one of those pencils which fall into the space between the bed and the wall and which we just leave there.
 
 It’s as T.S. Eliot once wrote,  
 “This is the way the world ends  
