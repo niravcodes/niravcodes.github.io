@@ -31,4 +31,5 @@ fields:
   name: hide
   label: Hide
 pages:
+- pages/on-the-nepali-language-and-unicode.md
 - pages/draft.md
