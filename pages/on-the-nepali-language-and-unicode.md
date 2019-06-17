@@ -27,7 +27,7 @@ It will be a long article, with many many things. So bear with me.
 
 # Part two
 
-# ASCII
+# ASCII and similar encodings
 
 _Note: The numbers starting with ‘0x’ and 'U+' are Hexadecimal numbers. 'U+' additionally implies that the number following it is a Unicode code point._
 
@@ -39,9 +39,7 @@ ASCII was the first widely adopted character encoding scheme. It is still used.
 
 ![](https://nirav.com.np/assets/img/2019-06-16-180457_1366x768_scrot.png)
 
-and many more
-
-So how do you type Nepali in ASCII? Well, you don't. ASCII is, by it's very definition, American. What you can do is is put a Nepali character's mask over an ASCII character. In other words, design a font which has Nepali characters instead of English ones. For example, in the above table, the Nepali letters द्व and अ are overlaid over the letter A. Based on what font you are using, you might have to type a different key on the keyboard to get the same Nepali alphabet.
+So how do you type Nepali in ASCII? Well, you don't. ASCII is, by it's very definition, American. What you can do is is put a Nepali character's mask over an ASCII character. In other words, design a font which has Nepali characters instead of English ones. For example, in the above table, the Nepali letters द्व and अ are overlaid over the letter A. Based on what font you are using, you might have to type a different key on the keyboard to get the same Nepali alphabet. 
 
 **Unicode**
 
@@ -55,7 +53,7 @@ Characters are given a block to live in. A block is essentially a range of numbe
 
 The advantage of separating language into blocks, is that each block can get it's own kind of treatment from the software. We know that all scripts behave differently. In Devanagari, some characters go above the previous character, some under. Some change the character itself. In Tibetan, diacritics stack up vertically. A single Urdu character, when it appears, can change how the entire word looks. Not to mention that scripts have different directions of reading. Chinese and Japanese are written from top to bottom, right to left. Urdu is written from right to left, top to bottom. All these quirks can be handled by software based on what block the characters come from.
 
-Now, if you look at the table above, you will notice a lot of characters missing. Where is, for example, क्ष? Or ग्ञ? 
+Now, if you look at the table above, you will notice a lot of characters missing. Where is, for example, क्ष? Or द्व? Or all the half forms like क्‍, ग्‍? 
 
 ![](https://nirav.com.np/assets/img/2019-06-16-174910_1366x768_scrot.png)
 
