@@ -35,15 +35,17 @@ Computers only understand numbers. To a computer, a picture is not, say, people 
 
 ASCII is simply a mapping of these numbers to characters. So if you put the number 65 in the memory of a computer and ask it to show what that means in ASCII, it will display the capital letter A. An important thing to note about ASCII is that it uses numbers from 0 to 127 only. Since computers almost universally store data in blocks of 8 bits (a byte) which can represent 256 numbers (2<sup>8</sup>), half of the representational possibilities go unused when using ASCII. There have been several extensions to ASCII which make use of the unused space from 128 to 255.
 
-So how do you type Nepali in ASCII? Well, you don't. ASCII is, by it's very definition, American. In the early 90's, Bureau of Indian Standards came up with it's very own encoding called ISCII. ISCII is essentially an extension of ASCII. From 128 to 255, it stores Devanagari consonants. An interesting thing to note is that ISCII actually unified a bunch of scripts like Devanagari, Tamil, Bengali, Oriya, Tamil etc. So a number 164 (0xA4) can mean all of the following: अ, அ, অ, ଅ and more. The idea with ISCII is that, since all these scripts are descendants of the same Brahmi script, they behave similarly and represent similar sounds. Which is true because all four of the above letters represent the same /ʌ/ sound. ISCII encodes all these characters with the same number but leaves it up to the font to render in required script. Unicode does the same for the Newari language. But more on that later.
-
-It is important to keep ISCII in mind, because Unicode specification for Devanagari is based almost exclusively on ISCII.
+So how do you type Nepali in ASCII? Well, you don't. ASCII is, by it's very definition, American. In the early 90's, Bureau of Indian Standards came up with it's very own encoding called ISCII. ISCII is essentially an extension of ASCII. From 128 to 255, it stores Devanagari consonants. An interesting thing to note is that ISCII actually unified a bunch of scripts like Devanagari, Tamil, Bengali, Oriya, Tamil etc. So a number 164 (0xA4) can mean all of the following: अ, அ, অ, ଅ and more. The idea with ISCII is that, since all these scripts are descendants of the same Brahmi script, they behave similarly and represent similar sounds. Which is true because all four of the above letters represent the same /ʌ/ sound. ISCII encodes all these characters with the same number but leaves it up to the font to render in required script. Unicode does the same for the Newari language. But more on that later. It is important to keep ISCII in mind, because Unicode specification for Devanagari is based almost exclusively on ISCII.
 
 In Nepal, however, government didn't initiate any efforts. What happened instead was that independent font makers arbitrarily assigned the 256 numbers to various characters and ligatures. Which character a specific number represented was completely up to the font you chose. That must have been messy. Fonts are meant to change how the text looks, not what it is! 
 
 The table below shows the character mapping of two Nepali fonts in the late 90's. So if you typed something in _Sabdatara_ but then decided to change to _Annapurna_ halfway through, I don't even know what you'd have to do. I'm just thankful that I was not a computer operator in the 90's.
 
 ![](https://nirav.com.np/assets/img/2019-06-16-180457_1366x768_scrot.png)
+
+So far, we have talked exclusively about the representation of text. Typing was a different beast entirely. Suppose that you were using the _Annapurna_ font. Since keyboards came in the standard QWERTY layout, if you typed an A (which is internally ASCII 65), an अ would appear. But change the font to Sabdatara and it changes to a द्ब.
+
+![](https://nirav.com.np/assets/img/2019-06-17-202341_1366x768_scrot.png)
 
 But thankfully, over time these mappings stabilized to the what is now known as the Traditional or Remington's keyboard layout. It seems that this layout was based on the Mangal font, 
 
