@@ -49,19 +49,19 @@ The Unicode is a text-encoding specification. It was designed from the ground up
 
 In Unicode, each character gets it's own number. For example, the number 2325 (0x0915) uniquely identifies the Devanagari letter क, the number 70658 (0x11402) identifies the Newari letter 𑐂, the number 65 (0x41) the English capital letter A and the number 24859 (0x611b) the unified Chinese, Japanese and Korean letter 愛, meaning love. 
 
-Scripts are given a block to live in. A block is essentially a range of numbers. For example, Devanagari lives in the U+
-
-The advantage of separating language into blocks, is that each block can get it's own kind of treatment from the software. We know that all scripts behave differently. In Devanagari, some characters go above the previous character, some under. Some change the character itself. In Tibetean, characters stack up vertically. Persian and Urdu characters, when they appear can, change how the entire word looks. Not to mention that scripts have different directions of reading. Chinese and Japanese are written from top to bottom, right to left. Urdu is written from right to left, top to bottom. 
-
-For Devanagari, Unicode has allocated the space from 0x0900 to 0x097F.
+Characters are given a block to live in. A block is essentially a range of numbers. For example, Devanagari characters live in the U+0900 to 097F block. Newa is in the U+1900 to U+194F block. 
 
 ![](https://nirav.com.np/assets/img/2019-06-16-175754_1366x768_scrot.png)
 
-And this image
+The advantage of separating language into blocks, is that each block can get it's own kind of treatment from the software. We know that all scripts behave differently. In Devanagari, some characters go above the previous character, some under. Some change the character itself. In Tibetan, diacritics stack up vertically. A single Urdu character, when it appears, can change how the entire word looks. Not to mention that scripts have different directions of reading. Chinese and Japanese are written from top to bottom, right to left. Urdu is written from right to left, top to bottom. All these quirks can be handled by software based on what block the characters come from.
+
+Now, if you look at the table above, you will notice a lot of characters missing. Where is, for example, क्ष. Or त्र or ग्ञ? 
 
 ![](https://nirav.com.np/assets/img/2019-06-16-174910_1366x768_scrot.png)
 
 and this image
+
+![](https://nirav.com.np/assets/img/2019-06-17-090949_1366x768_scrot.png)
 
 SUBHEADINGS:
 
