@@ -13,7 +13,7 @@ The Nepali language gets very little representation on the internet. Take, for e
 
 It's as they say, “whoever controls the media controls the mind”. And the media of the 21st century, the internet, is so desperately out of Nepali's hands that, not only do we read the news, articles, the weather, and novels in English, but we go on to caption our photos, of warm, intimate moments in English. My little brother, who is not even 10, will sniff my phone from a mile away and hide out in some corner to watch Motu Patlu on YouTube. He might not be as fluent in Hindi as he is in Nepali. But in his little world, Hindi is the language that superheroes speak. And Nepali? Only his annoying brother.
 
-I'm not saying that I'm any better. If anything, I'm worse. I'm one of those people who, after being told a phone number, says, "Okay, repeat that. But in English". Ask me to translate this very post to Nepali and watch how fast I run away. 
+I'm not saying that I'm any better. If anything, I'm worse. I'm one of those people who, after being told a phone number, says, "Okay, repeat that. But in English". Ask me to translate this very post to Nepali and watch how fast I run away. My friends are no better. 
 
 But the issue is pretty pervasive
 
@@ -33,11 +33,19 @@ _Note: The numbers starting with ‘0x’ and 'U+' are Hexadecimal numbers. 'U+'
 
 Computers only understand numbers. To a computer, a picture is not, say, people or food, but a 2D matrix of numbers representing the color values at each point. An audio recording is, similarly, a sequence of amplitude of sound wave recorded several thousand times each second. It goes without saying that text is also read by the computer as a sequence of numbers.
 
-ASCII is simply a mapping of these numbers to characters. So if you put the number 65 in the memory of a computer and ask it to show what that means in ASCII, it will display the capital letter A. An important thing to note about ASCII is that it uses numbers from 0 to 127 only. Since computers almost universally store data in blocks of 8 bits (a byte) which can represent 256 numbers (2<sup>8</sup>), half of the representational possibilities go unused when using ASCII. There have been several extensions to ASCII, which make use of the unused space from 128 to 255.
+ASCII is simply a mapping of these numbers to characters. So if you put the number 65 in the memory of a computer and ask it to show what that means in ASCII, it will display the capital letter A. An important thing to note about ASCII is that it uses numbers from 0 to 127 only. Since computers almost universally store data in blocks of 8 bits (a byte) which can represent 256 numbers (2<sup>8</sup>), half of the representational possibilities go unused when using ASCII. There have been several extensions to ASCII which make use of the unused space from 128 to 255.
 
-So how do you type Nepali in ASCII? Well, you don't. ASCII is, by it's very definition, American. In the early 90's, Bureau of Indian Standards came up with it's very own encoding called ISCII. ISCII is essentially an extension of ASCII. From 128 to 255, it stores Devanagari consonants. An interesting thing to note is that ISCII actually unified a bunch of scripts like Devanagari, Tamil, Bengali, Oriya, Tamil etc. So a number 164 (0xA4) can mean all of the following: अ, அ, অ, ଅ and more. The idea with ISCII is that, since all these scripts are descendants of the same Brahmi script, they behave similarly and represent similar sounds. Which is true because all four of the above letters represent the same /ʌ/ sound. So ISCII encodes all these characters with the same number but leaves it up to the font to render in required script. Unicode does the same for the Newari language. But more on that later.
+So how do you type Nepali in ASCII? Well, you don't. ASCII is, by it's very definition, American. In the early 90's, Bureau of Indian Standards came up with it's very own encoding called ISCII. ISCII is essentially an extension of ASCII. From 128 to 255, it stores Devanagari consonants. An interesting thing to note is that ISCII actually unified a bunch of scripts like Devanagari, Tamil, Bengali, Oriya, Tamil etc. So a number 164 (0xA4) can mean all of the following: अ, அ, অ, ଅ and more. The idea with ISCII is that, since all these scripts are descendants of the same Brahmi script, they behave similarly and represent similar sounds. Which is true because all four of the above letters represent the same /ʌ/ sound. ISCII encodes all these characters with the same number but leaves it up to the font to render in required script. Unicode does the same for the Newari language. But more on that later.
+
+It is important to keep ISCII in mind, because Unicode specification for Devanagari is based almost exclusively on ISCII.
+
+In Nepal, however, government didn't initiate any efforts. What happened instead was that independent font makers arbitrarily assigned the 256 numbers to various characters and ligatures. Which character a specific number represented was completely up to the font you chose. That must have been messy. Fonts are meant to change how the text looks, not what it is! 
+
+The table below shows the character mapping of two Nepali fonts in the late 90's. So if you typed something in _Sabdatara_ but then decided to change to _Annapurna_ halfway through, I don't even know what you'd have to do. I'm just thankful that I was not a computer operator in the 90's.
 
 ![](https://nirav.com.np/assets/img/2019-06-16-180457_1366x768_scrot.png)
+
+But thankfully, over time these mappings stabilized to the what is now known as the Traditional or Remington's keyboard layout. It seems that this layout was based on the Mangal font, 
 
 **Unicode**
 
