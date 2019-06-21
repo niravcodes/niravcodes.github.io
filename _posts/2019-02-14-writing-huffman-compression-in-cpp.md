@@ -114,7 +114,7 @@ Here is how it compresses a file:
 
 The soul of this entire code base is the following code.
 
-{% highlight c++ linenos %}
+{% highlight cpp linenos %}
 tree *make_huffman_tree(input_param options)
 {
     //open the file for inspection
