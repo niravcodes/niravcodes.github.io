@@ -154,7 +154,7 @@ tree *make_huffman_tree(input_param options)
 
 Since the huffman codes are of variable lengths, I had to write a special bit stream packing class. It can work with arbitrarily sized buffers and has a mechanism to avoid buffer overflows. I had the most fun working on that class. The header is below:
 
-{% highlight linenos c++ %}
+{% highlight linenos cpp %}
 typedef unsigned char byte;
 class bitstream
 {
