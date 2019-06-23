@@ -26,6 +26,12 @@ I would then transfer the circuit routing on a 2-layer PCB using toner-transfer 
 
 I love writing software for custom electronics. It feels so cool to write firmware for your own, extremely specialized hardware. I would start working on that next. Naturally, I'd have some temporary headers for  In-System Programming the circuit. After I am satisfied with the firmware and all the interfaces feel natural and intuitive, I'd test it the entire system inside the 3D printed case. After making sure that everything behaves beautifully, I'd reach the final part of the development process.
 
-At this point, the innards are done. The interface feels solid. The firmware works without a hitch. And the CPU sleep wake cycles as well as all other peripherals have been meticulously programmed to consume as little power as possible, it is time to build a beautiful case for the product. I'd start with all the materials I have available. I'll probably 
+At this point, the innards are done. The interface feels solid. The firmware works without a hitch. And the CPU sleep wake cycles as well as all other peripherals have been meticulously programmed to consume as little power as possible, it is time to build a beautiful case for the product. 
 
-There is a particular charm to something that is built by passionate craftsmen. 
+I would either mill the body with CNC or manually craft the piece in the workshop. Or I could cast metal to get the desired shape. This is the a crucial part of the product development because the choice of metal and the time I spend working on it directly influence how it feels in the hands. 
+
+If I end up working with aluminium then I could anodize the body and dye it to get nice colors. With laser cut acrylic, I could showcase the internal electronics, but plastic doesn't feel so good in the hand. I could also incorporate glass.
+
+![](https://nirav.com.np/assets/img/tech_1.jpg)
+
+There is a particular charm to a thing that is built by passionate craftsmen. And for some reason, I really like to 
