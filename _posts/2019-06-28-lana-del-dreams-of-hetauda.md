@@ -1,7 +1,7 @@
 ---
 excerpt_separator: "<!--more-->"
 layout: post
-title: Lana-Del-dreams of Hetauda
+title: Lana Del dreams of Hetauda
 tags:
 - writing
 feature-img: https://nirav.com.np/assets/img/abandoned-room-7007.jpg
