@@ -8,8 +8,6 @@ feature-img: https://nirav.com.np/assets/img/abandoned-room-7007.jpg
 thumbnail: ''
 
 ---
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cE6wxDqdOV0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 The unfortunate truth is that she doesn't care. Which is to say if at any instant the earth blew up, the second between me registering the bang and colliding on a boulder, I'd be thinking of her. But she wouldn't.
 
 Which is to say that I have kept her in that part of my heart where flowers bloom and butterflies flutter all colorful and cheery. But she has kept me in that forgotten corner where she keeps her small pencils and rusty sharpeners, inside a neglected pencil cup.
@@ -25,3 +23,5 @@ I put one foot in front of the other, then I put the next foot ahead of that the
 She had once asked me, "Will you still love me when I'm no longer young and beautiful?" and I had said, "Of course not." 
 
 I keep on passing her home as it begins to rain and the world is melancholy gray. I keep on passing her home as I'm somehow without the umbrella and drenched and shivering. I keep on passing her home as I grow as lonely as the asphalt road and the deserted houses. I keep on passing her home all alone and forever. Every time I pass her home, my eyes instinctively glance towards the balcony of her room. Maybe she is there, I think. But she isn't. Even she has abandoned this ghost town long ago to purse a colorful reality.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cE6wxDqdOV0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
