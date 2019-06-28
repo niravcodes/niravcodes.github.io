@@ -14,6 +14,8 @@ The unfortunate truth is that she doesn't care. Which is to say if at any instan
 
 Which is to say that I have kept her in that part of my heart where flowers bloom and butterflies flutter all colorful and cheery. But she has kept me in that forgotten corner where she keeps her small pencils and rusty sharpeners, inside a neglected pencil cup.
 
+<!--more-->
+
 I keep thinking of things like this, and stare at nothing. I am in the classroom where a teacher is animatedly explaining vector calculus. For some reason, my soul is blue today. A dream is playing in my head with visions of that asphalt road, that slightly uphill street on my way to college. It is midday. Against the backdrop of the blue sky, cloudless and infinite, a phantasmal Hetauda is arranged to look like the real place. It is summer and the world is asleep in a thin and sticky siesta. So the road is deserted. It's a ghost town. In my mind, I walk under under that placid sky under an umbrella. I am either very happy or at least not sad but it's hard to tell in the heat.
 
 The teacher's voice fades out and Video Games starts playing. The hallucination goes on, but I keep on walking that same asphalt street again and again. Like a video on loop, I pass by the same scenery every minute. 'it's you its you it's all for you everything I do'
