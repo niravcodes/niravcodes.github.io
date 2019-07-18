@@ -16,3 +16,12 @@ Below I provide links the documents which contain your article with my edits and
 These documents can be opened in Microsoft Word and reviewed. To see the changes, go to the 'Review' tab and select 'All Markup' from the dropdown as indicated in the picture below.
 
 ![](https://nirav.com.np/assets/img/scr1.png)Then, click on the 'Show Markup' dropdown below and **uncheck** 'Formatting'.
+
+If you don't want to see the changes made, click on the 'All Markup' and change that to 'Simple Markup' which retains comments.
+
+![](https://nirav.com.np/assets/img/scr2.png)
+
+The links to the articles are below.
+
+1. [Munching on the Blockchain](https://nirav.com.np/assets/img/Chewing the Blockchain.docx "Chewing the Blockchain.docx")
+2. [Filter Bubble.docx](https://nirav.com.np/assets/img/Filter Bubble.docx "Filter Bubble.docx")
