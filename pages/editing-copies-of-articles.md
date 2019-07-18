@@ -24,4 +24,4 @@ If you don't want to see the changes made, click on the 'All Markup' and change 
 The links to the articles are below.
 
 1. [Munching on the Blockchain](https://nirav.com.np/assets/img/Chewing the Blockchain.docx "Chewing the Blockchain.docx")
-2. [Filter Bubble.docx](https://nirav.com.np/assets/img/Filter Bubble.docx "Filter Bubble.docx")
+2. [Filter Bubble](https://nirav.com.np/assets/img/Filter Bubble.docx "Filter Bubble.docx")
