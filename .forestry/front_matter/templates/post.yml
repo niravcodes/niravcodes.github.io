@@ -40,7 +40,6 @@ fields:
     required: true
   description: Always post. ALWAYS POST!!
 pages:
-- pages/editing-copies-of-articles.md
 - _posts/2019-06-28-lana-del-dreams-of-hetauda.md
 - _posts/2019-06-23-i-wanna-handcraft-devices.md
 - _posts/designing-a-new-website-for-myself.md

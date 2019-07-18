@@ -31,5 +31,6 @@ fields:
   name: hide
   label: Hide
 pages:
+- pages/editing-copies-of-articles.md
 - pages/on-the-nepali-language-and-unicode.md
 - pages/draft.md
