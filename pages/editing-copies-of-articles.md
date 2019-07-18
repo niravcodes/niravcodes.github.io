@@ -2,7 +2,7 @@
 layout: post
 title: Editing copies of articles
 tags: []
-feature-img: ''
+feature-img: https://nirav.com.np/assets/img/pexels-photo-37728.jpeg
 permalink: "/vertex/"
 hide: true
 excerpt_separator: ''
