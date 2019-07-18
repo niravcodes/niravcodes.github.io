@@ -15,11 +15,9 @@ Below I provide links the documents which contain your article with my edits and
 
 These documents can be opened in Microsoft Word and reviewed. To see the changes, go to the 'Review' tab and select 'All Markup' from the dropdown as indicated in the picture below.
 
-![](https://nirav.com.np/assets/img/scr1.png)Then, click on the 'Show Markup' dropdown below and **uncheck** 'Formatting'.
+![](https://nirav.com.np/assets/img/scr1.png)Then, click on the 'Show Markup' dropdown below and **uncheck** 'Formatting'.![](https://nirav.com.np/assets/img/scr2.png)
 
 If you don't want to see the changes made, click on the 'All Markup' and change that to 'Simple Markup' which retains comments.
-
-![](https://nirav.com.np/assets/img/scr2.png)
 
 The links to the articles are below.
 
