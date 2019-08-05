@@ -20,6 +20,9 @@
           <div class="excerpt">
               {{ post.excerpt | strip_html | escape }}
           </div>
+	  <a alt="{{ post.title }}" style="margin-top:10px; display:inline-block" href="{{ post.url | relative_url }}">
+	  Read full post...
+      	  </a>
       </span>
     </div>
     {% endfor %}
@@ -27,25 +30,15 @@
 
 {% if paginator.total_pages > 1 %}
 <div class="pagination" style="display: inline-block;">
-    <div style="position: absolute; left: 35%;">
     {% if paginator.previous_page %}
         <!-- << -->
         <!-- < previous -->
-        <a href="{{ paginator.previous_page_path | relative_url }}" {% if paginator.previous_page != 1 %}style="margin-left:0"{% endif %} class="button">
+        <a href="{{ paginator.previous_page_path | relative_url }}" {% if paginator.previous_page != 1 %} {% endif %} class="button">
           &lt;
           {{ site.theme_settings.str_previous_page }}
         </a>
     {% endif %}
-    </div>            
-    
-    <!-- Centering not working well on all format
-    <div style="position: absolute; left: 50%;">
-        <div style="position: relative; left: -50%;">
-        {{ paginator.page }} / {{ paginator.total_pages }}
-        </div>    
-    </div> -->     
 
-    <div style="position: absolute; right: 35%;">
     {% if paginator.next_page %}
         <!-- next > -->
         <a alt="{{ site.theme_settings.str_next_page }}" 
@@ -55,6 +48,5 @@
         </a>
         <!-- >> -->
     {% endif %}
-    </div>     
 </div>
 {% endif %}

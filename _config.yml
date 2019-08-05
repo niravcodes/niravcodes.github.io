@@ -13,11 +13,8 @@ theme_settings:
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
 
-  header_text: >
-     <p>Hey.</p><p>I'm Nirav. I study computer engineering in Nepal.</p>
-     <p>I dabble with electronics, programming, art, design, music and everything in between. You could call me a jack of all trades. </p>
-
-  header_feature_image: assets/img/astrology-astronomy.jpg
+  header_text:
+  header_feature_image: 
 
   footer_text: >
    &copy; Nirav Nikhil. <a href="/about/">About me.</a>
@@ -35,7 +32,7 @@ theme_settings:
   gitlab:
   github: "niravcodes"
   google_plus:
-  instagram: kawaii.hermit
+  instagram:
   keybase:
   linkedin:  # Full URL
   pinterest:
