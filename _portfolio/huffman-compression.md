@@ -5,7 +5,7 @@ tags:
 - coding
 - c++
 img: https://nirav.com.np/assets/img/david_huffman.jpg
-feature-img: ''
+feature-img: https://nirav.com.np/assets/img/pexels-photo-37728.jpeg
 date: '2019-02-16T09:23:09+00:00'
 
 ---
