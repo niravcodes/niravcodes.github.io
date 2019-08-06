@@ -40,6 +40,7 @@ fields:
     required: true
   description: Always post. ALWAYS POST!!
 pages:
+- _posts/2019-01-20-ambling-down-the-javascript-rabbit-hole.md
 - _posts/first-prototype-for-a-nepali-language-compiler.md
 - _posts/2019-06-12-animating-led-dot-matrix-displays-with-avr.md
 - _posts/designing-a-new-website-for-myself.md
@@ -57,7 +58,6 @@ pages:
 - _posts/i-love-xxd.md
 - _posts/2018-12-20-on-sound-and-audio-generation-using-atmega-microcontrollers.md
 - _posts/2019-01-05-movies-that-i-watched-when-i-was-sick.md
-- _posts/2019-01-20-ambling-down-the-javascript-rabbit-hole.md
 - _posts/2018-12-22-looking-at-mern-stack.md
 - _posts/writing-huffman-compression-in-cpp.md
 - _posts/2019-02-17-the-hungry--operator-eats-whitespace.md

@@ -7,10 +7,10 @@ tags:
 - coding
 feature-img: https://nirav.com.np/assets/img/vue.png
 thumbnail: ''
-date: 2019-01-20 06:42:55 +0000
+date: '2019-01-20T06:42:55+00:00'
 
 ---
-I'm finally getting somewhere. After a week of learning JS fundamentals, I decided to make a test app using modern web frameworks and technologies. More specifically, I picked the MEVN stack (MongoDB, ExpressJS, VueJS and NodeJS). Notice that this stack is entirely based on javascript which is one of its touted benefits. 
+I'm finally getting somewhere. After a week of learning JS fundamentals, I decided to make a test app using modern web frameworks and technologies. More specifically, I picked the MEVN stack (MongoDB, ExpressJS, VueJS and NodeJS). Notice that this stack is entirely based on javascript which is one of its touted benefits.
 
 <!--more-->
 
@@ -24,6 +24,6 @@ Finally there's Vue. There are a few alternatives to Vue, most notably Angular a
 
 ![](https://nirav.com.np/assets/img/sshot.png)
 
-I will talk more about this little project of mine on [another post](https://nirav.com.np/portfolio/humbird "Humbird - Project"). For now, suffice it to say that I'm really enjoying this wonderland of javascript and all it's nuances and pitfalls. I was a happy C++ programmer for a long time, and I had thought that I'd be uncomfortable giving up the control that C++ provided. Turns out I have no problems trading control for expression.
+I will talk more about this little project of mine on [another post](https://nirav.com.np/project/humbird "Humbird - Project"). For now, suffice it to say that I'm really enjoying this wonderland of javascript and all its nuances and pitfalls. I was a happy C++ programmer for a long time, and I had thought that I'd be uncomfortable giving up the control that C++ provided. Turns out I have no problems trading control for expression.
 
 I was also introduced to cloud computing around this time and I have been experimenting with various combinations of web technologies, tools and cloud services. I'm fascinated by all stuff, and I think the best thing to do now is to take a break from embedded electronics to dive into the cloud and web development (which incidentally aligns with my field of study as an computer engineer).
