@@ -4,7 +4,6 @@ title: Dot-Matrix display System and Animation Software
 tags: []
 img: https://nirav.com.np/assets/img/circuitwalle.png
 feature-img: https://nirav.com.np/assets/img/tow.jpg
-published: false
 
 ---
 I built the electronics, the driver software, and the animation software for an arrangement of Dot-Matrix Displays. The result is below:
