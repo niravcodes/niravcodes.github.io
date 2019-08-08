@@ -10,7 +10,7 @@ thumbnail: https://nirav.com.np/assets/img/pexels/circuit.jpeg
 ---
 Studying for exams is so boring, you know? You study and study, with no intention or time to put any of it in practice, just so that you can wake up super early one morning, rush to the exam hall, make sure you haven't forgotten your admit card, and regurgitate it all with teachers patrolling like vultures, as if we're prisoners.
 
-We have test of Embedded system tomorrow. So I want to test if writing about what I'm studying in my blog will motivate me better. In this post, I'll try to summarize everything I manage to study today. I'm using the Frank Vahid and Tony Givargis book, and I'll be following the IOE syllabus (CT 655).
+We have test of Embedded system tomorrow. So I want to test if writing about what I'm studying in my blog will motivate me better. In this post, I'll try to summarize everything I manage to study today. I'm using the Frank Vahid and Tony Givargis book, and I'll be following the IOE syllabus (CT 655). A lot of the information below, including the diagrams, is summarized, paraphrased or downright plagiarized from the book.
 
 <!--more-->
 
@@ -59,8 +59,36 @@ A design metric is a measurable feature of a system's implementation. Here's a s
 
 ## The Time-to-Market metric
 
-It is more profitable if you launch your product within a fixed window. For ESes this window is very small, because the market is competitive. Sometimes, each day delayed causes more than a million dollar loss. 
+It is more profitable if you launch your product within a fixed window. For ESes this window is very small, because the market is competitive. Sometimes, each day delayed causes more than a million dollar loss.
 
-But because ES design has become increasingly complex, it is hard for the designer to do more in less time. Consider a simplified diagram below:
-
+But because ES design has become increasingly complex, it is hard for the designer to do more in less time. Consider a simplified diagram below:  
 ![](https://nirav.com.np/assets/img/esfig2.jpg)
+
+The areas under these triangles are proportional to the revenues generated in each scenario. The revenue loss can be calculated using the above diagram:
+
+> percentage revenue loss = (D (3W-W)/2W<sup>2</sup>)*100
+
+Clearly, it is important to market the product in time. To do this, the designer has to be aware of all the latest technologies and have expertise in both hardware and software design. 
+
+## NRE and Unit Cost
+
+The measures we are concerned with are:
+
+> Total Cost = NRE cost + Unit cost * number of units
+>
+> Per-product cost = Total Cost / Number of units = NRE Cost / Number of units + Unit cost
+
+The total cost increases linearly with increase in quantity. That is obvious. But the per-production cost decreases hyperbolically with quantity because the NRE cost gets shared among the units. If your product requires lot of R&D but is sold for less money, you can profit by selling large quantities of it (of course, in literally every other case you profit by selling large quantities of it).
+
+## Performance
+
+Measures of performance help understand how long it will take to execute the functions we require. Clock speed, instructions per second, sampling frequency, etc. help measure performance. But these metrics are not well suited for getting specialized understanding of the system at hand. We should be more concerned with factors like how many functions it can execute in a second, or how fast will it react to events, and things like that. It doesn't matter if the washing machine has a 128 kHz processor if it can get the motor rolling on the press of a button. 
+
+Some better measures of performance are:
+
+1. _Latency_ or _response time_: Time between the start and end of a process.
+2. _Throughput_: Number of high level functions that can be executed per second.
+
+When comparing two systems, we use _speedup_ which is simply a ratio of performance of two systems. 
+
+# Processor technology
