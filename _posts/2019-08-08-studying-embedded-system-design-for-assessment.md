@@ -16,12 +16,12 @@ We have test of Embedded system tomorrow. So I want to test if writing about wha
 
 # Introduction
 
-There doesn't seem to be a universally applicable definition of embedded systems. The book says, "An embedded system is any computing system other than a desktop computer." I don't like this very much. Richard Nass from embedded.com describes embedded system as, "any computer whose end function is not to be a computer". This is slightly better. But this won't do for the exam. Teachers expect definitions to be long and full of jargon. 
+There doesn't seem to be a universally applicable definition of embedded systems. The book says, "An embedded system is any computing system other than a desktop computer." I don't like this very much. Richard Nass from embedded.com describes embedded system as, "any computer whose end function is not to be a computer". This is slightly better. But this won't do for the exam. Teachers expect definitions to be long and full of jargon.
 
 Let us look at some examples and characteristics of these systems. Embedded systems are put into electronic and electric devices like cameras, phones, washing machines, printers and so on to electronically control other parts of the system. So if you want your device to react to events, or perform a coordinated sequence of procedures, you'd embed an embedded system into it. Some characteristics particular to embedded systems are:
 
 1. **Single-functioned**  
-   Embedded systems are designed to perform a single, or a set of closely related functions repeatedly. This characteristic distinguished embedded systems from desktop and mobile computing systems which support general programmability and the ability to perform virtually any conceivable algorithm. Modern smartphones shouldn't be classified as embedded systems because they are general-purpose. 
+   Embedded systems are designed to perform a single, or a set of closely related functions repeatedly. This characteristic distinguished embedded systems from desktop and mobile computing systems which support general programmability and the ability to perform virtually any conceivable algorithm. Modern smartphones shouldn't be classified as embedded systems because they are general-purpose.
 2. **Tightly constrained**
    Embedded systems often have to be kept in small, cheap, battery operated devices. So, they are designed with constraints on power usage, size and price.  This naturally means that the system will have the _bare minimum_ resources necessary to execute the expected functions reliably. The clock speed, component count, power usage, RAM size, CPU power, number of pins, the size of the components relative to the PCB area, the EMF radiated, and every other factor has to be carefully analyzed and minimized.
 3. **Reactive and real-time**  
@@ -33,11 +33,13 @@ I didn't want to write this, but they ask this in the exam.
 
 ![](https://nirav.com.np/assets/img/esfig1.jpg)
 
-As is evident from the horrid diagram I've drawn (cut me some slack, guys. I picked up this thing a day ago), 
+As is evident from the horrid diagram I've drawn (cut me some slack, guys. I picked up this thing a day ago), the camera is a complex ES. A Charge-Coupled Device (CCD) captures the image, which is converted to digital signals using the Analog to Digital converter (A2D). The CCD preprocessor is the chip that controls the CCD and gives it low level commands. The JPEG codec compresses and decompresses the image, because RAW photos take up heck ton of storage space. This part gives very little information on what the pixel coprocessor does, but I'm assuming it is able to parallelly perform operations on a lot of pixels at once (color correction, noise filtering and stuff like that) without overloading the microprocessor. The multiplier/accumulator does mathematical computations which take a lot of time when done by the microprocessor. All other components are self-explanatory.
+
+This camera is a great example of an ES. It is small, portable, battery operated and it performs a group of closely related functions repeatedly. It must be fast enough to process many images per second, consume little power, be low cost and all that. But the camera isn't obligated to be real time. As far as the photographer is concerned, one second latency is not dangerous.
 
 # Design Challenges
 
-I'm getting tired of typing in Embedded System all the time. So from here onwards, I'll write ES instead. Anyway, as we saw in the characteristics, ESes have to be optimized for tons of factors. In this section, we'll talk about some important design metrics and trade-offs. 
+I'm getting tired of typing in Embedded System all the time. So from here onwards, I'll write ES instead. Anyway, as we saw in the characteristics, ESes have to be optimized for tons of factors. In this section, we'll talk about some important design metrics and trade-offs.
 
 ## Common Design Metrics
 
