@@ -20,10 +20,10 @@ There doesn't seem to be a universally applicable definition of embedded systems
 
 Let us look at some examples and characteristics of these systems. Embedded systems are put into electronic and electric devices like cameras, phones, washing machines, printers and so on to electronically control other parts of the system. So if you want your device to react to events, or perform a coordinated sequence of procedures, you'd embed an embedded system into it. Some characteristics particular to embedded systems are:
 
-1. **Single-functioned  
-   **Embedded systems are designed to perform a single, or a set of closely related functions repeatedly. This characteristic distinguished embedded systems from desktop and mobile computing systems which support general programmability and the ability to perform virtually any conceivable algorithm. Modern smartphones shouldn't be classified as embedded systems because they are general-purpose. 
-2. **Tightly constrained  
-   **Embedded systems often have to be kept in small, cheap, battery operated devices. So, they are designed with constraints on power usage, size and price.  This naturally means that the system will have the _bare minimum_ resources necessary to execute the expected functions reliably. The clock speed, component count, power usage, RAM size, CPU power, number of pins, the size of the components relative to the PCB area, the EMF radiated, and every other factor has to be carefully analyzed and minimized.
+1. **Single-functioned**  
+   Embedded systems are designed to perform a single, or a set of closely related functions repeatedly. This characteristic distinguished embedded systems from desktop and mobile computing systems which support general programmability and the ability to perform virtually any conceivable algorithm. Modern smartphones shouldn't be classified as embedded systems because they are general-purpose. 
+2. **Tightly constrained**
+   Embedded systems often have to be kept in small, cheap, battery operated devices. So, they are designed with constraints on power usage, size and price.  This naturally means that the system will have the _bare minimum_ resources necessary to execute the expected functions reliably. The clock speed, component count, power usage, RAM size, CPU power, number of pins, the size of the components relative to the PCB area, the EMF radiated, and every other factor has to be carefully analyzed and minimized.
 3. **Reactive and real-time**  
    Many embedded systems are meant as control systems. They monitor the inputs and generate outputs that must vary in real time and be sufficiently accurate. Consider a car's Electronic Braking Mechanism. Failure in such systems can't be tolerated. There are hard constraints on the time it takes for the system to crunch the inputs and generate an output. In contrast, desktop computing systems are not expected to react with millisecond or microsecond level granularity.
 
@@ -32,6 +32,8 @@ Let us look at some examples and characteristics of these systems. Embedded syst
 I didn't want to write this, but they ask this in the exam.
 
 ![](https://nirav.com.np/assets/img/esfig1.jpg)
+
+As is evident from the horrid diagram I've drawn (cut me some slack, guys. I picked up this thing a day ago), 
 
 # Design Challenges
 
