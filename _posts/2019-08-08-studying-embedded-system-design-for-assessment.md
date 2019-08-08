@@ -5,7 +5,7 @@ title: Studying Embedded System Design for Assessment
 tags:
 - study
 feature-img: ''
-thumbnail: ''
+thumbnail: https://nirav.com.np/assets/img/pexels/circuit.jpeg
 
 ---
 Studying for exams is so boring, you know? You study and study, with no intention or time to put any of it in practice, just so that you can wake up super early one morning, rush to the exam hall, make sure you haven't forgotten your admit card, and regurgitate it all with teachers patrolling like vultures, as if we're prisoners.
@@ -56,3 +56,11 @@ A design metric is a measurable feature of a system's implementation. Here's a s
  9. **Maintainability**
 10. **Correctness**
 11. **Safety**
+
+## The Time-to-Market metric
+
+It is more profitable if you launch your product within a fixed window. For ESes this window is very small, because the market is competitive. Sometimes, each day delayed causes more than a million dollar loss. 
+
+But because ES design has become increasingly complex, it is hard for the designer to do more in less time. Consider a simplified diagram below:
+
+![](https://nirav.com.np/assets/img/esfig2.jpg)
