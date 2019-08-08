@@ -95,8 +95,22 @@ When comparing two systems, we use _speedup_ which is simply a ratio of the perf
 
 This book says, "technology is a manner of accomplishing a task, especially using technical processes ...", which is interesting because even though I have used the word technology a lot, I never thought about what it really meant. 
 
+![](https://nirav.com.np/assets/img/esfig3.jpg)
+
 ## General-Purpose Processors
 
 Also called microprocessors. Defining characteristic of General-purpose processors is that they have a program memory necessary to hold data in them. They have a wide variety of peripherals embedded in the chip to maximize flexibility. They have a general data-path to allow whatever software to run on them. With general purpose processors, the designer has to mainly worry about software, which is very easy to modify, debug or throw away. Advantages include flexibility, maintainability, lowered NRE and Time-to-market, and ease of use.
 
 But these processors have a lot of features and peripherals that go unused, while still taking up space and costing money. If the quantity is large enough, then it is cheaper to build a custom single-purpose integrated circuit (NRE is cancelled out by the scale). Also, for applications requiring parallel data processing (facial recognition, pixel processing, audio processing etc. the microprocessor is woefully inadequate. Also, when not properly selected, microprocessors are wasteful (for example, when someone uses an AVR or Arduino to control LED brightness).
+
+## Single-Purpose Processors
+
+These processors (should we even call them processors?) are digital circuits designed to execute exactly one program. It's a very expensive process which involves a lot of NRE costs, manufacturing process design, and wafer etching. Also called coprocessor, accelerator, and peripheral. For example, cheap calculators often have custom designed logic circuit hidden under an epoxy blob. Same with digital watches, which have the bare minimum of components needed to divide the quartz crystal frequency and a LCD driver. These things are incredibly low-powered, fast and customizable down to the type of logic gate used. Even things like working voltage and temperature responses can be tweaked. But yeah, it takes a lot of time, money, testing and incredibly specifically skilled and experienced manpower. 
+
+## Application-Specific Processors
+
+ASIPs are hybrid between the above two processors. They are sufficiently general for use in a fixed class of problems. The datapath and the ALU is tweaked in these kinds of processors at design time, which means that many unused parts are removed and frequently used parts are made more powerful and increased in number. But if you are making ASIPs from scratch, then a lot of NRE will be spent to design and build the processor and it's related toolchain like optimizing compilers. Unless an optimizing compiler exists to use the ASIP to its fullest potential, designers will have to write code in Assembly, and we know what assembly does to time-to-market, maintainability and flexibility.
+
+Microcontrollers are microprocessors designed for embedded control use, meaning that they need to monitor many variables, perform semi-trivial transformations/calculation on them and write output. So they tend to have simplified data-paths with bit-level control. They also have a vast array of peripherals like I2C and SPI bus controllers, PWM devices and A2Ds and D2As. 
+
+Digital Signal Processors are microprocessors designed specifically for processing digital signals like video and audio. They do things like signal filtering, transformation or combination, which are very computation-intensive. Also, DSPs often need to operate on an array of data (for example, in camera, the entire pixel array needs to be passed through the same processing mechanism) so they have special-purpose data-paths for multiplication/accumulation and array operations. DSPs are designed to work much more parallel compared to microprocessors.
