@@ -89,6 +89,14 @@ Some better measures of performance are:
 1. _Latency_ or _response time_: Time between the start and end of a process.
 2. _Throughput_: Number of high level functions that can be executed per second.
 
-When comparing two systems, we use _speedup_ which is simply a ratio of performance of two systems. 
+When comparing two systems, we use _speedup_ which is simply a ratio of the performance of a pair of systems. 
 
 # Processor technology
+
+This book says, "technology is a manner of accomplishing a task, especially using technical processes ...", which is interesting because even though I have used the word technology a lot, I never thought about what it really meant. 
+
+## General-Purpose Processors
+
+Also called microprocessors. Defining characteristic of General-purpose processors is that they have a program memory necessary to hold data in them. They have a wide variety of peripherals embedded in the chip to maximize flexibility. They have a general data-path to allow whatever software to run on them. With general purpose processors, the designer has to mainly worry about software, which is very easy to modify, debug or throw away. Advantages include flexibility, maintainability, lowered NRE and Time-to-market, and ease of use.
+
+But these processors have a lot of features and peripherals that go unused, while still taking up space and costing money. If the quantity is large enough, then it is cheaper to build a custom single-purpose integrated circuit (NRE is cancelled out by the scale). Also, for applications requiring parallel data processing (facial recognition, pixel processing, audio processing etc. the microprocessor is woefully inadequate. Also, when not properly selected, microprocessors are wasteful (for example, when someone uses an AVR or Arduino to control LED brightness).
