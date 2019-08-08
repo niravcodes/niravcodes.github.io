@@ -114,3 +114,7 @@ ASIPs are hybrid between the above two processors. They are sufficiently general
 Microcontrollers are microprocessors designed for embedded control use, meaning that they need to monitor many variables, perform semi-trivial transformations/calculation on them and write output. So they tend to have simplified data-paths with bit-level control. They also have a vast array of peripherals like I2C and SPI bus controllers, PWM devices and A2Ds and D2As. 
 
 Digital Signal Processors are microprocessors designed specifically for processing digital signals like video and audio. They do things like signal filtering, transformation or combination, which are very computation-intensive. Also, DSPs often need to operate on an array of data (for example, in camera, the entire pixel array needs to be passed through the same processing mechanism) so they have special-purpose data-paths for multiplication/accumulation and array operations. DSPs are designed to work much more parallel compared to microprocessors.
+
+# IC technology
+
+\--on pause for now, because I also have economics exam tomorrow which I need to read now--
