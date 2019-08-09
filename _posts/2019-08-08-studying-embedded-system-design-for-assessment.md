@@ -68,7 +68,7 @@ The areas under these triangles are proportional to the revenues generated in ea
 
 > percentage revenue loss = (D (3W-W)/2W<sup>2</sup>)*100
 
-Clearly, it is important to market the product in time. To do this, the designer has to be aware of all the latest technologies and have expertise in both hardware and software design. 
+Clearly, it is important to market the product in time. To do this, the designer has to be aware of all the latest technologies and have expertise in both hardware and software design.
 
 ## NRE and Unit Cost
 
@@ -82,18 +82,18 @@ The total cost increases linearly with increase in quantity. That is obvious. Bu
 
 ## Performance
 
-Measures of performance help understand how long it will take to execute the functions we require. Clock speed, instructions per second, sampling frequency, etc. help measure performance. But these metrics are not well suited for getting specialized understanding of the system at hand. We should be more concerned with factors like how many functions it can execute in a second, or how fast will it react to events, and things like that. It doesn't matter if the washing machine has a 128 kHz processor if it can get the motor rolling on the press of a button. 
+Measures of performance help understand how long it will take to execute the functions we require. Clock speed, instructions per second, sampling frequency, etc. help measure performance. But these metrics are not well suited for getting specialized understanding of the system at hand. We should be more concerned with factors like how many functions it can execute in a second, or how fast will it react to events, and things like that. It doesn't matter if the washing machine has a 128 kHz processor if it can get the motor rolling on the press of a button.
 
 Some better measures of performance are:
 
 1. _Latency_ or _response time_: Time between the start and end of a process.
 2. _Throughput_: Number of high level functions that can be executed per second.
 
-When comparing two systems, we use _speedup_ which is simply a ratio of the performance of a pair of systems. 
+When comparing two systems, we use _speedup_ which is simply a ratio of the performance of a pair of systems.
 
 # Processor technology
 
-This book says, "technology is a manner of accomplishing a task, especially using technical processes ...", which is interesting because even though I have used the word technology a lot, I never thought about what it really meant. 
+This book says, "technology is a manner of accomplishing a task, especially using technical processes ...", which is interesting because even though I have used the word technology a lot, I never thought about what it really meant.
 
 ![](https://nirav.com.np/assets/img/esfig3.jpg)
 
@@ -105,16 +105,19 @@ But these processors have a lot of features and peripherals that go unused, whil
 
 ## Single-Purpose Processors
 
-These processors (should we even call them processors?) are digital circuits designed to execute exactly one program. It's a very expensive process which involves a lot of NRE costs, manufacturing process design, and wafer etching. Also called coprocessor, accelerator, and peripheral. For example, cheap calculators often have custom designed logic circuit hidden under an epoxy blob. Same with digital watches, which have the bare minimum of components needed to divide the quartz crystal frequency and a LCD driver. These things are incredibly low-powered, fast and customizable down to the type of logic gate used. Even things like working voltage and temperature responses can be tweaked. But yeah, it takes a lot of time, money, testing and incredibly specifically skilled and experienced manpower. 
+These processors (should we even call them processors?) are digital circuits designed to execute exactly one program. It's a very expensive process which involves a lot of NRE costs, manufacturing process design, and wafer etching. Also called coprocessor, accelerator, and peripheral. For example, cheap calculators often have custom designed logic circuit hidden under an epoxy blob. Same with digital watches, which have the bare minimum of components needed to divide the quartz crystal frequency and a LCD driver. These things are incredibly low-powered, fast and customizable down to the type of logic gate used. Even things like working voltage and temperature responses can be tweaked. But yeah, it takes a lot of time, money, testing and incredibly specifically skilled and experienced manpower.
 
 ## Application-Specific Processors
 
 ASIPs are hybrid between the above two processors. They are sufficiently general for use in a fixed class of problems. The datapath and the ALU is tweaked in these kinds of processors at design time, which means that many unused parts are removed and frequently used parts are made more powerful and increased in number. But if you are making ASIPs from scratch, then a lot of NRE will be spent to design and build the processor and it's related toolchain like optimizing compilers. Unless an optimizing compiler exists to use the ASIP to its fullest potential, designers will have to write code in Assembly, and we know what assembly does to time-to-market, maintainability and flexibility.
 
-Microcontrollers are microprocessors designed for embedded control use, meaning that they need to monitor many variables, perform semi-trivial transformations/calculation on them and write output. So they tend to have simplified data-paths with bit-level control. They also have a vast array of peripherals like I2C and SPI bus controllers, PWM devices and A2Ds and D2As. 
+Microcontrollers are microprocessors designed for embedded control use, meaning that they need to monitor many variables, perform semi-trivial transformations/calculation on them and write output. So they tend to have simplified data-paths with bit-level control. They also have a vast array of peripherals like I2C and SPI bus controllers, PWM devices and A2Ds and D2As.
 
 Digital Signal Processors are microprocessors designed specifically for processing digital signals like video and audio. They do things like signal filtering, transformation or combination, which are very computation-intensive. Also, DSPs often need to operate on an array of data (for example, in camera, the entire pixel array needs to be passed through the same processing mechanism) so they have special-purpose data-paths for multiplication/accumulation and array operations. DSPs are designed to work much more parallel compared to microprocessors.
 
 # IC technology
 
-\--on pause for now, because I also have economics exam tomorrow which I need to read now--
+Many IC technologies exist and they have to be carefully chosen by taking current constraints and resources into consideration. 
+
+1. **Full Custom/VLSI**  
+   The IC 
