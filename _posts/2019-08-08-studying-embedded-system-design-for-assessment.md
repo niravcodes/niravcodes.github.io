@@ -115,9 +115,6 @@ Microcontrollers are microprocessors designed for embedded control use, meaning 
 
 Digital Signal Processors are microprocessors designed specifically for processing digital signals like video and audio. They do things like signal filtering, transformation or combination, which are very computation-intensive. Also, DSPs often need to operate on an array of data (for example, in camera, the entire pixel array needs to be passed through the same processing mechanism) so they have special-purpose data-paths for multiplication/accumulation and array operations. DSPs are designed to work much more parallel compared to microprocessors.
 
-# IC technology
+# The End
 
-Many IC technologies exist and they have to be carefully chosen by taking current constraints and resources into consideration. 
-
-1. **Full Custom/VLSI**  
-   The IC 
+It seems that writing on your blog pretty commits the information to memory for at least two months (and counting). I'll have to use this technique more often. Perhaps I'll try this with Electromagnetism next. I've been really digging the textbook by William Hayt.
