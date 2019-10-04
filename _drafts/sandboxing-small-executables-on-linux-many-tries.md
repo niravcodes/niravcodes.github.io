@@ -16,4 +16,8 @@ mbox doesn't work in 2019. -n still allows networks. Guessing that it relies on 
 
 Docker Heavy and not built for my use case. Not for security. Can be broken out of. At any rate, I'm not gonna be instantiating full containers for executing a sub-megabyte program.
 
-minijail I found about 2 days after i began my search. 
+minijail I found about 2 days after i began my search.
+
+custom:
+
+namespaces, chroot, seccomp-bpf, kafel, cgroups, users etc
