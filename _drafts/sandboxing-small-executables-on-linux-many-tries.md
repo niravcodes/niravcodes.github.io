@@ -21,3 +21,5 @@ minijail I found about 2 days after i began my search.
 custom:
 
 namespaces, chroot, seccomp-bpf, kafel, cgroups, users etc
+
+PS: Mosh is really cool substutite to ssh. 
