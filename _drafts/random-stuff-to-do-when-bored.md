@@ -14,3 +14,5 @@ brush teeth
 clean the valleys between toes
 
 make your sister some coffee
+
+Do omegle
