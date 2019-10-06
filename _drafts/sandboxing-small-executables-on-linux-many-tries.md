@@ -10,9 +10,9 @@ feature-img: ''
 thumbnail: ''
 
 ---
-I wrote a toy compiler few months. It is quite interesting because it allows you to write code in Nepali Language and compile it. I wanted people to see it, so I put the code up on Github. But as it turns out, not a lot of people are willing or capable of cloning your repository, compiling the program, installing a Nepali language keyboard and learn an obscure half-baked programming language just because it exists. 
+I wrote a toy compiler few months back. The compiler is interesting because it allows you to write code in Nepali and compile it. I wanted people to see it, so I put the code up on Github. But as it turns out, not a lot of people are willing or capable of going through the convoluted process of cloning your repository, compiling the program, installing a Nepali language keyboard and learning an obscure half-baked programming language just because some idiot put it on Github. (_note to self: link the repo here_)
 
-So, I decided to write a web app to easily demonstrate the program. In this post I discuss my decisions 
+So, I decided to write a web app to easily demonstrate the program. In this post I discuss my decisions regarding the choice of sandboxing
 
 nsjail doesn't install because of protobuf problems perhaps some kind of protobuf versioning inconsistency. It doesn't help that the git page doesn't have any installation steps/dependency+version info. Might look deeper into this in the future,
 
@@ -26,4 +26,4 @@ custom:
 
 namespaces, chroot, seccomp-bpf, kafel, cgroups, users etc
 
-PS: Mosh is really cool substutite to ssh. 
+PS: Mosh is really cool substutite to ssh.
