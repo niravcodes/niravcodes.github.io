@@ -1,18 +1,18 @@
 ---
 excerpt_separator: "<!--more-->"
 layout: post
-title: Sandboxing Untrusted Executables on Linux for an Online Compiler
+title: Sandboxing Unsafe Executables on Linux for an Online Compiler
 tags:
 - linux
 - cloud
 - sandbox
-feature-img: ''
+feature-img: https://nirav.com.np/assets/img/blurred-blurry-fence-967933.jpg
 thumbnail: ''
 
 ---
-I wrote a toy compiler few months back. The compiler is interesting because it allows you to write code in Nepali and compile it. I wanted people to see it, so I put the code up on Github. But as it turns out, not a lot of people are willing or capable of going through the convoluted process of cloning your repository, compiling the program, installing a Nepali language keyboard and learning an obscure half-baked programming language just because some idiot put it on Github. (_note to self: link the repo here once it's ready for release_) 
+I wrote a toy compiler few months back. The compiler is interesting because it allows you to write code in Nepali and compile it. I wanted people to see it, so I put the code up on Github. But as it turns out, not a lot of people are willing or capable of going through the convoluted process of cloning your repository, compiling the program, installing a Nepali language keyboard and learning an obscure half-baked programming language just because some idiot put it on Github. (_note to self: link the repo here once it's ready for release_)
 
-So, I decided to write a web app to easily demonstrate the program.<!--more--> The web app takes the code written in my language in the client side and compiles and executes the program on the server. 
+So, I decided to write a web app to easily demonstrate the program.<!--more--> The web app takes the code written in my language in the client side and compiles and executes the program on the server.
 
 ### Issues with executing unsafe binaries on server
 
@@ -20,12 +20,18 @@ But huge security issues emerge by allowing user-generated executable to run on 
 
 1. The executable can run an **expensive infinite loop** (for example: listing all prime numbers above 10^5), which makes the system unbearably slow for other processes.
 2. It can generate and **store a huge amount of data** which either completely fills up the RAM, the storage system, or both, causing the system to slow down or crash, and making it physically impossible for other users to store and run their executables.
-3. It can **overwrite important files** in the server (for example, the very node.js program responsible for compiling and executing user programs) and infect all clients with malicious payloads. 
+3. It can **overwrite important files** in the server (for example, the very node.js program responsible for compiling and executing user programs) and infect all clients with malicious payloads.
 4. It can utilise the program bugs or kernel bugs to **elevate it's status to root** to install stealthy rootkits or bitcoin mining software to use our servers for their benefit.
 
 Many other malicious things are possible. The system designer has to be very careful in setting up the system where untrusted and potentially unsafe executables are run, without causing significant lags for genuine users.
 
-This was the first time I had to design a system like this, so I had to look into lots of stuff. I learnt a fair bit about Linux security along the way. In this post, I highlight some results of my research. 
+### Solutions and preventive measures
+
+This was the first time I had to design a system like this, so I had to look into lots of stuff. I learnt a fair bit about Linux security along the way. In this post, I highlight some results of my research. First, lets see what 
+
+1. To prevent expensive infinite loops, we can limit the maximum CPU percentage allowed to each user process and kill it after a fixed time.
+2. To prevent memory overuse, simply limit the maximum memory allowed per process.
+3. Either completely block file writes, or have a sandboxing file layer which allows  for all changes made by the program ot 
 
 nsjail doesn't install because of protobuf problems perhaps some kind of protobuf versioning inconsistency. It doesn't help that the git page doesn't have any installation steps/dependency+version info. Might look deeper into this in the future,
 
