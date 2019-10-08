@@ -12,7 +12,11 @@ thumbnail: ''
 ---
 I wrote a toy compiler few months back. The compiler is interesting because it allows you to write code in Nepali and compile it. I wanted people to see it, so I put the code up on Github. But as it turns out, not a lot of people are willing or capable of going through the convoluted process of cloning your repository, compiling the program, installing a Nepali language keyboard and learning an obscure half-baked programming language just because some idiot put it on Github. (_note to self: link the repo here once it's ready for release_) 
 
-So, I decided to write a web app to easily demonstrate the program.<!--more--> The web app takes the code written in my language in the client side and compiles and executes the program on the server. But huge security issues emerge by allowing user-generated executable to run on your server. Just to name a few:
+So, I decided to write a web app to easily demonstrate the program.<!--more--> The web app takes the code written in my language in the client side and compiles and executes the program on the server. 
+
+### Issues with executing unsafe binaries on server
+
+But huge security issues emerge by allowing user-generated executable to run on your server. Just to name a few:
 
 1. The executable can run an **expensive infinite loop** (for example: listing all prime numbers above 10^5), which makes the system unbearably slow for other processes.
 2. It can generate and **store a huge amount of data** which either completely fills up the RAM, the storage system, or both, causing the system to slow down or crash, and making it physically impossible for other users to store and run their executables.
