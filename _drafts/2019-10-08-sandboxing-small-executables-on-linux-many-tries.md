@@ -1,7 +1,7 @@
 ---
 excerpt_separator: "<!--more-->"
 layout: post
-title: Sandboxing Unsafe Executables on Linux for an Online Compiler
+title: Sandboxing Unsafe Executables on Linux for an Online Compiler with Minijail
 tags:
 - linux
 - cloud
@@ -10,36 +10,42 @@ feature-img: https://nirav.com.np/assets/img/blurred-blurry-fence-967933.jpg
 thumbnail: ''
 
 ---
-I wrote a toy compiler few months back. The compiler is interesting because it allows you to write code in Nepali and compile it. I wanted people to see it, so I put the code up on Github. But as it turns out, not a lot of people are willing or capable of going through the convoluted process of cloning your repository, compiling the program, installing a Nepali language keyboard and learning an obscure half-baked programming language just because some idiot put it on Github. (_note to self: link the repo here once it's ready for release_)
+I wrote a toy compiler few months back. I wanted people to see it, so I put the code up on Github. But as it turns out, not everyone is willing or capable of going through the convoluted process of cloning the repository, compiling the program, installing a Nepali language keyboard and learning an obscure half-baked programming language just because some idiot put it on Github.
 
-So, I decided to write a web app to easily demonstrate the program.<!--more--> The web app takes the code written in my language in the client side and compiles and executes the program on the server.
+So, I decided to write a web app to make the program easily accessible.<!--more--> The web app lets user write code in their browser, then compiles and executes the program on the server, and allows the user to send input from the browser to the server as it executes.
 
 ### Issues with executing unsafe binaries on server
 
-But huge security issues emerge by allowing user-generated executable to run on your server. Just to name a few:
+But huge security issues emerge by allowing user-generated executables to run on your server. Just to name a few:
 
-1. The executable can run an **expensive infinite loop** (for example: listing all prime numbers above 10^5), which makes the system unbearably slow for other processes.
+1. The executable can start an **expensive infinite loop** (for example: listing all prime numbers above 10^5), which makes the system unbearably slow for other processes.
 2. It can generate and **store a huge amount of data** which either completely fills up the RAM, the storage system, or both, causing the system to slow down or crash, and making it physically impossible for other users to store and run their executables.
 3. It can **overwrite important files** in the server (for example, the very node.js program responsible for compiling and executing user programs) and infect all clients with malicious payloads.
 4. It can utilise the program bugs or kernel bugs to **elevate it's status to root** to install stealthy rootkits or bitcoin mining software to use our servers for their benefit.
 
-Many other malicious things are possible. The system designer has to be very careful in setting up the system where untrusted and potentially unsafe executables are run, without causing significant lags for genuine users.
+This is just the tip of the iceberg. So many other malicious attacks are possible depending on the system and infrastructure arrangement. The system designer has to be very careful in setting up the system where untrusted and potentially unsafe executables are run, without causing significant lags for genuine users.
 
 ### Solutions and preventive measures
 
-This was the first time I had to design a system like this, so I had to research lots of stuff. And I learnt a fair bit about Linux security along the way. In this post, I highlight some results of my research. First, lets see how the above issues can be dealt with, in a general way.
+This was the first time I had to design a system like this, so I had to research quite a bit. In this post, I highlight some results of my research. First, lets see how the above issues can be dealt with in a general way.
 
 1. To prevent expensive infinite loops, we can limit the maximum CPU percentage allowed to each user process and kill it after a fixed time.
 2. To prevent memory overuse, simply limit the maximum memory allowed per process.
 3. Either completely block file writes, or have a sandboxing file layer which redirects all file accesses of the process to a safe temporary directory. Or run the process on a virtual file system in a separate mount namespace.
 4. Use redundant security measures and tightly constrain the execution environment using whitelists to minimize the kernel attack surface.
-5. Execute the user process in a _sandbox_, which is a program which sets up the environment for another process to run in so that the process doesn't see or get to modify any resource from the actual system. In other words, the process inside the sandbox will run as normal, but it won't be interacting with the actual operating system or file system. That way, any changes it tries to make can be logged or discarded, leaving the actual system intact.
+5. Execute the user process in a _sandbox_, which essentially manages most of the above concerns and provides more isolation.
 
-These are, of course, just the general guidelines. In my case, because _i._ the users actually can't directly craft the machine code that runs in the server and _ii._ I have full control over and knowledge of the assembly code that is being generated, things are very much easier security-wise. For example, I can have two branches of my compiler, one for general release and another for web demonstration that doesn't allow unsafe commands to be compiled. And because the compiler is relatively small as of now, it is extremely simple to prove the safety of binaries coming out of the compiler.
+These are, of course, just the general guidelines. In my case, because _i._ the users actually can't directly craft the machine code that runs in the server and _ii._ I have full control over and knowledge of the assembly code that is being generated, things are a little easier security-wise. But this will eventually change as I add more features and as more contributors join. So taking some time to tighten the security is more future-proof.
 
-The problem with this approach is that, soon people will be contributing to the codebase and a lot of new features will be added. At that point, it might end up being very expensive to maintain two separate branches of the source. At any rate, if I had the resources to maintain two separate code-dense codebases, I might as well have chosen to implement a client-side JS interpreter for the language, and drop the cloud hosting cost of the demo to near zero.
+### Features the Linux Kernel provides
 
-So, to future-proof the website, I tried to set up a robust security system. 
+I'll start with the features already provided by Linux kernel.
+
+1. **Users and Groups:** It's obvious, but by simply ensuring that there's no case in which the unsafe binary will be run as root and that no program started with sudo executes the unsafe binary, we cut off a big chunk of attacks. But let's take it a step further. Make a new user account with limited privileges and run the unsafe binary as that user. Set up permissions accordingly so that the new user account cannot read what need not be read. Add the user only to groups which it absolutely requires.
+2. **Namespaces:** Namespace is a feature of Linux kernel that allows you to isolate a process from other processes in certain respects. For example, if you run the untrusted executable in a separate process namespace, the process is not able to see or interact with any other process running in the system. It literally becomes the `init` process in it's view. Namespaces allow containers like dockers to fake isolated systems without the overhead of the full Virtual Machine.
+3. **Control groups:** Control groups (also called cgroups) allow you to allocate resources and set limits on CPU time and memory, among other things. This, when used in conjunction with namespaces allows for effective containerization of apps.
+4. **Capabilities:** Capabilities in Linux allows 
+5. seccomp filters
 
 nsjail doesn't install because of protobuf problems perhaps some kind of protobuf versioning inconsistency. It doesn't help that the git page doesn't have any installation steps/dependency+version info. Might look deeper into this in the future,
 
