@@ -39,13 +39,15 @@ These are, of course, just the general guidelines. In my case, because _i._ the 
 
 ### Features the Linux Kernel provides
 
-I'll start with the features already provided by Linux kernel.
+I'll start with the features already provided by a relatively recent Linux kernel by default.
 
 1. **Users and Groups:** It's obvious, but by simply ensuring that there's no case in which the unsafe binary will be run as root and that no program started with sudo executes the unsafe binary, we cut off a big chunk of attacks. But let's take it a step further. Make a new user account with limited privileges and run the unsafe binary as that user. Set up permissions accordingly so that the new user account cannot read what need not be read. Add the user only to groups which it absolutely requires.
 2. **Namespaces:** Namespace is a feature of Linux kernel that allows you to isolate a process from other processes in certain respects. For example, if you run the untrusted executable in a separate process namespace, the process is not able to see or interact with any other process running in the system. It literally becomes the `init` process in it's view. Namespaces allow containers like dockers to fake isolated systems without the overhead of the full Virtual Machine.
 3. **Control groups:** Control groups (also called cgroups) allow you to allocate resources and set limits on CPU time and memory, among other things. This, when used in conjunction with namespaces allows for effective containerization of apps.
-4. **Capabilities:** Capabilities in Linux allows 
-5. seccomp filters
+4. **Capabilities:** Capabilities in Linux allows selective provisioning of root privileges. If you really have to allow the untrusted program to do things that only root is able to, then capabilities allows you to allocate only the required root-only operations to the running process
+5. **Seccomp-bpf:** Seccomp-bpf stands for Secure Computing mode-Berkeley Packet Filter (although no one calls it this). Seccomp by itself blocks any syscalls four (exit(), sigreturn(), read() and write() on already open file descriptors) so unsafe compute-bound processes can be run without many risks as almost 99% of the syscalls are blocked by the kernel. And of the four allowed, two can only be used to exit, while the other two for IO from already opened files.
+
+Because these features are provided natively by the Linux kernel, we could simply activate them using corresponding syscalls and parameters and end up with a relatively robust sandbox
 
 nsjail doesn't install because of protobuf problems perhaps some kind of protobuf versioning inconsistency. It doesn't help that the git page doesn't have any installation steps/dependency+version info. Might look deeper into this in the future,
 
@@ -54,6 +56,8 @@ mbox doesn't work in 2019. -n still allows networks. Guessing that it relies on 
 Docker Heavy and not built for my use case. Not for security. Can be broken out of. At any rate, I'm not gonna be instantiating full containers for executing a sub-megabyte program.
 
 minijail I found about 2 days after i began my search.
+
+systemd-nspawn looks interesting, but too heavy for my case
 
 custom:
 
