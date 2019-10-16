@@ -11,7 +11,7 @@ thumbnail:
 layout: post
 ---
 
-The Nepali language gets very little representation on the internet. Take, for example, the Nepali Wikipedia which has about 33 thousand articles. The Esperanto Wikipedia boasts 8 times that number (at around two hundred thousand articles), which is kind of sad, because Esperanto is an artificial language created by _one _person in the 19th century. It is spoken by a meager 2 million people worldwide. Compare this to the Nepali language, which has more than 25 million speakers.
+The Nepali language gets very little representation on the internet. Take, for example, the Nepali Wikipedia which has about 33 thousand articles. The Esperanto Wikipedia boasts 8 times that number (at around two hundred thousand articles), which is kind of sad, because Esperanto is an artificial language created by _one _person in the 19th century. It is spoken by a meager 2 million people worldwide. Compare this to the Nepali language, which has more than 25 million speakers.<!--more-->
 
 It's as they say, “whoever controls the media controls the mind”. And the media of the 21st century, the internet, is so desperately out of Nepali's hands that, not only do we read the news, articles, the weather, and novels in English, but we go on to caption our photos of warm, intimate moments in English. Our pop culture is stuffed full of references to Hindi media. My little brother, who is not even 10, will sniff my phone from a mile away and hide out in some corner to watch Motu Patlu on YouTube. He might not be as fluent in Hindi as he is in Nepali. But in his little world, Hindi is the language that superheroes speak. And Nepali? Only his annoying brother.
 
@@ -51,7 +51,7 @@ So far, I have talked exclusively about the representation of text. Typing was a
 
 But thankfully, over time these mappings stabilized to the what is now known as the Traditional or Remington's keyboard layout. Generally, if someone over 30 tells you that they can type in Nepali, what they probably mean is that they can type in the traditional keyboard layout. It is what you type if you use the Sagarmatha or the Preeti font.
 
-Unicode
+## Unicode
 
 Naturally, India was not alone in wanting an encoding for its scripts. The late ‘80s and the ‘90s saw the rise of encoding schemes such as PASCII, VSCII, JIS X, many ISO standards, and much more, each developed by a particular country or a group of countries to encode their language. All this was fine and dandy for the systems back then. But then came the Internet.
 
@@ -89,7 +89,7 @@ The Unicode 12.0 specification has an insightful image to clarify further.
 
 ![purtiunicode.png](/uploads/purtiunicode.png)
 
-**UTF**
+## UTF
 
 Unicode is mostly concerned with assigning *abstract* numbers to characters, and describing their properties. Unicode Transformation Format, or UTF is the *implementation* of the Unicode specification. UTFs are the algorithms which convert these abstract numbers into bits and bytes that are eventually stored in the memory, processed or transmitted.
 
@@ -105,7 +105,7 @@ But as it turns out, it is a fairly simple exercise to create a new keyboard lay
 
 Nepal Language Technology Kendra website also provides keyboard layouts for Nepali Keyboard layouts for Linux. On Android phones, you can install either Hamro Keyboard or Google Indic keyboard, both of which are excellent. On iPhones and iMac, simply activating the required input method in Settings should suffice.
 
-**Fonts**
+## Fonts
 
 ![compositionsdevanagari.png](/uploads/compositionsdevanagari.png)
 
