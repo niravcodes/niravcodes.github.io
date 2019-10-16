@@ -12,7 +12,13 @@ thumbnail: ''
 ---
 I wrote a toy compiler few months back. I wanted people to see it, so I put the code up on Github. But as it turns out, not everyone is willing or capable of going through the convoluted process of cloning the repository, compiling the program, installing a Nepali language keyboard and learning an obscure half-baked programming language just because some idiot put it on Github.
 
-So, I decided to write a web app to make the program easily accessible.<!--more--> The web app lets user write code in their browser, then compiles and executes the program on the server, and allows the user to send input from the browser to the server as it executes.
+So, I started to write a web app to make the program easily accessible.<!--more--> The web app lets user write code in their browser, then compiles and executes the program on the server, and allows the user to send input from the browser to the server as it executes.
+
+My first instinct was to use something like AWS Lambda to compile and run each process as a cloud function, but then I looked into the deep abyss of my wallet and found myself lost in the darkness.
+
+Another idea was to forego the cloud altogether. Compiling code into assembly can be done in any under-powered Virtual Private Server. I can write an implementation of a simple virtual machine in JavaScript, then I can add a new backend to my compiler to generate code for the virtual machine. Then I can embed the JS virtual machine in the webpage, and when the user hits compile, all server has to do is compile the language into machine code for the virtual machine and send that back to the client. Execution becomes client-side headache. Something like (a slightly saner version of) Brainfuck could be perfect for this kind of application. It's relatively simple to make a [Brainfuck Virtual machine](https://https://thorstenball.com/blog/2017/01/04/a-virtual-brainfuck-machine-in-go/).
+
+Anyway, I decided that AWS Lambda is too wasteful for my needs. Virtual Machine on Webpage idea is going to significantly increase code maintenance related tasks in the future. I tried to find some other way of executing user's programs on the server.
 
 ### Issues with executing unsafe binaries on server
 
@@ -47,19 +53,19 @@ I'll start with the features already provided by a relatively recent Linux kerne
 4. **Capabilities:** Capabilities in Linux allows selective provisioning of root privileges. If you really have to allow the untrusted program to do things that only root is able to, then capabilities allows you to allocate only the required root-only operations to the running process
 5. **Seccomp-bpf:** Seccomp-bpf stands for Secure Computing mode-Berkeley Packet Filter (although no one calls it this). Seccomp by itself blocks any syscalls four (exit(), sigreturn(), read() and write() on already open file descriptors) so unsafe compute-bound processes can be run without many risks as almost 99% of the syscalls are blocked by the kernel. BPF is an addon to seccomp which allows you to block any syscalls you want. _strace_ is a linux tool that allows you to trace syscalls made by a process. 
 
-Because these features are provided natively by the Linux kernel, we can apply them using corresponding syscalls and parameters and make with a relatively robust sandbox. 
+Because these features are provided natively by the Linux kernel, we can apply them using corresponding syscalls and parameters and make with a relatively robust sandbox. I toyed with the idea of making my own restricted micro-sandboxing program (and I really wanted to) but decided not to because I was already juggling more things than I'd like to. 
 
-There are programs which use these features and more to sandbox applications for us. I looked at ones below:
+There are programs which use these kernel features and more to sandbox applications for us. I had expected there to be many, specially in this age of cloud computing and lambda functions. 
 
-**nsjail:** I couldn't get it to compile because of some strange protobuf dependency error. It doesn't help that the GitHub readme doesn't have any build steps or the versions of dependencies required. Which is a shame because this was almost exactly what I was looking for: a lightweight application sandbox. I might look into it some more later. [This ](https://nsjail.com "https://nsjail.com")is the official site.
+**nsjail:** I couldn't get it to compile because of some strange protobuf dependency error. It doesn't help that the GitHub readme doesn't have any build steps or the versions of dependencies required. Which is a shame because this was almost exactly what I was looking for: a lightweight application sandbox. I might look into it some more later. [This](https://nsjail.com "https://nsjail.com") is the official site for nsjail.
 
-**mbox:** doesn't work in 2019. -n still allows networks. Guessing that it relies on kernel specific features. Development halted 4 years ago. Also, reading the author's paper and ycombinator comments, you get the feeling that he's much more proud of his filesystem layering work than his sandboxing work. Also, it seems more like some academic/proof-of-concept work someone coded to escape real life (much like I coded Huffman Compression). Doesn't fit my requirements.
+**mbox:** It doesn't seem to work in 2019. The example usages in GitHub fail to do any kind of blocking. The `-n` still doesn't block internet access. I'm guessing that it relies on some old kernel specific features. It was last updated 3 or 4 years ago on github. Also, reading the author's paper and ycombinator comments, I got the feeling that he's much more proud of his filesystem layering work than his sandboxing work. Also, Mbox seems more like some academic/proof-of-concept work. Doesn't fit my requirements. [This](https://pdos.csail.mit.edu/archive/mbox/ "Mbox website") is the official site for Mbox.
 
-Docker Heavy and not built for my use case. Not for security. Can be broken out of. At any rate, I'm not gonna be instantiating full containers for executing a sub-megabyte program.
+**Docker:** Heavy and not built for my use case. It is also not as security-focused, and apparently it can be broken out of. At any rate, I'm not gonna be instantiating full containers for executing a sub-megabyte programs. Although Docker running small distros like Puppy linux is an interesting idea. [This](https://docker.com "Docker") is the official site for Docker.
 
-minijail I found about 2 days after i began my search.
+**systemd-nspawn** is really interesting. It needs a full chown-able filesystem I didn't use it this time, but I'm definitely going to use this in some future project.
 
-systemd-nspawn looks interesting, but too heavy for my case
+**minijail:** This little software is apparently used by Google to sandbox chromium programs. This presentation is quite interesting
 
 custom:
 
