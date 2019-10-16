@@ -1,13 +1,13 @@
 ---
-layout: post
 title: Love blossoms in Winter
+date: 2018-12-22 03:19:25 Z
 tags:
 - writing
+layout: post
 feature-img: assets/img/9538432_winter-flowers-a.png
 thumbnail: ''
-date: 2018-12-22 03:19:25 +0000
-
 ---
+
 I'll continue to be lost in my incessant thoughts of you. In rainbow dreams. In lively conversations. In the loneliest of winter afternoons, when the sun is bright and the breeze cool, and the only flower that blooms is you, on your first floor balcony eating tangerines.
 
 In pastel coloured houses where tiny statues of gods lay discarded, forgotten and hidden behind tinted black glasses.

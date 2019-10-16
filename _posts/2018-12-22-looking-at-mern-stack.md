@@ -1,14 +1,14 @@
 ---
-layout: post
 title: Looking at MEAN stack
+date: 2018-12-22 17:14:25 Z
 tags:
 - coding
 - random
+layout: post
 feature-img: assets/img/thumbnails/desk-messy.jpeg
 thumbnail: ''
-date: 2018-12-22 17:14:25 +0000
-
 ---
+
 Long ago, when I was a little kid, I found about the WAMP stack. It absolutely thrilled me to think that I could own a piece of web and make it do whatever I wanted. I was also a fan of 000webhost back then (then it got hacked). So in a frenzy of rapid coding and loads of cussing (I was a beginner in both) I built several web apps. Things like half baked social networking sites, blogging websites and suchlike. One such invention I remember with particular fondness is a small chat application. I built it in a day to talk to a girl I really liked. The idea was that we both loved to chat but hated Facebook.
 
 For a SE class project, I was required to look into a back-end that can serve both a thin web client and a mobile client. As it turns out, these days the web is full of people talking about and using the MEAN and MERN stacks. They stand for {MongoDB, ExpressJS, Angular, NodeJS} and {MongoDB, ExpressJS, React, NodeJS} respectively.

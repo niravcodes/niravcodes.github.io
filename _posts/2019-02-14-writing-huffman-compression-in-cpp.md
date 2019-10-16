@@ -1,17 +1,17 @@
 ---
-excerpt_separator: "<!--more-->"
-layout: post
 title: Implementing the Huffman Compression Algorithm in C++
+date: 2019-02-14 13:05:22 Z
 tags:
 - huffman_code
 - c++
 - coding
 - project
+excerpt_separator: "<!--more-->"
+layout: post
 feature-img: https://nirav.com.np/assets/img/Webp.net-resizeimage (1).jpg
 thumbnail: ''
-date: '2019-02-14T13:05:22+00:00'
-
 ---
+
 _The final code is in GitHub_ [_here_](https://github.com/niravcodes/huffman_compression "Link to NiravCodes's Huffman Compression on Github")_._
 
 Da Vinci is quoted saying, "Art is never finished, only abandoned". I don't see why it should be any different for code. With that said, I'd like to declare my latest project: an [implementation of the huffman's algorithm](https://github.com/niravcodes/huffman_compression "Huffman Compression Implementation by Nirav"), abandoned. It works well as it is, but it can be made a lot better. I just don't want to be the one doing that.

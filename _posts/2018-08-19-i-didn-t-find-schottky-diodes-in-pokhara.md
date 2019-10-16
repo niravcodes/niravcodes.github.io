@@ -1,12 +1,13 @@
 ---
-layout: post
-published: true
 title: So I didn't find schottky diodes in Pokhara
+date: 2018-08-19 00:00:00 Z
 tags:
-  - thoughts
-  - electronics
-  - tinkering
+- thoughts
+- electronics
+- tinkering
+layout: post
 ---
+
 Long story short, I made charge pump. This is exciting to me because:
 
 1. this is my first time making a DC-DC voltage converter.

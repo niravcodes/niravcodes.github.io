@@ -1,11 +1,10 @@
 ---
-layout: post
 title: Self-Balancing Robot (MIMO)
-tags: []
+layout: post
 img: https://nirav.com.np/assets/img/mimosmall.png
 feature-img: https://nirav.com.np/assets/img/mimo.png
-
 ---
+
 I really wish I had more photos. But we were so busy that the thought didn't even cross our minds. And because this we made this using college resources, we had to return the project back to college. So all I have is this one video which my friend had taken using his laptop's webcam.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-HTUWfT0hFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

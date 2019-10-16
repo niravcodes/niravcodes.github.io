@@ -1,5 +1,6 @@
 ---
 ---
+
 [
   {% if site.theme_settings.special_page.search.enabled %}
    {% for post in site.posts %}

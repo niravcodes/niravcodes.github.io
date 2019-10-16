@@ -1,13 +1,14 @@
 ---
-layout: post
 title: Generate a table of content
+date: 2013-12-12 00:00:00 Z
 tags:
 - toc.js
 - kramdown
 - Markdown
 - Customization
-
+layout: post
 ---
+
 Test article, get the source on [github](https://github.com/Sylhare/Type-on-Strap/blob/gh-pages/_posts/2013-12-12-toc.js-for-table-of-content.md).
 
 # Using Kramdown GFM

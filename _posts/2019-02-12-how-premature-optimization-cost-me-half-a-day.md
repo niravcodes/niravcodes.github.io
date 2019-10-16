@@ -1,15 +1,15 @@
 ---
-excerpt_separator: "<!--more-->"
-layout: post
 title: How premature optimization cost me half a day
+date: 2019-02-12 17:11:38 Z
 tags:
 - thoughts
 - coding
+excerpt_separator: "<!--more-->"
+layout: post
 feature-img: https://nirav.com.np/assets/img/business-code-coding-943096.jpg
 thumbnail: ''
-date: 2019-02-12 17:11:38 +0000
-
 ---
+
 I have been programming in 8-bit AVRs exclusively for some time to make things like huge dot-matrix displays, self-balancing robots and DACs. And as it turns out, I have been unwittingly picking up the conventions specific to embedded programming and 8-bit devices.
 <!--more-->
 

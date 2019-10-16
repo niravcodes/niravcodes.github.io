@@ -1,16 +1,16 @@
 ---
-layout: post
 title: Humbird
+date: 2019-01-20 07:46:50 Z
 tags:
 - javascript
 - project
 - cloud
 - aws
+layout: post
 img: https://nirav.com.np/assets/img/sshot-1.png
 feature-img: https://nirav.com.np/assets/img/pexels-photo-37728.jpeg
-date: 2019-01-20 07:46:50 +0000
-
 ---
+
 Humbird is a little chat application I made to gain more understanding of latest web technologies and cloud services. It took me a few days of sporadic effort to make and has given me a lot of insight into how things are made in the web these days. Humbird is not meant to be used seriously because I chose not to deal with the errors and exceptions that might occur.
 
 When making Humbird, I had the following objectives in mind:

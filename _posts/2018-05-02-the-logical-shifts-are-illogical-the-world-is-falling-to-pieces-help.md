@@ -1,10 +1,11 @@
 ---
-layout: post
-published: true
 title: The logical shifts are illogical the world is falling to pieces HELP
+date: 2018-05-02 00:00:00 Z
 tags:
-  - code
+- code
+layout: post
 ---
+
 *+1 for the clickbaity title. Ding!*
 
 I'm obviously a fool for not realizing straight away that anything labeled logical is actually not logical at all in this sad world that we live in.

@@ -1,15 +1,15 @@
 ---
-excerpt_separator: "<!--more-->"
-layout: post
 title: A Drizzle in Pokhara
+date: 2019-02-04 12:33:14 Z
 tags:
 - writing
 - love
+excerpt_separator: "<!--more-->"
+layout: post
 feature-img: https://nirav.com.np/assets/img/black-and-white-clear-cool-459451.jpg
 thumbnail: ''
-date: 2019-02-04 12:33:14 +0000
-
 ---
+
 If you think being madly in love with your best friend’s girlfriend is unfortunate, try sitting next to him during a Microprocessor lecture having to listen to him describe the sex they had the day before. What’s more, Microprocessor is one of the few subjects I actually enjoy. My friend is normally a level-headed person who doesn’t speak much. But it seems that the excitement of the first time is grand enough for him to break character. Needless to say, I’m miserable.
 
 <!--more-->

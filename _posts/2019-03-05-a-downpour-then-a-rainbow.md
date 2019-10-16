@@ -1,14 +1,14 @@
 ---
-excerpt_separator: "<!--more-->"
-layout: post
 title: A Downpour, then a Rainbow
+date: 2019-03-05 13:18:16 Z
 tags:
 - writing
+excerpt_separator: "<!--more-->"
+layout: post
 feature-img: https://nirav.com.np/assets/img/Webp.net-resizeimage.jpg
 thumbnail: ''
-date: '2019-03-05T13:18:16+00:00'
-
 ---
+
 It was a strange afternoon, no doubt. The sun grinned from the west, making shadows in strange corners and bouncing off whitewashed walls, while the eastern sky was dark and premonitory with a sinister turbulence. I was walking home contemplating this contrast and hoping for a rainbow.
 
 First an apprehensive drop hit my earlobe. I continued to walk. The next landed on my cheek. The women coming out of the shop held out their palm and lightheartedly exclaimed, "Hurry! It's starting to rain!". I continued to walk. I felt a drop on my eyebrow, then on my nose, then two drops at once and before I could register that I had lost count, it had started to rain.

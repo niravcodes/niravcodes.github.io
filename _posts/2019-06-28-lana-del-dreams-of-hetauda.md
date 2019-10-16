@@ -1,13 +1,14 @@
 ---
-excerpt_separator: "<!--more-->"
-layout: post
 title: Lana Del dreams of Hetauda
+date: 2019-06-28 00:00:00 Z
 tags:
 - writing
+excerpt_separator: "<!--more-->"
+layout: post
 feature-img: https://nirav.com.np/assets/img/abandoned-room-7007.jpg
 thumbnail: ''
-
 ---
+
 The unfortunate truth is that she doesn't care. Which is to say if at any instant the earth blew up, the second between me registering the bang and colliding on a boulder, I'd be thinking of her. But she wouldn't.
 
 Which is to say that I have kept her in that part of my heart where flowers bloom and butterflies flutter all colorful and cheery. But she has kept me in that forgotten corner where she keeps her small pencils and rusty sharpeners, inside a neglected pencil cup.

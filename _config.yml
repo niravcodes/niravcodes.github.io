@@ -1,117 +1,106 @@
-# SITE CONFIGURATION
-baseurl: ""
-url: "https://nirav.com.np"
-title: Nirav's Blog 
-description: "" # used by search engines
-
-
-# THEME-SPECIFIC CONFIGURATION
+---
+title: Nirav's Blog
+timezone: UTC
+collections:
+  portfolio:
+    title: Portfolio
+    output: true
+    permalink: "/project/:name"
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+baseurl: ''
+url: https://nirav.com.np
+description: ''
 theme_settings:
-  # Meta
-  title: Nirav's Blog # blog's title
-  # avatar: assets/img/triangle.svg
+  title: Nirav's Blog
   favicon: assets/favicon.ico
-  gravatar: # Email MD5 hash
-
-  header_text:
+  gravatar: 
+  header_text: 
   header_feature_image: 
+  footer_text: '&copy; Nirav Nikhil. <a href="/about/">About me.</a>
 
-  footer_text: >
-   &copy; Nirav Nikhil. <a href="/about/">About me.</a>
-
-
-
-  # Icons
-  rss: true  # Make sure you created a feed.xml with feed.xml layout
+'
+  rss: true
   email_address: mail@nirav.com.np
-  behance:
-  bitbucket:
-  dribbble:
-  facebook:
-  flickr:
-  gitlab:
-  github: "niravcodes"
-  google_plus:
-  instagram:
-  keybase:
-  linkedin:  # Full URL
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange:  https://stackexchange.com/users/3242498/nirav
-  steam:
-  tumblr:
-  twitter: # "twitter username"
-  vimeo:
-  wordpress:
-  youtube:
-  
-  # Sharing options
+  behance: 
+  bitbucket: 
+  dribbble: 
+  facebook: 
+  flickr: 
+  gitlab: 
+  github: niravcodes
+  google_plus: 
+  instagram: 
+  keybase: 
+  linkedin: 
+  pinterest: 
+  reddit: 
+  soundcloud: 
+  stack_exchange: https://stackexchange.com/users/3242498/nirav
+  steam: 
+  tumblr: 
+  twitter: 
+  vimeo: 
+  wordpress: 
+  youtube: 
   share_buttons:
     facebook: true
     twitter: true
-    google_plus: false 
-    tumblr:
-    pinterest:
-    pocket:
+    google_plus: false
+    tumblr: 
+    pinterest: 
+    pocket: 
     reddit: true
-    linkedin:
-    wordpress:
+    linkedin: 
+    wordpress: 
     email: true
-
-  # Scripts / Features 
-  google_analytics:  UA-131574406-1  # Tracking ID, e.g. "UA-000000-01"
+  google_analytics: UA-131574406-1
   disqus_shortname: nirav-2
-  katex: false # Enable if using math markup
-  
+  katex: false
   special_page:
-    search: 
-      icon: "search"
+    search:
+      icon: search
       enabled: true
     tags:
-      icon: "tags"
+      icon: tags
       enabled: true
-  
-  # Localization strings
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
-  str_share_on: "Share on"
-  str_add_to: "Add to"
-  str_email: "Email"
-  str_tweet: "Tweet"
-  str_pin_it: "Pin it"
-  str_next_post: "Next post"
-  str_previous_post: "Previous post"
-  str_next_page: "Next"
-  str_previous_page: "Prev"
-  str_javascript_required_disqus: "Please enable JavaScript to view comments."
-
-  # Colours, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Poiret+One|EB+Garamond:400,400i,700,700i"
-
-  # Post navigation
-  post_navigation: false 
-  
-  
-# PAGINATION
-paginate: 10 
-paginate_path: "blog/page:num"
-
-
-# PORTFOLIO
-collections:
-  portfolio:
-    output: true
-    permalink: /project/:name
-
-
-# BUILD SETTINGS
+  str_follow_on: Follow on
+  str_rss_follow: Follow RSS feed
+  str_share_on: Share on
+  str_add_to: Add to
+  str_email: Email
+  str_tweet: Tweet
+  str_pin_it: Pin it
+  str_next_post: Next post
+  str_previous_post: Previous post
+  str_next_page: Next
+  str_previous_page: Prev
+  str_javascript_required_disqus: Please enable JavaScript to view comments.
+  google_fonts: Poiret+One|EB+Garamond:400,400i,700,700i
+  post_navigation: false
+paginate: 10
+paginate_path: blog/page:num
 markdown: kramdown
 highlighter: rouge
 sass:
   sass_dir: _sass
   style: :compressed
-plugins: [jekyll-paginate, jekyll-seo-tag]
-#theme: type-on-strap # Uncomment if using the theme as a jekyll theme gem
-exclude: ["Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png", "package.json", "node_modules", "gulpfile.js", ".idea/*"]
+plugins:
+- jekyll-paginate
+- jekyll-seo-tag
+exclude:
+- Gemfile
+- Gemfile.lock
+- type-on-strap.gemspec
+- "*.gem"
+- LICENSE
+- README.md
+- screenshot.png
+- package.json
+- node_modules
+- gulpfile.js
+- ".idea/*"

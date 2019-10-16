@@ -1,17 +1,17 @@
 ---
-excerpt_separator: "<!--more-->"
-layout: post
 title: Meet Jobcat - The Feline Goddess of Freelancing
+date: 2019-02-09 16:00:57 Z
 tags:
 - coding
 - javascript
 - project
 - jobcat
+excerpt_separator: "<!--more-->"
+layout: post
 feature-img: ''
 thumbnail: ''
-date: 2019-02-09 16:00:57 +0000
-
 ---
+
 Pride. It makes people do stupid things. It drove Colonel Aureliano Buendía into several years of war. It caused both Mr. Darcy and Miss Elizabeth to suffer throughout the book. And now, it has made me want to bang my head on the wall more times than I'd ever have thought was possible. In fact, if you plot the number of times I have wanted to bang my head on the wall as a function of time, you will find that it traces a roughly exponential curve, culminating on Feb 9, five days before the sad valentine's.
 
 <!--more-->

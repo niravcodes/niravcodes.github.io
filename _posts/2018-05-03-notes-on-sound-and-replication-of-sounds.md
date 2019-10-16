@@ -1,11 +1,12 @@
 ---
-layout: post
-published: false
 title: Notes on sound and replication of sounds
-tags: ''
+date: 2018-05-03 00:00:00 Z
+published: false
+layout: post
 feature-img: ''
 thumbnail: ''
 ---
+
 I have been reading about sounds for the past few days. I have written this post as a note that I can refer to in the future. As such, details might have been left out for conciseness. I will, however, link to sites that helped me learn about sounds for reference.
 
 A little background: The reason I wanted to learn about sounds was because I wanted to create an electronic circuit that can play back a recording; Basically an attiny controlled speaker that says 'Hi'. 

@@ -1,13 +1,14 @@
 ---
-excerpt_separator: "<!--more-->"
-layout: post
 title: I wanna handcraft devices
+date: 2019-06-23 00:00:00 Z
 tags:
 - ramblings
+excerpt_separator: "<!--more-->"
+layout: post
 feature-img: https://nirav.com.np/assets/img/clutter-drill-garage-115558.jpg
 thumbnail: ''
-
 ---
+
 I happened upon a video talking about the iPod shuffles today. I fell in love with the design of the devices, so I went to the [ifixit](https://www.ifixit.com/Teardown/iPod+shuffle+3rd+Generation+Teardown/673) website and looked at the teardowns. From the inside, they looked even more beautiful. I already like designing small gadgets even though I may never actually bulid one. Starting with the rough sketches, then thinking about the electronics, the user experience and all the other constraints is a great mental exercise (not to mention the best way to sit through long boring lectures).
 
 <!--more-->

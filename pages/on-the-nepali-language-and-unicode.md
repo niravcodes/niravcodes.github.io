@@ -1,12 +1,12 @@
 ---
-layout: post
 title: 'DRAFT : On the Nepali Language and Unicode'
+permalink: "/draft2/"
+layout: post
 tags: []
 feature-img: ''
-permalink: "/draft2/"
 hide: true
-
 ---
+
 # Part one
 
 The Nepali language gets very little representation on the internet. Take, for example, the Nepali Wikipedia which has about 33 thousand articles. The Esperanto Wikipedia boasts 8 times that number (at around two hundred thousand articles). Which is kind of sad, because Esperanto is an artificial language created by **one** person in the 19th century. It is spoken by a meager 2 million people worldwide. Compare this to the Nepali language, which has more than 25 million speakers.

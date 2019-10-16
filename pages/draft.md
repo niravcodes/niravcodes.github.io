@@ -1,12 +1,12 @@
 ---
-layout: post
 title: Draft
+permalink: "/draft/"
+layout: post
 tags: []
 feature-img: ''
-permalink: "/draft/"
 hide: true
-
 ---
+
 The year I turned 19, I moved to Kathmandu for college. I lived in a small room in _Kalanki_ that my brother had been living in for the last four years. It was a quiet place to live in, and the relationship with landlords was ...aslkfdj
 
 <--start-->

@@ -1,15 +1,15 @@
 ---
-excerpt_separator: "<!--more-->"
-layout: post
 title: Ambling Down The Javascript Rabbit Hole
+date: 2019-01-20 06:42:55 Z
 tags:
 - javascript
 - coding
+excerpt_separator: "<!--more-->"
+layout: post
 feature-img: https://nirav.com.np/assets/img/vue.png
 thumbnail: ''
-date: '2019-01-20T06:42:55+00:00'
-
 ---
+
 I'm finally getting somewhere. After a week of learning JS fundamentals, I decided to make a test app using modern web frameworks and technologies. More specifically, I picked the MEVN stack (MongoDB, ExpressJS, VueJS and NodeJS). Notice that this stack is entirely based on javascript which is one of its touted benefits.
 
 <!--more-->

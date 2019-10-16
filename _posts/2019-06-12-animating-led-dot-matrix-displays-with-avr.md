@@ -1,17 +1,18 @@
 ---
-excerpt_separator: "<!--more-->"
-layout: post
 title: Animating WALL-E on a LED dot-matrix display with AVR
+date: 2019-06-12 00:00:00 Z
 tags:
 - animation
 - avr
 - c
 - coding
 - javascript
+excerpt_separator: "<!--more-->"
+layout: post
 feature-img: https://nirav.com.np/assets/img/tow.jpg
 thumbnail: ''
-
 ---
+
 I was asked to animate a dot-matrix display for the robotics club recently. They wanted something that said "Robotics Club" to hang over their door. We had some old `P10(1r)` DMDs which I had worked on in the past to make a little scoreboard for a robot football match. And, even though I am not very good at it, I really love animating things. So I decided to give it a shot. I ended up writing an animation software for the DMD in JavaScript which is unfortunately only as functional as a flipbook. But I had fun animating little person carrying a balloon, ugly gear trains and a little pixel Wall-E blinking.
 
 <!--more-->

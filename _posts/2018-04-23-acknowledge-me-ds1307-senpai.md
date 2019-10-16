@@ -1,12 +1,13 @@
 ---
-layout: post
 title: Acknowledge me, DS1307 senpai!
+date: 2018-04-23 00:00:00 Z
 tags:
 - code
 - electronics
 - avr
-
+layout: post
 ---
+
 I might be one of the few people who find 2 ICs talking to each other absolutely cute, but so be it.
 
 Yes, I hooked up my cute little 8 legged ATtiny to a similarly cute DS1307 RTC chip using I2C. Self implemented I2C. Sure, it is pretty easy, but see, *it had leds*. I used a very small frequency(0.5Hz) for the clock and put leds on the data and clock lines. So it was practically like watching 2 chips talk to each other. And when the DS1307 chip pulled the line low for the first time, it was positively like looking at 3x10^8 kittens at once yes it was that wild.

@@ -1,14 +1,14 @@
 ---
-excerpt_separator: "<!--more-->"
-layout: post
 title: Installing Linux in VirtualBox in Windows 10
+date: 2019-01-27 16:08:17 Z
 tags:
 - tutorial
+excerpt_separator: "<!--more-->"
+layout: post
 feature-img: https://nirav.com.np/assets/img/ubuntu-1710-default-wallpaper-artful.jpg
 thumbnail: ''
-date: 2019-01-27 16:08:17 +0000
-
 ---
+
 _Written for the participants of the "Transitioning from Windows to Linux" program organised by iCES._
 
 <!--more-->

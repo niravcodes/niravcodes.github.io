@@ -1,17 +1,17 @@
 ---
-layout: post
 title: Binge Watching Movies When Sick
+date: 2019-01-05 16:08:09 Z
 tags:
 - random
 - thoughts
 - lists
 - movies
+layout: post
 feature-img: assets/img/harrysally.jpg
 thumbnail: https://nirav.com.np/assets/img/zooey.jpg
-date: 2019-01-05 16:08:09 +0000
 excerpt_separator: "<!--more-->"
-
 ---
+
 Don't you ever get nostalgic about being sick as a child and not going to school and being mostly home alone  watching movies on TV? I do too. Few days ago I came down with fever and took this chance to go back home and watch loads of movies. I chose most of them from the late 90's and early 00's to evoke that general sense of nostalgia.
 
 <!--more-->
