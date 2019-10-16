@@ -43,9 +43,11 @@ In Nepal, however, the government didn't initiate any efforts. What I think happ
 
 The table below shows the character mapping of two Nepali fonts from the late ‘90s. You’ll notice how same field of the tables doesn’t encode the same character. Both learning to type in these fonts and changing the fonts must have been an inconvenience.
 
-
+![unicodenepalione.png](/uploads/unicodenepalione.png)
 
 So far, I have talked exclusively about the representation of text. Typing was a different beast entirely. Suppose that you were using the *Annapurna* font. Since keyboards come in the standard QWERTY layout, if you pressed the A key (which is internally ASCII 65), an अ would appear. But on changing the font to *Sabdatara* and it would change to a द्ब. The image below demonstrates how, typing कलम in *Sabdatara* font, and then changing it to Annapurna results in garbage.
+
+![kalamin3fonts.png](/uploads/kalamin3fonts.png)
 
 But thankfully, over time these mappings stabilized to the what is now known as the Traditional or Remington's keyboard layout. Generally, if someone over 30 tells you that they can type in Nepali, what they probably mean is that they can type in the traditional keyboard layout. It is what you type if you use the Sagarmatha or the Preeti font.
 
@@ -57,13 +59,19 @@ The Internet pretty much broke everything. Computers all over the world were exp
 
 Unicode was designed from the ground up to support all scripts of the world. It currently has 1,37,994 characters from 150 writing scripts. Unicode puts each character its own unique identifying number. For example, the number 2325 (U\+0915) uniquely identifies the Devanagari letter क, the number 70658 (U\+11402) identifies the Newari letter 𑐂, the number 65 (0x41) represents the English capital letter A and the number 24859 (0x611b) the unified Chinese, Japanese and Korean ideograph 愛. These numbers mean the same thing no matter where in the world you are or what computer you are using. These numbers are also immutable, meaning that, Unicode won’t ever change what a number means, hence maintaining backward compatibility.
 
+![codepoint_table.png](/uploads/codepoint_table.png)
+
 Characters of the same script live in the same block. A block is essentially a range of numbers. For example, Devanagari characters live in the U\+0900 to U\+097F block. Newa is in the U\+1900 to U\+194F block. The Limbu writing system, Sirijanga Script, lives in U\+1900 to U\+194F block.
 
 The advantage of separating language into blocks, is that each block can get its own kind of treatment from the software. We know that different scripts behave differently. In Devanagari, some characters go above the previous character, some under. Some change the character itself. In Tibetan, diacritics stack up vertically. A single Urdu character, when typed, can change how the entire word looks. Not to mention that scripts have different directions of reading. Chinese is written from top to bottom. Urdu is written from right to left. All these quirks can be handled by software based on what block the characters come from.
 
 The Devanagari block is shown below.
 
+![wikipediaunicodetable.png](/uploads/wikipediaunicodetable.png)
+
 Now, if you look at the table above, you will notice a lot of characters missing. Where is क्ष? Or द्य? Or all the half forms like क्‍ , ग्‍ , and the rest? Well, because Unicode was based on ISCII, and since Hindi considers क्ष, त्र and ज्ञ to be compound characters, they aren’t allocated separate code points. That doesn’t mean you cannot type it, though. You just have to input the constituent characters and the text-rendering system will take care of the rest. क्‌ष makes क्ष, त्‌र makes त्र and ज्‌ञ makes ज्ञ automatically.
+
+![consonantforms.png](/uploads/consonantforms.png)
 
 Figure 1 Unicode Specification on how a software should handle compound characters in Indic scripts.
 
@@ -71,17 +79,23 @@ So then, what if you want to type out क्‌ष explicitly? Unicode provides 
 
 Now, if you look at the table for *Sabdatara* and A_nnapurna_ font above, you’ll notice that the half forms are explicitly encoded. That is probably an artifact from the printing press era. When typesetting for the printing press, or when using a Linotype, a क followed by a ्‌ wouldn’t magically change into क्‍. You would have to select the correct type blocks manually. That kind of thinking could have carried over into the font design process.
 
+![oldpresslettering.jpg](/uploads/oldpresslettering.jpg)
+
 But computers are smarter than that. They will easily substitute the glyphs for you. The only thing to keep in mind is to use your ZWJs and the ZWNJs when you want the other forms.
 
 Unicode intends to depict the underlying characters rather than the renderings. Think of it this way: प्राप्त is the rendering and प \+ ्‌ \+ र \+ ा‌ \+ प \+ ्‌ \+ त is its underlying character composition. Unicode delegates the rendering to the display system. This model of text encoding is called the Virama-based model (*virama* meaning *halanta*), and is not unique to Devanagari.
 
 The Unicode 12.0 specification has an insightful image to clarify further.
 
+![purtiunicode.png](/uploads/purtiunicode.png)
+
 **UTF**
 
 Unicode is mostly concerned with assigning *abstract* numbers to characters, and describing their properties. Unicode Transformation Format, or UTF is the *implementation* of the Unicode specification. UTFs are the algorithms which convert these abstract numbers into bits and bytes that are eventually stored in the memory, processed or transmitted.
 
 Only three Unicode Transformation Formats are in widespread use: UTF-8, UTF-16 and UTF-32. The numbers in their name signify the number of bits they use. So UTF-8 uses 8 bits (one byte), UTF-16 uses 2 bytes and UTF-32 uses 4 bytes. The figure below will try to demonstrate how UTF8 works. It’s okay if it ends up confusing you instead. Unless you are writing multilingual computer programs, it is not generally necessary to know how these encoding schemes work. Just remember that most all of internet uses utf-8 because it is the most efficient encoding.
+
+![utf8rocketinggraph.png](/uploads/utf8rocketinggraph.png)
 
 **Nepali Input**
 
@@ -92,5 +106,7 @@ But as it turns out, it is a fairly simple exercise to create a new keyboard lay
 Nepal Language Technology Kendra website also provides keyboard layouts for Nepali Keyboard layouts for Linux. On Android phones, you can install either Hamro Keyboard or Google Indic keyboard, both of which are excellent. On iPhones and iMac, simply activating the required input method in Settings should suffice.
 
 **Fonts**
+
+![compositionsdevanagari.png](/uploads/compositionsdevanagari.png)
 
 Google Fonts has a usable selection of fonts for Devanagari. To filter the fonts by the language, find the *Language* dropdown and select Devanagari (even though it isn’t a language).
