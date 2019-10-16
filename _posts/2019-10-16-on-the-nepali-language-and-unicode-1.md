@@ -79,8 +79,6 @@ So then, what if you want to type out क्‌ष explicitly? Unicode provides 
 
 Now, if you look at the table for *Sabdatara* and A_nnapurna_ font above, you’ll notice that the half forms are explicitly encoded. That is probably an artifact from the printing press era. When typesetting for the printing press, or when using a Linotype, a क followed by a ्‌ wouldn’t magically change into क्‍. You would have to select the correct type blocks manually. That kind of thinking could have carried over into the font design process.
 
-![oldpresslettering.jpg](/uploads/oldpresslettering.jpg)
-
 But computers are smarter than that. They will easily substitute the glyphs for you. The only thing to keep in mind is to use your ZWJs and the ZWNJs when you want the other forms.
 
 Unicode intends to depict the underlying characters rather than the renderings. Think of it this way: प्राप्त is the rendering and प \+ ्‌ \+ र \+ ा‌ \+ प \+ ्‌ \+ त is its underlying character composition. Unicode delegates the rendering to the display system. This model of text encoding is called the Virama-based model (*virama* meaning *halanta*), and is not unique to Devanagari.
