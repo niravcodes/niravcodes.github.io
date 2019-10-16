@@ -69,4 +69,18 @@ There are programs which use these kernel features and more to sandbox applicati
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oGmj6CUEup0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-PS [Mosh](https://mosh.org/ "Mosh website") is really cool substitute to SSH, specially when you're using vim to code directly on the server. Plus, the fact that I don't have to restart SSH connection every time I wake my laptop is such a convenience. 
+[https://en.wikipedia.org/wiki/OS-level_virtualisation#Implementations](https://en.wikipedia.org/wiki/OS-level_virtualisation#Implementations "https://en.wikipedia.org/wiki/OS-level_virtualisation#Implementations")
+
+PS [Mosh](https://mosh.org/ "Mosh website") is really cool substitute to SSH, specially when you're using vim to code directly on the server. Plus, the fact that I don't have to restart SSH connection every time I wake my laptop is such a convenience.
+
+**Resources**
+
+1. [https://en.wikipedia.org/wiki/OS-level_virtualisation#Implementations](https://en.wikipedia.org/wiki/OS-level_virtualisation#Implementations "https://en.wikipedia.org/wiki/OS-level_virtualisation#Implementations")  
+   This page has a list of many sandboxing tools that don't use full VMs. 
+2. [https://chromium.googlesource.com/chromiumos/docs/+/master/sandboxing.md](https://chromium.googlesource.com/chromiumos/docs/+/master/sandboxing.md "https://chromium.googlesource.com/chromiumos/docs/+/master/sandboxing.md")  
+   Explains how minijail can be used for security. If you're using Minijail, also check out the embedded video.
+3. [https://people.csail.mit.edu/nickolai/papers/kim-mbox.pdf](https://people.csail.mit.edu/nickolai/papers/kim-mbox.pdf "https://people.csail.mit.edu/nickolai/papers/kim-mbox.pdf")  
+   The author's paper explaining Mbox.
+4. [https://blogs.rdoproject.org/2015/08/hands-on-linux-sandbox-with-namespaces-and-cgroups/](https://blogs.rdoproject.org/2015/08/hands-on-linux-sandbox-with-namespaces-and-cgroups/ "https://blogs.rdoproject.org/2015/08/hands-on-linux-sandbox-with-namespaces-and-cgroups/")  
+   [https://www.toptal.com/linux/separation-anxiety-isolating-your-system-with-linux-namespaces](https://www.toptal.com/linux/separation-anxiety-isolating-your-system-with-linux-namespaces "https://www.toptal.com/linux/separation-anxiety-isolating-your-system-with-linux-namespaces")  
+   Use these two links if you're going baremetal. Also try finding pages in chromium.googlesource.com about sandboxing. They have done a lot of work in that area. A representative page is below: [https://chromium.googlesource.com/chromium/src/+/master/docs/design/sandbox.md](https://chromium.googlesource.com/chromium/src/+/master/docs/design/sandbox.md "https://chromium.googlesource.com/chromium/src/+/master/docs/design/sandbox.md")
