@@ -51,11 +51,11 @@ I'll start with the features already provided by a relatively recent Linux kerne
 2. **Namespaces:** Namespace is a feature of Linux kernel that allows you to isolate a process from other processes in certain respects. For example, if you run the untrusted executable in a separate process namespace, the process is not able to see or interact with any other process running in the system. It literally becomes the `init` process in it's view. Namespaces allow containers like dockers to fake isolated systems without the overhead of the full Virtual Machine.
 3. **Control groups:** Control groups (also called cgroups) allow you to allocate resources and set limits on CPU time and memory, among other things. This, when used in conjunction with namespaces allows for effective containerization of apps.
 4. **Capabilities:** Capabilities in Linux allows selective provisioning of root privileges. If you really have to allow the untrusted program to do things that only root is able to, then capabilities allows you to allocate only the required root-only operations to the running process
-5. **Seccomp-bpf:** Seccomp-bpf stands for Secure Computing mode-Berkeley Packet Filter (although no one calls it this). Seccomp by itself blocks any syscalls four (exit(), sigreturn(), read() and write() on already open file descriptors) so unsafe compute-bound processes can be run without many risks as almost 99% of the syscalls are blocked by the kernel. BPF is an addon to seccomp which allows you to block any syscalls you want. _strace_ is a linux tool that allows you to trace syscalls made by a process. 
+5. **Seccomp-bpf:** Seccomp-bpf stands for Secure Computing mode-Berkeley Packet Filter (although no one calls it this). Seccomp by itself blocks any syscalls four (exit(), sigreturn(), read() and write() on already open file descriptors) so unsafe compute-bound processes can be run without many risks as almost 99% of the syscalls are blocked by the kernel. BPF is an addon to seccomp which allows you to block any syscalls you want. _strace_ is a linux tool that allows you to trace syscalls made by a process.
 
-Because these features are provided natively by the Linux kernel, we can apply them using corresponding syscalls and parameters and make with a relatively robust sandbox. I toyed with the idea of making my own restricted micro-sandboxing program (and I really wanted to) but decided not to because I was already juggling more things than I'd like to. 
+Because these features are provided natively by the Linux kernel, we can apply them using corresponding syscalls and parameters and make with a relatively robust sandbox. I toyed with the idea of making my own restricted micro-sandboxing program (and I really wanted to) but decided not to because I was already juggling more things than I'd like to.
 
-There are programs which use these kernel features and more to sandbox applications for us. I had expected there to be many, specially in this age of cloud computing and lambda functions. 
+There are programs which use these kernel features and more to sandbox applications for us. I had expected there to be many, specially in this age of cloud computing and lambda functions.
 
 **nsjail:** I couldn't get it to compile because of some strange protobuf dependency error. It doesn't help that the GitHub readme doesn't have any build steps or the versions of dependencies required. Which is a shame because this was almost exactly what I was looking for: a lightweight application sandbox. I might look into it some more later. [This](https://nsjail.com "https://nsjail.com") is the official site for nsjail.
 
@@ -69,6 +69,4 @@ There are programs which use these kernel features and more to sandbox applicati
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oGmj6CUEup0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-PS: Mosh is really cool substutite to ssh.
-
-For problems that include running untrusted executables on sensitive servers, a software tool called _sandbox_ is often used. Unsafe binaries are executed inside the sandbox
+PS [Mosh](https://mosh.org/ "Mosh website") is really cool substitute to SSH, specially when you're using vim to code directly on the server. Plus, the fact that I don't have to restart SSH connection every time I wake my laptop is such a convenience. 
