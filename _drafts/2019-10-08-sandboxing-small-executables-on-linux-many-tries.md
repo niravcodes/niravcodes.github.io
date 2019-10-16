@@ -65,11 +65,9 @@ There are programs which use these kernel features and more to sandbox applicati
 
 **systemd-nspawn** is really interesting. It needs a full chown-able filesystem I didn't use it this time, but I'm definitely going to use this in some future project.
 
-**minijail:** This little software is apparently used by Google to sandbox chromium programs. This presentation is quite interesting
+**minijail:** This little software is apparently used by Google to sandbox chromium programs. It is not as feature rich as nsjail so I ended up using this in conjunction with cgroups and some other programs to isolate the unsafe binary.
 
-custom:
-
-namespaces, chroot, seccomp-bpf, kafel, cgroups, users etc
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oGmj6CUEup0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 PS: Mosh is really cool substutite to ssh.
 
