@@ -109,6 +109,6 @@ Nepal Language Technology Kendra website also provides keyboard layouts for Nepa
 
 Google Fonts has a usable selection of fonts for Devanagari. To filter the fonts by the language, find the *Language* dropdown and select Devanagari (even though it isn’t a language).
 
-_Featured photo of Linotype by werner moser from FreeImages._
+_Featured photo of Linotype by werner moser from FreeImages.com_
 
 I still need to attribute all photos and reference all facts that I read from somewhere else.
