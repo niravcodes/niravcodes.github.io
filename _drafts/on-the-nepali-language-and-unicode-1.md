@@ -11,11 +11,11 @@ The Nepali language gets very little representation on the internet. Take, for e
 
 It's as they say, “whoever controls the media controls the mind”. And the media of the 21st century, the internet, is so desperately out of Nepali's hands that, not only do we read the news, articles, the weather, and novels in English, but we go on to caption our photos of warm, intimate moments in English. Our pop culture is stuffed full of references to Hindi media. My little brother, who is not even 10, will sniff my phone from a mile away and hide out in some corner to watch Motu Patlu on YouTube. He might not be as fluent in Hindi as he is in Nepali. But in his little world, Hindi is the language that superheroes speak. And Nepali? Only his annoying brother.
 
-I'm not saying that I'm any better. If anything, I'm worse. I'm one of those people who, after being told a phone number, says, "Okay, repeat that. But in English". Ask me to translate this very post to Nepali and watch how fast I run away. My friends are, frankly, no better.
+I'm not saying that I'm any better. If anything, I'm far worse. I'm one of those people who, after being told a phone number, says, "Okay, repeat that. But in English". Ask me to translate this very post to Nepali and watch how fast I run away. My friends are, frankly, no better.
 
 The problems are much worse for other languages of Nepal. The Newari Language is listed by UNESCO as being “definitely endangered”. The Kusunda language has speakers in single digit numbers, which is particularly unfortunate because Kusunda happens to be a language isolate, so once it’s gone, we’ll lose any chance of accurately reconstructing it. Half of the 123 languages of Nepal are endangered.
 
-From this point onwards, I will talk about Unicode for Nepali language in hopes that I can encourage more people to adopt it (I’m already working on a simple bilingual blog format at [Nirav.dev](https://nirav.dev/)).
+In this post, I will talk about Unicode for Nepali language in hopes that I can shed some technical light on Unicode in Nepali context for the uninitiated.
 
 # Some background
 
@@ -41,7 +41,7 @@ The table below shows the character mapping of two Nepali fonts from the late �
 
 So far, I have talked exclusively about the representation of text. Typing was a different beast entirely. Suppose that you were using the _Annapurna_ font. Since keyboards come in the standard QWERTY layout, if you pressed the A key (which is internally ASCII 65), an अ would appear. But on changing the font to _Sabdatara_ and it would change to a द्ब. The image below demonstrates how, typing कलम in _Sabdatara_ font, and then changing it to Annapurna results in garbage.
 
-But thankfully, over time these mappings stabilized to the what is now known as the Traditional or Remington's keyboard layout. Generally, if someone over 30 tells you that they can type in Nepali, what they probably mean is that they can type in the traditional keyboard layout. It is what you type if you use the Sagarmatha or the Preeti font. 
+But thankfully, over time these mappings stabilized to the what is now known as the Traditional or Remington's keyboard layout. Generally, if someone over 30 tells you that they can type in Nepali, what they probably mean is that they can type in the traditional keyboard layout. It is what you type if you use the Sagarmatha or the Preeti font.
 
 Unicode
 
