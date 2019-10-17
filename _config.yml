@@ -80,7 +80,7 @@ theme_settings:
   str_next_page: Next
   str_previous_page: Prev
   str_javascript_required_disqus: Please enable JavaScript to view comments.
-  google_fonts: Poiret+One|EB+Garamond:400,400i,700,700i
+  google_fonts: Poiret+One|EB+Garamond:400,400i,700,700i|Cambay&display=swap&subset=devanagari
   post_navigation: false
 paginate: 10
 paginate_path: blog/page:num
