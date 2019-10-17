@@ -19,7 +19,7 @@ I'm not saying that I'm any better. If anything, I'm far worse. I'm one of those
 
 The problems are much worse for other languages of Nepal. The Newari Language is listed by UNESCO as being “definitely endangered”. The Kusunda language has speakers in single digit numbers, which is particularly unfortunate because Kusunda happens to be a language isolate, so once it’s gone, we’ll lose any chance of accurately reconstructing it. Half of the 123 languages of Nepal are endangered.
 
-In this post, I will talk about Unicode for Nepali language in hopes that I can shed some technical light on Unicode in Nepali context for the uninitiated.
+In this post, I will talk about Unicode for Nepali language in hopes that I can shed some technical light on Unicode in Nepali context for the uninitiated. The idea is to let interested people know of the tools and ideas in Unicode, specially in context of the Nepali language to encourage adoption and usage.
 
 ## Some background
 
@@ -39,7 +39,7 @@ So how do you type Nepali in ASCII? Well, you don't. ASCII is, by its very defin
 
 To switch between scripts in ISCII, you just change the fonts rendering the numbers. If a Devanagari font is selected, computer displays Devanagari characters. If a Tamil font was selected, it displays the same text in Tamil. The equivalent for English language would be to do assign numbers to the 26 English alphabets, and switch cases by changing fonts. The phonetic information stays the same but the representing characters seem different. ISCII used a special ATR byte to specify which script the fragment of text was in. ISCII is important historically, because Unicode specification for Devanagari and other Indic scripts is based almost entirely on ISCII. The ATR byte was not adopted by Unicode because font attributes are not a part of Unicode.
 
-In Nepal, however, the government didn't initiate any efforts. What I think happened instead was that independent font makers arbitrarily assigned the 256 numbers to various characters and ligatures. Which character a specific number represented was completely up to the font you chose. That must have been messy. Fonts are meant to change how the text looks, not what it represents!
+In Nepal, however, the government didn't initiate any efforts. What I think happened instead was that people or groups (like Muni Shakya) independently assigned the 256 numbers to various characters and ligatures. Which character a specific number represented was completely up to the font you chose. That must have been messy. Fonts are meant to change how the text looks, not what it represents!
 
 The table below shows the character mapping of two Nepali fonts from the late ‘90s. You’ll notice how same field of the tables doesn’t encode the same character. Both learning to type in these fonts and changing the fonts must have been an inconvenience.
 
@@ -60,12 +60,13 @@ The Internet pretty much broke everything. Computers all over the world were exp
 Unicode was designed from the ground up to support all scripts of the world. It currently has 1,37,994 characters from 150 writing scripts. Unicode puts each character its own unique identifying number. For example, the number 2325 (U\+0915) uniquely identifies the Devanagari letter क, the number 70658 (U\+11402) identifies the Newari letter 𑐂, the number 65 (0x41) represents the English capital letter A and the number 24859 (0x611b) the unified Chinese, Japanese and Korean ideograph 愛. These numbers mean the same thing no matter where in the world you are or what computer you are using. These numbers are also immutable, meaning that, Unicode won’t ever change what a number means, hence maintaining backward compatibility.
 
 ![codepoint_table.png](/uploads/codepoint_table.png)
+_This table lists all Nepali Characters in the Unicode Devanagari block with their codepoint numbers._
 
 Characters of the same script live in the same block. A block is essentially a range of numbers. For example, Devanagari characters live in the U\+0900 to U\+097F block. Newa is in the U\+1900 to U\+194F block. The Limbu writing system, Sirijanga Script, lives in U\+1900 to U\+194F block.
 
 The advantage of separating language into blocks, is that each block can get its own kind of treatment from the software. We know that different scripts behave differently. In Devanagari, some characters go above the previous character, some under. Some change the character itself. In Tibetan, diacritics stack up vertically. A single Urdu character, when typed, can change how the entire word looks. Not to mention that scripts have different directions of reading. Chinese is written from top to bottom. Urdu is written from right to left. All these quirks can be handled by software based on what block the characters come from.
 
-The Devanagari block is shown below.
+The Devanagari block is shown below. It was taken from Wikipedia.
 
 ![wikipediaunicodetable.png](/uploads/wikipediaunicodetable.png)
 
@@ -73,7 +74,7 @@ Now, if you look at the table above, you will notice a lot of characters missing
 
 ![consonantforms.png](/uploads/consonantforms.png)
 
-Figure 1 Unicode Specification on how a software should handle compound characters in Indic scripts.
+_Unicode Specification on how a software should handle compound characters in Indic scripts._
 
 So then, what if you want to type out क्‌ष explicitly? Unicode provides a character called Zero Width Non-Joiner (ZWNJ) (zero width because it doesn’t take up any space in the text). But it prevents the Halant ्‌ from changing characters to their half forms. Similarly, there is a Zero Width Joiner which explicitly asks for the half form to be displayed, even if there isn’t a character next to it.
 
@@ -97,9 +98,9 @@ Only three Unicode Transformation Formats are in widespread use: UTF-8, UTF-16 a
 
 **Nepali Input**
 
-Unless you can already type in the traditional layout, I recommend that you try out the Phonetic layout by Nepali Language Technology Kendra (ltk.org.np/keyboard_layouts.php). I’m sure any reasonably dedicated person can learn this layout in a day.
+Unless you can already type in the traditional layout, I recommend that you try out the [Phonetic layout](http://ltk.org.np/keyboard_layouts.php) by Nepali Language Technology Kendra. I’m sure any reasonably dedicated person can learn this layout in a day.
 
-But as it turns out, it is a fairly simple exercise to create a new keyboard layout from scratch. I was able to make myself a modified version of the Phonetic layout in less than an hour. To make your own layout, download and install the Microsoft Keyboard Layout Creator tool.
+As it turns out, it is a fairly simple exercise to create a new keyboard layout from scratch. I was able to make myself a modified version of the Phonetic layout in less than an hour. To make your own layout, download and install the [Microsoft Keyboard Layout Creator tool](https://www.microsoft.com/en-us/download/details.aspx?id=22339).
 
 Nepal Language Technology Kendra website also provides keyboard layouts for Nepali Keyboard layouts for Linux. On Android phones, you can install either Hamro Keyboard or Google Indic keyboard, both of which are excellent. On iPhones and iMac, simply activating the required input method in Settings should suffice.
 
