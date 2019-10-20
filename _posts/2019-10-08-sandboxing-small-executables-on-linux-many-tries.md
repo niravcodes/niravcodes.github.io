@@ -1,6 +1,6 @@
 ---
 title: Sandboxing Unsafe Executables on Linux for an Online Compiler with Minijail
-date: 2019-10-08 00:00:00 Z
+date: 2019-10-08T00:00:00.000+00:00
 tags:
 - linux
 - cloud
@@ -9,8 +9,8 @@ excerpt_separator: "<!--more-->"
 layout: post
 feature-img: https://nirav.com.np/assets/img/blurred-blurry-fence-967933.jpg
 thumbnail: ''
----
 
+---
 I wrote a toy compiler few months back. I wanted people to see it, so I put the code up on Github. But as it turns out, not everyone is willing or capable of going through the convoluted process of cloning the repository, compiling the program, installing a Nepali language keyboard and learning an obscure half-baked programming language just because some idiot put it on Github.
 
 So, I started to write a web app to make the program easily accessible.<!--more--> The web app lets user write code in their browser, then compiles and executes the program on the server, and allows the user to send input from the browser to the server as it executes.
@@ -87,3 +87,6 @@ PS [Mosh](https://mosh.org/ "Mosh website") is really cool substitute to SSH, sp
    Use these two links if you're going baremetal. Also try finding pages in chromium.googlesource.com about sandboxing. They have done a lot of work in that area. A representative page is below: [https://chromium.googlesource.com/chromium/src/+/master/docs/design/sandbox.md](https://chromium.googlesource.com/chromium/src/+/master/docs/design/sandbox.md "https://chromium.googlesource.com/chromium/src/+/master/docs/design/sandbox.md")
 5. [http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/34913.pdf](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/34913.pdf "http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/34913.pdf")  
    This is the paper explaining Native Client, a sandboxing system developed by Chrome developers to allow execution of C/C++ programs in the web browser with near-native speed.
+6. [https://blog.golang.org/playground](https://blog.golang.org/playground "https://blog.golang.org/playground")  
+   The Go language website has an online code compiler similar to ours. In this blog post, they describe how they used Native Client (see resource 5) and other ideas to provide the safe online compilation and execution service to users. Particularly interesting is their decision to [disallow any interactive input ](https://github.com/golang/go/issues/16667 "golang issue raised on whether to allow interactive input or not")to favour caching results and to reduce CPU time per program.   
+   They also seem to be using a separate branch of compiler to generate Native Client executable for executables. I had contemplated on whether I should add an extra backend in my compiler which generates secure by at compile time. But I decided that the maintenance burden was not worth it.
