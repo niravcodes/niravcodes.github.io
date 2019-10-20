@@ -1,15 +1,16 @@
 ---
-excerpt_separator: "<!--more-->"
-layout: post
 title: Sandboxing Unsafe Executables on Linux for an Online Compiler with Minijail
+date: 2019-10-08 00:00:00 Z
 tags:
 - linux
 - cloud
 - sandbox
+excerpt_separator: "<!--more-->"
+layout: post
 feature-img: https://nirav.com.np/assets/img/blurred-blurry-fence-967933.jpg
 thumbnail: ''
-
 ---
+
 I wrote a toy compiler few months back. I wanted people to see it, so I put the code up on Github. But as it turns out, not everyone is willing or capable of going through the convoluted process of cloning the repository, compiling the program, installing a Nepali language keyboard and learning an obscure half-baked programming language just because some idiot put it on Github.
 
 So, I started to write a web app to make the program easily accessible.<!--more--> The web app lets user write code in their browser, then compiles and executes the program on the server, and allows the user to send input from the browser to the server as it executes.
