@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Post
 hide_body: false
 fields:
@@ -48,30 +45,15 @@ fields:
     required: true
   description: Always post. ALWAYS POST!!
 pages:
-- _posts/2019-10-08-sandboxing-small-executables-on-linux-many-tries.md
-- _posts/implementing-nepali-language-support-in-website-using-javascript.md
-- _posts/random-stuff-to-do-when-bored.md
-- _posts/making-an-online-compiler.md
-- _posts/2019-08-08-studying-embedded-system-design-for-assessment.md
-- _posts/i-can-t-stop-thinking-about-her.md
-- _posts/2019-01-20-ambling-down-the-javascript-rabbit-hole.md
-- _posts/first-prototype-for-a-nepali-language-compiler.md
-- _posts/2019-06-12-animating-led-dot-matrix-displays-with-avr.md
-- _posts/designing-a-new-website-for-myself.md
-- _posts/animating-a-skeleton-in-pixel-art.md
-- _posts/2019-02-12-how-premature-optimization-cost-me-half-a-day.md
-- _posts/maybe-those-really-were-the-good-old-days.md
-- _posts/2019-01-27-installing-linux-in-virtualbox-in-win10.md
-- _posts/hey-i-m-nubivagant.md
-- _posts/2019-06-28-lana-del-dreams-of-hetauda.md
-- _posts/2019-06-23-i-wanna-handcraft-devices.md
-- _posts/2019-03-05-a-downpour-then-a-rainbow.md
-- _posts/2018-03-09-the-cursed-child-sucks.md
-- _posts/Meet Jobcat - The feline goddess of Freelance.md
 - _posts/i-love-xxd.md
+- _posts/Meet Jobcat - The feline goddess of Freelance.md
+- _posts/random-stuff-to-do-when-bored.md
+- _posts/hey-i-m-nubivagant.md
+- _posts/making-an-online-compiler.md
+- _posts/first-prototype-for-a-nepali-language-compiler.md
+- _posts/designing-a-new-website-for-myself.md
+- _posts/implementing-nepali-language-support-in-website-using-javascript.md
+- _posts/2018-03-09-the-cursed-child-sucks.md
 - _posts/2018-12-20-on-sound-and-audio-generation-using-atmega-microcontrollers.md
 - _posts/2019-01-05-movies-that-i-watched-when-i-was-sick.md
 - _posts/2018-12-22-looking-at-mern-stack.md
-- _posts/writing-huffman-compression-in-cpp.md
-- _posts/2019-02-17-the-hungry--operator-eats-whitespace.md
-- _posts/2019-02-04-a-drizzle-in-pokhara.md

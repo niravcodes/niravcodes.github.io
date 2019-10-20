@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Page
 hide_body: false
 fields:
@@ -34,6 +31,5 @@ fields:
   name: hide
   label: Hide
 pages:
-- pages/on-the-nepali-language-and-unicode.md
 - pages/editing-copies-of-articles.md
 - pages/draft.md
