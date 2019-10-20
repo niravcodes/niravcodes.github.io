@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Post
 hide_body: false
 fields:
@@ -50,7 +47,6 @@ fields:
 pages:
 - _posts/2019-10-08-sandboxing-small-executables-on-linux-many-tries.md
 - _posts/implementing-nepali-language-support-in-website-using-javascript.md
-- _posts/on-the-nepali-language-and-unicode-1.md
 - _posts/random-stuff-to-do-when-bored.md
 - _posts/making-an-online-compiler.md
 - _posts/2019-08-08-studying-embedded-system-design-for-assessment.md
