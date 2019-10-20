@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Post
 hide_body: false
 fields:
@@ -22,6 +19,11 @@ fields:
   config:
     required: true
   default: "<!--more-->"
+- name: enableNepali
+  type: boolean
+  label: Contains Nepali Text
+  default: false
+  description: Turn this on if the post has Nepali text.
 - type: file
   name: feature-img
   label: Feature Image
