@@ -31,5 +31,5 @@ fields:
   name: hide
   label: Hide
 pages:
-- pages/editing-copies-of-articles.md
 - pages/draft.md
+- pages/editing-copies-of-articles.md
