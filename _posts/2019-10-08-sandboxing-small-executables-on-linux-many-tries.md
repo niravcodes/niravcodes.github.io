@@ -1,16 +1,15 @@
 ---
+excerpt_separator: "<!--more-->"
+layout: post
 title: Sandboxing Unsafe Executables on Linux for an Online Compiler with Minijail
-date: 2019-10-08 00:00:00 Z
 tags:
 - linux
 - cloud
 - sandbox
-excerpt_separator: "<!--more-->"
-layout: post
 feature-img: https://nirav.com.np/assets/img/blurred-blurry-fence-967933.jpg
 thumbnail: ''
----
 
+---
 I wrote a toy compiler few months back. I wanted people to see it, so I put the code up on Github. But as it turns out, not everyone is willing or capable of going through the convoluted process of cloning the repository, compiling the program, installing a Nepali language keyboard and learning an obscure half-baked programming language just because some idiot put it on Github.
 
 So, I started to write a web app to make the program easily accessible.<!--more--> The web app lets user write code in their browser, then compiles and executes the program on the server, and allows the user to send input from the browser to the server as it executes.
@@ -77,7 +76,7 @@ PS [Mosh](https://mosh.org/ "Mosh website") is really cool substitute to SSH, sp
 **Resources**
 
 1. [https://en.wikipedia.org/wiki/OS-level_virtualisation#Implementations](https://en.wikipedia.org/wiki/OS-level_virtualisation#Implementations "https://en.wikipedia.org/wiki/OS-level_virtualisation#Implementations")  
-   This page has a list of many sandboxing tools that don't use full VMs. 
+   This page has a list of many sandboxing tools that don't use full VMs.
 2. [https://chromium.googlesource.com/chromiumos/docs/+/master/sandboxing.md](https://chromium.googlesource.com/chromiumos/docs/+/master/sandboxing.md "https://chromium.googlesource.com/chromiumos/docs/+/master/sandboxing.md")  
    Explains how minijail can be used for security. If you're using Minijail, also check out the embedded video.
 3. [https://people.csail.mit.edu/nickolai/papers/kim-mbox.pdf](https://people.csail.mit.edu/nickolai/papers/kim-mbox.pdf "https://people.csail.mit.edu/nickolai/papers/kim-mbox.pdf")  
@@ -85,3 +84,5 @@ PS [Mosh](https://mosh.org/ "Mosh website") is really cool substitute to SSH, sp
 4. [https://blogs.rdoproject.org/2015/08/hands-on-linux-sandbox-with-namespaces-and-cgroups/](https://blogs.rdoproject.org/2015/08/hands-on-linux-sandbox-with-namespaces-and-cgroups/ "https://blogs.rdoproject.org/2015/08/hands-on-linux-sandbox-with-namespaces-and-cgroups/")  
    [https://www.toptal.com/linux/separation-anxiety-isolating-your-system-with-linux-namespaces](https://www.toptal.com/linux/separation-anxiety-isolating-your-system-with-linux-namespaces "https://www.toptal.com/linux/separation-anxiety-isolating-your-system-with-linux-namespaces")  
    Use these two links if you're going baremetal. Also try finding pages in chromium.googlesource.com about sandboxing. They have done a lot of work in that area. A representative page is below: [https://chromium.googlesource.com/chromium/src/+/master/docs/design/sandbox.md](https://chromium.googlesource.com/chromium/src/+/master/docs/design/sandbox.md "https://chromium.googlesource.com/chromium/src/+/master/docs/design/sandbox.md")
+5. [http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/34913.pdf](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/34913.pdf "http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/34913.pdf")  
+   This is the paper explaining Native Client, a sandboxing system developed by Chrome developers to allow execution of C/C++ programs in the web browser with near-native speed.
