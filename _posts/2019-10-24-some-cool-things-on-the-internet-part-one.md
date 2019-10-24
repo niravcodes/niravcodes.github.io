@@ -22,7 +22,7 @@ I need to set a few ground rules so as not to go overboard with this. It is impo
 
 ### Marijn Haverbeke's Bouncing Beholder
 
-Link: [marijnhaerbeke.nl/js1k](https://marijnhaverbeke.nl/js1k/)
+Link: [marijnhaerbeke.nl/js1k](https://marijnhaverbeke.nl/js1k/); License: MIT; Copyright © 2012 by Marijn Haverbeke <marijnh@gmail.com>
 
 {% highlight js %}
 c=document.body.children\[0\];h=t=150;L=w=c.width=800;u=D=50;H=\[\];R=Math.random;for($ in C=
@@ -39,7 +39,7 @@ h);A(G);i%3?0:T<w?(A(G,33,T-15,10),fc(31,T-7,4,9)):(A(7,25,$,9),A(G,25,$,5),fc(2
 > ,u);onkeydown=onkeyup=function(e){E=e.type\[5\]?4:0;e=e.keyCode;J=e^38?J:E;X=e^37?e^39?X:E:-E}
 > {% endhighlight %}
 
-  
+The Javascript code above generates a playable version of the picture shown below. [Marijn's website](https://marijnhaverbeke.nl/js1k/) has both a fully playable version of the game, and some explanation of the source code and of some of the problems he faced.  
 ![](https://nirav.com.np/assets/img/bouncingBeholder.png)
 
 ### One-Bit Music
