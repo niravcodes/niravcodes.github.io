@@ -83,7 +83,7 @@ theme_settings:
   google_fonts: Poiret+One|EB+Garamond:400,400i,700,700i
   google_fonts_nepali: Poiret+One|EB+Garamond:400,400i,700,700i|Cambay&display=swap&subset=devanagari
   post_navigation: false
-paginate: 10
+paginate: 20
 paginate_path: blog/page:num
 markdown: kramdown
 highlighter: rouge
