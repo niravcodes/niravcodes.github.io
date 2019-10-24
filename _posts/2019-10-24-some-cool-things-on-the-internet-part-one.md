@@ -53,7 +53,7 @@ Link: [http://www.1bitmusic.com/](http://www.1bitmusic.com/ "http://www.1bitmusi
 
 ![](https://nirav.com.np/assets/img/Tristan_Perich_1_Bit_Symphony_Front_By_D_Yee_800.jpg)
 
-Pictured above is an album with about 40 minutes of music. But it's not a conventional album. It has all the electronics and power required to play the music right in the Jewel case. Having done [some similar projects](https://nirav.com.np/2018/12/20/on-sound-and-audio-generation-using-atmega-microcontrollers.html) in the past, I loved what the artist [Tristan Perich](http://www.tristanperich.com/) has done here. 
+Pictured above is an album with about 40 minutes of music. But it's not a conventional album. It has all the electronics and power required to play the music right in the Jewel case. Having done [some similar projects](https://nirav.com.np/2018/12/20/on-sound-and-audio-generation-using-atmega-microcontrollers.html) in the past, I loved what the artist [Tristan Perich](http://www.tristanperich.com/) has done here.
 
 I found his website a long time ago, when researching to accomplish something similar, and it struck a chord with my sense of aesthetics. As I was writing this post, I remembered the project and decided that it must be included here.
 
@@ -63,4 +63,8 @@ I found his website a long time ago, when researching to accomplish something si
 
 This video is one of my favourites on youtube, because Ben demonstrates the engineering process in such an incredibly interesting manner. If you liked this, also checkout his other video titled, "Electroluminescent paint and multi-channel control circuit".
 
-Some other videos that I love to rewatch are
+Some other videos that I love to rewatch are:
+
+1. [EEVblog Pebble Smartwatch Teardown](https://www.youtube.com/watch?v=MDJ0EOkU_Fg)
+2. [Reverse Engineering the iPod Nano 6 LCD interface](https://www.youtube.com/watch?v=7TedIzmguP0)
+3. [Interfacing a cheap phone camera module to a PIC32 microcontroller](https://www.youtube.com/watch?v=rQYByorpoFk)
