@@ -68,3 +68,11 @@ Some other videos that I love to rewatch are:
 1. [EEVblog Pebble Smartwatch Teardown](https://www.youtube.com/watch?v=MDJ0EOkU_Fg)
 2. [Reverse Engineering the iPod Nano 6 LCD interface](https://www.youtube.com/watch?v=7TedIzmguP0)
 3. [Interfacing a cheap phone camera module to a PIC32 microcontroller](https://www.youtube.com/watch?v=rQYByorpoFk)
+
+# Things You Should Never Do by Joel Spolsky
+
+Link: [https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/ "https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/")
+
+Joel On Software is an amazing blog on software engineering by none other than the co-founder of Stack Overflow. You'll find websites linking to one of his articles or quoting him in many nodes of the developer-web cluster. This article in particular puts forward some really good tips on software development that I keep on forgetting. 
+
+See also: Schlemiel the Painter's algorithm
