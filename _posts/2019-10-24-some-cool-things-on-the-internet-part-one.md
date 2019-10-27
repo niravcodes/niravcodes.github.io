@@ -6,7 +6,7 @@ tags:
 - internet
 - random
 enableNepali: false
-feature-img: ''
+feature-img: https://nirav.com.np/assets/img/backgroundcoolthings.jpg
 thumbnail: ''
 
 ---
@@ -53,6 +53,8 @@ Link: [http://www.1bitmusic.com/](http://www.1bitmusic.com/ "http://www.1bitmusi
 
 ![](https://nirav.com.np/assets/img/Tristan_Perich_1_Bit_Symphony_Front_By_D_Yee_800.jpg)
 
+_Photographed by Tristan Perich and taken from_ [_1bitsymphony.com_](http://www.1bitsymphony.com/ "http://www.1bitsymphony.com/")
+
 Pictured above is an album with about 40 minutes of music. But it's not a conventional album. It has all the electronics and power required to play the music right in the Jewel case. Having done [some similar projects](https://nirav.com.np/2018/12/20/on-sound-and-audio-generation-using-atmega-microcontrollers.html) in the past, I loved what the artist [Tristan Perich](http://www.tristanperich.com/) has done here.
 
 I found his website a long time ago, when researching to accomplish something similar, and it struck a chord with my sense of aesthetics. As I was writing this post, I remembered the project and decided that it must be included here.
@@ -69,10 +71,10 @@ Some other videos that I love to rewatch are:
 2. [Reverse Engineering the iPod Nano 6 LCD interface](https://www.youtube.com/watch?v=7TedIzmguP0)
 3. [Interfacing a cheap phone camera module to a PIC32 microcontroller](https://www.youtube.com/watch?v=rQYByorpoFk)
 
-# Things You Should Never Do by Joel Spolsky
+### Things You Should Never Do by Joel Spolsky
 
 Link: [https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/ "https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/")
 
-Joel On Software is an amazing blog on software engineering by none other than the co-founder of Stack Overflow. You'll find websites linking to one of his articles or quoting him in many nodes of the developer-web cluster. This article in particular puts forward some really good tips on software development that I keep on forgetting. 
+Joel On Software is an amazing blog on software engineering by none other than the co-founder of Stack Overflow. You'll find websites linking to one of his articles or quoting him in many nodes of the developer web-cluster. This article in particular puts forward some really good tips on software development that I always try to keep in mind, given my proclivity for wanting to restart start projects from scratch.
 
 See also: Schlemiel the Painter's algorithm
