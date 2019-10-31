@@ -28,4 +28,4 @@ I try to design websites with accessibility when the time allows for it, but I j
 
 The default assumption has always been that it's my fault when the website or video doesn't work as intended because of night light. But, I think, with more and more people starting to have their blue light filters turned on, I think it's time that web designers start anticipating it and designing around it.
 
-In [niravko.com](niravko.com "My other website"), I get around the problem by simply italicizing the links. It's a very small site, so this works. But in a blog such as this, italics in text often has other meanings. I wouldn't want a link in my paragraph to convey emphasis or sarcasm to the blue light enabled monitor. I will have to find
+In [niravko.com](http://niravko.com "My other website"), I get around the problem by simply italicizing the links. It's a very small site, so this works. But in a blog such as this, italics in text often has other meanings. I wouldn't want a link in my paragraph to convey emphasis or sarcasm to the blue light enabled monitor. I need to work on this problem soon.
