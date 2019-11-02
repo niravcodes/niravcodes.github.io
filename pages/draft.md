@@ -1,11 +1,74 @@
 ---
-title: Draft
-permalink: "/draft/"
 layout: post
+title: Draft
 tags: []
 feature-img: ''
+permalink: "/draft/"
 hide: true
+
 ---
+It's 4 in the afternoon. A soft breeze tangos on the footpath, on the streets, between people and avoiding vehicles. It moves in small gusts, swirling through the crosswalks and flowing on to the Mahendra Pul, and there it leaps into the Seti, all the while humming Por Una Cabeza.
+
+Clouds have bloomed on the sky the way lotus blooms in a pond. The sun is out and orange in the west, but it's already chilly. It seems that winter is slowly descending into Pokhara all the way from the mountains up north.
+
+I instinctively imagine my little village hundreds of kilometers away. The marigolds there have probably withered by now, but tangerines still paint the hills orange. My mother is already back from the woods with fodder. I wonder what Sumanta is doing. I see her in my mind's eye sitting on the walnut tree we used to climb, against the sweeping wind so much colder than what blows here in Pokhara. I hope she's thinking of me.
+
+I'm going to my room back after a pleasant date. The girl I'm dating is a year older than me, and studies business. We barely have anything in common, and she's not particularly pretty, but she fills up my world with stars and sparkles. Her laughter lights up the weekends that I meet her. I enjoy spending time with her. These past few weeks, I've caught myself thinking about her more times I'd like to admit.
+
+Our dates invariably start with a call.
+
+"Are you busy?"
+
+"I am, actually ...", and then she begins to list things she has to do that day.
+
+"..."
+
+"... I can arrange some free time around 1, but only for an hour"
+
+"Great! See you at our usual spot"
+
+The one hour becomes one and a half, then two, then three, and so on until the day is over and it's time to take our respective buses home. Which is where I'm walking to: the bus stop.
+
+"Would you like some tangerines, uncle?", I hear a little boy saying, and it takes some time for me to register that he is addressing me. Tangerines. I was born and raised in the distant hills of Hirding, a small scattered settlement of 150 houses and about a million trees of tangerines, oranges, pines, walnuts and all manners of citruses. I've eaten tangerines in almost every condition and in every time of the day possible: after waking, with tea, on the way to the school, in the school orchards, on the way back from school, alone, with friends, on the suspension bridge, before a major earthquake, after a major earthquake, and at one point during a major earthquake on a suspension bridge. With Sumanta, without Sumanta, missing Sumanta, hoping Sumanta misses me, waiting for her to sneak out of the house at midnight, hunting wolves, chased by a leopard and so on. Chances are, if I've done something without a tangerine, then I've done it with a tangerine in my mouth at some other point.
+
+"It's Rs 90 a kilo"
+
+Hah! It sells for Rs 20 in Hirding.
+
+"Okay, weigh half a kilo for me"
+
+"But uncle, I'll give you a whole kilo in Rs 75"
+
+I look at his basket. The tangerines look like they were plucked a month before they ripe.
+
+"No. Just half for me"
+
+"It'll cost you Rs 45, then"
+
+Of course it will.
+
+"But if a full kilo costs 75, half should cost 38", I say, mostly teasing.
+
+"That's not how it works here, uncle."
+
+He is weighing a bagful in his spring balance. I notice the balance is already damaged, so I'll probably be getting a lot less than half a kilo, but I don't care. I'm not even sure why I'm buying these in the first place. Maybe it's just habit.
+
+So I went on a date, got called uncle for the first time, *and* bought tangerines for the first time, all in a single day.
+
+"Look at you! You're all grown up now, town boy", I can almost hear Sumanta tease in the back of my mind. I smile.
+
+My mom is also there, but in visible consternation.
+
+"90 Rupees for tangerines. It's murder! Fights with his father to go be a town boy, comes back home with all brown hair like a *khaire*, drinks milk tea for breakfast, and now he's buying stupid tangerines for 90. Lives in the town for a year; suddenly he thinks he can live like a raja."
+
+A peal of laughter escapes me before I can catch it, and suddenly I'm grinning alone to myself in the middle of Mahendra Pul, with people probably staring at me like I'm an idiot.
+
+On the bus, I think about home. My home, where winter arrives with the orange buds, ripes with the tangerines, drinks black tea in the yellow mornings, burns yellow in the evenings in the fireplace, and is swept away by my mother with the orange peels. My home, where the mustard fields are now bright carpets, where pine cones drop with a pleasant plop, and where people break their backs every day carrying the ever-long burden of the entire hill, and an even bigger burden of life itself.
+
+I really didn't mean to reminisce, but the arrival of winter always makes me homesick. You think April is the cruelest month? Try Mangsir.
+
+  
+\--- END ---
 
 The year I turned 19, I moved to Kathmandu for college. I lived in a small room in _Kalanki_ that my brother had been living in for the last four years. It was a quiet place to live in, and the relationship with landlords was ...aslkfdj
 
