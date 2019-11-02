@@ -78,3 +78,11 @@ Link: [https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part
 Joel On Software is an amazing blog on software engineering by none other than the co-founder of Stack Overflow. You'll find websites linking to one of his articles or quoting him in many nodes of the developer web-cluster. This article in particular puts forward some really good tips on software development that I always try to keep in mind, given my proclivity for wanting to restart start projects from scratch.
 
 See also: Schlemiel the Painter's algorithm, the Joel Test
+
+### Nepal Lipi Prakash by Hemraj Shakya
+
+Published in 1930 BS (1873 AD), archived at [https://archive.org/details/NepalLipiPrakashHemrajShakya](https://archive.org/details/NepalLipiPrakashHemrajShakya "https://archive.org/details/NepalLipiPrakashHemrajShakya")
+
+![](https://nirav.com.np/assets/img/scriptsHemraj.jpg)
+
+This scanned copy of a book published about 150 years ago documenting scripts and inscriptions found in Nepal. It is also interesting to observe the artifacts of the printing press and the written language of that time.
