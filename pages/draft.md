@@ -33,13 +33,13 @@ The one hour becomes one and a half, then two, then three, and so on until the d
 
 "It's Rs 90 a kilo"
 
-Hah! It sells for Rs 20 in back home.
+Hah! It sells for Rs 20 back home.
 
 "Okay, weigh half a kilo for me"
 
 "But uncle, I'll give you a whole kilo in Rs 75"
 
-I look at his basket. The tangerines look like they were plucked a month before they ripe.
+I look at his basket. They look like they were plucked a month before they ripen.
 
 "No. Just half for me"
 
@@ -47,23 +47,23 @@ I look at his basket. The tangerines look like they were plucked a month before 
 
 Of course it will.
 
-"But if a full kilo costs 75, half should cost 38", I say, mostly teasing.
+"But if a full kilo costs 75, half should cost 38", I say, but I'm mostly teasing the boy.
 
-"That's not how it works here, uncle."
+"That's not how it works, uncle."
 
-He is weighing a bagful in his spring balance. I notice the balance is already damaged, so I'll probably be getting a lot less than half a kilo, but I don't care. I'm not even sure why I'm buying these in the first place. Maybe it's just habit.
+He is weighing a bagful in his spring balance. I notice the spring is wonky, so I'll probably be getting a lot less than half a kilo, but I don't care. I'm not even sure why I'm buying these in the first place.
 
-So I went on a date, got called uncle for the first time, _and_ bought tangerines for the first time, all in a single day.
+So, I went on a date, got called uncle for the first time, _and_ bought tangerines for the first time, all in a single day.
 
 "Look at you! You're all grown up now, town boy", I can almost hear Sumanta tease in the back of my mind. I smile.
 
 My mom is also there, but in visible consternation.
 
-"90 Rupees for tangerines. It's murder! Fights with his father to go be a town boy, comes back home with all brown hair like a _khaire_, drinks milk tea for breakfast, and now he's buying stupid tangerines for 90. Lives in the town for a year; suddenly he thinks he can live like a raja."
+"90 Rupees for tangerines. It's murder! Fights with his father to go be a town boy, comes back home with all brown hair like a _khaire_, drinks milk tea for breakfast, and now he's buying stupid tangerines for 90. Hasn't lived in the town for a year; but he thinks he can live like a raja."
 
-A peal of laughter escapes me before I can catch it, and suddenly I'm grinning alone to myself in the middle of Mahendra Pul, with people probably staring at me like I'm an idiot.
+A peal of laughter escapes me before I can catch it, and suddenly I'm grinning alone to myself in the middle of Mahendra Pul like an idiot.
 
-On the bus, I think about myself. How far have I come? I feel much older today than I did yesterday, as though I lived an entire decade in a single day. The last time I felt this was a year ago, when I decided that I'd leave my old life behind, when I defended my decision against my father, and when I boarded the bus to Pokhara with a single thousand rupee note. I find it fitting that my symbolic coming-of-age ritual essentially ended with me buying tangerines. Though unripe, and most likely very sour, these tangerines in my plastic bag are the same as the ones I left behind in the remote hill of my childhood and first love.
+On the bus, I think about myself. How far have I come? I feel much older today than I did yesterday, as though I lived an entire decade in a single day. The last time I felt this was a year ago on the bus to Pokhara with a thousand rupee note and a one way ticket in my pocket. I find it fitting that my symbolic coming-of-age ritual essentially ended with me buying tangerines. Though unripe, and most likely very sour, these tangerines in my plastic bag are the same as the ones I left behind in the remote hill of my childhood and first love.
 
 I think about that remote hill. My home, where winter arrives with the orange buds, ripes with the tangerines, drinks black tea in the yellow mornings, burns in the evening fireplace, and is swept away by my mother along with the orange-peels. My village, where the mustard fields are now radiant carpets, where pine cones drop with a pleasant plop, and where people break their backs every day carrying the burden of the entire hill, and the even bigger burden of living life.
 
