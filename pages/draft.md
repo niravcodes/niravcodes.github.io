@@ -13,7 +13,7 @@ Clouds have bloomed on the sky the way lotus blooms in a pond. The sun is out an
 
 I instinctively imagine my little village hundreds of kilometers away. The marigolds there have probably withered by now, but tangerines still paint the hills orange. My mother is already back from the woods with fodder. I wonder what Sumanta is doing. I see her in my mind's eye sitting on the walnut tree we used to climb, against the sweeping wind so much colder than what blows here in Pokhara. I hope she's thinking of me.
 
-I'm going to my room back after a pleasant date. The girl I'm dating is a year older than me, and studies business. We barely have anything in common, and she's not particularly pretty, but she fills up my world with stars and sparkles. Her laughter lights up the weekends that I meet her. I enjoy spending time with her. These past few weeks, I've caught myself thinking about her more times I'd like to admit.
+I'm going to my room back after a pleasant date. The girl I'm dating is a year older than me, and studies business. We barely have anything in common, and she's not particularly pretty, but she fills up my world with stars and sparkles. Her laughter lights up my weekends. I enjoy spending time with her. These past few weeks, I've caught myself thinking about her more times I'd like to admit.
 
 Our dates invariably start with a call.
 
