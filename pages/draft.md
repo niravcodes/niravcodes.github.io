@@ -55,17 +55,17 @@ He is weighing a bagful in his spring balance. I notice the spring is wonky, so 
 
 So, I went on a date, got called uncle for the first time, _and_ bought tangerines for the first time, all in a single day.
 
-"Look at you! You're all grown up now, town boy", I can almost hear Sumanta tease in the back of my mind. I smile.
+"Look at you! You're all grown up now, town boy", I imagine her saying. The image of her amused, teasing face brings a smile to my face.
 
-My mom is also there, but in visible consternation.
+My mother is next to her, and in visible consternation. 
 
 "90 Rupees for tangerines. It's murder! Fights with his father to go be a town boy, comes back home with all brown hair like a _khaire_, drinks milk tea for breakfast, and now he's buying stupid tangerines for 90. Hasn't lived in the town for a year; but he thinks he can live like a raja."
 
-A peal of laughter escapes me before I can catch it, and suddenly I'm grinning alone to myself in the middle of Mahendra Pul like an idiot.
+A peal of laughter escapes me before I can catch it, and suddenly I'm grinning alone to myself in the middle of Mahendra Pul like an idiot. I hurry to the bus.
 
-On the bus, I think about myself. How far have I come? I feel much older today than I did yesterday, as though I lived an entire decade in a single day. The last time I felt this was a year ago on the bus to Pokhara with a thousand rupee note and a one way ticket in my pocket. I find it fitting that my symbolic coming-of-age ritual essentially ended with me buying tangerines. Though unripe, and most likely very sour, these tangerines in my plastic bag are the same as the ones I left behind in the remote hill of my childhood and first love.
+On the bus, I think about myself. How far have I come? I feel much older today than I did yesterday, as though I lived an entire decade in a single day. The last time I felt this was a year ago on the bus to Pokhara with a thousand rupee note and a one way ticket in my pocket. I find it fitting that my symbolic coming-of-age ritual essentially ended with me buying tangerines. Though unripe, and most likely very sour, these tangerines in my plastic bag are the ones I left behind in that remote hill of my childhood and of my first love.
 
-I think about that remote hill. My home, where winter arrives with the orange buds, ripes with the tangerines, drinks black tea in the yellow mornings, burns in the evening fireplace, and is swept away by my mother along with the orange-peels. My village, where the mustard fields are now radiant carpets, where pine cones drop with a pleasant plop, and where people break their backs every day carrying the burden of the hills.
+I think about that remote hill. My home, where winter arrives with the orange buds, ripens with the tangerines, drinks black tea in the yellow mornings, burns in the evening fireplace, and is swept away by my mother along with the orange-peels. That village where the mustard fields are radiant carpets, where pine cones drop with a pleasant plop, and where people break their backs every day carrying the burden of the hills.
 
 I really didn't mean to reminisce, but the arrival of winter always makes me homesick. You think April is the cruelest month? Try Mangsir.
 
