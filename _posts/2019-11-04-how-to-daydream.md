@@ -6,7 +6,7 @@ tags:
 - writing
 - daydreams
 enableNepali: false
-feature-img: ''
+feature-img: https://nirav.com.np/assets/img/beautiful-blooming-blossom-374134.jpg
 thumbnail: https://nirav.com.np/assets/img/beautiful-blooming-blossom-374134.jpg
 
 ---
