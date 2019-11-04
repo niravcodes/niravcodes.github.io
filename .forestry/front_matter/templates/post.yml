@@ -45,6 +45,7 @@ fields:
     required: true
   description: Always post. ALWAYS POST!!
 pages:
+- _posts/how-to-daydream.md
 - _posts/2019-10-24-some-cool-things-on-the-internet-part-one.md
 - _posts/2019-10-31-anticipate-blue-light-filters-when-designing-for-the-web.md
 - _posts/designing-the-mnsa-cc-website.md

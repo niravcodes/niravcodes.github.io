@@ -1,0 +1,29 @@
+---
+excerpt_separator: "<!--more-->"
+layout: post
+title: How to Daydream
+tags:
+- writing
+- daydreams
+enableNepali: false
+feature-img: ''
+thumbnail: https://nirav.com.np/assets/img/beautiful-blooming-blossom-374134.jpg
+
+---
+In the classroom, the teacher drones on and on in his maroon colored t-shirt that doesn’t suit him. His empty vibrations ripple through out the room, bouncing off the glass windows shut tight against the summer breeze, mixing with the clickety-clack of the ceiling fan to create a subtle dissonance, and stretching indefinitely and interminably in time and in space.
+
+<!--more-->
+
+The only consolation, the only medicine is a certain girl who is facing a certain degrees away from that maroon-T-shirt-wearing teacher; looking into the window-pane with a certain temperament; certainly thinking of beautiful thoughts about who knows what. Yes, that girl between two other girls in the second bench. We will call her Sabina because she is also the unintentional witch who ensnared my lonely heart with no intention of ever doing so, not knowing that that intentlessness was the strongest incantation.
+
+That girl, with her pretty red cap and her long neck, has set up an irrevocable residence in the little part of my heart where I plant roses and other flowers. It is of little consequence that she probably keeps me in a humdrum study table of her heart in a small unimportant box where she keeps her useless pencils-that is if she keeps me at all. When I dream of her, I find myself in an incomprehensible universe where I am without ground or sky, the angry stars murmur and roar; where she is the absolute and unequivocal queen of the cosmos such that when she walks the space ripples in her feet and inside her incomprehensible home is the absolute pool of swirling rainbows and sweet water where she lounges with her grandmother. Where she fills me up with the eternal promise of fragrant flowers of all colors and emotions. It is of little consequence that most likely she doesn’t even dream of me.
+
+Yes her. We will daydream about her today. We will first pretend that we are secret artists and that we possess all the curves that exist in the universe. We will then pretend to draw her profile with the expert application of those curves which flow gracefully out of the pencil oddly sharpened with a knife and tucked in our ears when not in use, while in reality we are just absentmindedly writing her name and circling it repeatedly with a dazed, upward gaze. We will, in our reverie, first draw her nose. The small inward curve beneath the brow-ridge, followed by a beautiful nose - made with two curves: the first subtly bumps upward and falls, then the next smoothly turns from the tip to the philtrum. Then we draw the lips gently, as though we are carefully tracing it’s outlines without daring touch the flesh. We then continue on to draw her chin, then with one fluid line we conjure her jaw, then her small, pretty ear. We continue on in this fashion, drawing her hair, and her shirt’s collar and what not. The result is a beautiful picture of a beautiful girl, which is, naturally, to be expected seeing how we are secret artists who possess all the curves in the universe.
+
+After the picture is drawn, we will imagine tearing it off our notebook and keep it inside our shirt right next to our beating heart that pumps red hot blood through our body and skips a beat when it hears her name.
+
+Now, because this is a daydream, and we are the sole masters of the events that unfold in this contrived sphere, we will engineer the circumstances so that in the recess, as we enter the classroom engrossed in our secret artistic thoughts, she happens to be walking out perhaps agitated by a similarly beautiful preoccupation, such that the scene resolves itself in a mild collision, a whiff of the intertwining fragrances of her shampoo, of her hair, and of her skin; a little bit of that summer breeze; and my own unwittingly committed blunder that allows that little piece of paper to find a way away from my heart and out of the shirt, where it traces a flourish in that thin summer breeze to land right next to her feet.
+
+By pure chance she looks down and notices the prettiest curves of the universe which we had employed to trace the profile of the prettiest girl in the universe. She realizes the lines, plucked from a rose for her ears, borrowed from a butterfly for her nose, and taken from the celestial darkness with an astral sprinkling for her eyes - could only have been drawn by someone in love. But because we are ourselves secret artists and because we like for it to stay that way, we have no choice but to grab her by the wrist, and guide her through between the various bodies and obstacles to a private spot in the staircase which leads to the terrace but which is currently blocked, thus forming a sort of staircasey cul-de-sac. There we look into her radiant eyes and say that we like her very much and so on and so forth until she looks right into our eyes too and smiles that bemused smile that says she has understood everything that hasn’t yet been said and says something back but we can’t hear it because now the maroon-T-shirt-wearing teacher has stopped producing those turbulent vibrations to focus his ugly energy into spotting the inattentive students and remarking on their inattentiveness. With our head back in the classroom, we realize that the notebook page is covered with various instances of her name in various sizes and with various flourishes, so we must first take care of that.
+
+Then we borrow a book from the guy behind us and try to make sense of whatever the hell is being taught. For today, that is all the daydreaming we will do, because, in the words of Albus Dumbledore, “It does not do to dwell on dreams, and forget to live.”
