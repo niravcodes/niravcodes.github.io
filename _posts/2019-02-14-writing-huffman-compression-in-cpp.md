@@ -1,6 +1,6 @@
 ---
 title: Implementing the Huffman Compression Algorithm in C++
-date: 2019-02-14 13:05:22 Z
+date: 2019-02-14T13:05:22.000+00:00
 tags:
 - huffman_code
 - c++
@@ -10,8 +10,8 @@ excerpt_separator: "<!--more-->"
 layout: post
 feature-img: https://nirav.com.np/assets/img/Webp.net-resizeimage (1).jpg
 thumbnail: ''
----
 
+---
 _The final code is in GitHub_ [_here_](https://github.com/niravcodes/huffman_compression "Link to NiravCodes's Huffman Compression on Github")_._
 
 Da Vinci is quoted saying, "Art is never finished, only abandoned". I don't see why it should be any different for code. With that said, I'd like to declare my latest project: an [implementation of the huffman's algorithm](https://github.com/niravcodes/huffman_compression "Huffman Compression Implementation by Nirav"), abandoned. It works well as it is, but it can be made a lot better. I just don't want to be the one doing that.
@@ -117,21 +117,21 @@ The soul of this entire code base is the following code.
 {% highlight cpp linenos %}
 tree *make_huffman_tree(input_param options)
 {
-    //open the file for inspection
-    ifstream in_file;
-    in_file.open(options.input_file, ios::binary | ios::in);
+//open the file for inspection
+ifstream in_file;
+in_file.open(options.input_file, ios::binary | ios::in);
 
     // count the frequency of all 256 bytes
     unsigned *count = count_frequency(in_file, options.input_file_size);
-
+    
     priority_queue<tree::node> *x = generate_alphabets(count);
-
+    
     //count[] is no longer needed
     delete[] count;
-
+    
     int cnt = 0;
     tree::node *a, *b, element, c;
-
+    
     while (x->element_count() > 1)
     {
         element = x->dequeue();
@@ -141,14 +141,15 @@ tree *make_huffman_tree(input_param options)
         c = tree::node(0, a->get_frequency() + b->get_frequency(), a, b);
         x->enqueue(c);
     }
-
+    
     //there is only one element in the priority queue now: The root.
     element = x->dequeue();
     tree::node *root = new tree::node(element);
     tree *huffman_tree = new tree(root);
-
+    
     in_file.close();
     return huffman_tree;
+
 }
 {% endhighlight %}
 
@@ -159,39 +160,39 @@ typedef unsigned char byte;
 class bitstream
 {
 protected:
-  byte *buffer;
-  unsigned buffer_size; //in bytes
-  unsigned bit_pos;     //in bits
+byte *buffer;
+unsigned buffer_size; //in bytes
+unsigned bit_pos;     //in bits
 
-  unsigned remainder; // to store overflowing data
-  unsigned remainder_size;
+unsigned remainder; // to store overflowing data
+unsigned remainder_size;
 
-  inline unsigned get_byte_pos();
-  inline unsigned get_bit_offset();
-  inline unsigned get_free_bits();
-  int micropack(byte, unsigned);
-  
-  // after the buffer has been emptied, 
-  // pack remainder inside buffer
-  bool add_remainder(unsigned, unsigned);
+inline unsigned get_byte_pos();
+inline unsigned get_bit_offset();
+inline unsigned get_free_bits();
+int micropack(byte, unsigned);
+
+// after the buffer has been emptied,
+// pack remainder inside buffer
+bool add_remainder(unsigned, unsigned);
 
 public:
-  bitstream(unsigned buffer_size_in_bytes);
-  ~bitstream();
+bitstream(unsigned buffer_size_in_bytes);
+\~bitstream();
 
-  unsigned get_occupied_bytes();
+unsigned get_occupied_bytes();
 
-  // packs data into buffer upto specified size
-  // returns true if okay
-  // returns false if the buffer has filled up
-  // if pack is false, flush then reset buffer
-  bool pack(unsigned huffman_code, unsigned code_length);
-  
-  //gives you a pointer to the buffer
-  const byte *flush_buffer();
-  
-  //clears the buffer then packs remainder in
-  int reset_buffer();
+// packs data into buffer upto specified size
+// returns true if okay
+// returns false if the buffer has filled up
+// if pack is false, flush then reset buffer
+bool pack(unsigned huffman_code, unsigned code_length);
+
+//gives you a pointer to the buffer
+const byte *flush_buffer();
+
+//clears the buffer then packs remainder in
+int reset_buffer();
 };
 {% endhighlight %}
 
@@ -203,12 +204,26 @@ During decompression:
 
 This is the most naive way I can think of to decompress the file. But one good thing about a slow decompression is that I got to make a progress bar. This might be the first time I wrote a program that takes long enough to make progress-bar mandatory (apart from file-uploads, of course).
 
+# Results
+
+The resulting program is able to compress and decompress files from command line.
+
+![](https://nirav.com.np/assets/img/huffmanconsole.png)
+
+The details for usage are in the readme.md file on github but here's a summary:
+
+1. To compress, `./huff <filename>`. The compressed file will be named `a.huff` by default. To specify output file name, use `./huff -o <output filename> <filename>`
+2. To decompress, `./huff -v -d <compressed file>`. The `-v` flag turns on a progress bar, because decompression is slow with this naive implementation.
+
+The compression performance varies wildly with the nature of file, but text files generally compress to half the size. In a representative test, a sample 6.3 MB text file compressed to 3.6 MB. Trying to compress the already compressed file brought the size down to 3.5 MB.
+
+By comparison, gZip compressed the same file down to 2.3 MB and bZip compressed the text file to 1.7 MB, the smallest in all the compared comparison schemes. 
+
 # Closing remarks
 
 When I set out to implement Huffman's algorithm, I had two main objectives:
 
 1. Compare it with gzip to see how well it fares.
-   * I can tell you right away that compared to gzip, huffman sucks. There is a huge difference. If you want to try for yourself, [clone the repo from github](https://github.com/niravcodes/huffman_compression). But that is not the whole story. Gzip is itself a combination of LZ77 followed by a series of huffman compressions. Gzip is built with huffman compression as one of it's pillars (see also: [DEFLATE](https://en.wikipedia.org/wiki/DEFLATE)). So I suppose huffman wins.
-   * See if it is feasible in memory constrained embedded systems (like atmega or at89c2051). It seems doable. Huffman decompression doesn't require a lot of RAM (with the compression table stored in PROGMEM) and it doesn't matter if the decompression is slow because it's okay to do it one sample at a time, every 1/8000th of a second. This might be my next project after the exams end.
+   * I can tell you right away that compared to gzip, huffman sucks. There is a huge difference. If you want to try for yourself, [clone the repo from github](https://github.com/niravcodes/huffman_compression). But that is not the whole story. Gzip is itself a combination of LZ77 followed by a series of huffman compressions. Gzip is built with huffman compression as one of it's pillars (see also: [DEFLATE](https://en.wikipedia.org/wiki/DEFLATE)). So I suppose huffman wins.. See if it is feasible in memory constrained embedded systems (like atmega or at89c2051). It seems doable. Huffman decompression doesn't require a lot of RAM (with the compression table stored in PROGMEM) and it doesn't matter if the decompression is slow because it's okay to do it one sample at a time, every 1/8000th of a second. This might be my next project after the exams end.
 
 I learnt a **lot** of things with this project. I got a glimpse of the immense mathematical complexity that is hidden underneath the abstractions and the tools of compression. I learnt a lot more about gzip compression and LZ77 algorithm. I learnt how a code can be slow, and [how to make it faster](https://commandlinefanatic.com/cgi-bin/showarticle.cgi?article=art007). But new things were not all that I learnt. I got to learn more about the good old C++. It's various idiosyncrasies, it's weaknesses and strengths, memory management, code segregation and better use of test programs. I know, I still have a long way to go, but this project has been a important step towards that destination.
