@@ -81,8 +81,16 @@ See also: Schlemiel the Painter's algorithm, the Joel Test
 
 ### Nepal Lipi Prakash by Hemraj Shakya
 
-Published in 1930 BS (1873 AD), archived at [https://archive.org/details/NepalLipiPrakashHemrajShakya](https://archive.org/details/NepalLipiPrakashHemrajShakya "https://archive.org/details/NepalLipiPrakashHemrajShakya")
+Published in 2030 BS (1973 AD), archived at [https://archive.org/details/NepalLipiPrakashHemrajShakya](https://archive.org/details/NepalLipiPrakashHemrajShakya "https://archive.org/details/NepalLipiPrakashHemrajShakya")
 
 ![](https://nirav.com.np/assets/img/scriptsHemraj.jpg)
 
-This scanned copy of a book published about 150 years ago documenting scripts and inscriptions found in Nepal. It is also interesting to observe the artifacts of the printing press and the written language of that time.
+This scanned copy of a book published about 50 years ago documenting scripts and inscriptions found in Nepal. It is also interesting to observe the artifacts of the printing press and the written language of that time.
+
+### Epigrams in Programming by Alan Perlis
+
+Link: [http://www.cs.yale.edu/homes/perlis-alan/quotes.html](http://www.cs.yale.edu/homes/perlis-alan/quotes.html "http://www.cs.yale.edu/homes/perlis-alan/quotes.html")
+
+Alan J. Perlis, a computer scientist who received the inagural Turing Award for his work in designing ALGOL. He wrote a set of concise and witty sentences distilling his experiences in programming. They are often humorous, and give you a lot of food for thought. One of my favorites:
+
+> In the long run every program becomes rococo - then rubble.
