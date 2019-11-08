@@ -55,11 +55,11 @@ He is weighing a bagful in his spring balance. I notice the spring is wonky, so 
 
 So, I went on a date, got called uncle for the first time, _and_ bought tangerines for the first time, all in a single day.
 
-"Look at you! You're all grown up now, town boy", I imagine her saying. The image of her amused, teasing face brings a smile to my face.
+"Look at you! You're all grown up now, town boy", I imagine Sumanta saying. The image of her amused, teasing face brings a smile to my face. 
 
-My mother is next to her, and in visible consternation. 
+My mother is next to her, and in visible consternation.
 
-"90 Rupees for tangerines. It's murder! Fights with his father to go be a town boy, comes back home with all brown hair like a _khaire_, drinks milk tea for breakfast, and now he's buying stupid tangerines for 90. Hasn't lived in the town for a year; but he thinks he can live like a raja."
+"90 rupees for tangerines. It's murder! Fights with his father to go be a town boy, comes back home with all golden hair like a _khaire_, drinks milk tea for breakfast, and now he's buying stupid tangerines for 90. Hasn't lived in the town for a year; but he thinks he can live like a raja."
 
 A peal of laughter escapes me before I can catch it, and suddenly I'm grinning alone to myself in the middle of Mahendra Pul like an idiot. I hurry to the bus.
 
