@@ -1,6 +1,6 @@
 ---
 title: Animating WALL-E on a LED dot-matrix display with AVR
-date: 2019-06-12 00:00:00 Z
+date: 2019-06-12T00:00:00.000+00:00
 tags:
 - animation
 - avr
@@ -11,8 +11,8 @@ excerpt_separator: "<!--more-->"
 layout: post
 feature-img: https://nirav.com.np/assets/img/tow.jpg
 thumbnail: ''
----
 
+---
 I was asked to animate a dot-matrix display for the robotics club recently. They wanted something that said "Robotics Club" to hang over their door. We had some old `P10(1r)` DMDs which I had worked on in the past to make a little scoreboard for a robot football match. And, even though I am not very good at it, I really love animating things. So I decided to give it a shot. I ended up writing an animation software for the DMD in JavaScript which is unfortunately only as functional as a flipbook. But I had fun animating little person carrying a balloon, ugly gear trains and a little pixel Wall-E blinking.
 
 <!--more-->
@@ -52,6 +52,8 @@ This time, I decided to go with a HTML canvas based approach because I didn't wa
 
 It was so fun to make animations in my own animation program. The only seriously desirable feature that this program lacks is the select and the move feature. The old python version actually had that feature. But I was already pressed for time so I didn't implement it.
 
+The software can be accessed at [nirav.com.np/Animator-inator](https://nirav.com.np/Animator-inator). Feel free to check it out.
+
 # The Firmware
 
 I used the same firmware I had written a semester ago. The code itself is straightforward. But I remember it took me a long time to write it, because I didn't have a lot of documentation to consult. So I had to sit there, with the DMD board and it's various pins and wires, and I had to prod this and poke that to figure out how it worked, rather like a puzzle. Thankfully I had worked with the shift registers before, so it took a lot less work than it otherwise would have. This piece of code below is pretty much the only part of the code that counts.
@@ -60,31 +62,32 @@ I used the same firmware I had written a semester ago. The code itself is straig
 // Slightly altered from original
 // for readablity
 void clock_selected_lines (char selector){
-  for (int i = 0 ; i < (WIDTH/8); i++)
-    for (int j = 3; j >= 0; j--)
-      clockbyte(display[j*4 + selector][i]);
-  setselector(selector);
-  sendpulse(LATCH);
+for (int i = 0 ; i < (WIDTH/8); i++)
+for (int j = 3; j >= 0; j--)
+clockbyte(display\[j*4 + selector\]\[i\]);
+setselector(selector);
+sendpulse(LATCH);
 }
 
 int main(){
-  init();
-  OCR0 = 0xff;
-  TIMSK = 2;
-  TCCR0 = 0X0b;
-  sei();
+init();
+OCR0 = 0xff;
+TIMSK = 2;
+TCCR0 = 0X0b;
+sei();
 
-  int frame = 0;
-  while (1){
-    cli();
-    disableoutput();
-    assign_to_display(frame++);
-    enableoutput();
-    sei();
-          
+int frame = 0;
+while (1){
+cli();
+disableoutput();
+assign_to_display(frame++);
+enableoutput();
+sei();
+
     if (frame >= framecount) frame = 0;
       _delay_ms(10);
-  }
+
+}
 }
 {% endhighlight %}
 
