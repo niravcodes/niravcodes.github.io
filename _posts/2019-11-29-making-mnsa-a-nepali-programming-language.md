@@ -8,7 +8,7 @@ tags:
 - nepali
 enableNepali: true
 feature-img: ''
-thumbnail: https://nirav.com.np/assets/img/mnsabanner.png
+thumbnail: https://nirav.com.np/assets/img/mnsabanner-1.png
 
 ---
 **Draft**
