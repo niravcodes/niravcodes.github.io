@@ -17,6 +17,8 @@ I'm currently working on this post and if it's visible to you, it means I've pub
 
 <!--more-->
 
+![](https://nirav.com.np/assets/img/mnsabanner.png)
+
 I've been working on and off on a programming language in Nepali language for quite some time. It isn't finished yet,
 
 1. VSCODE with c++ extentino is incredible. They seem to be making proper ASTs for my syntax on the fly. So far, I've only ever used vim and sublime without much configuration (for c and c++, that is). It makes things so much easier.
