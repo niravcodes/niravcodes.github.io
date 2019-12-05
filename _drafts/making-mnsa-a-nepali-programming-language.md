@@ -44,4 +44,18 @@ USE **PRESENTATION's MATERIAL**
 
 # Makefile
 
-was using -o3 without knowing it. 
+was using -o3 without knowing it.
+
+# Interesting observatoins
+
+1. One interesting thing I noticed isL
+   1. VSCODE with c++ extention enabled takes insane amount 1.3 of memory,. So does chrome USes smem to find out
+   2. at some point, you **_need_** _a second, prefreably vertical monitor._
+
+## Making Vector Website
+
+I was astounded at the amount of hacking attempts that were being made at the site. 
+
+1 the PHP site kind
+
+2. The SSH kind. Woah
