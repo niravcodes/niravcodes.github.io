@@ -36,7 +36,9 @@ Unicode shenanigans, ingenuities, and stupidities + code redundancy and not inve
 
 # Parser
 
-The boon that is unique pointers. Problems with recursivedescent. talk about pratt parsing.
+The boon that is unique pointers. Problems with recursivedescent. talk about pratt parsing .
+
+recursive descent with backtracking.
 
 Have photos of parse trees both terminal generated and made proper
 
