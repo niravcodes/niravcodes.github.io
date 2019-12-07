@@ -54,8 +54,14 @@ was using -o3 without knowing it.
 
 ## Making Vector Website
 
-I was astounded at the amount of hacking attempts that were being made at the site. 
+I proposed that an event of this scale would benefit from having a centralized information bank on the web. specially because it's so targeted towards young people, who are used to using the web for everything anyway. Also, we are so reliant on Google forms that dilutes the brand and so on.
+
+But as it turns out, it's hard to do everything by yourself. I was doing the content-writing, the designing and the web front and back ends and the server maintenance at 
+
+I was astounded at the amount of hacking attempts that were being made at the site.
 
 1 the PHP site kind
 
-2. The SSH kind. Woah
+1. The SSH kind. Woah
+
+Website maintainence is a many-people job. Trying to do all things at once 
