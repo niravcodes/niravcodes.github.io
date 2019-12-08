@@ -24,6 +24,6 @@ generates this AST:
 
 ![](https://nirav.com.np/assets/img/2019-12-09-004011_1366x768_scrot.png)
 
-Yes, and this was quite enough for me at the time. Frankly, for a language that doesn't even have an else if clause, there's a very limited ways to complicate the AST other than by writing very long code.  
+Yes, and this was quite enough for me at the time. Frankly, for a language that doesn't even have an else if clause, there's are limited ways to complicate the AST other than by writing longer code.
 
 Funnily enough, I spent less time writing code to actually generate the graph than I spent trying to make it look cooler. But given how much time I'm going to have to stare at and navigate these graphs, I think the time was worth it.
