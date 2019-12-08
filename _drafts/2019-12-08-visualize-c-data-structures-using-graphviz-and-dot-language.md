@@ -28,4 +28,12 @@ Yes, and this was quite enough for me at the time. Frankly, for a language that 
 
 Brian Kernighan has given a very [interesting talk](https://www.youtube.com/watch?v=Sg4U4r_AgJU "Brian Kernighan's talk on successful computer language design") on successful language design, where he also described Pic, a programming language he designed for specifying graphs. When I watched the talk a few months ago, I thought Pic was very cool, because using a laptop touchpad or even a mouse to make graphs is extremely annoying. It is often the most annoying part of writing reports. 
 
+So I thought maybe it
+
 Funnily enough, I spent less time writing code to actually generate the graph than I spent trying to make it look cooler. But given how much time I'm going to have to stare at and navigate these graphs, I think the time was worth it.
+
+notes:
+
+1. get gif of the debugging workflow cuz it's so cool
+2. get a gif of scrolling through the tree output
+3. explain that it's a nepali programming language
