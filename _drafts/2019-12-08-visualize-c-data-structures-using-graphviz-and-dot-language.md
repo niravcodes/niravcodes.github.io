@@ -24,6 +24,8 @@ generates this AST:
 
 ![](https://nirav.com.np/assets/img/2019-12-09-004011_1366x768_scrot.png)
 
-Yes, and this was quite enough for me at the time. Frankly, for a language that doesn't even have an else if clause, there's are limited ways to complicate the AST other than by writing longer code.
+Yes, and this was quite enough for me at the time. Frankly, for a language that didn't even have an else if clause, there's are limited ways to complicate the AST other than by writing longer code. But the current language I'm working on is quite extensive. So, I couldn't rely on this method. The tree it creates is immense and it isn't a strictly binary tree this time. So I had to come up with some other way to analyse the data structures.
+
+Brian Kernighan has given a very [interesting talk](https://www.youtube.com/watch?v=Sg4U4r_AgJU "Brian Kernighan's talk on successful computer language design") on successful language design, where he also described Pic, a programming language he designed for specifying graphs. When I watched the talk a few months ago, I thought Pic was very cool, because using a laptop touchpad or even a mouse to make graphs is extremely annoying. It is often the most annoying part of writing reports. 
 
 Funnily enough, I spent less time writing code to actually generate the graph than I spent trying to make it look cooler. But given how much time I'm going to have to stare at and navigate these graphs, I think the time was worth it.
