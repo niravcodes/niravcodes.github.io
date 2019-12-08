@@ -16,6 +16,14 @@ I'm currently working on writing a compiler for my own programming language. And
 
 <!--more-->
 
-I wrote a compiler for my minor project in my 6<sup>th</sup> semester but the language it compiled to assembly was very basic. So back then, I got away with simply printing the tree 
+I wrote a compiler for my minor project in my 6<sup>th</sup> semester but the language it compiled to assembly was very basic. So back then, I got away with simply printing the tree in the terminal. For example, for this code:
 
-Funnily enough, I spent less time writing code to actually generate the graph than I spent trying to make it look cooler. But given how much time I'm going to have to stare at and navigate these graphs, I think the time was worth it. 
+![](https://nirav.com.np/assets/img/2019-12-09-003859_1366x768_scrot.png)
+
+generates this AST:
+
+![](https://nirav.com.np/assets/img/2019-12-09-004011_1366x768_scrot.png)
+
+Yes, and this was quite enough for me at the time. Frankly, for a language that doesn't even have an else if clause, there's a very limited ways to complicate the AST other than by writing very long code.  
+
+Funnily enough, I spent less time writing code to actually generate the graph than I spent trying to make it look cooler. But given how much time I'm going to have to stare at and navigate these graphs, I think the time was worth it.
