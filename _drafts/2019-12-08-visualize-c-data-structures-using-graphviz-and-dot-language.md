@@ -27,7 +27,7 @@ But AST is also an incredibly complex data structure. It has to store a bunch of
 
 ## Flatten the AST back to source code
 
-This one is quite intersting. 
+The AST is a lossless transformation of the source code. So it should be possible to go the other direction and retrieve the source code back from the AST. If the AST is good, then the original source code should be identical to the generated source code. This step is also essential when trying to verify compiler 
 
 ## Printing in the terminal
 
@@ -42,8 +42,6 @@ generates this AST:
 The AST is printed in the terminal rotated 90° counter-clockwise such that the root of the tree is at the bottom-left. This was served me well at the time. Frankly, for a language that didn't even have an else if clause, there's are limited ways to complicate the AST other than by writing longer code. But the language I'm working on right now is extensive. And so the tree it creates is immense. I had to come up with some other way to analyse the data structures.
 
 Brian Kernighan has given an [amazing talk](https://www.youtube.com/watch?v=Sg4U4r_AgJU "Brian Kernighan's talk on successful computer language design") on successful language design, where he also described Pic, a language he designed for specifying graphs. It was interesting because I personally find having to make graphs using my touchpad to be an annoying experience.
-
-
 
 So, I searched for something like Pic, and found Graphviz, which uses the DOT graph description language.
 
