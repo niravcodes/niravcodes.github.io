@@ -20,8 +20,16 @@ I recently ran into such problem, and found an interesting solution. In this pos
 
 I'm currently working on writing a compiler for my own Nepali programming language. The front-end part of a compiler converts the program code into a data structure called AST. AST, or Abstract Syntax Tree, is a tree-based representation of the source code. It's much more suitable to further transformations in the semantic analysis, optimization and code generation phases.
 
-But AST is also an incredibly complex data structure. It has to store a bunch of information and maintain a tree structure. It is not immediately obvious how one might 
+But AST is also an incredibly complex data structure. It has to store a bunch of information and maintain a tree structure. It is not immediately obvious how one might present it on the terminal screen. Several ideas to exist, but they don't scale well. Two solutions that I thought up were:
 
+1. Print in the terminal
+2. Flatten the AST back to source code.
+
+## Flatten the AST back to source code
+
+This one is quite intersting. 
+
+## Printing in the terminal
 
 I wrote a compiler for my minor project in my 6<sup>th</sup> semester but the language it compiled to assembly was very basic. So back then, I got away with simply printing the tree in the terminal. For example, for this code:
 
@@ -31,7 +39,7 @@ generates this AST:
 
 ![](https://nirav.com.np/assets/img/2019-12-09-004011_1366x768_scrot.png)
 
-And this was quite enough for me at the time. Frankly, for a language that didn't even have an else if clause, there's are limited ways to complicate the AST other than by writing longer code. But the current language I'm working on is extensive. And so the tree it creates is immense. I had to come up with some other way to analyse the data structures.
+The AST is printed in the terminal rotated 90° counter-clockwise such that the root of the tree is at the bottom-left. This was served me well at the time. Frankly, for a language that didn't even have an else if clause, there's are limited ways to complicate the AST other than by writing longer code. But the language I'm working on right now is extensive. And so the tree it creates is immense. I had to come up with some other way to analyse the data structures.
 
 Brian Kernighan has given an [amazing talk](https://www.youtube.com/watch?v=Sg4U4r_AgJU "Brian Kernighan's talk on successful computer language design") on successful language design, where he also described Pic, a language he designed for specifying graphs. It was interesting because I personally find having to make graphs using my touchpad to be an annoying experience.
 
