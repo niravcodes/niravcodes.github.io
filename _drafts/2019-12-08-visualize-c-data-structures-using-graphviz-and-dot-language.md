@@ -18,9 +18,9 @@ It is often necessary to inspect the data structure in debugging and program ver
 
 I recently ran into such problem, and found an interesting solution. In this post, I will try to document it.
 
-I'm currently working on writing a compiler for my own Nepali programming language. The front-end part of a compiler converts the program code into a data structure called AST. AST, or Abstract Syntax Tree, is a tree-based representation of the source code. It's much more suitable to further processing in the semantic analysis, optimization and code generation phases.
+I'm currently working on writing a compiler for my own Nepali programming language. The front-end part of a compiler converts the program code into a data structure called AST. AST, or Abstract Syntax Tree, is a tree-based representation of the source code. It's much more suitable to further transformations in the semantic analysis, optimization and code generation phases.
 
-But AST is also an incredibly complex data structure. It has to store a bunch of information and maintain a tree structure. So, I was 
+But AST is also an incredibly complex data structure. It has to store a bunch of information and maintain a tree structure. It is not immediately obvious how one might 
 
 
 I wrote a compiler for my minor project in my 6<sup>th</sup> semester but the language it compiled to assembly was very basic. So back then, I got away with simply printing the tree in the terminal. For example, for this code:
