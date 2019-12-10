@@ -47,10 +47,24 @@ But the language I'm working on right now is extensive. And so the tree it creat
 
 ## Enter Graphviz
 
-Brian Kernighan has given an [amazing talk](https://www.youtube.com/watch?v=Sg4U4r_AgJU "Brian Kernighan's talk on successful computer language design") on successful language design, where he also talked about Pic, a language he designed for specifying graphs. I was immediately taken by the idea because this was a much better way to make graphs.
+Brian Kernighan has given an [amazing talk](https://www.youtube.com/watch?v=Sg4U4r_AgJU "Brian Kernighan's talk on successful computer language design") on successful language design, where he also talked about Pic, a language he designed for specifying graphs. I was immediately taken by the idea because this was a much better way to make graphs than the clumsy touchpad.
+
+Well, Brian's pic is antiquated now, but [Graphviz](http://www.graphviz.org/) does the same kind of thing. Graphviz uses the DOT graph specification language. DOT is extremely simple. It literally takes 5 minutes to be able to make nearly any graph you want. For example, consider the DOT code below
+
+    digraph any_other_name{
+        Brahma->Ram
+        Brahma->Hari
+        Ram->Tom
+        Hari->Dick
+        Hari->Harry
+    }
+
+It produces the Graph:
+
+
 
 <video controls autoplay muted>
 <source src="/assets/img/graphvizdemo1.mp4" type="video/mp4">
 </video>
 
-Funnily enough, I spent less time writing code to actually generate the graph than I spent trying to make it look cooler. But given how much time I'm going to have to stare at and navigate these graphs, I think the time was worth it.
+Funnily enough, I spent less time writing code to actually generate the graph than I spent trying to make it look cooler. But given how much time I'm going to have to stare at and navigate these graphs, I think the it was worth the effort.
