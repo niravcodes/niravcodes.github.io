@@ -49,7 +49,7 @@ But the language I'm working on right now is extensive. And so the tree it creat
 
 Brian Kernighan has given an [amazing talk](https://www.youtube.com/watch?v=Sg4U4r_AgJU "Brian Kernighan's talk on successful computer language design") on successful language design, where he also talked about Pic, a language he designed for specifying graphs. I was immediately taken by the idea because this was a much better way to make graphs.
 
-<video>
+<video controls autoplay muted>
 <source src="/assets/img/graphvizdemo1.mp4" type="video/mp4">
 </video>
 
