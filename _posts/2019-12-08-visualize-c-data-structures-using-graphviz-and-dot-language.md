@@ -128,38 +128,38 @@ void Parser::genDOT(astNode &n, bool isLeft) {
   if (n->type == ast::astType::_if) {
     if (n->cond) {
       print += "n" + to_string(rootNumBackup) + "->n" +
-        to_string(rootNum) + " [label=condition]\\n";
+        to_string(rootNum) + " [label=condition]\n";
       genDOT(n->cond);
     }
     rootNum += 1;
     if (n->_if) {
       print += "n" + to_string(rootNumBackup) + "->n" + 
-        to_string(rootNum) + " [label=if]\\n";
+        to_string(rootNum) + " [label=if]\n";
       genDOT(n->_if);
     }
     rootNum += 1;
     if (n->_elseIf) {
       print += "n" + to_string(rootNumBackup) + "->n" + 
-        to_string(rootNum) + " [label=elseif]\\n";
+        to_string(rootNum) + " [label=elseif]\n";
       genDOT(n->_elseIf);
     }
     rootNum += 1;
     if (n->_else) {
       print += "n" + to_string(rootNumBackup) + "->n" + 
-        to_string(rootNum) + " [label=else]\\n";
+        to_string(rootNum) + " [label=else]\n";
       genDOT(n->_else);
     }
     rootNum += 1;
   } else if (n->type == ast::astType::_while) {
     if (n->cond) {
       print += "n" + to_string(rootNumBackup) + "->n" + 
-        to_string(rootNum) + " [label=condition]\\n";
+        to_string(rootNum) + " [label=condition]\n";
       genDOT(n->cond);
     }
     rootNum += 1;
     if (n->_if) {
-      print += "n" + to_string(rootNumBackup) + "->n" + \
-        to_string(rootNum) + " [label=do]\\n";
+      print += "n" + to_string(rootNumBackup) + "->n" + 
+        to_string(rootNum) + " [label=do]\n";
       genDOT(n->_if);
     }
     rootNum += 1;
@@ -167,10 +167,10 @@ void Parser::genDOT(astNode &n, bool isLeft) {
     if (n->left || n->right) {
       if (n->left) {
         print += "n" + to_string(rootNumBackup) + "->n" +
-          to_string(rootNum) + " [color="#FF595E"]\\n";
+          to_string(rootNum) + " [color="#FF595E"]\n";
         genDOT(n->left);
       } else {
-        print += "n" + to_string(rootNum) + " [label=x]\\n";
+        print += "n" + to_string(rootNum) + " [label=x]\n";
         print += "n" + to_string(rootNumBackup) + "->n" + 
           to_string(rootNum) + "\n";
       }
