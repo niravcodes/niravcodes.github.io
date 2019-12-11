@@ -22,6 +22,8 @@ I'm currently working on writing a compiler for my own Nepali programming langua
 
 ![](https://nirav.com.np/assets/img/wikiast.svg)
 
+_This picture of Abstract Syntax Tree taken from Wikipedia page on AST_
+
 But AST is also an incredibly complex data structure. It has to store a bunch of information and maintain a tree structure. It is not immediately obvious how one might present it on the terminal screen. Several ideas to exist, but they don't scale well. Two solutions that I thought up were:
 
 1. Print in the terminal
