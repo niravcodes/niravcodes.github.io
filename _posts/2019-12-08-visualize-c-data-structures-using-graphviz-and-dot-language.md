@@ -77,18 +77,16 @@ Generating the DOT for Graphviz is generally trivial. For linked list, a recursi
 
 {% highlight c++ %}  
 void printElement(listElement* el, int nodeNumber){
-string DOT;
-DOT = "n" + to_string(nodeNumber) + " \[label=";
-DOT+= el->name+""\]\\n";
+  string DOT;
+  DOT = "n" + to_string(nodeNumber) + " [label=";
+  DOT+= el->name+"\"]\n";
 
-    if (el->right){
+  if (el->right){
     DOT += "n" + to_string(nodeNumber) + "->";
-        DOT += "n" + to_string(nodeNumber+1) + "\n"; 
-        printElement(el->right, nodeNumber+1);
-    }
-     
-    cout << DOT;
-
+    DOT += "n" + to_string(nodeNumber+1) + "\n"; 
+    printElement(el->right, nodeNumber+1);
+  }    
+  cout << DOT;
 }
 {% endhighlight %}
 
@@ -97,90 +95,99 @@ It is a little more complex for the AST. Because trees are recursive structures,
 {% highlight c++ linenos %}  
 int rootNum = 0;
 void Parser::genDOT() {
-cout << "digraph G{\\n";
-cout << "graph\[fontname=Rajdhani, color="#242038"\]\\n";
-cout << "node\[fontname=Rajdhani, color="#242038", shape=square\]\\n";
-cout << "edge\[fontname=Rajdhani, color="#242038"\]\\n";
-genDOT(root, false);
-cout << "}\\n";
+  cout << "digraph G{\n";
+  cout << "graph[fontname=Rajdhani, color="#242038"\]\n";
+  cout << "node[fontname=Rajdhani, color="#242038", shape=square]\n";
+  cout << "edge[fontname=Rajdhani, color="#242038"]\n";
+  genDOT(root, false);
+  cout << "}\n";
 }
 
 void Parser::genDOT(astNode &n, bool isLeft) {
-std::string print;
+  std::string print;
 
-// DOT for current node
-print = "n" + to_string(rootNum) + " \[label=< <B>" +   translateTypeStr(n->type) + "</B>";
-if (translateDataStr(n) != "")
-print += "<BR/>" + translateDataStr(n) + " >";
-else
-print += " >";
-if (isLeft)
-print += ", color="#FF595E", fontcolor="#FF595E"";
-else
-print += ", color="#274690", fontcolor="#274690"";
+  // DOT for current node
+  print = "n" + to_string(rootNum) + " \[label=< <B>" +   translateTypeStr(n->type) + "</B>";
+  if (translateDataStr(n) != "")
+    print += "<BR/>" + translateDataStr(n) + " >";
+  else
+    print += " >";
+  if (isLeft)
+    print += ", color="#FF595E", fontcolor="#FF595E"";
+  else
+    print += ", color="#274690", fontcolor="#274690"";
 
-if (n->type == ast::astType::numericConstant ||
-n->type == ast::astType::stringConstant ||
-n->type == ast::astType::boolConstant) {
-print += ", shape=egg";
-}
-print += "\]\\n";
+  if (n->type == ast::astType::numericConstant ||
+      n->type == ast::astType::stringConstant ||
+      n->type == ast::astType::boolConstant) {
+    print += ", shape=egg";
+  }
+  print += "]\n";
 
-int rootNumBackup = rootNum;
-rootNum++;
-if (n->type == ast::astType::_if) {
-if (n->cond) {
-print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " \[label=condition\]\\n";
-genDOT(n->cond);
-}
-rootNum += 1;
-if (n->_if) {
-print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " \[label=if\]\\n";
-genDOT(n->_if);
-}
-rootNum += 1;
-if (n->_elseIf) {
-print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " \[label=elseif\]\\n";
-genDOT(n->_elseIf);
-}
-rootNum += 1;
-if (n->_else) {
-print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " \[label=else\]\\n";
-genDOT(n->_else);
-}
-rootNum += 1;
-} else if (n->type == ast::astType::_while) {
-if (n->cond) {
-print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " \[label=condition\]\\n";
-genDOT(n->cond);
-}
-rootNum += 1;
-if (n->_if) {
-print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " \[label=do\]\\n";
-genDOT(n->_if);
-}
-rootNum += 1;
-} else {
-if (n->left || n->right) {
-if (n->left) {
-print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " \[color="#FF595E"\]\\n";
-genDOT(n->left);
-} else {
-print += "n" + to_string(rootNum) + " \[label=x\]\\n";
-print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + "\\n";
-}
-rootNum += 1;
-if (n->right) {
-print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " \[color="#274690"\]\\n";
-genDOT(n->right, false);
-} else {
-print += "n" + to_string(rootNum) + " \[label=x\]\\n";
-print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + "\\n";
-}
-}
-}
-
-cout << print << endl;
+  int rootNumBackup = rootNum;
+  rootNum++;
+  if (n->type == ast::astType::_if) {
+    if (n->cond) {
+      print += "n" + to_string(rootNumBackup) + "->n" +
+        to_string(rootNum) + " \[label=condition\]\\n";
+      genDOT(n->cond);
+    }
+    rootNum += 1;
+    if (n->_if) {
+      print += "n" + to_string(rootNumBackup) + "->n" + 
+        to_string(rootNum) + " \[label=if\]\\n";
+      genDOT(n->_if);
+    }
+    rootNum += 1;
+    if (n->_elseIf) {
+      print += "n" + to_string(rootNumBackup) + "->n" + 
+        to_string(rootNum) + " \[label=elseif\]\\n";
+      genDOT(n->_elseIf);
+    }
+    rootNum += 1;
+    if (n->_else) {
+      print += "n" + to_string(rootNumBackup) + "->n" + 
+        to_string(rootNum) + " \[label=else\]\\n";
+      genDOT(n->_else);
+    }
+    rootNum += 1;
+  } else if (n->type == ast::astType::_while) {
+    if (n->cond) {
+      print += "n" + to_string(rootNumBackup) + "->n" + 
+        to_string(rootNum) + " \[label=condition\]\\n";
+      genDOT(n->cond);
+    }
+    rootNum += 1;
+    if (n->_if) {
+      print += "n" + to_string(rootNumBackup) + "->n" + \
+        to_string(rootNum) + " \[label=do\]\\n";
+      genDOT(n->_if);
+    }
+    rootNum += 1;
+  } else {
+    if (n->left || n->right) {
+      if (n->left) {
+        print += "n" + to_string(rootNumBackup) + "->n" +
+          to_string(rootNum) + " \[color="#FF595E"\]\\n";
+        genDOT(n->left);
+      } else {
+        print += "n" + to_string(rootNum) + " \[label=x\]\\n";
+        print += "n" + to_string(rootNumBackup) + "->n" + 
+          to_string(rootNum) + "\\n";
+      }
+      rootNum += 1;
+      if (n->right) {
+        print += "n" + to_string(rootNumBackup) + "->n" + 
+          to_string(rootNum) + " \[color="#274690"\]\\n";
+        genDOT(n->right, false);
+      } else {
+        print += "n" + to_string(rootNum) + " \[label=x\]\\n";
+        print += "n" + to_string(rootNumBackup) + "->n" + 
+          to_string(rootNum) + "\\n";
+      }
+    }
+  }
+  cout << print << endl;
 }
 {% endhighlight %}
 
