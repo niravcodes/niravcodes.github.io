@@ -107,7 +107,7 @@ void Parser::genDOT(astNode &n, bool isLeft) {
   std::string print;
 
   // DOT for current node
-  print = "n" + to_string(rootNum) + " \[label=< <B>" +   translateTypeStr(n->type) + "</B>";
+  print = "n" + to_string(rootNum) + " [label=< <B>" +   translateTypeStr(n->type) + "</B>";
   if (translateDataStr(n) != "")
     print += "<BR/>" + translateDataStr(n) + " >";
   else
@@ -123,44 +123,43 @@ void Parser::genDOT(astNode &n, bool isLeft) {
     print += ", shape=egg";
   }
   print += "]\n";
-
   int rootNumBackup = rootNum;
   rootNum++;
   if (n->type == ast::astType::_if) {
     if (n->cond) {
       print += "n" + to_string(rootNumBackup) + "->n" +
-        to_string(rootNum) + " \[label=condition\]\\n";
+        to_string(rootNum) + " [label=condition]\\n";
       genDOT(n->cond);
     }
     rootNum += 1;
     if (n->_if) {
       print += "n" + to_string(rootNumBackup) + "->n" + 
-        to_string(rootNum) + " \[label=if\]\\n";
+        to_string(rootNum) + " [label=if]\\n";
       genDOT(n->_if);
     }
     rootNum += 1;
     if (n->_elseIf) {
       print += "n" + to_string(rootNumBackup) + "->n" + 
-        to_string(rootNum) + " \[label=elseif\]\\n";
+        to_string(rootNum) + " [label=elseif]\\n";
       genDOT(n->_elseIf);
     }
     rootNum += 1;
     if (n->_else) {
       print += "n" + to_string(rootNumBackup) + "->n" + 
-        to_string(rootNum) + " \[label=else\]\\n";
+        to_string(rootNum) + " [label=else]\\n";
       genDOT(n->_else);
     }
     rootNum += 1;
   } else if (n->type == ast::astType::_while) {
     if (n->cond) {
       print += "n" + to_string(rootNumBackup) + "->n" + 
-        to_string(rootNum) + " \[label=condition\]\\n";
+        to_string(rootNum) + " [label=condition]\\n";
       genDOT(n->cond);
     }
     rootNum += 1;
     if (n->_if) {
       print += "n" + to_string(rootNumBackup) + "->n" + \
-        to_string(rootNum) + " \[label=do\]\\n";
+        to_string(rootNum) + " [label=do]\\n";
       genDOT(n->_if);
     }
     rootNum += 1;
@@ -168,22 +167,22 @@ void Parser::genDOT(astNode &n, bool isLeft) {
     if (n->left || n->right) {
       if (n->left) {
         print += "n" + to_string(rootNumBackup) + "->n" +
-          to_string(rootNum) + " \[color="#FF595E"\]\\n";
+          to_string(rootNum) + " [color="#FF595E"]\\n";
         genDOT(n->left);
       } else {
-        print += "n" + to_string(rootNum) + " \[label=x\]\\n";
+        print += "n" + to_string(rootNum) + " [label=x]\\n";
         print += "n" + to_string(rootNumBackup) + "->n" + 
-          to_string(rootNum) + "\\n";
+          to_string(rootNum) + "\n";
       }
       rootNum += 1;
       if (n->right) {
         print += "n" + to_string(rootNumBackup) + "->n" + 
-          to_string(rootNum) + " \[color="#274690"\]\\n";
+          to_string(rootNum) + " [color="#274690"]\n";
         genDOT(n->right, false);
       } else {
-        print += "n" + to_string(rootNum) + " \[label=x\]\\n";
+        print += "n" + to_string(rootNum) + " [label=x]\n";
         print += "n" + to_string(rootNumBackup) + "->n" + 
-          to_string(rootNum) + "\\n";
+          to_string(rootNum) + "\n";
       }
     }
   }
@@ -265,3 +264,4 @@ Here's an example graph generated from the makefile.
 
 So the next time you're trying to debug or inspect a complex data structure or a tangle of pointers, try taking some time out to write code which generates DOT so that you can inspect the graph. I tell you, a picture _is_ worth a thousand words. The AST below is worth much more:
 
+![](https://nirav.com.np/assets/img/astgraph1.png)
