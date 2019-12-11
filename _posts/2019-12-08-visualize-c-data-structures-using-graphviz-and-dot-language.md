@@ -264,4 +264,4 @@ Here's an example graph generated from the makefile.
 
 So the next time you're trying to debug or inspect a complex data structure or a tangle of pointers, try taking some time out to write code which generates DOT so that you can inspect the graph. I tell you, a picture _is_ worth a thousand words. The AST below is worth much more:
 
-![](https://nirav.com.np/assets/img/astgraph1.png)
+![](https://nirav.com.np/assets/img/astgraph2.png)
