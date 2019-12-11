@@ -20,6 +20,8 @@ I recently ran into such problem, and found an interesting solution. In this pos
 
 I'm currently working on writing a compiler for my own Nepali programming language. The front-end part of a compiler converts the program code into a data structure called AST. AST, or Abstract Syntax Tree, is a tree-based representation of the source code. It's much more suitable to further transformations in the semantic analysis, optimization and code generation phases.
 
+
+
 But AST is also an incredibly complex data structure. It has to store a bunch of information and maintain a tree structure. It is not immediately obvious how one might present it on the terminal screen. Several ideas to exist, but they don't scale well. Two solutions that I thought up were:
 
 1. Print in the terminal
