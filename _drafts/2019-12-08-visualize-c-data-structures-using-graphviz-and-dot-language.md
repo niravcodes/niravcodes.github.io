@@ -10,7 +10,7 @@ feature-img: ''
 thumbnail: ''
 
 ---
-Data structures help structure and organize data effectively, and provide several abstracted operations on the data. They are elegant and convinient, and computer scientists love to use them. Implementing these data structures in the computer require the programmer to flatten the structure into a one-dimensional model using pointers or references because the memory is actually arranged as a one-dimensional sequencial run of data elements.
+Data structures help structure and organize data effectively, and provide several abstracted operations on the data. They are elegant and convenient, and computer scientists love to use them. Implementing these data structures in the computer require the programmer to flatten the structure into a one-dimensional model using pointers or references because the memory is actually arranged as a one-dimensional run of data elements.
 
 It is often necessary to inspect the data structure in debugging and program verification phases. But some data structures happen to be particularly graphical, in that they have multiple associations and elaborate hierarchies or layers. Think of a Rope or a Graph. Due to many associations between nodes, it's not possible to properly display the graph on the terminal.
 
@@ -83,7 +83,7 @@ Generating the DOT for Graphviz is generally trivial. For linked list, a recursi
         cout << DOT;
     }
 
-It is a little more complex for the AST.
+It is a little more complex for the AST. Because trees are recursive structures, it's easy to write elegant recursive functions that process the trees. In this case, the `genDOT(astNode,bool)` function helps recursively descend the AST tree, and print out it's nodes 
 
     int rootNum = 0;
     void Parser::genDOT() {
@@ -170,6 +170,8 @@ It is a little more complex for the AST.
     
     cout << print << endl;
     }
+
+This code is recursively descending 
 
 Firstly, this is not the complete code. It only covers if and while loops, but not function bodies and other blocks. 
 
