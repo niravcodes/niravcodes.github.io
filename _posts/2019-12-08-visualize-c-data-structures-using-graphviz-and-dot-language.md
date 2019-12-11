@@ -85,7 +85,7 @@ Generating the DOT for Graphviz is generally trivial. For linked list, a recursi
         cout << DOT;
     }
 
-It is a little more complex for the AST. Because trees are recursive structures, it's easy to write elegant recursive functions that process the trees. In this case, the `genDOT(astNode,bool)` function helps recursively descend the AST tree, and print out it's nodes. 
+It is a little more complex for the AST. Because trees are recursive structures, it's easy to write elegant recursive functions that process the trees. In this case, the `genDOT(astNode,bool)` function helps recursively descend the AST tree, and print out it's nodes.
 
     int rootNum = 0;
     void Parser::genDOT() {
@@ -222,20 +222,23 @@ The `rootNum` keeps track of the parent node at each recursion. The parent node 
 
 After the code was working, I wrote a Makefile that saves the output, generates a PNG image of the graph and opens that image in the feh image viewer.
 
-	test_ast: parser/parser.C parser/parser.h tests/parser/parser.C lexer/lexer.C lexer/token.C lexer/characters.C 
-		$(CC) $(CFLAGS) parser/parser.C parser/ast.C parser/helper.C tests/parser/parser.C lexer/characters.C lexer/token.C lexer/lexer.C file_handler/file_handler.C -o tests/parser/parser.out
-		@echo "Starting Parser Test"
-		@echo
-		@tests/parser/parser.out > .graph
-		dot -Tpng < .graph > .png
-		feh .png
-		@echo
-        
+    test_ast: parser/parser.C parser/parser.h tests/parser/parser.C lexer/lexer.C lexer/token.C lexer/characters.C 
+    	$(CC) $(CFLAGS) parser/parser.C parser/ast.C parser/helper.C tests/parser/parser.C lexer/characters.C lexer/token.C lexer/lexer.C file_handler/file_handler.C -o tests/parser/parser.out
+    	@echo "Starting Parser Test"
+    	@echo
+    	@tests/parser/parser.out > .graph
+    	dot -Tpng < .graph > .png
+    	feh .png
+    	@echo
+
 This makefile simply redirects the DOT output from STDOUT to a file, and uses the graphviz program `dot` to generate a image that can be opened with feh.
-        
 
 ## Results
 
 After the set up, the whole thing just fit into my workflow.
 
 <video controls autoplay loop muted> <source src="/assets/img/graphvizdemo1.mp4" type="video/mp4"> </video>
+
+Here's an example graph generated from the makefile:
+
+![](https://nirav.com.np/assets/img/astgraph1.png)
