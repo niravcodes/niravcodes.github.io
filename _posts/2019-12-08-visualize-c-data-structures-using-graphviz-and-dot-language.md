@@ -51,13 +51,15 @@ Brian Kernighan has given an [amazing talk](https://www.youtube.com/watch?v=Sg4U
 
 Well, Brian's Pic is antiquated now, but [Graphviz](http://www.graphviz.org/) does the same kind of thing. Graphviz uses the DOT graph specification language. DOT is extremely simple. It literally takes 5 minutes to be able to make nearly any graph you want. For example, consider the DOT code below
 
-    digraph any_other_name{
-        Brahma->Ram
-        Brahma->Hari
-        Ram->Tom
-        Hari->Dick
-        Hari->Harry
-    }
+{% highlight DOT %}
+digraph any_other_name{
+    Brahma->Ram
+    Brahma->Hari
+    Ram->Tom
+    Hari->Dick
+    Hari->Harry
+}
+{% endhighlight %}
 
 It produces the Graph:
 
@@ -71,112 +73,119 @@ I can only imagine how many hours this thing could have saved me the previous se
 
 Generating the DOT for Graphviz is generally trivial. For linked list, a recursive function such as the one below suffices (for c++):
 
-    printElement(listElement* el, int nodeNumber){
-        string DOT;
-        DOT = "n" + to_string(nodeNumber) + " [label=";
-        DOT+= el->name+"\"]\n";
-        
-        if (el->right){
-        	DOT += "n" + to_string(nodeNumber) + "->";
-            DOT += "n" + to_string(nodeNumber+1) + "\n"; 
-            printElement(el->right, nodeNumber+1);
-        }
-        
-        cout << DOT;
+{% highlight c++ %}    
+void printElement(listElement* el, int nodeNumber){
+    string DOT;
+    DOT = "n" + to_string(nodeNumber) + " [label=";
+    DOT+= el->name+"\"]\n";
+    
+    if (el->right){
+ 	DOT += "n" + to_string(nodeNumber) + "->";
+        DOT += "n" + to_string(nodeNumber+1) + "\n"; 
+        printElement(el->right, nodeNumber+1);
     }
+     
+    cout << DOT;
+}
+{% endhighlight %}
 
 It is a little more complex for the AST. Because trees are recursive structures, it's easy to write elegant recursive functions that process the trees. In this case, the `genDOT(astNode,bool)` function helps recursively descend the AST tree, and print out it's nodes.
 
-    int rootNum = 0;
-    void Parser::genDOT() {
-    cout << "digraph G{\n";
-    cout << "graph[fontname=Rajdhani, color=\"#242038\"]\n";
-    cout << "node[fontname=Rajdhani, color=\"#242038\", shape=square]\n";
-    cout << "edge[fontname=Rajdhani, color=\"#242038\"]\n";
-    genDOT(root, false);
-    cout << "}\n";
-    }
+{% highlight c++ linenos %}  
+int rootNum = 0;
+void Parser::genDOT() {
+  cout << "digraph G{\n";
+  cout << "graph[fontname=Rajdhani, color=\"#242038\"]\n";
+  cout << "node[fontname=Rajdhani, color=\"#242038\", shape=square]\n";
+  cout << "edge[fontname=Rajdhani, color=\"#242038\"]\n";
+  genDOT(root, false);
+  cout << "}\n";
+}
     
-    void Parser::genDOT(astNode &n, bool isLeft) {
-    std::string print;
+void Parser::genDOT(astNode &n, bool isLeft) {
+  std::string print;
+  
+  // DOT for current node
+  print = "n" + to_string(rootNum) + " [label=< <B>" +   translateTypeStr(n->type) + "</B>";
+  if (translateDataStr(n) != "")
+      print += "<BR/>" + translateDataStr(n) + " >";
+  else
+      print += " >";
+  if (isLeft)
+      print += ", color=\"#FF595E\", fontcolor=\"#FF595E\"";
+  else
+      print += ", color=\"#274690\", fontcolor=\"#274690\"";
+   
+  if (n->type == ast::astType::numericConstant ||
+      n->type == ast::astType::stringConstant || 
+      n->type == ast::astType::boolConstant) {
+    print += ", shape=egg";
+  }
+  print += "]\n";
     
-    // DOT for current node
-    print = "n" + to_string(rootNum) + " [label=< <B>" + translateTypeStr(n->type) + "</B>";
-    if (translateDataStr(n) != "")
-        print += "<BR/>" + translateDataStr(n) + " >";
-    else
-        print += " >";
-    if (isLeft)
-        print += ", color=\"#FF595E\", fontcolor=\"#FF595E\"";
-    else
-        print += ", color=\"#274690\", fontcolor=\"#274690\"";
-    
-    if (n->type == ast::astType::numericConstant || n->type == ast::astType::stringConstant || n->type == ast::astType::boolConstant) {
-        print += ", shape=egg";
-    }
-    print += "]\n";
-    
-    int rootNumBackup = rootNum;
-    rootNum++;
-    if (n->type == ast::astType::_if) {
-        if (n->cond) {
-            print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " [label=condition]\n";
-            genDOT(n->cond);
-        }
-        rootNum += 1;
-        if (n->_if) {
-            print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " [label=if]\n";
-            genDOT(n->_if);
-        }
-        rootNum += 1;
-        if (n->_elseIf) {
-            print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " [label=elseif]\n";
-            genDOT(n->_elseIf);
-        }
-        rootNum += 1;
-        if (n->_else) {
-            print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " [label=else]\n";
-            genDOT(n->_else);
-        }
-        rootNum += 1;
-    } else if (n->type == ast::astType::_while) {
-        if (n->cond) {
-            print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " [label=condition]\n";
-            genDOT(n->cond);
-        }
-        rootNum += 1;
-        if (n->_if) {
-            print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " [label=do]\n";
-            genDOT(n->_if);
-        }
-        rootNum += 1;
-    } else {
-        if (n->left || n->right) {
-            if (n->left) {
-                print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " [color=\"#FF595E\"]\n";
-                genDOT(n->left);
-            } else {
-                print += "n" + to_string(rootNum) + " [label=x]\n";
-                print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + "\n";
-            }
-            rootNum += 1;
-            if (n->right) {
-                print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " [color=\"#274690\"]\n";
-                genDOT(n->right, false);
-            } else {
-                print += "n" + to_string(rootNum) + " [label=x]\n";
-                print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + "\n";
-            }
-        }
-    }
-    
-    cout << print << endl;
-    }
+  int rootNumBackup = rootNum;
+  rootNum++;
+  if (n->type == ast::astType::_if) {
+      if (n->cond) {
+          print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " [label=condition]\n";
+          genDOT(n->cond);
+      }
+      rootNum += 1;
+      if (n->_if) {
+        print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " [label=if]\n";
+          genDOT(n->_if);
+      }
+      rootNum += 1;
+      if (n->_elseIf) {
+          print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " [label=elseif]\n";
+          genDOT(n->_elseIf);
+      }
+      rootNum += 1;
+      if (n->_else) {
+          print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " [label=else]\n";
+          genDOT(n->_else);
+      }
+      rootNum += 1;
+  } else if (n->type == ast::astType::_while) {
+      if (n->cond) {
+          print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " [label=condition]\n";
+          genDOT(n->cond);
+      }
+      rootNum += 1;
+      if (n->_if) {
+          print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " [label=do]\n";
+          genDOT(n->_if);
+      }
+      rootNum += 1;
+  } else {
+      if (n->left || n->right) {
+          if (n->left) {
+              print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " [color=\"#FF595E\"]\n";
+              genDOT(n->left);
+          } else {
+              print += "n" + to_string(rootNum) + " [label=x]\n";
+              print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + "\n";
+          }
+          rootNum += 1;
+          if (n->right) {
+              print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + " [color=\"#274690\"]\n";
+              genDOT(n->right, false);
+          } else {
+              print += "n" + to_string(rootNum) + " [label=x]\n";
+              print += "n" + to_string(rootNumBackup) + "->n" + to_string(rootNum) + "\n";
+          }
+      }
+  }
+  
+  cout << print << endl;
+  }
+{% endhighlight %}
 
 Of course, this is not the complete code. It only covers if and while loops, but not function bodies and other blocks. But this is the essence. Funnily enough, I spent less time writing code to actually generate the graph than I spent trying to make it look cooler. But given how much time I'm going to have to stare at and navigate these graphs, I think the it was worth the effort.
 
 The `rootNum` keeps track of the parent node at each recursion. The parent node needs to point to all it's the children, and `rootNum` helps keep track of the that. The `genDOT()` function is simply the public interface which first prints out the necessary DOT boilerplate and then calls the main `genDOT(astNode,bool)` function. The `genDOT(astnode,bool)` function recursively prints out all the DOT code. Here's the kind of DOT code it produces:
 
+{% highlight dot %}    
     digraph G{
     graph[fontname=Rajdhani, color="#242038"]
     node[fontname=Rajdhani, color="#242038", shape=square]
@@ -219,10 +228,12 @@ The `rootNum` keeps track of the parent node at each recursion. The parent node 
     n0->n1 [color="#FF595E"]
     n0->n7 [color="#274690"]
     }
+{% endlighlight %}
 
 After the code was working, I wrote a Makefile that saves the output, generates a PNG image of the graph and opens that image in the feh image viewer.
 
-    test_ast: parser/parser.C parser/parser.h tests/parser/parser.C lexer/lexer.C lexer/token.C lexer/characters.C 
+{% highlight make %}
+test_ast: parser/parser.C parser/parser.h tests/parser/parser.C lexer/lexer.C lexer/token.C lexer/characters.C 
     	$(CC) $(CFLAGS) parser/parser.C parser/ast.C parser/helper.C tests/parser/parser.C lexer/characters.C lexer/token.C lexer/lexer.C file_handler/file_handler.C -o tests/parser/parser.out
     	@echo "Starting Parser Test"
     	@echo
@@ -230,6 +241,7 @@ After the code was working, I wrote a Makefile that saves the output, generates 
     	dot -Tpng < .graph > .png
     	feh .png
     	@echo
+{% endhighlight %}
 
 This makefile simply redirects the DOT output from STDOUT to a file, and uses the graphviz program `dot` to generate a image that can be opened with feh.
 
@@ -239,6 +251,8 @@ After the set up, the whole thing just fit into my workflow.
 
 <video controls autoplay loop muted> <source src="/assets/img/graphvizdemo1.mp4" type="video/mp4"> </video>
 
-Here's an example graph generated from the makefile:
+Here's an example graph generated from the makefile.
 
 ![](https://nirav.com.np/assets/img/astgraph1.png)
+
+So the next time you're trying to debug or inspect a complex data structure or a tangle of pointers, try taking some time out to write code which generates DOT so that you can inspect the graph. I tell you, a picture _is_ worth a thousand words.
