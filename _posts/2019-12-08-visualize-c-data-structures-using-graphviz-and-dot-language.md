@@ -51,7 +51,7 @@ Brian Kernighan has given an [amazing talk](https://www.youtube.com/watch?v=Sg4U
 
 Well, Brian's Pic is antiquated now, but [Graphviz](http://www.graphviz.org/) does the same kind of thing. Graphviz uses the DOT graph specification language. DOT is extremely simple. It literally takes 5 minutes to be able to make nearly any graph you want. For example, consider the DOT code below
 
-{% highlight DOT %}
+{% highlight %}
 digraph any_other_name{
     Brahma->Ram
     Brahma->Hari
@@ -185,7 +185,7 @@ Of course, this is not the complete code. It only covers if and while loops, but
 
 The `rootNum` keeps track of the parent node at each recursion. The parent node needs to point to all it's the children, and `rootNum` helps keep track of the that. The `genDOT()` function is simply the public interface which first prints out the necessary DOT boilerplate and then calls the main `genDOT(astNode,bool)` function. The `genDOT(astnode,bool)` function recursively prints out all the DOT code. Here's the kind of DOT code it produces:
 
-{% highlight dot %}    
+{% highlight %}    
     digraph G{
     graph[fontname=Rajdhani, color="#242038"]
     node[fontname=Rajdhani, color="#242038", shape=square]
@@ -234,13 +234,13 @@ After the code was working, I wrote a Makefile that saves the output, generates 
 
 {% highlight make %}
 test_ast: parser/parser.C parser/parser.h tests/parser/parser.C lexer/lexer.C lexer/token.C lexer/characters.C 
-    	$(CC) $(CFLAGS) parser/parser.C parser/ast.C parser/helper.C tests/parser/parser.C lexer/characters.C lexer/token.C lexer/lexer.C file_handler/file_handler.C -o tests/parser/parser.out
-    	@echo "Starting Parser Test"
-    	@echo
-    	@tests/parser/parser.out > .graph
-    	dot -Tpng < .graph > .png
-    	feh .png
-    	@echo
+$(CC) $(CFLAGS) parser/parser.C parser/ast.C parser/helper.C tests/parser/parser.C lexer/characters.C lexer/token.C lexer/lexer.C file_handler/file_handler.C -o tests/parser/parser.out
+    @echo "Starting Parser Test"
+    @echo
+    @tests/parser/parser.out > .graph
+    dot -Tpng < .graph > .png
+    feh .png
+    @echo
 {% endhighlight %}
 
 This makefile simply redirects the DOT output from STDOUT to a file, and uses the graphviz program `dot` to generate a image that can be opened with feh.
