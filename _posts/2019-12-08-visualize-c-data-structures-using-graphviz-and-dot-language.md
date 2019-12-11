@@ -96,7 +96,7 @@ It is a little more complex for the AST. Because trees are recursive structures,
 int rootNum = 0;
 void Parser::genDOT() {
   cout << "digraph G{\n";
-  cout << "graph[fontname=Rajdhani, color="#242038"\]\n";
+  cout << "graph[fontname=Rajdhani, color="#242038"]\n";
   cout << "node[fontname=Rajdhani, color="#242038", shape=square]\n";
   cout << "edge[fontname=Rajdhani, color="#242038"]\n";
   genDOT(root, false);
