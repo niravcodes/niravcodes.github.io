@@ -55,13 +55,13 @@ Brian Kernighan has given an [amazing talk](https://www.youtube.com/watch?v=Sg4U
 
 Well, Brian's Pic is antiquated now, but [Graphviz](http://www.graphviz.org/) does the same kind of thing. Graphviz uses the DOT graph specification language. DOT is extremely simple. It literally takes 5 minutes to be able to make nearly any graph you want. For example, consider the DOT code below
 
-digraph any_other_name{
-Brahma->Ram
-Brahma->Hari
-Ram->Tom
-Hari->Dick
-Hari->Harry
-}
+    digraph any_other_name{
+        Brahma->Ram
+        Brahma->Hari
+        Ram->Tom
+        Hari->Dick
+        Hari->Harry
+    }
 
 It produces the Graph:
 
@@ -189,59 +189,59 @@ Of course, this is not the complete code. It only covers if and while loops, but
 The `rootNum` keeps track of the parent node at each recursion. The parent node needs to point to all it's the children, and `rootNum` helps keep track of the that. The `genDOT()` function is simply the public interface which first prints out the necessary DOT boilerplate and then calls the main `genDOT(astNode,bool)` function. The `genDOT(astnode,bool)` function recursively prints out all the DOT code. Here's the kind of DOT code it produces:
 
     digraph G{
-    graph[fontname=Rajdhani, color="#242038"]
-    node[fontname=Rajdhani, color="#242038", shape=square]
-    edge[fontname=Rajdhani, color="#242038"]
-    n3 [label=< <B>Declare Var</B><BR/>नाम >, color="#FF595E", fontcolor="#FF595E"]
-    n2 [label=< <B>chain</B> >, color="#FF595E", fontcolor="#FF595E"]
-    n2->n3 [color="#FF595E"]
-    n5 [label=x]
-    n2->n5
-    n1 [label=< <B>Declare String </B> >, color="#FF595E", fontcolor="#FF595E"]
-    n1->n2 [color="#FF595E"]
-    n6 [label=x]
-    n1->n6
-    n10 [label=< <B>dataEl</B><BR/>नाम >, color="#FF595E", fontcolor="#FF595E"]
-    n12 [label=< <B>string</B><BR/>नीरब >, color="#274690", fontcolor="#274690", shape=egg]
-    n9 [label=< <B>=</B> >, color="#FF595E", fontcolor="#FF595E"]
-    n9->n10 [color="#FF595E"]
-    n9->n12 [color="#274690"]
-    n17 [label=< <B>string</B><BR/>नमस्ते मालिक >, color="#FF595E", fontcolor="#FF595E", shape=egg]
-    n16 [label=< <B>chain</B> >, color="#FF595E", fontcolor="#FF595E"]
-    n16->n17 [color="#FF595E"]
-    n19 [label=x]
-    n16->n19
-    n15 [label=< <B>FunctionCall</B><BR/>लेख >, color="#FF595E", fontcolor="#FF595E"]
-    n15->n16 [color="#FF595E"]
-    n20 [label=x]
-    n15->n20
-    n14 [label=< <B>Statement<BR/>3</B> >, color="#FF595E", fontcolor="#FF595E"]
-    n14->n15 [color="#FF595E"]
-    n21 [label=x]
-    n14->n21
-    n8 [label=< <B>If</B> >, color="#FF595E", fontcolor="#FF595E"]
-    n8->n9 [label=condition]
-    n8->n14 [label=if]
-    n7 [label=< <B>Statement<BR/>2</B> >, color="#274690", fontcolor="#274690"]
-    n7->n8 [color="#FF595E"]
-    n25 [label=x]
-    n7->n25
-    n0 [label=< <B>Statement<BR/>1</B> >, color="#274690", fontcolor="#274690"]
-    n0->n1 [color="#FF595E"]
-    n0->n7 [color="#274690"]
+        graph[fontname=Rajdhani, color="#242038"]
+        node[fontname=Rajdhani, color="#242038", shape=square]
+        edge[fontname=Rajdhani, color="#242038"]
+        n3 [label=< <B>Declare Var</B><BR/>नाम >, color="#FF595E", fontcolor="#FF595E"]
+        n2 [label=< <B>chain</B> >, color="#FF595E", fontcolor="#FF595E"]
+        n2->n3 [color="#FF595E"]
+        n5 [label=x]
+        n2->n5
+        n1 [label=< <B>Declare String </B> >, color="#FF595E", fontcolor="#FF595E"]
+        n1->n2 [color="#FF595E"]
+        n6 [label=x]
+        n1->n6
+        n10 [label=< <B>dataEl</B><BR/>नाम >, color="#FF595E", fontcolor="#FF595E"]
+        n12 [label=< <B>string</B><BR/>नीरब >, color="#274690", fontcolor="#274690", shape=egg]
+        n9 [label=< <B>=</B> >, color="#FF595E", fontcolor="#FF595E"]
+        n9->n10 [color="#FF595E"]
+        n9->n12 [color="#274690"]
+        n17 [label=< <B>string</B><BR/>नमस्ते मालिक >, color="#FF595E", fontcolor="#FF595E", shape=egg]
+        n16 [label=< <B>chain</B> >, color="#FF595E", fontcolor="#FF595E"]
+        n16->n17 [color="#FF595E"]
+        n19 [label=x]
+        n16->n19
+        n15 [label=< <B>FunctionCall</B><BR/>लेख >, color="#FF595E", fontcolor="#FF595E"]
+        n15->n16 [color="#FF595E"]
+        n20 [label=x]
+        n15->n20
+        n14 [label=< <B>Statement<BR/>3</B> >, color="#FF595E", fontcolor="#FF595E"]
+        n14->n15 [color="#FF595E"]
+        n21 [label=x]
+        n14->n21
+        n8 [label=< <B>If</B> >, color="#FF595E", fontcolor="#FF595E"]
+        n8->n9 [label=condition]
+        n8->n14 [label=if]
+        n7 [label=< <B>Statement<BR/>2</B> >, color="#274690", fontcolor="#274690"]
+        n7->n8 [color="#FF595E"]
+        n25 [label=x]
+        n7->n25
+        n0 [label=< <B>Statement<BR/>1</B> >, color="#274690", fontcolor="#274690"]
+        n0->n1 [color="#FF595E"]
+        n0->n7 [color="#274690"]
     }
 
 After the code was working, I wrote a Makefile that saves the output, generates a PNG image of the graph and opens that image in the feh image viewer.
 
 {% highlight make %}
 test_ast: parser/parser.C parser/parser.h tests/parser/parser.C lexer/lexer.C lexer/token.C lexer/characters.C
-$(CC) $(CFLAGS) parser/parser.C parser/ast.C parser/helper.C tests/parser/parser.C lexer/characters.C lexer/token.C lexer/lexer.C file_handler/file_handler.C -o tests/parser/parser.out
-@echo "Starting Parser Test"
-@echo
-@tests/parser/parser.out > .graph
-dot -Tpng < .graph > .png
-feh .png
-@echo
+    $(CC) $(CFLAGS) parser/parser.C parser/ast.C parser/helper.C tests/parser/parser.C lexer/characters.C lexer/token.C lexer/lexer.C file_handler/file_handler.C -o tests/parser/parser.out
+    @echo "Starting Parser Test"
+    @echo
+    @tests/parser/parser.out > .graph
+    dot -Tpng < .graph > .png
+    feh .png
+    @echo
 {% endhighlight %}
 
 This makefile simply redirects the DOT output from STDOUT to a file, and uses the graphviz program `dot` to generate a image that can be opened with feh.
