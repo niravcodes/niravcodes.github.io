@@ -51,7 +51,7 @@ Brian Kernighan has given an [amazing talk](https://www.youtube.com/watch?v=Sg4U
 
 Well, Brian's Pic is antiquated now, but [Graphviz](http://www.graphviz.org/) does the same kind of thing. Graphviz uses the DOT graph specification language. DOT is extremely simple. It literally takes 5 minutes to be able to make nearly any graph you want. For example, consider the DOT code below
 
-{% highlight %}
+
 digraph any_other_name{
     Brahma->Ram
     Brahma->Hari
@@ -59,7 +59,7 @@ digraph any_other_name{
     Hari->Dick
     Hari->Harry
 }
-{% endhighlight %}
+
 
 It produces the Graph:
 
@@ -185,7 +185,7 @@ Of course, this is not the complete code. It only covers if and while loops, but
 
 The `rootNum` keeps track of the parent node at each recursion. The parent node needs to point to all it's the children, and `rootNum` helps keep track of the that. The `genDOT()` function is simply the public interface which first prints out the necessary DOT boilerplate and then calls the main `genDOT(astNode,bool)` function. The `genDOT(astnode,bool)` function recursively prints out all the DOT code. Here's the kind of DOT code it produces:
 
-{% highlight %}    
+ 
     digraph G{
     graph[fontname=Rajdhani, color="#242038"]
     node[fontname=Rajdhani, color="#242038", shape=square]
@@ -228,7 +228,6 @@ The `rootNum` keeps track of the parent node at each recursion. The parent node 
     n0->n1 [color="#FF595E"]
     n0->n7 [color="#274690"]
     }
-{% endlighlight %}
 
 After the code was working, I wrote a Makefile that saves the output, generates a PNG image of the graph and opens that image in the feh image viewer.
 
