@@ -6,7 +6,7 @@ tags:
 - c++
 - graphviz
 enableNepali: false
-feature-img: ''
+feature-img: https://nirav.com.np/assets/img/browntrunk.jpg
 thumbnail: ''
 
 ---
@@ -63,6 +63,8 @@ It produces the Graph:
 
 ![](https://nirav.com.np/assets/img/graph1.png)
 
+If you're interested, you should try some online Graphviz software to get the hang of it. I used [this one](https://dreampuf.github.io/GraphvizOnline/ "online graphviz") but there are a lot of choices one web search away.
+
 I can only imagine how many hours this thing could have saved me the previous semester when I was stuck making elaborate graphs for my minor project report and presentation.
 
 ## Generating the DOT
@@ -83,7 +85,7 @@ Generating the DOT for Graphviz is generally trivial. For linked list, a recursi
         cout << DOT;
     }
 
-It is a little more complex for the AST. Because trees are recursive structures, it's easy to write elegant recursive functions that process the trees. In this case, the `genDOT(astNode,bool)` function helps recursively descend the AST tree, and print out it's nodes 
+It is a little more complex for the AST. Because trees are recursive structures, it's easy to write elegant recursive functions that process the trees. In this case, the `genDOT(astNode,bool)` function helps recursively descend the AST tree, and print out it's nodes. 
 
     int rootNum = 0;
     void Parser::genDOT() {
@@ -171,12 +173,69 @@ It is a little more complex for the AST. Because trees are recursive structures,
     cout << print << endl;
     }
 
-This code is recursively descending 
+Of course, this is not the complete code. It only covers if and while loops, but not function bodies and other blocks. But this is the essence. Funnily enough, I spent less time writing code to actually generate the graph than I spent trying to make it look cooler. But given how much time I'm going to have to stare at and navigate these graphs, I think the it was worth the effort.
 
-Firstly, this is not the complete code. It only covers if and while loops, but not function bodies and other blocks. 
+The `rootNum` keeps track of the parent node at each recursion. The parent node needs to point to all it's the children, and `rootNum` helps keep track of the that. The `genDOT()` function is simply the public interface which first prints out the necessary DOT boilerplate and then calls the main `genDOT(astNode,bool)` function. The `genDOT(astnode,bool)` function recursively prints out all the DOT code. Here's the kind of DOT code it produces:
+
+    digraph G{
+    graph[fontname=Rajdhani, color="#242038"]
+    node[fontname=Rajdhani, color="#242038", shape=square]
+    edge[fontname=Rajdhani, color="#242038"]
+    n3 [label=< <B>Declare Var</B><BR/>नाम >, color="#FF595E", fontcolor="#FF595E"]
+    n2 [label=< <B>chain</B> >, color="#FF595E", fontcolor="#FF595E"]
+    n2->n3 [color="#FF595E"]
+    n5 [label=x]
+    n2->n5
+    n1 [label=< <B>Declare String </B> >, color="#FF595E", fontcolor="#FF595E"]
+    n1->n2 [color="#FF595E"]
+    n6 [label=x]
+    n1->n6
+    n10 [label=< <B>dataEl</B><BR/>नाम >, color="#FF595E", fontcolor="#FF595E"]
+    n12 [label=< <B>string</B><BR/>नीरब >, color="#274690", fontcolor="#274690", shape=egg]
+    n9 [label=< <B>=</B> >, color="#FF595E", fontcolor="#FF595E"]
+    n9->n10 [color="#FF595E"]
+    n9->n12 [color="#274690"]
+    n17 [label=< <B>string</B><BR/>नमस्ते मालिक >, color="#FF595E", fontcolor="#FF595E", shape=egg]
+    n16 [label=< <B>chain</B> >, color="#FF595E", fontcolor="#FF595E"]
+    n16->n17 [color="#FF595E"]
+    n19 [label=x]
+    n16->n19
+    n15 [label=< <B>FunctionCall</B><BR/>लेख >, color="#FF595E", fontcolor="#FF595E"]
+    n15->n16 [color="#FF595E"]
+    n20 [label=x]
+    n15->n20
+    n14 [label=< <B>Statement<BR/>3</B> >, color="#FF595E", fontcolor="#FF595E"]
+    n14->n15 [color="#FF595E"]
+    n21 [label=x]
+    n14->n21
+    n8 [label=< <B>If</B> >, color="#FF595E", fontcolor="#FF595E"]
+    n8->n9 [label=condition]
+    n8->n14 [label=if]
+    n7 [label=< <B>Statement<BR/>2</B> >, color="#274690", fontcolor="#274690"]
+    n7->n8 [color="#FF595E"]
+    n25 [label=x]
+    n7->n25
+    n0 [label=< <B>Statement<BR/>1</B> >, color="#274690", fontcolor="#274690"]
+    n0->n1 [color="#FF595E"]
+    n0->n7 [color="#274690"]
+    }
+
+After the code was working, I wrote a Makefile that saves the output, generates a PNG image of the graph and opens that image in the feh image viewer.
+
+	test_ast: parser/parser.C parser/parser.h tests/parser/parser.C lexer/lexer.C lexer/token.C lexer/characters.C 
+		$(CC) $(CFLAGS) parser/parser.C parser/ast.C parser/helper.C tests/parser/parser.C lexer/characters.C lexer/token.C lexer/lexer.C file_handler/file_handler.C -o tests/parser/parser.out
+		@echo "Starting Parser Test"
+		@echo
+		@tests/parser/parser.out > .graph
+		dot -Tpng < .graph > .png
+		feh .png
+		@echo
+        
+This makefile simply redirects the DOT output from STDOUT to a file, and uses the graphviz program `dot` to generate a image that can be opened with feh.
+        
 
 ## Results
 
-<video controls autoplay loop muted> <source src="/assets/img/graphvizdemo1.mp4" type="video/mp4"> </video>
+After the set up, the whole thing just fit into my workflow.
 
-Funnily enough, I spent less time writing code to actually generate the graph than I spent trying to make it look cooler. But given how much time I'm going to have to stare at and navigate these graphs, I think the it was worth the effort.
+<video controls autoplay loop muted> <source src="/assets/img/graphvizdemo1.mp4" type="video/mp4"> </video>
