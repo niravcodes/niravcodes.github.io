@@ -45,22 +45,22 @@ fields:
     required: true
   description: Always post. ALWAYS POST!!
 pages:
-- _posts/making-mnsa-a-nepali-programming-language.md
-- _posts/2019-10-16-on-the-nepali-language-and-unicode-1.md
-- _posts/implementing-nepali-language-support-in-website-using-javascript.md
-- _posts/designing-the-mnsa-cc-website.md
-- _posts/2019-12-08-visualize-c-data-structures-using-graphviz-and-dot-language.md
-- _posts/first-prototype-for-a-nepali-language-compiler.md
-- _posts/making-an-online-compiler.md
-- _posts/hey-i-m-nubivagant.md
-- _posts/2019-10-24-some-cool-things-on-the-internet-part-one.md
-- _posts/2018-12-22-looking-at-mern-stack.md
-- _posts/how-to-daydream.md
-- _posts/2019-10-31-anticipate-blue-light-filters-when-designing-for-the-web.md
-- _posts/2019-01-05-movies-that-i-watched-when-i-was-sick.md
-- _posts/2018-12-20-on-sound-and-audio-generation-using-atmega-microcontrollers.md
-- _posts/i-love-xxd.md
-- _posts/Meet Jobcat - The feline goddess of Freelance.md
 - _posts/2018-03-09-the-cursed-child-sucks.md
+- _posts/2018-12-20-on-sound-and-audio-generation-using-atmega-microcontrollers.md
+- _posts/2018-12-22-looking-at-mern-stack.md
+- _posts/2019-01-05-movies-that-i-watched-when-i-was-sick.md
+- _posts/2019-10-16-on-the-nepali-language-and-unicode-1.md
+- _posts/2019-10-24-some-cool-things-on-the-internet-part-one.md
+- _posts/2019-10-31-anticipate-blue-light-filters-when-designing-for-the-web.md
+- _posts/2019-12-08-visualize-c-data-structures-using-graphviz-and-dot-language.md
+- _posts/Meet Jobcat - The feline goddess of Freelance.md
 - _posts/designing-a-new-website-for-myself.md
+- _posts/designing-the-mnsa-cc-website.md
+- _posts/first-prototype-for-a-nepali-language-compiler.md
+- _posts/hey-i-m-nubivagant.md
+- _posts/how-to-daydream.md
+- _posts/i-love-xxd.md
+- _posts/implementing-nepali-language-support-in-website-using-javascript.md
+- _posts/making-an-online-compiler.md
+- _posts/making-mnsa-a-nepali-programming-language.md
 - _posts/random-stuff-to-do-when-bored.md

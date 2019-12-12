@@ -8,7 +8,7 @@ tags:
 - project
 excerpt_separator: "<!--more-->"
 layout: post
-feature-img: https://nirav.com.np/assets/img/Webp.net-resizeimage (1).jpg
+feature-img: https://nirav.com.np/assets/img/browntrunk.jpg
 thumbnail: ''
 
 ---

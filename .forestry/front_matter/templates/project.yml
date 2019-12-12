@@ -26,6 +26,6 @@ fields:
   default: post
 pages:
 - _portfolio/dot-matrix-display-system-and-animation-software.md
-- _portfolio/self-balancing-robot-mimo.md
-- _portfolio/humbird.md
 - _portfolio/huffman-compression.md
+- _portfolio/humbird.md
+- _portfolio/self-balancing-robot-mimo.md
