@@ -94,3 +94,11 @@ Link: [http://www.cs.yale.edu/homes/perlis-alan/quotes.html](http://www.cs.yale.
 Alan J. Perlis, a computer scientist who received the inagural Turing Award for his work in designing ALGOL. He wrote a set of concise and witty sentences distilling his experiences in programming. They are often humorous, and give you a lot of food for thought. One of my favorites:
 
 > In the long run every program becomes rococo - then rubble.
+
+### Sed pathfinder
+
+Link: [https://devpost.com/software/sed-pathfinder](https://devpost.com/software/sed-pathfinder "https://devpost.com/software/sed-pathfinder")
+
+Yes. This guy wrote a text-based path finder in Sed! It is incredibly easy to try for yourself so give it a go. Then try to make sense of the code. 
+
+### Mitxela's DIY video game console
