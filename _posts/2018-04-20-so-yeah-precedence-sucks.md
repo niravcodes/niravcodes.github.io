@@ -1,15 +1,15 @@
 ---
 title: The Long Sad Story Of How My Life Was Ruined By Precedence In C
-date: 2018-04-20 00:00:00 Z
+date: 2018-04-20T00:00:00.000+00:00
 tags:
 - code
 - thoughts
 - avr
 - attiny
 layout: post
----
 
-Did you know that the equality (==) operator takes precedence over bitwise operators(&, \|) in c? You probably did, because you must have memorized the precedence table in the first semester. Being a lazy ass, however, I didn't. Now, at that time, I didn't think much of it because I could use parenthesis whenever I was confused about precedence. I was wrong.
+---
+Did you know that the equality (==) operator takes precedence over bitwise operators(&, |) in c? You probably did, because you must have memorized the precedence table in the first semester. Being a lazy ass, however, I didn't. Now, at that time, I didn't think much of it because I could use parenthesis whenever I was confused about precedence. I was wrong.
 
 Let me tell you a sad story. Few days ago, I decided that I should start practically learning electronics. This was mostly because I am going to fail EDC this semester (having written 3 Harry Potter fanfictions to pass time in the exam hall). Thus I bought random capacitors, transistors, diodes and the like. I also already had an ATtiny13 and an Arduino. So I download the AVR toolchain and the trusty avrdude, and decide to learn the avr dialect of C. It was lovely. The datasheet detailed every little register, all the bits that could be flipped to output highs and lows. This was all beautiful because this would allow me to use my programming knowledge to make real physical things happen (IRL!!). So yeah, I fantasized, I dreamed, I made little sketches and designs of things I would eventually make. Hell, I even read books on product designing.
 
@@ -24,27 +24,27 @@ Now, I have always thought myself to be a good programmer. Granted, I never fins
 Reading the example code in the datasheet made me realize that there was no clean way to set a flip a bit in C. You would have to operate on an entire byte of register (like DDR) at a time with bitwise operators. Nice, I said. I had a reason to read bitwise operators now. I then wrote the following code:
 
 {% highlight c linenos %}
-#define F_CPU 1200000
-#include <avr/io.h>
-    
+\#define F_CPU 1200000
+\#include <avr/io.h>
+
 int main(){
 DDRB = 0x10;    // 00010000 : Set the pin PB4 as an output pin
 PORTB = 0x18;   // 00011000 : Set the pin PB4 to High (LED is connected here)
-				// and turn on internal pullup resistor on pin PB3
-                // this means that when switch is not pressed, the corresponding PIN bit is high
+// and turn on internal pullup resistor on pin PB3
+// this means that when switch is not pressed, the corresponding PIN bit is high
 
 while (1){
-   	if (PINB & 0x08 == 0)   // if switch is ON (PB3 is reading LOW)
-       	PORTB = 0x08; // turn off the led
-    else
-       	PORTB = 0x18; // turn on the led
-    }
+if (PINB & 0x08 == 0)   // if switch is ON (PB3 is reading LOW)
+PORTB = 0x08; // turn off the led
+else
+PORTB = 0x18; // turn on the led
+}
 }
 {% endhighlight %}
 
 I had worked out the hexadecimal numbers on paper to check for errors. I had consulted the datasheet again and again to make sure that the pins on the tiny matched with the pins I was setting and reading from. Sure, the register values are hardcoded and it shouldn't be done this way. But for something so simple, I didn't have to adhere to the correct coding practice.
 
-But the circuit didn't work, you see. I went bald from going pulling on my hair, the switch didn't work. I lost my chin beard from stroking it too hard, the switch didn't work. Nothing I did made any difference, the switch just wouldn't work.
+But the circuit didn't work, you see. I went bald from pulling on my hair, the switch didn't work. I lost my chin beard from stroking it too hard, the switch didn't work. Nothing I did made any difference, the switch just wouldn't work.
 
 It was because I was new to electronics, I had already unconsciously decided that problem was with the circuit, and not the code. I didn't give the code a second thought.
 
@@ -53,24 +53,24 @@ Any logical person would think that the == operator has to be applied last. You 
 So in the end, after several sad days of contemplating the melancholy Chopin and furiously banging my head on the  wall with tears in my eyes, I looked back at the code. I made 2 changes, both of them I thought to be redundant. BUT IT WORKED.
 
 {% highlight c linenos %}
-#define F_CPU 1200000
-#include <avr/io.h>
-    
+\#define F_CPU 1200000
+\#include <avr/io.h>
+
 int main(){
 DDRB = 0x10;    // 00010000 : Set the pin PB4 as an output pin
 PORTB = 0x18;   // 00011000 : Set the pin PB4 to High (LED is connected here)
-  				// and turn on internal pullup resistor on pin PB3
-                // this means that when switch is not pressed, the corresponding PIN bit is high
+// and turn on internal pullup resistor on pin PB3
+// this means that when switch is not pressed, the corresponding PIN bit is high
 
 while (1==1){
-   	if ( (PINB & 0x08) == 0)   // if switch is ON (PB3 is reading LOW)
-    	PORTB = 0x08; // turn off the led
-    else
-       	PORTB = 0x18; // turn on the led
-    }
+if ( (PINB & 0x08) == 0)   // if switch is ON (PB3 is reading LOW)
+PORTB = 0x08; // turn off the led
+else
+PORTB = 0x18; // turn on the led
+}
 }
 {% endhighlight %}
-    
+
 With tears of happiness welling up in my eyes, I thought, "The while loop wasn't working?" See, intuition can hurt sometimes.
 
 Yes most of this story is exaggerated but it was quite frustrating. And I was stupid. But well, that is what it is and I have most definitely learnt my lesson.
