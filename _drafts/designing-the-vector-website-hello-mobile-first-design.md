@@ -14,7 +14,7 @@ Vector II is almost upon us. ...
 
 ## The Mobile-First Approach
 
-The current vector website has been up for about 3 months. Google Analytics shows some interesting patterns. The most prominent trend is that of mobile usage. Only one in every four users use desktop. The main sources of traffic are Facebook posts that link directly to a certain page in the website, so almost one-third of users used Android Webview.
+The current vector website has been up for about 3 months. Google Analytics shows some interesting patterns. The most prominent trend is that of mobile usage. Only one in every five users use desktop. The main sources of traffic are Facebook posts that link directly to a certain page in the website, so almost one-third of users used Android Webview.
 
 ![](https://nirav.com.np/assets/img/vector1.jpg)
 
