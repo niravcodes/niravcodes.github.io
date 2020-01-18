@@ -21,3 +21,5 @@ The current vector website has been up for about 3 months. Google Analytics show
 So I have decided to go with a mobile-first approach to web design. I'm going to focus more on the mobile user experience, and write code for the phone first.
 
 ## Quick Thumbnails
+
+## Prototyping in XD![](https://nirav.com.np/assets/img/designXDvector.png)![](https://nirav.com.np/assets/img/Annotation 2020-01-18 004909.jpg)
