@@ -85,3 +85,7 @@ Plus I had to make a desktop application to write generated code into AVR. so I 
 But time is a factor. 
 
 Surprisingly, it took me literally --- 
+
+Luckily codemirror is awesome. Marijn Haverbeke is literally my fabourite person rn.
+
+The strange thing about time is that there's too much of it in the future but too little in the present I can't wrap my head arund the concept of time there seems to be ..
