@@ -1,11 +1,12 @@
 ---
 excerpt_separator: "<!--more-->"
 layout: post
-title: 'Making Mnsa: a Nepali Programming Language'
+title: 'Making मनसा: a Nepali Programming Language v0.1'
 tags:
 - programming
 - c++
 - nepali
+- mnsa
 enableNepali: true
 feature-img: ''
 thumbnail: https://nirav.com.np/assets/img/mnsabanner-1.png
@@ -58,7 +59,7 @@ was using -o3 without knowing it.
 
 1. at some point, you need to rethink your build system. Blog idea: Moving to Cmake? or is it too boring??
 2. Compilation takes way too long. That's wasted time.
-3. Cross system compilation is important 
+3. Cross system compilation is important
 4. _*Most of the code is pointless_*
 
 ## Making Vector Website
@@ -74,3 +75,5 @@ I was astounded at the amount of hacking attempts that were being made at the si
 1. The SSH kind. Woah
 
 Website maintainence is a many-people job. Trying to do all things at once
+
+### gtksourceview bug
