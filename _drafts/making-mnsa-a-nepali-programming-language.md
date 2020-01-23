@@ -77,3 +77,11 @@ I was astounded at the amount of hacking attempts that were being made at the si
 Website maintainence is a many-people job. Trying to do all things at once
 
 ### gtksourceview bug
+
+gtksourcview has some errors that make it impossible to setup a syntax highlighting system. It fails to highlight _insert pic here_
+
+Plus I had to make a desktop application to write generated code into AVR. so I couldn't just use a web app. I turned to electron.js. I had never used it before, and had hoped I'd never have to use it because I'm inherently repulsed by large systems. Plus, I use a 5 year old laptop with 4 gig ram, so I'm naturally inclined towards slimmer packages.
+
+But time is a factor. 
+
+Surprisingly, it took me literally --- 
