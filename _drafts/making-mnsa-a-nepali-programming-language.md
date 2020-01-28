@@ -12,6 +12,14 @@ feature-img: ''
 thumbnail: https://nirav.com.np/assets/img/mnsabanner-1.png
 
 ---
+I've been working on and off on a Nepali programming language with my friends for the last few months. It's called मनसा (IAST: _manasā_) and I think it's time for an alpha release. If you'd like to try the language out, visit [mnsa.cc](http://mnsa.cc/): the official website of मनसा. You can play around with the language right in the browser without having to download anything, not even a Devanagari keyboard layout.
+
+This post is kind of a collection of random things I want to say about the language, including how the idea came about, the interesting things I learnt making the project, and the problems I faced.
+
+### How it all started
+
+In the sixth semester, we have a subject called the 'Minor Project' which basically requires you to form a team and turn in a project by the end of the term. So me and three of my friends ([Sam](https://sammelan.com.np/), [Chinge](http://sangamkhanal.com.np) and [Sauhard](http://sauhard.writes.xyz/)) got together
+
 **Draft**
 
 I'm currently working on this post and if it's visible to you, it means I've published this temporarily to see how it looks. Sorry.
