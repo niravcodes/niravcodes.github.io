@@ -18,7 +18,7 @@ This post is kind of a collection of random things I want to say about the langu
 
 ### How it all started
 
-In the sixth semester, we have a subject called the 'Minor Project' which basically requires you to form a team and turn in a project by the end of the term. So me and three of my friends ([Sam](https://sammelan.com.np/), [Chinge](http://sangamkhanal.com.np) and [Sauhard](http://sauhard.writes.xyz/)) got together
+In the sixth semester, we have a subject called the 'Minor Project' which basically requires you to form a team and turn in a project by the end of the term. So me and three of my friends ([Sam](https://sammelan.com.np/), [Chinge](http://sangamkhanal.com.np) and [Sauhard](http://sauhard.writes.xyz/)) decided that each of us would come to class the next day with at least five interesting ideas. So I go home, pace around my tiny room like the leopard in Sahid Smarak and think up some interesting ideas like a Nepali version of Spotify, an Operating System, a robot and so on. 
 
 **Draft**
 
