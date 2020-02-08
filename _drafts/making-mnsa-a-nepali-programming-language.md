@@ -22,9 +22,15 @@ In the sixth semester, we are required to submit a team project by the end of th
 
 In the beginning, we thought a Nepali programming language wouldn't have any practical use at all. We thought that all this thing would ever be is a novelty, a fun thing to play with and forget about, kind of like Brainfuck or Befunge. But as we continued to look into things to include in our proposal, we realized that a Nepali programming language might have a few very niche but very practical uses.                 
 
-After some more deliberation, we decided that it had to be a compiled language, because that was the most difficult to make in terms of code, and the "coolest". It was exciting and kind of uncertain. We don't have Compiler Construction classes in our syllabus, so we had basically zero idea on how we'd proceed. Plus we didn't know how                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+After some more deliberation, we decided that it had to be a compiled language, because that was the most difficult to make in terms of code, and the "coolest". It was exciting and kind of uncertain. We don't have Compiler Construction classes in our syllabus, so we had basically zero idea on how we'd proceed. Plus we didn't know how to work with Nepali characters in program. It was a great journey.
 
-**Draft**
+### The language
+
+The language is actually very tentative at this point and we're still refining it. You should be able to get the general idea of the syntax by the small example code below. If you don't, wait for the official documentation to be finished. It's in the works. 
+
+![](https://nirav.com.np/assets/img/programmnsa.jpg)
+
+We have made a few changes to the conventional structure of a program statement to make it more expressive. For example, in function calls, the name of the function comes after the parameters, as verb comes at the end of sentence in Nepali. So "print Something" becomes "something लेख". We similarly modified other constructs such as conditionals and loops to fit into the Nepali grammar structure more. 
 
 I'm currently working on this post and if it's visible to you, it means I've published this temporarily to see how it looks. Sorry.
 
@@ -101,3 +107,7 @@ Surprisingly, it took me literally ---
 Luckily codemirror is awesome. Marijn Haverbeke is literally my fabourite person rn.
 
 The strange thing about time is that there's too much of it in the future but too little in the present I can't wrap my head arund the concept of time there seems to be ..
+
+Learnt a few new things not related to programming
+
+1: Its' not enough to just know the best way to do things. You have to put in the time to do the thing and take the time to see it through. I have been very critical of many people's work in the past because I could point out the errors in their work. But this experience taught me that perfectionism is not always the best sometimes showing up and makign shit works too
