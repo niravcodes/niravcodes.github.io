@@ -12,13 +12,17 @@ feature-img: ''
 thumbnail: https://nirav.com.np/assets/img/mnsabanner-1.png
 
 ---
-I've been working on and off on a Nepali programming language with my friends for the last few months. It's called मनसा (IAST: _manasā_) and I think it's time for an alpha release. If you'd like to try the language out, visit [mnsa.cc](http://mnsa.cc/): the official website of मनसा. You can play around with the language right in the browser without having to download anything, not even a Devanagari keyboard layout.
+I've been working on and off on a Nepali programming language with my friends for the last few months. It's called मनसा (IAST: _mansā_) and I think it's ready for an alpha release. If you'd like to try the language out, visit [mnsa.cc](http://mnsa.cc/) - the official website. You can play around with the language right in the browser without having to download anything, not even a Devanagari keyboard layout.
 
-This post is kind of a collection of random things I want to say about the language, including how the idea came about, the interesting things I learnt making the project, and the problems I faced.
+This post is kind of a collection of random things I want to say about the language, including how the idea came about, the interesting things I learnt making the project, and the problems faced.
 
 ### How it all started
 
-In the sixth semester, we have a subject called the 'Minor Project' which basically requires you to form a team and turn in a project by the end of the term. So me and three of my friends ([Sam](https://sammelan.com.np/), [Chinge](http://sangamkhanal.com.np) and [Sauhard](http://sauhard.writes.xyz/)) decided that each of us would come to class the next day with at least five interesting ideas. So I go home, pace around my tiny room like the leopard in Sahid Smarak and think up some interesting ideas like a Nepali version of Spotify, an Operating System, a robot and so on. 
+In the sixth semester, we are required to submit a team project by the end of the term. Most teams in my class were making boring things, like hotel management systems, or polling websites. If you get to chose your own project, why not do something exciting and new? We settled on making a programming language. "Why not in Nepali?", I said, and after a long debate, we settled on building a Nepali programming language. 
+
+In the beginning, we thought a Nepali programming language wouldn't have any practical use at all. We thought that all this thing would ever be is a novelty, a fun thing to play with and forget about, kind of like Brainfuck or Befunge. But as we continued to look into things to include in our proposal, we realized that a Nepali programming language might have a few very niche but very practical uses.                 
+
+After some more deliberation, we decided that it had to be a compiled language, because that was the most difficult to make in terms of code, and the "coolest". It was exciting and kind of uncertain. We don't have Compiler Construction classes in our syllabus, so we had basically zero idea on how we'd proceed. Plus we didn't know how                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 
 **Draft**
 
