@@ -40,13 +40,30 @@ The compiler was written in C++ completely from scratch. I didn't want to use le
 
 I used Visual Studio Code to write C++ code this time. I actually started coding using plain old vim as always, but eventually it became so unmanageable with files all over that I had to find a more manageable tool. I went with vscode, and I'm glad I did because vscode is so well made. And the c/c++ extension is so good. It apparently makes an AST for my code on the fly and checks for all kinds of errors. I had never before used these sophisticated tools for writing C++. I generally used vanilla sublime with vim extention, or just command line vim. But really it's so nice. It's like discovering geysers for the first time when you've been showering with cold water all your life (strangely specific simile? sorry). 
 
-When writing
+When writing the compiler, I used many new C++17 features. I was drawn into modern C++ first because of constexpr which allows you to make functions that are evaluated at compile time. I wanted to build a fast but manageable lexical analyser using a composition of constexpr functions but I realised that I was trying to prematurely optimise, so I controlled myself. Maybe in version 0.2.
 
-For writing the compiler, I used many new C++17 features. 
+I also used C++17 lambda functions to declare nested functions to eliminate repeated actions that are only relevant inside a specific function. Here's an example:
 
-I'm currently working on this post and if it's visible to you, it means I've published this temporarily to see how it looks. Sorry.
+     auto makeDeclNode = [&](ast::astType a) {
+       stmt.reset(new ast::Ast);
+       astNode declaration;
+       if (declaration = declList()) {
+          stmt->type = a;
+          stmt->left = std::move(declaration);
+       } else
+          errQuit("declarations");
+    };
+    
+    if (accept(lexer::tokenType::_int)) {
+       makeDeclNode(ast::astType::_intDecl);
+    } else if (accept(lexer::tokenType::_str)) {
+       makeDeclNode(ast::astType::_strDecl);
+    } else if (accept(lexer::tokenType::_bool)) {
+       makeDeclNode(ast::astType::_boolDecl);
+    }
 
-<!--more-->
+Maybe it's because I've coding a lot in javascript these days, but nested functions feel like an important language feature to have. मनसा has nested function support too.
+
 
 ![](https://nirav.com.np/assets/img/mnsabanner.png)
 
