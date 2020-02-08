@@ -20,7 +20,7 @@ This post is a collection of random things I want to say about the language, inc
 
 ### How it all started
 
-In the sixth semester, we are required to submit a team project by the end of the term. Most teams in my class were making boring things, like hotel management systems, or polling websites. If you get to chose your own project, why not do something exciting and new? We settled on making a programming language. "Why not in Nepali?", I said, and after a long debate, we settled on building a Nepali programming language. 
+In the sixth semester, we are required to submit a team project by the end of the term. Most teams in my class were making boring things, like hotel management systems, or polling websites. If you get to chose your own project, why not do something exciting and new? We settled on making a programming language. "Why not in Nepali?", I said, and after a long debate, we settled on building a Nepali programming language.
 
 In the beginning, we thought a Nepali programming language wouldn't have any practical use at all. We thought that all this thing would ever be is a novelty, a fun thing to play with and forget about, something like Brainfuck or Befunge. But as we continued to look into things to include in our proposal, we realized that a Nepali programming language might have a few very niche but very practical uses.
 
@@ -28,7 +28,7 @@ After some more deliberation, we decided that it had to be a compiled language, 
 
 ### The language
 
-The language is actually very tentative at this point and we're still refining it. You should be able to get the general idea of the syntax by the small example code below. If you don't, wait for the official documentation to be finished. It's in the works. 
+The language is actually very tentative at this point and we're still refining it. You should be able to get the general idea of the syntax by the small example code below. If you don't, wait for the official documentation to be finished. It's in the works.
 
 ![](https://nirav.com.np/assets/img/programmnsa.jpg)
 
@@ -38,7 +38,7 @@ We have made a few changes to the conventional structure of a program statement 
 
 The compiler was written in C++ completely from scratch. I didn't want to use lexer or parser generators because these tools hide the interesting and complicated details. That is a good thing if your goal is to make good, maintainable compilers but, as a student, I wanted to explore all the gory details and learn everything I could. I should mention here that the [series of lectures by Alex Aiken](https://www.youtube.com/playlist?list=PLDcmCgguL9rxPoVn2ykUFc8TOpLyDU5gx "Compiler Making Lectures Alex Aiken") is an amazing resource, and if you're planning on doing compilers too, you must at least skim through the videos to see the big picture.
 
-I used Visual Studio Code to write C++ code this time. I actually started coding using plain old vim as always, but eventually it became so unmanageable with files all over that I had to find a more manageable tool. I went with vscode, and I'm glad I did because vscode is so well made. And the c/c++ extension is so good. It apparently makes an AST for my code on the fly and checks for all kinds of errors. I had never before used these sophisticated tools for writing C++. I generally used vanilla sublime with vim extention, or just command line vim. But really it's so nice. It's like discovering geysers for the first time when you've been showering with cold water all your life (strangely specific simile? sorry). 
+I used Visual Studio Code to write C++ code this time. I actually started coding using plain old vim as always, but eventually it became so unmanageable with files all over that I had to find a more manageable tool. I went with vscode, and I'm glad I did because vscode is so well made. And the c/c++ extension is so good. It apparently makes an AST for my code on the fly and checks for all kinds of errors. I had never before used these sophisticated tools for writing C++. I generally used vanilla sublime with vim extention, or just command line vim. But really it's so nice. It's like discovering geysers for the first time when you've been showering with cold water all your life (strangely specific simile? sorry).
 
 When writing the compiler, I used many new C++17 features. I was drawn into modern C++ first because of constexpr which allows you to make functions that are evaluated at compile time. I wanted to build a fast but manageable lexical analyser using a composition of constexpr functions but I realised that I was trying to prematurely optimise, so I controlled myself. Maybe in version 0.2.
 
@@ -68,7 +68,12 @@ I also tried to use C++ smart pointers everywhere. They make memory management s
 
 In v0.1, I have only implemented the lexer, parser, semantic analyser and a rudimentary code generator with emits C++ code. In the new versions, I will progressively add new modules like optimiser, and redo some old ones.
 
-1. The lexical analyser is a simple finite state machine which iterates over each each UTF8 encoded character and converts them into tokens. I learnt a lot about Unicode while making the lexer. I am interested in world languages and scripts, so reading the Unicode documentation and other articles was fascinating to me. I have written about Unicode 
+1. The **Lexical Analyser** is a simple finite state machine which iterates over each each UTF8 encoded character and converts them into tokens. I learnt a lot about Unicode while making the lexer. I am interested in world languages and scripts, so reading the Unicode documentation and other articles was fascinating to me. If you're interested in languages too, I cannot recommend at least skimming through [the Unicode Standard](http://www.unicode.org/versions/Unicode12.0.0/UnicodeStandard-12.0.pdf "the Unicode Standard") enough. If you're in love with writing scripts like I am, do read [this article](https://www.smashingmagazine.com/2010/05/the-beauty-of-typography-writing-systems-and-calligraphy-of-the-world/) on Smashing Magazine. I have written about Unicode in another  [blog post](https://nirav.com.np/2019/10/16/on-the-nepali-language-and-unicode-1.html) so maybe also check that out.
+
+   The encoding of Unicode characters is also a fascinating topic. I find UTF-8 particularly beautiful. And as it turns out, it was designed by [Ken and Rob](http://doc.cat-v.org/bell_labs/utf-8_history) from Bell Labs. I'm a big fan of the Bell Labs people. 
+2. I wrote the **Parser** using the Recursive Descent algorithm. It's crazy how simple yet powerful Recursive Descent is. I learnt it using only the [Wikipedia article](https://en.wikipedia.org/wiki/Recursive_descent_parser), wrote my first parser in a weekend, and it works like magic. It's just so elegant. In the current code base, the parser takes up the most volume at about a thousand lines. But I do believe that I should have mixed in some Pratt parsing to parse the operators, because recursive descent has to make a lot of function calls even for trivial tasks, which makes it inefficient. Oh well, maybe next time.
+
+    
 
 ![](https://nirav.com.np/assets/img/mnsabanner.png)
 
