@@ -70,36 +70,38 @@ I also tried to use C++ smart pointers everywhere. They make memory management s
 
 In v0.1, I have only implemented the lexer, parser, semantic analyser and a rudimentary code generator with emits C++ code. In the new versions, I will progressively add new modules like optimiser, and redo some old ones.
 
-1. The **Lexical Analyser** is a simple finite state machine which iterates over each each UTF8 encoded character and converts them into tokens. I learnt a lot about Unicode while making the lexer. I am interested in world languages and scripts, so reading the Unicode documentation and other articles was fascinating to me. If you're interested in languages too, I cannot recommend at least skimming through [the Unicode Standard](http://www.unicode.org/versions/Unicode12.0.0/UnicodeStandard-12.0.pdf "the Unicode Standard") enough. If you're in love with writing scripts like I am, do read [this article](https://www.smashingmagazine.com/2010/05/the-beauty-of-typography-writing-systems-and-calligraphy-of-the-world/) on Smashing Magazine. I have written about Unicode in another  [blog post](https://nirav.com.np/2019/10/16/on-the-nepali-language-and-unicode-1.html) so maybe also check that out.
+ 1. The **Lexical Analyser** is a simple finite state machine which iterates over each each UTF8 encoded character and converts them into tokens. I learnt a lot about Unicode while making the lexer. I am interested in world languages and scripts, so reading the Unicode documentation and other articles was fascinating to me. If you're interested in languages too, I cannot recommend at least skimming through [the Unicode Standard](http://www.unicode.org/versions/Unicode12.0.0/UnicodeStandard-12.0.pdf "the Unicode Standard") enough. If you're in love with writing scripts like I am, do read [this article](https://www.smashingmagazine.com/2010/05/the-beauty-of-typography-writing-systems-and-calligraphy-of-the-world/) on Smashing Magazine. I have written about Unicode in another  [blog post](https://nirav.com.np/2019/10/16/on-the-nepali-language-and-unicode-1.html) so maybe also check that out.
 
-   The encoding of Unicode characters is also a fascinating topic. I find UTF-8 particularly beautiful. And as it turns out, it was designed by [Ken and Rob](http://doc.cat-v.org/bell_labs/utf-8_history) from Bell Labs. I'm a big fan of the Bell Labs people. 
-2. I wrote the **Parser** using the Recursive Descent algorithm. It's crazy how simple yet powerful Recursive Descent is. I learnt it using only the [Wikipedia article](https://en.wikipedia.org/wiki/Recursive_descent_parser), wrote my first parser in a weekend, and it works like magic. It's just so elegant. In the current code base, the parser takes up the most volume at about a thousand lines. But I do believe that I should have mixed in some Pratt parsing to parse the operators, because recursive descent has to make a lot of function calls even for trivial tasks, which makes it inefficient. Oh well, maybe next time.
-3. The **Semantic Analyser** is all about recursively getting to all nodes in the AST and checking their types and making sure everything is according to rules. 
-4. I had to write my own **Symbol Table**, which was awesome because I got to play with STL containers like pairs and unordered maps. Once you discover these tools, you can never go back to hand-coding data structures (which I'll admit was stupid, but I'm slowly fighting my not-invented-here syndrome). 
-5. The actual **Code Generator** is not done yet. In it's place is a simple function which recursively navigates the AST and generates C++ code. For variable names, I just base64 encoded all Devanagari identifiers and replaced the illegal characters in base64 with underscore. The generated code looks like this:
+    The encoding of Unicode characters is also a fascinating topic. I find UTF-8 particularly beautiful. And as it turns out, it was designed by [Ken and Rob](http://doc.cat-v.org/bell_labs/utf-8_history) from Bell Labs. I'm a big fan of the Bell Labs people.
+ 2. I wrote the **Parser** using the Recursive Descent algorithm. It's crazy how simple yet powerful Recursive Descent is. I learnt it using only the [Wikipedia article](https://en.wikipedia.org/wiki/Recursive_descent_parser), wrote my first parser in a weekend, and it works like magic. It's just so elegant. In the current code base, the parser takes up the most volume at about a thousand lines. But I do believe that I should have mixed in some Pratt parsing to parse the operators, because recursive descent has to make a lot of function calls even for trivial tasks, which makes it inefficient. Oh well, maybe next time.
 
-       int main(){
-       auto v4KSo4KSv4KS_pX_pCksuCkvuCkh_pCkqATT1 = [&]() {
-       cout << "\n";
-       }
-       ;
-       int v4KSG4KSH = 100;
-       string v4KSV4KWB4KSw4KS_p = "नमस्ते";
-       while  (v4KSG4KSH > 0) {
-       cout << v4KSV4KWB4KSw4KS_p;
-       v4KSo4KSv4KS_pX_pCksuCkvuCkh_pCkqATT1();
-       v4KSG4KSH= (v4KSG4KSH - 10) ;
-       }
-       ;
-       }
+    The Parser makes an AST. Because the AST is vital, I wrote some routines to generate actual pictures from the AST. I've detailed the process in [another blog post](https://nirav.com.np/2019/12/08/visualize-c-data-structures-using-graphviz-and-dot-language.html) but this is what the AST's visualization looks like:
 
+    ![](https://nirav.com.np/assets/img/astgraph1.png)
+ 3. The **Semantic Analyser** is all about recursively getting to all nodes in the AST and checking their types and making sure everything is according to rules.
+ 4. I had to write my own **Symbol Table**, which was awesome because I got to play with STL containers like pairs and unordered maps. Once you discover these tools, you can never go back to hand-coding data structures (which I'll admit was stupid, but I'm slowly fighting my not-invented-here syndrome).
+ 5. The actual **Code Generator** is not done yet. In it's place is a simple function which recursively navigates the AST and generates C++ code. For variable names, I just base64 encoded all Devanagari identifiers and replaced the illegal characters in base64 with underscore. The generated code looks like this:
 
-1. VSCODE with c++ extentino is incredible. They seem to be making proper ASTs for my syntax on the fly. So far, I've only ever used vim and sublime without much configuration (for c and c++, that is). It makes things so much easier.
-2. c++17 is great. I'm ysing things in ways they perhaps weren't meant to be used for better code management. One of them is I'm using lambdas for organisation of function code. it is fun.
-3. pratt and recursive descent
-4. I'm also working on a website **LINK SCREENSHOT**
-5. Unique Pointer is a lifesaver. supereffective once you get the hang of it. in previous c-like c++ code, I'd used raw poitners like in C. SO fucked.  
-   but with _unique POinters_ it's easy to forget if you've already moved things, and end up with null pointers. Specially matters in complex mutually recursive functions that pass around pointers to subtrees as if they were joints.
+        int main(){
+        auto v4KSo4KSv4KS_pX_pCksuCkvuCkh_pCkqATT1 = [&]() {
+        cout << "\n";
+        }
+        ;
+        int v4KSG4KSH = 100;
+        string v4KSV4KWB4KSw4KS_p = "नमस्ते";
+        while  (v4KSG4KSH > 0) {
+        cout << v4KSV4KWB4KSw4KS_p;
+        v4KSo4KSv4KS_pX_pCksuCkvuCkh_pCkqATT1();
+        v4KSG4KSH= (v4KSG4KSH - 10) ;
+        }
+        ;
+        }
+ 6. VSCODE with c++ extentino is incredible. They seem to be making proper ASTs for my syntax on the fly. So far, I've only ever used vim and sublime without much configuration (for c and c++, that is). It makes things so much easier.
+ 7. c++17 is great. I'm ysing things in ways they perhaps weren't meant to be used for better code management. One of them is I'm using lambdas for organisation of function code. it is fun.
+ 8. pratt and recursive descent
+ 9. I'm also working on a website **LINK SCREENSHOT**
+10. Unique Pointer is a lifesaver. supereffective once you get the hang of it. in previous c-like c++ code, I'd used raw poitners like in C. SO fucked.  
+    but with _unique POinters_ it's easy to forget if you've already moved things, and end up with null pointers. Specially matters in complex mutually recursive functions that pass around pointers to subtrees as if they were joints.
 
 # Short description of language
 
