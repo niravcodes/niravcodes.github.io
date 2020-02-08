@@ -96,6 +96,21 @@ In v0.1, I have only implemented the lexer, parser, semantic analyser and a rudi
         }
         ;
         }
+        
+### The Website
+
+asldfkjsalfjsaldfkjsf
+
+### The IDE
+
+### Random observations
+
+1. It's nice to have a small code diary, if you will, to jot down all complex ideas that you think up while coding. I made a `diary.md` file on the root of the source tree to keep a chronological log of my thoughts, snippets of codes, things I had to do next, of bugs and other things in the file.
+2. C++11 range based loops are awesome. Why didn't I know about these before?
+3. Makefiles get real sloppy and annoying to maintain. 
+4. Vscode with 
+        
+        
  6. VSCODE with c++ extentino is incredible. They seem to be making proper ASTs for my syntax on the fly. So far, I've only ever used vim and sublime without much configuration (for c and c++, that is). It makes things so much easier.
  7. c++17 is great. I'm ysing things in ways they perhaps weren't meant to be used for better code management. One of them is I'm using lambdas for organisation of function code. it is fun.
  8. pratt and recursive descent
