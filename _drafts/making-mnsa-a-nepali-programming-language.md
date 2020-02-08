@@ -12,6 +12,8 @@ feature-img: ''
 thumbnail: https://nirav.com.np/assets/img/mnsabanner-1.png
 
 ---
+![](https://nirav.com.np/assets/img/mnsabanner.png)
+
 I've been working on and off on a Nepali programming language with my friends for the last few months. It's called मनसा (IAST: _mansā_) and I think it's ready for an alpha release. If you'd like to try the language out, visit [mnsa.cc](http://mnsa.cc/) - the official website. You can play around with the language right in the browser without having to download anything, not even a Devanagari keyboard layout.
 
 This post is a collection of random things I want to say about the language, including how the idea came about, the interesting things I learnt making the project, and the problems faced.
@@ -72,12 +74,25 @@ In v0.1, I have only implemented the lexer, parser, semantic analyser and a rudi
 
    The encoding of Unicode characters is also a fascinating topic. I find UTF-8 particularly beautiful. And as it turns out, it was designed by [Ken and Rob](http://doc.cat-v.org/bell_labs/utf-8_history) from Bell Labs. I'm a big fan of the Bell Labs people. 
 2. I wrote the **Parser** using the Recursive Descent algorithm. It's crazy how simple yet powerful Recursive Descent is. I learnt it using only the [Wikipedia article](https://en.wikipedia.org/wiki/Recursive_descent_parser), wrote my first parser in a weekend, and it works like magic. It's just so elegant. In the current code base, the parser takes up the most volume at about a thousand lines. But I do believe that I should have mixed in some Pratt parsing to parse the operators, because recursive descent has to make a lot of function calls even for trivial tasks, which makes it inefficient. Oh well, maybe next time.
+3. The **Semantic Analyser** is all about recursively getting to all nodes in the AST and checking their types and making sure everything is according to rules. 
+4. I had to write my own **Symbol Table**, which was awesome because I got to play with STL containers like pairs and unordered maps. Once you discover these tools, you can never go back to hand-coding data structures (which I'll admit was stupid, but I'm slowly fighting my not-invented-here syndrome). 
+5. The actual **Code Generator** is not done yet. In it's place is a simple function which recursively navigates the AST and generates C++ code. For variable names, I just base64 encoded all Devanagari identifiers and replaced the illegal characters in base64 with underscore. The generated code looks like this:
 
-    
+       int main(){
+       auto v4KSo4KSv4KS_pX_pCksuCkvuCkh_pCkqATT1 = [&]() {
+       cout << "\n";
+       }
+       ;
+       int v4KSG4KSH = 100;
+       string v4KSV4KWB4KSw4KS_p = "नमस्ते";
+       while  (v4KSG4KSH > 0) {
+       cout << v4KSV4KWB4KSw4KS_p;
+       v4KSo4KSv4KS_pX_pCksuCkvuCkh_pCkqATT1();
+       v4KSG4KSH= (v4KSG4KSH - 10) ;
+       }
+       ;
+       }
 
-![](https://nirav.com.np/assets/img/mnsabanner.png)
-
-I've been working on and off on a programming language in Nepali language for quite some time. It isn't finished yet,
 
 1. VSCODE with c++ extentino is incredible. They seem to be making proper ASTs for my syntax on the fly. So far, I've only ever used vim and sublime without much configuration (for c and c++, that is). It makes things so much easier.
 2. c++17 is great. I'm ysing things in ways they perhaps weren't meant to be used for better code management. One of them is I'm using lambdas for organisation of function code. it is fun.
