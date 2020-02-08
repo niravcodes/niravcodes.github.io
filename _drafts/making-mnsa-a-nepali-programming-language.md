@@ -14,15 +14,17 @@ thumbnail: https://nirav.com.np/assets/img/mnsabanner-1.png
 ---
 I've been working on and off on a Nepali programming language with my friends for the last few months. It's called मनसा (IAST: _mansā_) and I think it's ready for an alpha release. If you'd like to try the language out, visit [mnsa.cc](http://mnsa.cc/) - the official website. You can play around with the language right in the browser without having to download anything, not even a Devanagari keyboard layout.
 
-This post is kind of a collection of random things I want to say about the language, including how the idea came about, the interesting things I learnt making the project, and the problems faced.
+This post is a collection of random things I want to say about the language, including how the idea came about, the interesting things I learnt making the project, and the problems faced.
+
+<!--more-->
 
 ### How it all started
 
 In the sixth semester, we are required to submit a team project by the end of the term. Most teams in my class were making boring things, like hotel management systems, or polling websites. If you get to chose your own project, why not do something exciting and new? We settled on making a programming language. "Why not in Nepali?", I said, and after a long debate, we settled on building a Nepali programming language. 
 
-In the beginning, we thought a Nepali programming language wouldn't have any practical use at all. We thought that all this thing would ever be is a novelty, a fun thing to play with and forget about, kind of like Brainfuck or Befunge. But as we continued to look into things to include in our proposal, we realized that a Nepali programming language might have a few very niche but very practical uses.                 
+In the beginning, we thought a Nepali programming language wouldn't have any practical use at all. We thought that all this thing would ever be is a novelty, a fun thing to play with and forget about, something like Brainfuck or Befunge. But as we continued to look into things to include in our proposal, we realized that a Nepali programming language might have a few very niche but very practical uses.
 
-After some more deliberation, we decided that it had to be a compiled language, because that was the most difficult to make in terms of code, and the "coolest". It was exciting and kind of uncertain. We don't have Compiler Construction classes in our syllabus, so we had basically zero idea on how we'd proceed. Plus we didn't know how to work with Nepali characters in program. It was a great journey.
+After some more deliberation, we decided that it had to be a compiled language, because that was the most difficult to make in terms of code, and the "coolest". It was exciting and somewhat uncertain because we don't have Compiler Construction classes in our syllabus, so we had basically zero idea on how we'd proceed. Plus we didn't know how to work with Nepali characters in the program. It was a great learning experience.
 
 ### The language
 
@@ -30,7 +32,17 @@ The language is actually very tentative at this point and we're still refining i
 
 ![](https://nirav.com.np/assets/img/programmnsa.jpg)
 
-We have made a few changes to the conventional structure of a program statement to make it more expressive. For example, in function calls, the name of the function comes after the parameters, as verb comes at the end of sentence in Nepali. So "print Something" becomes "something लेख". We similarly modified other constructs such as conditionals and loops to fit into the Nepali grammar structure more. 
+We have made a few changes to the conventional structure of a program statement to make it more expressive. For example, in function calls, the name of the function comes after the parameters, as verb comes at the end of sentence in Nepali. So "print Something" becomes "something लेख". We similarly modified other constructs such as conditionals and loops to fit into the Nepali grammar structure more. Technically, it is a very small change but it really does help make the programs more readable in Nepali. It was surprising how fluid the language becomes by changes so simple.
+
+### The compiler
+
+The compiler was written in C++ completely from scratch. I didn't want to use lexer or parser generators because these tools hide the interesting and complicated details. That is a good thing if your goal is to make good, maintainable compilers but, as a student, I wanted to explore all the gory details and learn everything I could. I should mention here that the [series of lectures by Alex Aiken](https://www.youtube.com/playlist?list=PLDcmCgguL9rxPoVn2ykUFc8TOpLyDU5gx "Compiler Making Lectures Alex Aiken") is an amazing resource, and if you're planning on doing compilers too, you must at least skim through the videos to see the big picture.
+
+I used Visual Studio Code to write C++ code this time. I actually started coding using plain old vim as always, but eventually it became so unmanageable with files all over that I had to find a more manageable tool. I went with vscode, and I'm glad I did because vscode is so well made. And the c/c++ extension is so good. It apparently makes an AST for my code on the fly and checks for all kinds of errors. I had never before used these sophisticated tools for writing C++. I generally used vanilla sublime with vim extention, or just command line vim. But really it's so nice. It's like discovering geysers for the first time when you've been showering with cold water all your life (strangely specific simile? sorry). 
+
+When writing
+
+For writing the compiler, I used many new C++17 features. 
 
 I'm currently working on this post and if it's visible to you, it means I've published this temporarily to see how it looks. Sorry.
 
