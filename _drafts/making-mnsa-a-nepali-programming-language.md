@@ -64,6 +64,11 @@ I also used C++17 lambda functions to declare nested functions to eliminate repe
 
 Maybe it's because I've coding a lot in javascript these days, but nested functions feel like an important language feature to have. मनसा has nested function support too.
 
+I also tried to use C++ smart pointers everywhere. They make memory management so pleasant and take away most of the issues I used to deal when using raw pointers. But I did find the lack of good observer pointer idiom annoying and dangerous. Maybe they'll make it better by C++20, but hopefully I'll already be using Rust by then.
+
+In v0.1, I have only implemented the lexer, parser, semantic analyser and a rudimentary code generator with emits C++ code. In the new versions, I will progressively add new modules like optimiser, and redo some old ones.
+
+1. The lexical analyser is a simple finite state machine which iterates over each each UTF8 encoded character and converts them into tokens. I learnt a lot about Unicode while making the lexer. I am interested in world languages and scripts, so reading the Unicode documentation and other articles was fascinating to me. I have written about Unicode 
 
 ![](https://nirav.com.np/assets/img/mnsabanner.png)
 
