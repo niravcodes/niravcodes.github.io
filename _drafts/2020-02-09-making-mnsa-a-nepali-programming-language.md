@@ -113,14 +113,22 @@ The backend part is also interesting, but it still needs lots of work. I basical
 
 ### The IDE
 
-I've hated ElectronJS with a passion I only reserve for a few things in life (like [the Cursed Child](https://nirav.com.np/2018/03/09/the-cursed-child-sucks.html)) but the night before a major demonstration of the project I was in such a rush because I had so much 
+I've hated ElectronJS with a passion I only reserve for a few things in life (like [the Cursed Child](https://nirav.com.np/2018/03/09/the-cursed-child-sucks.html)) The hate is a result of a few factors. I use a 6 year old Dell laptop as my computer which is so dilapidated at this point that it stutters when I have lots of chrome tabs and VScode running at the same time. So I appreciate parsimony from the developer's side. I'm also kind of annoyed at this developer-first culture we developers are promoting, piggybacking simply on the fact that computers are getting faster and with more memory than before. 
+
+But then the night before a major demonstration of the project I was in such a rush because I had so many things to make and refine, that I broke all my rules and made a deal with the devil itself. _Oh mighty devil, oh accomplice of the photon, oh sinful chimera of chromium and nodejs, oh gods of chaos and asynchronicity, I implore you._
+
+Anyway, the results were incredibly. In about three hours, I had a perfectly working syntax-highlighting enabled (thanks again, CodeMirror), beautiful IDE for demonstration. It could compile and run the code and upload it to Arduino too (with some avrdude magic, of course). ElectronJS is incredibly fast and simple (for the developer, at least). Even though the reasons for hating ElectronJS are still valid, I got a new perspective by actually working on it, and I've added it into my toolbox. Thank you, ElectronJS, for taking me back to my childhood days of Visual Basic and RAD. 
+
+### The Arduino interface
+
+मनसा can also write code for Arduino. The idea came when I was trying to teach my cousin (who's 12) this programming language. I realized that 
 
 ### Random observations
 
 1. It's nice to have a small code diary, if you will, to jot down all complex ideas that you think up while coding. I made a `diary.md` file on the root of the source tree to keep a chronological log of my thoughts, snippets of codes, things I had to do next, of bugs and other things in the file.
 2. C++11 range based loops are awesome. Why didn't I know about these before?
 3. Makefiles get real sloppy and annoying to maintain.
-4. Vscode with 
+4. Vscode with
 5. VSCODE with c++ extentino is incredible. They seem to be making proper ASTs for my syntax on the fly. So far, I've only ever used vim and sublime without much configuration (for c and c++, that is). It makes things so much easier.
 6. c++17 is great. I'm ysing things in ways they perhaps weren't meant to be used for better code management. One of them is I'm using lambdas for organisation of function code. it is fun.
 7. pratt and recursive descent
