@@ -101,13 +101,19 @@ In v0.1, I have only implemented the lexer, parser, semantic analyzer and a rudi
 
 Making the website was like a pleasant stroll in the morning sun. It was not particularly challenging. I used Adobe XD to make a prototype and then designed it with vanilla CSS. I decided that unless there's an online compiler a website for a programming language is no use. I also fell in love with [Haskell's online shell](https://www.haskell.org/). But making it was going to be difficult.
 
-I used vanilla javascript, socket.io library and Codemirror to make the compiler part. Learning to write the syntax highlighting was somewhat complicated so I just modified a preexisting one. I wanted anybody with a computer or a mobile phone to be able to go in, type code and try it out. So I also made an in-browser keyboard layout switcher which reads input keys and converts them to Nepali based on [this](https://nirav.com.np/2020/02/07/an-easier-nepali-keyboard-layout.html) keyboard layout, which we also made. Then I made a nice keyboard layout switching drawer that I love to play with.
+I used vanilla javascript, socket.io library and Codemirror to make the compiler part. Learning to write the syntax highlighting was somewhat complicated so I just modified a preexisting one. I wanted anybody with a computer or a mobile phone to be able to go in, type code and try it out. So I also made an in-browser keyboard layout switcher which reads input keys and converts them to Nepali based on [this](https://nirav.com.np/2020/02/07/an-easier-nepali-keyboard-layout.html) keyboard layout, which we also made. I have yet to make the keyboard work on the phone, but I'm so busy these days that I don't yet have the time.
+
+Then I made a nice keyboard layout switching drawer that I love to play with.
 
 ![](https://nirav.com.np/assets/img/mnsakeyboardpop.gif)
 
 I apologize for the low quality GIF. I had to run the screen recording through so many online converters that all compressed the original in some form or another that now it looks like it came straight from early 2000s.
 
+The backend part is also interesting, but it still needs lots of work. I basically instantiated a linux server on Azure and ran a simple NodeJS program on it which listens to socket.io requests for programs in मनसा, compiles the program, runs it in a sandbox, and pipes the input and output to the web terminal. I have put some primitive rate limiting and protections in the code but at some point I intend to use recaptcha or something to that effect to guard the API. I might also look to use cloud functions instead of running a full linux box all the time. I wrote a blog post documenting a part of the process [here](https://nirav.com.np/2019/10/08/sandboxing-small-executables-on-linux-many-tries.html).
+
 ### The IDE
+
+sd;fsdlf
 
 ### Random observations
 
