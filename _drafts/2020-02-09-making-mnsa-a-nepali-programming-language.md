@@ -121,35 +121,20 @@ Anyway, the results were incredibly. In about three hours, I had a perfectly wor
 
 ### The Arduino interface
 
-मनसा can also write code for Arduino. The idea came when I was trying to teach my cousin (who's 12) this programming language. I realized that 
+मनसा can also write code for Arduino. The idea came when I was trying to teach my cousin (who's 12) this programming language. I realized that it's difficult to get a kid to relate to the world inside the computer. For example, when teaching the concept of looping for the first time, it's way easier to show him a led blinking 10 times and explain the code than to show him ten instances of 'Hello World'. 
 
-### Random observations
+So a literally a day before the major demonstration, I added in some features to the language, mainly the `external` interface which can then be used to write external C code inside मनसा functions. So the resulting system is kind of hacky 
+
+### Random, interesting observations
 
 1. It's nice to have a small code diary, if you will, to jot down all complex ideas that you think up while coding. I made a `diary.md` file on the root of the source tree to keep a chronological log of my thoughts, snippets of codes, things I had to do next, of bugs and other things in the file.
 2. C++11 range based loops are awesome. Why didn't I know about these before?
-3. Makefiles get real sloppy and annoying to maintain.
-4. Vscode with
-5. VSCODE with c++ extentino is incredible. They seem to be making proper ASTs for my syntax on the fly. So far, I've only ever used vim and sublime without much configuration (for c and c++, that is). It makes things so much easier.
-6. c++17 is great. I'm ysing things in ways they perhaps weren't meant to be used for better code management. One of them is I'm using lambdas for organisation of function code. it is fun.
-7. pratt and recursive descent
-8. I'm also working on a website **LINK SCREENSHOT**
-9. Unique Pointer is a lifesaver. supereffective once you get the hang of it. in previous c-like c++ code, I'd used raw poitners like in C. SO fucked.  
-   but with _unique POinters_ it's easy to forget if you've already moved things, and end up with null pointers. Specially matters in complex mutually recursive functions that pass around pointers to subtrees as if they were joints.
+3. Makefiles get very sloppy very fast and annoying to maintain. I must learn to use more sophisticated build system soon. Maybe Cmake? The build system should be able to build on both Linux and on WSL, install all required programs if they don't exist, and only compile the libraries that actually changed.
+4. Most of the 3000+ lines of code I've written is worthless. I think I read somewhere lines of code are not investments, rather they are loans. The more you add to the codebase, the more expensive you make it to maintain it. It takes more time for a prospective contributor to make sense of the whole project. The more lines you write, the more bugs you hide. I would have been far far better using a parser generator and making the language interpreted instead of compiled. That would reduce complexity of the system and let me focus on the big picture and on the applications of the language. 
+5. At some point, you _absolutely_ need a second, vertical monitor.
+6. Compiling larger codebases takes far more time than I expected.
 
 USE **PRESENTATION's MATERIAL**
-
-# Interesting observatoins
-
-1. One interesting thing I noticed isL
-   1. VSCODE with c++ extention enabled takes insane amount 1.3 of memory,. So does chrome USes smem to find out
-   2. at some point, you **_need_** _a second, prefreably vertical monitor._
-
-# Reaching 2500 lines and what that means
-
-1. at some point, you need to rethink your build system. Blog idea: Moving to Cmake? or is it too boring??
-2. Compilation takes way too long. That's wasted time.
-3. Cross system compilation is important
-4. _*Most of the code is pointless_*
 
 ## Making Vector Website
 
