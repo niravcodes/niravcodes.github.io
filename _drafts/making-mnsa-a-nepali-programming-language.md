@@ -24,9 +24,9 @@ This post is a collection of random things I want to say about the language, inc
 
 In the sixth semester, we are required to submit a team project by the end of the term. Most teams in my class were making boring things, like hotel management systems, or polling websites. If you get to chose your own project, why not do something exciting and new? We settled on making a programming language. "Why not in Nepali?", I said, and after a long debate, we settled on building a Nepali programming language.
 
-In the beginning, we thought a Nepali programming language wouldn't have any practical use at all. We thought that all this thing would ever be is a novelty, a fun thing to play with and forget about, something like Brainfuck or Befunge. But as we continued to look into things to include in our proposal, we realized that a Nepali programming language might have a few very niche but very practical uses.
+In the beginning, we thought a Nepali programming language wouldn't have any practical use at all. We thought that all this project would ever be is a novelty, a fun thing to play with and forget about, something like Brainfuck or Befunge. But as we continued to look into things to include in our proposal, we realized that a Nepali programming language might have a few very niche but very practical uses.
 
-After some more deliberation, we decided that it had to be a compiled language, because that was the most difficult to make in terms of code, and the "coolest". It was exciting and somewhat uncertain because we don't have Compiler Construction classes in our syllabus, so we had basically zero idea on how we'd proceed. Plus we didn't know how to work with Nepali characters in the program. It was a great learning experience.
+After some more deliberation, we decided that it had to be a compiled language, because that was the most difficult to make in terms of code, and the "coolest". It was exciting and somewhat uncertain because we don't have Compiler Construction classes in our syllabus, so we had basically zero idea on how we'd proceed. And we didn't know how to work with Nepali characters in the program. It was a great learning experience.
 
 ### The language
 
@@ -38,11 +38,11 @@ We have made a few changes to the conventional structure of a program statement 
 
 ### The compiler
 
-The compiler was written in C++ completely from scratch. I didn't want to use lexer or parser generators because these tools hide the interesting and complicated details. That is a good thing if your goal is to make good, maintainable compilers but, as a student, I wanted to explore all the gory details and learn everything I could. I should mention here that the [series of lectures by Alex Aiken](https://www.youtube.com/playlist?list=PLDcmCgguL9rxPoVn2ykUFc8TOpLyDU5gx "Compiler Making Lectures Alex Aiken") is an amazing resource, and if you're planning on doing compilers too, you must at least skim through the videos to see the big picture.
+The compiler was written in C++ completely from scratch. I didn't want to use lexer or parser generators because these tools hide the interesting and complicated details. That is a good thing if your goal is to make good, maintainable compilers but, as a student, I wanted to explore all the gory details and learn everything I could. I should mention here that the [series of lectures by Alex Aiken](https://www.youtube.com/playlist?list=PLDcmCgguL9rxPoVn2ykUFc8TOpLyDU5gx "Compiler Making Lectures Alex Aiken") is an amazing resource, and if you're planning on doing compilers too, you can at least skim through the videos to see the big picture.
 
-I used Visual Studio Code to write C++ code this time. I actually started coding using plain old vim as always, but eventually it became so unmanageable with files all over that I had to find a more manageable tool. I went with vscode, and I'm glad I did because vscode is so well made. And the c/c++ extension is so good. It apparently makes an AST for my code on the fly and checks for all kinds of errors. I had never before used these sophisticated tools for writing C++. I generally used vanilla sublime with vim extention, or just command line vim. But really it's so nice. It's like discovering geysers for the first time when you've been showering with cold water all your life (strangely specific simile? sorry).
+I used Visual Studio Code to write C++ code this time. I actually started coding using plain old vim as always, but eventually it became so unmanageable with files all over the place that I had to find a more manageable tool. I went with vscode, and I'm glad I did because vscode is incredibly well made. And the c/c++ extension is so good. It apparently makes an AST for my code on the fly and checks for all kinds of errors. I had never before used these sophisticated tools for writing C++. I generally used vanilla sublime with vim extention, or just command line vim. But really it's so nice. It's like discovering geysers for the first time when you've been showering with cold water all your life (strangely specific metaphor? sorry).
 
-When writing the compiler, I used many new C++17 features. I was drawn into modern C++ first because of constexpr which allows you to make functions that are evaluated at compile time. I wanted to build a fast but manageable lexical analyser using a composition of constexpr functions but I realised that I was trying to prematurely optimise, so I controlled myself. Maybe in version 0.2.
+When writing the compiler, I used many new C++17 features. I was drawn into modern C++ first because of constexpr which allows you to make functions that are evaluated at compile time. I wanted to build a fast but manageable lexical analyser using a composition of constexpr functions but I realised that I was trying to prematurely optimize again, so I controlled myself. Maybe in version 0.2.
 
 I also used C++17 lambda functions to declare nested functions to eliminate repeated actions that are only relevant inside a specific function. Here's an example:
 
@@ -68,38 +68,44 @@ Maybe it's because I've coding a lot in javascript these days, but nested functi
 
 I also tried to use C++ smart pointers everywhere. They make memory management so pleasant and take away most of the issues I used to deal when using raw pointers. But I did find the lack of good observer pointer idiom annoying and dangerous. Maybe they'll make it better by C++20, but hopefully I'll already be using Rust by then.
 
-In v0.1, I have only implemented the lexer, parser, semantic analyser and a rudimentary code generator with emits C++ code. In the new versions, I will progressively add new modules like optimiser, and redo some old ones.
+In v0.1, I have only implemented the lexer, parser, semantic analyzer and a rudimentary code generator with emits C++ code. In the new versions, I will progressively add new modules like optimizer, and redo some old ones.
 
- 1. The **Lexical Analyser** is a simple finite state machine which iterates over each each UTF8 encoded character and converts them into tokens. I learnt a lot about Unicode while making the lexer. I am interested in world languages and scripts, so reading the Unicode documentation and other articles was fascinating to me. If you're interested in languages too, I cannot recommend at least skimming through [the Unicode Standard](http://www.unicode.org/versions/Unicode12.0.0/UnicodeStandard-12.0.pdf "the Unicode Standard") enough. If you're in love with writing scripts like I am, do read [this article](https://www.smashingmagazine.com/2010/05/the-beauty-of-typography-writing-systems-and-calligraphy-of-the-world/) on Smashing Magazine. I have written about Unicode in another  [blog post](https://nirav.com.np/2019/10/16/on-the-nepali-language-and-unicode-1.html) so maybe also check that out.
+1. The **Lexical Analyser** is a simple finite state machine which iterates over each each UTF8 encoded character and converts them into tokens. I learnt a lot about Unicode while making the lexer. I am interested in world languages and scripts, so reading the Unicode documentation and other articles was fascinating to me. If you're interested in languages too, I cannot recommend at least skimming through [the Unicode Standard](http://www.unicode.org/versions/Unicode12.0.0/UnicodeStandard-12.0.pdf "the Unicode Standard") enough. If you're in love with writing scripts like I am, do read [this article](https://www.smashingmagazine.com/2010/05/the-beauty-of-typography-writing-systems-and-calligraphy-of-the-world/) on Smashing Magazine. I have written about Unicode in another  [blog post](https://nirav.com.np/2019/10/16/on-the-nepali-language-and-unicode-1.html) so maybe also check that out.
 
-    The encoding of Unicode characters is also a fascinating topic. I find UTF-8 particularly beautiful. And as it turns out, it was designed by [Ken and Rob](http://doc.cat-v.org/bell_labs/utf-8_history) from Bell Labs. I'm a big fan of the Bell Labs people.
- 2. I wrote the **Parser** using the Recursive Descent algorithm. It's crazy how simple yet powerful Recursive Descent is. I learnt it using only the [Wikipedia article](https://en.wikipedia.org/wiki/Recursive_descent_parser), wrote my first parser in a weekend, and it works like magic. It's just so elegant. In the current code base, the parser takes up the most volume at about a thousand lines. But I do believe that I should have mixed in some Pratt parsing to parse the operators, because recursive descent has to make a lot of function calls even for trivial tasks, which makes it inefficient. Oh well, maybe next time.
+   The encoding of Unicode characters is also a fascinating topic. I find UTF-8 particularly beautiful. And as it turns out, it was designed by [Ken and Rob](http://doc.cat-v.org/bell_labs/utf-8_history) from Bell Labs. I'm a big fan of the Bell Labs people.
+2. I wrote the **Parser** using the Recursive Descent algorithm. It's crazy how simple yet powerful Recursive Descent is. I learnt it using only the [Wikipedia article](https://en.wikipedia.org/wiki/Recursive_descent_parser), wrote my first parser in a weekend, and it works like magic. It's just so elegant. In the current code base, the parser takes up the most volume at about a thousand lines. But I do believe that I should have mixed in some Pratt parsing to parse the operators, because recursive descent has to make a lot of function calls even for trivial tasks, which makes it inefficient. Oh well, maybe next time.
 
-    The Parser makes an AST. Because the AST is vital, I wrote some routines to generate actual pictures from the AST. I've detailed the process in [another blog post](https://nirav.com.np/2019/12/08/visualize-c-data-structures-using-graphviz-and-dot-language.html) but this is what the AST's visualization looks like:
+   The Parser makes an AST. Because the AST is vital, I wrote some routines to generate actual pictures from the AST. I've detailed the process in [another blog post](https://nirav.com.np/2019/12/08/visualize-c-data-structures-using-graphviz-and-dot-language.html) but this is what the AST's visualization looks like:
 
-    ![](https://nirav.com.np/assets/img/astgraph1.png)
- 3. The **Semantic Analyser** is all about recursively getting to all nodes in the AST and checking their types and making sure everything is according to rules.
- 4. I had to write my own **Symbol Table**, which was awesome because I got to play with STL containers like pairs and unordered maps. Once you discover these tools, you can never go back to hand-coding data structures (which I'll admit was stupid, but I'm slowly fighting my not-invented-here syndrome).
- 5. The actual **Code Generator** is not done yet. In it's place is a simple function which recursively navigates the AST and generates C++ code. For variable names, I just base64 encoded all Devanagari identifiers and replaced the illegal characters in base64 with underscore. The generated code looks like this:
+   ![](https://nirav.com.np/assets/img/astgraph1.png)
+3. The **Semantic Analyser** is all about recursively getting to all nodes in the AST and checking their types and making sure everything is according to rules.
+4. I had to write my own **Symbol Table**, which was awesome because I got to play with STL containers like pairs and unordered maps. Once you discover these tools, you can never go back to hand-coding data structures (which I'll admit was stupid, but I'm slowly fighting my not-invented-here syndrome).
+5. The actual **Code Generator** is not done yet. In it's place is a simple function which recursively navigates the AST and generates C++ code. For variable names, I just base64 encoded all Devanagari identifiers and replaced the illegal characters in base64 with underscore. The generated code looks like this:
 
-        int main(){
-        auto v4KSo4KSv4KS_pX_pCksuCkvuCkh_pCkqATT1 = [&]() {
-        cout << "\n";
-        }
-        ;
-        int v4KSG4KSH = 100;
-        string v4KSV4KWB4KSw4KS_p = "नमस्ते";
-        while  (v4KSG4KSH > 0) {
-        cout << v4KSV4KWB4KSw4KS_p;
-        v4KSo4KSv4KS_pX_pCksuCkvuCkh_pCkqATT1();
-        v4KSG4KSH= (v4KSG4KSH - 10) ;
-        }
-        ;
-        }
-        
+       int main(){
+       auto v4KSo4KSv4KS_pX_pCksuCkvuCkh_pCkqATT1 = [&]() {
+       cout << "\n";
+       }
+       ;
+       int v4KSG4KSH = 100;
+       string v4KSV4KWB4KSw4KS_p = "नमस्ते";
+       while  (v4KSG4KSH > 0) {
+       cout << v4KSV4KWB4KSw4KS_p;
+       v4KSo4KSv4KS_pX_pCksuCkvuCkh_pCkqATT1();
+       v4KSG4KSH= (v4KSG4KSH - 10) ;
+       }
+       ;
+       }
+
 ### The Website
 
-asldfkjsalfjsaldfkjsf
+Making the website was like a pleasant stroll in the morning sun. It was not particularly challenging. I used Adobe XD to make a prototype and then designed it with vanilla CSS. I decided that unless there's an online compiler a website for a programming language is no use. I also fell in love with [Haskell's online shell](https://www.haskell.org/). But making it was going to be difficult.
+
+I used vanilla javascript, socket.io library and Codemirror to make the compiler part. Learning to write the syntax highlighting was somewhat complicated so I just modified a preexisting one. I wanted anybody with a computer or a mobile phone to be able to go in, type code and try it out. So I also made an in-browser keyboard layout switcher which reads input keys and converts them to Nepali based on [this](https://nirav.com.np/2020/02/07/an-easier-nepali-keyboard-layout.html) keyboard layout, which we also made. Then I made a nice keyboard layout switching drawer that I love to play with.
+
+![](https://nirav.com.np/assets/img/mnsakeyboardpop.gif)
+
+I apologize for the low quality GIF. I had to run the screen recording through so many online converters that all compressed the original in some form or another that now it looks like it came straight from early 2000s.
 
 ### The IDE
 
@@ -107,36 +113,16 @@ asldfkjsalfjsaldfkjsf
 
 1. It's nice to have a small code diary, if you will, to jot down all complex ideas that you think up while coding. I made a `diary.md` file on the root of the source tree to keep a chronological log of my thoughts, snippets of codes, things I had to do next, of bugs and other things in the file.
 2. C++11 range based loops are awesome. Why didn't I know about these before?
-3. Makefiles get real sloppy and annoying to maintain. 
-4. Vscode with 
-        
-        
- 6. VSCODE with c++ extentino is incredible. They seem to be making proper ASTs for my syntax on the fly. So far, I've only ever used vim and sublime without much configuration (for c and c++, that is). It makes things so much easier.
- 7. c++17 is great. I'm ysing things in ways they perhaps weren't meant to be used for better code management. One of them is I'm using lambdas for organisation of function code. it is fun.
- 8. pratt and recursive descent
- 9. I'm also working on a website **LINK SCREENSHOT**
-10. Unique Pointer is a lifesaver. supereffective once you get the hang of it. in previous c-like c++ code, I'd used raw poitners like in C. SO fucked.  
-    but with _unique POinters_ it's easy to forget if you've already moved things, and end up with null pointers. Specially matters in complex mutually recursive functions that pass around pointers to subtrees as if they were joints.
-
-# Short description of language
-
-# Lexer
-
-Unicode shenanigans, ingenuities, and stupidities + code redundancy and not invented here syndrome. mid coding change of conventions
-
-# Parser
-
-The boon that is unique pointers. Problems with recursivedescent. talk about pratt parsing .
-
-recursive descent with backtracking.
-
-Have photos of parse trees both terminal generated and made proper
+3. Makefiles get real sloppy and annoying to maintain.
+4. Vscode with
+5. VSCODE with c++ extentino is incredible. They seem to be making proper ASTs for my syntax on the fly. So far, I've only ever used vim and sublime without much configuration (for c and c++, that is). It makes things so much easier.
+6. c++17 is great. I'm ysing things in ways they perhaps weren't meant to be used for better code management. One of them is I'm using lambdas for organisation of function code. it is fun.
+7. pratt and recursive descent
+8. I'm also working on a website **LINK SCREENSHOT**
+9. Unique Pointer is a lifesaver. supereffective once you get the hang of it. in previous c-like c++ code, I'd used raw poitners like in C. SO fucked.  
+   but with _unique POinters_ it's easy to forget if you've already moved things, and end up with null pointers. Specially matters in complex mutually recursive functions that pass around pointers to subtrees as if they were joints.
 
 USE **PRESENTATION's MATERIAL**
-
-# Makefile
-
-was using -o3 without knowing it.
 
 # Interesting observatoins
 
