@@ -113,14 +113,14 @@ The backend part is also interesting, but it still needs lots of work. I basical
 
 ### The IDE
 
-sd;fsdlf
+I've hated ElectronJS with a passion I only reserve for a few things in life (like [the Cursed Child](https://nirav.com.np/2018/03/09/the-cursed-child-sucks.html)) but the night before a major demonstration of the project I was in such a rush because I had so much 
 
 ### Random observations
 
 1. It's nice to have a small code diary, if you will, to jot down all complex ideas that you think up while coding. I made a `diary.md` file on the root of the source tree to keep a chronological log of my thoughts, snippets of codes, things I had to do next, of bugs and other things in the file.
 2. C++11 range based loops are awesome. Why didn't I know about these before?
 3. Makefiles get real sloppy and annoying to maintain.
-4. Vscode with
+4. Vscode with 
 5. VSCODE with c++ extentino is incredible. They seem to be making proper ASTs for my syntax on the fly. So far, I've only ever used vim and sublime without much configuration (for c and c++, that is). It makes things so much easier.
 6. c++17 is great. I'm ysing things in ways they perhaps weren't meant to be used for better code management. One of them is I'm using lambdas for organisation of function code. it is fun.
 7. pratt and recursive descent
