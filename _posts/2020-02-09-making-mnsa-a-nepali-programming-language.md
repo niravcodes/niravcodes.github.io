@@ -113,57 +113,23 @@ The backend part is also interesting, but it still needs lots of work. I basical
 
 ### The IDE
 
-I've hated ElectronJS with a passion I only reserve for a few things in life (like [the Cursed Child](https://nirav.com.np/2018/03/09/the-cursed-child-sucks.html)) The hate is a result of a few factors. I use a 6 year old Dell laptop as my computer which is so dilapidated at this point that it stutters when I have lots of chrome tabs and VScode running at the same time. So I appreciate parsimony from the developer's side. I'm also kind of annoyed at this developer-first culture we developers are promoting, piggybacking simply on the fact that computers are getting faster and with more memory than before. 
+I've hated ElectronJS with a passion I only reserve for a few things in life (like [the Cursed Child](https://nirav.com.np/2018/03/09/the-cursed-child-sucks.html)) The hate is a result of a few factors. I use a 6 year old Dell laptop as my computer which is so dilapidated at this point that it stutters when I have lots of chrome tabs and VScode running at the same time. So I appreciate parsimony from the developer's side. I'm also kind of annoyed at this developer-first culture we developers are promoting, piggybacking simply on the fact that computers are getting faster and with more memory than before.
 
 But then the night before a major demonstration of the project I was in such a rush because I had so many things to make and refine, that I broke all my rules and made a deal with the devil itself. _Oh mighty devil, oh accomplice of the photon, oh sinful chimera of chromium and nodejs, oh gods of chaos and asynchronicity, I implore you._
 
-Anyway, the results were incredibly. In about three hours, I had a perfectly working syntax-highlighting enabled (thanks again, CodeMirror), beautiful IDE for demonstration. It could compile and run the code and upload it to Arduino too (with some avrdude magic, of course). ElectronJS is incredibly fast and simple (for the developer, at least). Even though the reasons for hating ElectronJS are still valid, I got a new perspective by actually working on it, and I've added it into my toolbox. Thank you, ElectronJS, for taking me back to my childhood days of Visual Basic and RAD. 
+Anyway, the results were incredibly. In about three hours, I had a perfectly working syntax-highlighting enabled (thanks again, CodeMirror), beautiful IDE for demonstration. It could compile and run the code and upload it to Arduino too (with some avrdude magic, of course). ElectronJS is incredibly fast and simple (for the developer, at least). Even though the reasons for hating ElectronJS are still valid, I got a new perspective by actually working on it, and I've added it into my toolbox. Thank you, ElectronJS, for taking me back to my childhood days of Visual Basic and RAD.
 
 ### The Arduino interface
 
-मनसा can also write code for Arduino. The idea came when I was trying to teach my cousin (who's 12) this programming language. I realized that it's difficult to get a kid to relate to the world inside the computer. For example, when teaching the concept of looping for the first time, it's way easier to show him a led blinking 10 times and explain the code than to show him ten instances of 'Hello World'. 
+मनसा can also write code for Arduino. The idea came when I was trying to teach my cousin (who's 12) this programming language. I realized that it's difficult to get a kid to relate to the world inside the computer. For example, when teaching the concept of looping for the first time, it's way easier to show him a led blinking 10 times and explain the code than to show him ten instances of 'Hello World'.
 
-So a literally a day before the major demonstration, I added in some features to the language, mainly the `external` interface which can then be used to write external C code inside मनसा functions. So the resulting system is kind of hacky 
+So I added in some features to the language, mainly the `external` mechanism which allows you to write C code inside मनसा functions. The resulting system is kind of hacky but surprisingly flexible. The embedded C code does most of the register twiddling and bit flipping, and exposes high level functions to मसना. That code is written as library. Then, using the import mechanism of the language, you can import these functions and access them like normal मसना functions. I will put in a video demonstration when I have the time.
 
 ### Random, interesting observations
 
 1. It's nice to have a small code diary, if you will, to jot down all complex ideas that you think up while coding. I made a `diary.md` file on the root of the source tree to keep a chronological log of my thoughts, snippets of codes, things I had to do next, of bugs and other things in the file.
 2. C++11 range based loops are awesome. Why didn't I know about these before?
 3. Makefiles get very sloppy very fast and annoying to maintain. I must learn to use more sophisticated build system soon. Maybe Cmake? The build system should be able to build on both Linux and on WSL, install all required programs if they don't exist, and only compile the libraries that actually changed.
-4. Most of the 3000+ lines of code I've written is worthless. I think I read somewhere lines of code are not investments, rather they are loans. The more you add to the codebase, the more expensive you make it to maintain it. It takes more time for a prospective contributor to make sense of the whole project. The more lines you write, the more bugs you hide. I would have been far far better using a parser generator and making the language interpreted instead of compiled. That would reduce complexity of the system and let me focus on the big picture and on the applications of the language. 
-5. At some point, you _absolutely_ need a second, vertical monitor.
-6. Compiling larger codebases takes far more time than I expected.
-
-USE **PRESENTATION's MATERIAL**
-
-## Making Vector Website
-
-I proposed that an event of this scale would benefit from having a centralized information bank on the web. specially because it's so targeted towards young people, who are used to using the web for everything anyway. Also, we are so reliant on Google forms that dilutes the brand and so on.
-
-But as it turns out, it's hard to do everything by yourself. I was doing the content-writing, the designing and the web front and back ends and the server maintenance at
-
-I was astounded at the amount of hacking attempts that were being made at the site.
-
-1 the PHP site kind
-
-1. The SSH kind. Woah
-
-Website maintainence is a many-people job. Trying to do all things at once
-
-### gtksourceview bug
-
-gtksourcview has some errors that make it impossible to setup a syntax highlighting system. It fails to highlight _insert pic here_
-
-Plus I had to make a desktop application to write generated code into AVR. so I couldn't just use a web app. I turned to electron.js. I had never used it before, and had hoped I'd never have to use it because I'm inherently repulsed by large systems. Plus, I use a 5 year old laptop with 4 gig ram, so I'm naturally inclined towards slimmer packages.
-
-But time is a factor.
-
-Surprisingly, it took me literally ---
-
-Luckily codemirror is awesome. Marijn Haverbeke is literally my fabourite person rn.
-
-The strange thing about time is that there's too much of it in the future but too little in the present I can't wrap my head arund the concept of time there seems to be ..
-
-Learnt a few new things not related to programming
-
-1: Its' not enough to just know the best way to do things. You have to put in the time to do the thing and take the time to see it through. I have been very critical of many people's work in the past because I could point out the errors in their work. But this experience taught me that perfectionism is not always the best sometimes showing up and makign shit works too
+4. Most of the 3000+ lines of code I've written is worthless. I think I read somewhere lines of code are not investments, rather they are loans. The more you add to the codebase, the more expensive you make it to maintain it. It takes more time for a prospective contributor to make sense of the whole project. The more lines you write, the more bugs you hide. I would have been far far better using a parser generator and making the language interpreted instead of compiled. That would reduce complexity of the system and let me focus on the big picture and on the applications of the language.
+5. At some point, you _really_ need a second, vertical monitor.
+6. Compiling larger code bases takes far more time than you expect.
