@@ -117,7 +117,7 @@ I've hated ElectronJS with a passion I only reserve for a few things in life (li
 
 But then the night before a major demonstration of the project I was in such a rush because I had so many things to make and refine, that I broke all my rules and made a deal with the devil itself. _Oh mighty devil, oh accomplice of the photon, oh sinful chimera of chromium and nodejs, oh gods of chaos and asynchronicity, I implore you._
 
-Anyway, the results were incredibly. In about three hours, I had a perfectly working syntax-highlighting enabled (thanks again, CodeMirror), beautiful IDE for demonstration. It could compile and run the code and upload it to Arduino too (with some avrdude magic, of course). ElectronJS is incredibly fast and simple (for the developer, at least). Even though the reasons for hating ElectronJS are still valid, I got a new perspective by actually working on it, and I've added it into my toolbox. Thank you, ElectronJS, for taking me back to my childhood days of Visual Basic and RAD.
+Anyway, the results were astounding. In about three hours, I had a perfectly working syntax-highlighting enabled (thanks again, CodeMirror), beautiful IDE for demonstration. It could compile and run the code and upload it to Arduino too (with some avrdude magic, of course). ElectronJS is incredibly fast and simple (for the developer, at least). Even though the reasons for hating ElectronJS are still valid, I got a new perspective by actually working on it, and I've added it into my toolbox. Thank you, ElectronJS, for taking me back to my childhood days of Visual Basic and RAD.
 
 ### The Arduino interface
 
@@ -128,8 +128,8 @@ So I added in some features to the language, mainly the `external` mechanism whi
 ### Random, interesting observations
 
 1. It's nice to have a small code diary, if you will, to jot down all complex ideas that you think up while coding. I made a `diary.md` file on the root of the source tree to keep a chronological log of my thoughts, snippets of codes, things I had to do next, of bugs and other things in the file.
-2. C++11 range based loops are awesome. Why didn't I know about these before?
+2. C++11 range based loops are awesome. I know about these before.
 3. Makefiles get very sloppy very fast and annoying to maintain. I must learn to use more sophisticated build system soon. Maybe Cmake? The build system should be able to build on both Linux and on WSL, install all required programs if they don't exist, and only compile the libraries that actually changed.
-4. Most of the 3000+ lines of code I've written is worthless. I think I read somewhere lines of code are not investments, rather they are loans. The more you add to the codebase, the more expensive you make it to maintain it. It takes more time for a prospective contributor to make sense of the whole project. The more lines you write, the more bugs you hide. I would have been far far better using a parser generator and making the language interpreted instead of compiled. That would reduce complexity of the system and let me focus on the big picture and on the applications of the language.
+4. Most of the 3000+ lines of code I've written is worthless. I read somewhere lines of code are not investments, rather they are loans. The more you add to the codebase, the more expensive you make it to maintain it. It takes more time for a prospective contributor to make sense of the whole project. The more lines you write, the more bugs you hide. I would have been far far better using a parser generator and making the language interpreted instead of compiled. That would reduce complexity of the system and let me focus on the big picture and on the applications of the language.
 5. At some point, you _really_ need a second, vertical monitor.
 6. Compiling larger code bases takes far more time than you expect.
