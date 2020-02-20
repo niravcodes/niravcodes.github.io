@@ -99,6 +99,10 @@ Alan J. Perlis, a computer scientist who received the inagural Turing Award for 
 
 Link: [https://devpost.com/software/sed-pathfinder](https://devpost.com/software/sed-pathfinder "https://devpost.com/software/sed-pathfinder")
 
-Yes. This guy wrote a text-based path finder in Sed! It is incredibly easy to try for yourself so give it a go. Then try to make sense of the code. 
+Yes. This guy wrote a text-based path finder in Sed! It is easy to try for yourself so give it a go. Then try to make sense of the code.
 
 ### Mitxela's DIY video game console
+
+Link: youtube.com/watch?v=dTGOEe8f8ls
+
+This guy built a very nice DIY game console all by himself. Very cool.
