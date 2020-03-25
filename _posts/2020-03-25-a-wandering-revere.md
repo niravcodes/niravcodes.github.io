@@ -1,13 +1,13 @@
 ---
 excerpt_separator: "<!--more-->"
 layout: post
-title: A Wandering Revere
+title: A Wandering Reverie
 tags:
 - poem
 - writing
 enableNepali: false
 feature-img: https://nirav.com.np/assets/img/grassrain.png
-thumbnail: ''
+thumbnail: https://nirav.com.np/assets/img/grassrain.png
 
 ---
 <!--more-->
@@ -17,10 +17,10 @@ and wrapped in a blanket I stare
 out into the eyes of the vacant sky  
 the puddles ripple and the wind  
 she dances by,  
-brushing my lips with a sublte kiss,   
+brushing my lips with a subtle kiss,  
 a secret mischief, a certain aftertaste
 
-On rainy days I'm meaningless,   
+On rainy days I'm meaningless,  
 I sip my tea, and count the days  
 I contemplate the rainy haze  
 and when there is a sudden chill,  
@@ -35,13 +35,14 @@ her tender neck, it's your perfume
 
 It's just a thought - a hollow dream  
 but I think of you to some extreme  
-Before the clouds are satisfied,   
+Before the clouds are satisfied,  
 then  
 they step aside for a new sky
 
 And promises of novel dreams  
 New hands to hold, new lips to kiss
 
-_Featured Photo by_ [**_Johannes Plenio_**](https://www.pexels.com/@jplenio?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) _from_ [**_Pexels_**](https://www.pexels.com/photo/closeup-photo-of-green-grass-field-1423601/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
+<br><br><br>
 
-_Written during the Corona Quarantine_
+_Featured Photo by_ [**_Johannes Plenio_**](https://www.pexels.com/@jplenio?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) _from_ [**_Pexels_**](https://www.pexels.com/photo/closeup-photo-of-green-grass-field-1423601/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)**_  
+_**_Written during the Corona Quarantine_
