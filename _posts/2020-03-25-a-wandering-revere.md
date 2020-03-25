@@ -24,7 +24,7 @@ On rainy days I'm meaningless,
 I sip my tea, and count the days  
 I contemplate the rainy haze  
 and when there is a sudden chill,  
-a wandering reverie knocks my door  
+a wandering reverie knocks at my door  
 she knocks twice-oh, she knocks once more
 
 Her name is you, her face is you  
@@ -42,7 +42,7 @@ they step aside for a new sky
 And promises of novel dreams  
 New hands to hold, new lips to kiss
 
-<br><br><br>
+<br><br>
 
 _Featured Photo by_ [_Johannes Plenio_](https://www.pexels.com/@jplenio?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) _from_ [_Pexels_](https://www.pexels.com/photo/closeup-photo-of-green-grass-field-1423601/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)_ <br>
 _Written during the Corona Quarantine_
