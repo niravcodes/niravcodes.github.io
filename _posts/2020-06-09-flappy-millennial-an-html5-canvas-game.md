@@ -243,4 +243,4 @@ I actually have a lot of bad things to say about Azure's user experience and I'm
 
 ![](https://nirav.com.np/assets/img/photo.png)
 
-This is the data collected in the first few hours after I published the game on GitHub. So far the highscore is 27. Think you can do better? Go play the game at \[nirav.com.np/flappy-millennial\](https://nirav.com.np/flappy-millennial) and prove it. I won't know who you are, but I'll know you're a badass.
+This is the data collected in the first few hours after I published the game on GitHub. So far the highscore is 27. Think you can do better? Go play the game at [nirav.com.np/flappy-millennial](https://nirav.com.np/flappy-millennial "link to game") and prove it. I won't know who you are, but I'll know you're a badass.
