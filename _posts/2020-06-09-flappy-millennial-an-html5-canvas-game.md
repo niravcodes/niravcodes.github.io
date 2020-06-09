@@ -14,6 +14,8 @@ Meet Flappy Millennial. He's an average guy in his mid 20's and the future looks
 
 But worry not. For he has an antidote—well, not so much an antidote as a sedative. He has his phone! Come help this Flappy Millennial ignore reality while he scrolls through Instagram or something. You should play this game not because it's good or anything, but simply so you too can pretend that things are okay for a while.
 
+<!--more-->
+
 ![preview of the game](https://nirav.com.np/flappy-millennial/assets/preview.gif)
 
 Play the game online at [nirav.com.np/flappy-millennial](https://nirav.com.np/flappy-millennial).
@@ -30,7 +32,7 @@ Over time, I began to notice some problems with the design of the game engine AP
 
 Because I'm an unoriginal fuck.
 
-But also because Flappy Bird has an engaging gameplay with a remarkably simple game mechanic. It's a child's play to code a clone and for some reason even the worst clones turn out to be playable. To prove the assertion I wrote yet another flappy bird clone right here. Turns out just 60 lines of code and about an hour or two is enough to make a fun flappy clone. Completely playable and still addictive! Go ahead, try it out right here. Click on the square below to focus the game.
+But also because Flappy Bird has an engaging gameplay with a remarkably simple game mechanic. It's a child's play to write a clone and for some reason even the worst clones turn out to be fun. To prove the assertion I wrote yet another flappy bird clone right here. Turns out just 60 lines of code and about an hour or two is enough to make a fun flappy clone. Completely playable and still addictive! Go ahead, try it out right on this page. Click on the square below to focus the game.
 
 <canvas id="c" tabindex=1 style="outline:dashed 4px #000"></canvas>
 <script>
