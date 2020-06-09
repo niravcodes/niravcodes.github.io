@@ -85,7 +85,7 @@ theme_settings:
   post_navigation: false
 paginate: 20
 paginate_path: blog/page:num
-markdown: kramdown
+markdown: jekyll-commonmark-ghpages
 highlighter: rouge
 sass:
   sass_dir: _sass
