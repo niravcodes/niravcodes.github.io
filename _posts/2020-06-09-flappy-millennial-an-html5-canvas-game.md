@@ -151,7 +151,7 @@ var pt=(t,h)=>{
 CC.fillStyle="#fff";
 CC.fillText(t,(W-CC.measureText(t).width)/2,h)
 }
-c.ontouchstart=c.onkeydown=(e)=>P?(P=0)&(S=1)&(LP()):vy=-8;
+c.ontouchstart=c.onkeydown=(e)=>P?(P=0)&(S=1)&((new Image()).src=`https://flappymillennial2.azure-api.net/flappymillennial/score/${S}/none/none/${Date.now()}`)&(LP()):vy=-8;
 </script>
 ```
 
