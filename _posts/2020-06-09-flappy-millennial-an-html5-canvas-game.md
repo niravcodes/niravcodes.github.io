@@ -184,7 +184,7 @@ Of course, at that point I was left wondering why my actual Flappy Millennial co
 
 ## How?
 
-The main game logic is in the `js/game.js` file. It begins by importing a bunch of classes and functions from the library, including `Character`, `Spritesheet`, `Collider`, and `StaticText`. These classes abstract the mechanism of animating on the canvas and checking for collisions among other things. These things are very helpful because the canvas API, while flexible, is very low level. For example, if you wanted to play an animation using the bare canvas API, you'd have to convert your GIF into a sequence of images and manually draw each image while also taking care of the timing and positioning. Things like that don't scale well as the game gets bigger. With my library, you can simply say `Character.runAnimation()` and the rest is taken care of for you.
+The main game logic is in the `js/game.js` file. It begins by importing a bunch of classes and functions from the library, including `Character`, `Spritesheet`, `Collider`, and `StaticText`. These classes abstract the mechanism of animating on the canvas and checking for collisions among other things. These things are very helpful because the canvas API, while flexible, is very low level. For example, if you wanted to play an animation using the bare canvas API, you'd have to convert your GIF into a sequence of images and manually draw each image while also taking care of the timing and positioning. Things like that don't scale well as the game gets bigger. With my library, you can simply say `Character.runAnimation()` and the rest is taken care of for you. The game is gradually implemented using these primitives and very simple javascript. A casual skim of the code in `js/game.js` on GitHub should be enough to get most implementation details.
 
 I made most of the art for the game myself, including our titular character Flappy Millennial. It was made using [Piskel](http://piskelapp.com/) which is a great pixel art animation software. It isn't as feature-rich as I'd like but works well right in the browser and I love it for that.
 
@@ -200,38 +200,30 @@ I've acquired the habit of writing ES6 javaScript by default because I do so muc
 
 So I had to put together a set of tools to convert my modern javascript dialect to standard javascript understood by most browsers. Without this process, my code wouldn't work on current mobile browsers and slightly outdated or extended support editions of desktop browsers. It isn't a particularly difficult thing to do, because these tool makers have already put in all the effort.
 
-First we pass our javascript through Babel with plugins that convert to ES5 javascript. Then output is then passed to Browserify, which reads all the imports and requires, and puts all the code together in a single, huge file. That file is finally passed to Google closure compiler, which minifies the code and in our case, outputs a file that's half the size of the unminified code.
+First we pass our javascript through Babel with plugins that convert to ES5 javascript. Then output is then passed to Browserify, which reads all the `import`s and `require`s, and puts all the code together in a single, huge file. That file is finally passed to Google closure compiler, which minifies the code and in our case, creates a file that's half the size of the unminified code but with the exact behavior.
 
 I could have used something like Gulp to create this pipeline, but this time it isn't too complicated so a simple bash script did the trick.
 
     #! /bin/bash
-    
     echo "Rebuilding Game"
     rm -rf dist
     mkdir -p dist/js
     cp index_dist.html dist/index.html
     cp favicon.ico dist/favicon.ico
-    
     echo "Copying Assets"
     cp -r assets dist/
-    
     echo "Transpiling with Babel"
     npx babel js/library -d dist/js/library
     npx babel js/game.js -o dist/js/game.js
     npx babel js/LOGSCORE.js -o dist/js/LOGSCORE.js
-    
     echo "Browserifying"
     npx browserify dist/js/game.js -o dist/js/game_browserify.js
-    
     echo "Cleaning up"
     rm -rf dist/js/library
-    
     echo "Minifying"
     npx google-closure-compiler --js=dist/js/game_browserify.js --js_output_file=dist/js/game.js --jscomp_off=checkVars
-    
     rm dist/js/LOGSCORE.js
     # rm dist/js/game_browserify.js
-    
     echo "Done! (ignore the warnings)"
 
 # Azure and Analytics
