@@ -86,9 +86,64 @@ CC.fillText(t,(W-CC.measureText(t).width)/2,h)
 c.ontouchstart=c.onkeydown=(e)=>P?(P=0)&(S=1)&(LP()):vy=-8;
 </script>
 
-Once you've played this to your heart's content, check out the JavaScript it took to make it work:
+Once you've played this to your heart's delight, check out the JavaScript it took to make it work:
 
-[Javascript]
+```html
+<style>#c:focus{outline:dashed 4px #000;}</style>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+<canvas id="c" tabindex=1></canvas>
+<script>
+let snd = new Audio("data:audio/wav;base64,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qJrx4KOQjahZxWbcZgztj2c49nKmkId44S71j0c8eV9yDK6uPRzx5X18eDvjvQ6yKo9ZSS6l//8elePK/Lf//IInrOF/FvDoADYAGBMGb7FtErm5MXMlmPAJQVgWta7Zx2go+8xJ0UiCb8LHHdftWyLJE0QIAIsI+UbXu67dZMjmgDGCGl1H+vpF4NSDckSIkk7Vd+sxEhBQMRU8j/12UIRhzSaUdQ+rQU5kGeFxm+hb1oh6pWWmv3uvmReDl0UnvtapVaIzo1jZbf/pD6ElLqSX+rUmOQNpJFa/r+sa4e/pBlAABoAAAAA3CUgShLdGIxsY7AUABPRrgCABdDuQ5GC7DqPQCgbbJUAoRSUj+NIEig0YfyWUho1VBBBA//uQZB4ABZx5zfMakeAAAAmwAAAAF5F3P0w9GtAAACfAAAAAwLhMDmAYWMgVEG1U0FIGCBgXBXAtfMH10000EEEEEECUBYln03TTTdNBDZopopYvrTTdNa325mImNg3TTPV9q3pmY0xoO6bv3r00y+IDGid/9aaaZTGMuj9mpu9Mpio1dXrr5HERTZSmqU36A3CumzN/9Robv/Xx4v9ijkSRSNLQhAWumap82WRSBUqXStV/YcS+XVLnSS+WLDroqArFkMEsAS+eWmrUzrO0oEmE40RlMZ5+ODIkAyKAGUwZ3mVKmcamcJnMW26MRPgUw6j+LkhyHGVGYjSUUKNpuJUQoOIAyDvEyG8S5yfK6dhZc0Tx1KI/gviKL6qvvFs1+bWtaz58uUNnryq6kt5RzOCkPWlVqVX2a/EEBUdU1KrXLf40GoiiFXK///qpoiDXrOgqDR38JB0bw7SoL+ZB9o1RCkQjQ2CBYZKd/+VJxZRRZlqSkKiws0WFxUyCwsKiMy7hUVFhIaCrNQsKkTIsLivwKKigsj8XYlwt/WKi2N4d//uQRCSAAjURNIHpMZBGYiaQPSYyAAABLAAAAAAAACWAAAAApUF/Mg+0aohSIRobBAsMlO//Kk4soosy1JSFRYWaLC4qZBYWFRGZdwqKiwkNBVmoWFSJkWFxX4FFRQWR+LsS4W/rFRb/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////VEFHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU291bmRib3kuZGUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjAwNGh0dHA6Ly93d3cuc291bmRib3kuZGUAAAAAAAAAACU=");  
+let pnt = (r=0.20)=>{
+    snd.playbackRate = r;
+    snd.play();
+}
+let C = document.querySelector('#c');
+let W=C.width=H=C.height=350;
+let CC=C.getContext('2d');
+colH=S=P=1;
+let pipe1,pipe2;{
+    let rH=()=>(Math.random()*100+50)|0;
+    let pipe=(off)=>{
+        let x=off, h=rH();
+        return(rst)=>{
+        if (rst){x=off;colH=0;return}
+        if ((x=x-2)<-50) {x=W;h=rH()}
+        (x>70&&x<100)?colH=h:0
+        if (x==20){colH=0;++S;pnt(1)};
+        CC.fillRect(x, 0,50,h);
+        CC.fillRect(x,H,50,h-H+140);
+    }}
+    pipe1=pipe(W+100);pipe2=pipe(W+300);
+}
+let y=h=w=30;
+window.vy=0,ay=0.4;
+let LP=window.onload=()=>{
+    CC.fillStyle="#235789"
+    CC.fillRect(0,0,W,H);
+    if (P) {
+        pt("Press any key to play",H/2)
+        pt("Score: "+S,H/2+40)
+        pipe1(1);pipe2(1);
+        return;
+    }
+    CC.fillStyle="#f1d302"
+    y+=vy+=ay;
+    CC.fillRect(70,y,w,h)
+    if(colH&&(y<colH||y+h>colH+140)) {y=30;P=1;pnt()};
+    y>H+h?(P=1)&(vy=0)&(y=30)&(pnt()):0;
+    pipe1();pipe2();
+    pt(S,40)
+    requestAnimationFrame(LP);
+}
+CC.font = "24px 'Poiret One'"
+var pt=(t,h)=>{
+CC.fillStyle="#fff";
+CC.fillText(t,(W-CC.measureText(t).width)/2,h)
+}
+c.ontouchstart=c.onkeydown=(e)=>P?(P=0)&(S=1)&(LP()):vy=-8;
+</script>
+```
 
 That's about 60 lines of javascript which makes a playable Flappy Bird game, complete with touch screen support and sound effects.
 
@@ -96,8 +151,30 @@ Now, that should have been the end of it. A game in 60 lines of code is good eno
 
 So then I went ahead and made it even smaller.
 
-[smaller code]
+```html
+<canvas id="c"/><script>C=document.querySelector('#c');W=C.width=H=C.height=350
+colH=S=P=1;y=h=w=30;vy=0,ay=.4;for($ in CC=C.getContext('2d'))CC[$[0]+($[6]||'')]
+=CC[$];rH=_=>Math.random()*99+50;pp=(off)=>{ let x=off,ph=rH();return r=>{r?(x=off)
+&(colH=0):0;(x=x-2)<-50?(x=W)&(ph=rH()|0):0;(x>70&&x<100)?colH=ph:0;
+x==20?(colH=0)&++S&B(400):0;CC.fc(x,0,50,ph);CC.fc(x,H,50,ph-H+140);}}
+p1=pp(W+100);p2=pp(W+300);LP=onload=_=> {CC.fillStyle="#258";CC.fc(0,0,W,H)
+if(P){pt("Score "+S,H/2);p1(1);p2(1);return};CC.fillStyle="#fd0"
+y+=vy+=ay;CC.fc(70,y,w,h);colH&&(y<colH||y+h>colH+140)?(y=30)&
+(P=1)&B():0;y>H+h?(P=1)&(vy=0)&(y=30)&(B()):0;p1();p2();pt(S,40);
+requestAnimationFrame(LP)};CC.font="24px serif"
+pt=(t,h)=>{CC.fillStyle="#fff";CC.fx(t,(W-CC.me(t).width)/2,h)}
+c.ontouchstart=onkeydown=(e)=>P?(P=0)&(S=1)&LP():vy=-8;
+A=new AudioContext;B=_=>{o=A.createOscillator();o.frequency.value=_||999
+o.start();o.connect(A.destination);setTimeout(_=>o.stop(),99)}</script>
+```
 
-Yeah, that's right. It is 15 lines of the HTML and javascript code that will make a flappy bird game in your browser. Pretty cool, huh? But line count is not a valid metric for this. This code is less than 970 bytes. That's about 100 times smaller than the code size of flappy millennial. And it still works!
+Yeah, that's right. It is 15 lines of the HTML and javascript code that will make a flappy bird game in your browser. Pretty cool, huh? But line count is not a valid metric for this code. Here's a proper one: this code is less than 970 bytes. That's about a 100 times smaller than the code size of flappy millennial. And it still works!
 
-Of course, at that point I was left wondering why my actual Flappy Millennial code is so huge. 
+Of course, at that point I was left wondering why my actual Flappy Millennial code is so huge.
+
+## How?
+
+The main game logic is in the `js/game.js` file. It begins by importing a bunch of classes and functions from the library, including `Character`, `Spritesheet`, `Collider`, and `StaticText`. These classes abstract the mechanism of animating on the canvas and checking for collisions among other things. These things are very helpful because the canvas API, while flexible, is very low level. For example, if you wanted to play an animation using the bare canvas API, you'd have to convert your GIF into a sequence of images and manually draw each image while also taking care of the timing and positioning. Things like that don't scale well as the game gets bigger. With my library, you can simply say `Character.runAnimation()` and the rest is taken care of for you.
+
+I made most of the art for the game myself, including our titular character Flappy Millennial. It was made using [Piskel](http://piskelapp.com/) which is a great pixel art animation software. It isn't as feature-rich as I'd like but works well right in the browser and I love it for that.
+
