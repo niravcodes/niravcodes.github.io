@@ -185,55 +185,53 @@ The beautiful background art that I'm using was made by [Vicente Nitti](https://
 
 # Build system
 
-I've acquired the habit of writing ES6 javaScript by default because I do so much work with React, Vue and NodeJS. That's generally a good thing, but it also means that if I want my javascript code to work on most browsers, I'll have to use external tooling. That was the case with Flappy Millennial. 
+I've acquired the habit of writing ES6 javaScript by default because I do so much work with React, Vue and NodeJS. That's generally a good thing, but it also means that if I want my javascript code to work on most browsers, I'll have to use external tooling. That was the case with Flappy Millennial.
 
-So I had to put together a set of tools to convert my modern javascript dialect to standard javascript understood by most browsers. Without this process, my code wouldn't work on current mobile browsers and slightly outdated or extended support editions of desktop browsers. It isn't a particularly difficult thing to do, because these tool makers have already put in all the effort. 
+So I had to put together a set of tools to convert my modern javascript dialect to standard javascript understood by most browsers. Without this process, my code wouldn't work on current mobile browsers and slightly outdated or extended support editions of desktop browsers. It isn't a particularly difficult thing to do, because these tool makers have already put in all the effort.
 
-First we pass our javascript through Babel with plugins that convert to ES5 javascript. Then output is then passed to Browserify, which reads all the imports and requires, and puts all the code together in a single, huge file. That file is finally passed to Google closure compiler, which minifies the code and in our case, outputs a file that's half the size of the unminified code. 
+First we pass our javascript through Babel with plugins that convert to ES5 javascript. Then output is then passed to Browserify, which reads all the imports and requires, and puts all the code together in a single, huge file. That file is finally passed to Google closure compiler, which minifies the code and in our case, outputs a file that's half the size of the unminified code.
 
 I could have used something like Gulp to create this pipeline, but this time it isn't too complicated so a simple bash script did the trick.
 
-```
-#! /bin/bash
-
-echo "Rebuilding Game"
-rm -rf dist
-mkdir -p dist/js
-cp index_dist.html dist/index.html
-cp favicon.ico dist/favicon.ico
-
-echo "Copying Assets"
-cp -r assets dist/
-
-echo "Transpiling with Babel"
-npx babel js/library -d dist/js/library
-npx babel js/game.js -o dist/js/game.js
-npx babel js/LOGSCORE.js -o dist/js/LOGSCORE.js
-
-echo "Browserifying"
-npx browserify dist/js/game.js -o dist/js/game_browserify.js
-
-echo "Cleaning up"
-rm -rf dist/js/library
-
-echo "Minifying"
-npx google-closure-compiler --js=dist/js/game_browserify.js --js_output_file=dist/js/game.js --jscomp_off=checkVars
-
-rm dist/js/LOGSCORE.js
-# rm dist/js/game_browserify.js
-
-echo "Done! (ignore the warnings)"
-```
+    #! /bin/bash
+    
+    echo "Rebuilding Game"
+    rm -rf dist
+    mkdir -p dist/js
+    cp index_dist.html dist/index.html
+    cp favicon.ico dist/favicon.ico
+    
+    echo "Copying Assets"
+    cp -r assets dist/
+    
+    echo "Transpiling with Babel"
+    npx babel js/library -d dist/js/library
+    npx babel js/game.js -o dist/js/game.js
+    npx babel js/LOGSCORE.js -o dist/js/LOGSCORE.js
+    
+    echo "Browserifying"
+    npx browserify dist/js/game.js -o dist/js/game_browserify.js
+    
+    echo "Cleaning up"
+    rm -rf dist/js/library
+    
+    echo "Minifying"
+    npx google-closure-compiler --js=dist/js/game_browserify.js --js_output_file=dist/js/game.js --jscomp_off=checkVars
+    
+    rm dist/js/LOGSCORE.js
+    # rm dist/js/game_browserify.js
+    
+    echo "Done! (ignore the warnings)"
 
 # Azure and Analytics
 
-One of the tangential goals of this project was to set up a simple analytics system that logs what score you make and when you make it. With that data I can look for interesting patterns like how many times the average player plays the game before rage quitting, or the global high score, or if players come back to play a second time. 
+One of the tangential goals of this project was to set up a simple analytics system that logs what score you make and when you make it. With that data I can look for interesting patterns like how many times the average player plays the game before rage quitting, or the global high score, or if players come back to play a second time.
 
-***Side note**: You don't have to worry about privacy. The data I collect is totally anonymous and ridiculously harmless. I'll eventually publish interesting findings from the data once I have enough of it.*
+**_Side note_**_: You don't have to worry about privacy. The data I collect is totally anonymous and ridiculously harmless. I'll eventually publish interesting findings from the data once I have enough of it._
 
 So anyway, to make that system, I chose to use Azure Functions. Azure Function (and its equivalent from other cloud providers) is an awesome service that makes backend development, deployment and scaling so much easier. I've fallen in love with it and all the possibilities it represents.
 
-A cloud function is essentially some code that triggers when some event happens (say a HTTP request, or a database modification), does some processing, and creates some output (a HTTP response, a database entry modification). In my case, every time the player dies, his score is sent to a cloud function that does some verification and records the score in a CosmosDB database. All in all, it took about 10 lines of code and some basic configuration. To do the same thing with a virtual machine, I'd have to instantiate a new VM and a new disk to go with it, configure the firewall, install all the software, `scp` local files to the VM, `npm install` and wait, provision https certificates, and just so much more. 
+A cloud function is essentially some code that triggers when some event happens (say a HTTP request, or a database modification), does some processing, and creates some output (a HTTP response, a database entry modification). In my case, every time the player dies, his score is sent to a cloud function that does some verification and records the score in a CosmosDB database. All in all, it took about 10 lines of code and some basic configuration. To do the same thing with a virtual machine, I'd have to instantiate a new VM and a new disk to go with it, configure the firewall, install all the software, `scp` local files to the VM, `npm install` and wait, provision https certificates, and just so much more.
 
 But was it a smooth ride? Nope.
 
@@ -241,3 +239,6 @@ I actually have a lot of bad things to say about Azure's user experience and I'm
 
 ### First few hours
 
+![](https://nirav.com.np/assets/img/photo.png)
+
+This is the data collected in the first few hours after I published the game on GitHub. So far the highscore is 27. Think you can do better? Go play the game at \[nirav.com.np/flappy-millennial\](https://nirav.com.np/flappy-millennial) and prove it. I won't know who you are, but I'll know you're a badass.
