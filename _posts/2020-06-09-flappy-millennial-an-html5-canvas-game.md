@@ -89,7 +89,7 @@ var pt=(t,h)=>{
 CC.fillStyle="#fff";
 CC.fillText(t,(W-CC.measureText(t).width)/2,h)
 }
-c.ontouchstart=c.onkeydown=(e)=>P?(P=0)&(S=1)&(LP()):vy=-8;
+C.ontouchstart=C.onkeydown=(e)=>P?(P=0)&(S=1)&(LP()):vy=-8;
 </script>
 
 Once you've played this to your heart's delight, check out the JavaScript it took to make it work:
