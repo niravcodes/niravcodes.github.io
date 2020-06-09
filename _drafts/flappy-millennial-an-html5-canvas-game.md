@@ -6,8 +6,8 @@ tags:
 - javascript
 - game
 enableNepali: false
-feature-img: ''
-thumbnail: ''
+feature-img: https://nirav.com.np/assets/img/photo2.png
+thumbnail: https://nirav.com.np/assets/img/photo2.png
 
 ---
 Meet Flappy Millennial. He's an average guy in his mid 20's and the future looks bleak for him. With the threats of climate change, mass-extinctions, rising authoritarianism, economic depression, unprecedented wildfires and so much more ever-looming, nihilism has become his background music.
