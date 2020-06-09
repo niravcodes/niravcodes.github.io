@@ -93,7 +93,7 @@ var pt=(t,h)=>{
 CC.fillStyle="#fff";
 CC.fillText(t,(W-CC.measureText(t).width)/2,h)
 }
-C.ontouchstart=C.onkeydown=(e)=>{e.preventDefault();P?(P=0)&(S=1)&(navigator.sendBeacon(`https://flappymillennial2.azure-api.net/flappymillennial/score/${S}/none/none/${Date.now()}`))&(LP()):vy=-8};
+C.ontouchstart=C.onkeydown=(e)=>{e.preventDefault();P?(P=0)&(navigator.sendBeacon(`https://flappymillennial2.azure-api.net/flappymillennial/score/${S}/none/none/${Date.now()}`))&(S=1)&(LP()):vy=-8};
 </script>
 
 Once you've played this to your heart's delight, check out the JavaScript it took to make it work:
