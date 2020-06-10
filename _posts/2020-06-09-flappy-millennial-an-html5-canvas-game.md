@@ -70,7 +70,7 @@ pipe1=pipe(W+100);pipe2=pipe(W+300);
 }
 let y=h=w=30;
 window.vy=0,ay=0.4;
-let LP=window.onload=()=>{
+let LP=()=>{
 CC.fillStyle="#235789"
 CC.fillRect(0,0,W,H);
 if (P) {
@@ -94,6 +94,7 @@ CC.fillStyle="#fff";
 CC.fillText(t,(W-CC.measureText(t).width)/2,h)
 }
 C.ontouchstart=C.onkeydown=(e)=>{e.preventDefault();P?(P=0)&(navigator.sendBeacon(`https://flappymillennial2.azure-api.net/flappymillennial/score/${S}/none/none/${Date.now()}`))&(S=1)&(LP()):vy=-8};
+LP();
 </script>
 
 Once you've played this to your heart's delight, check out the JavaScript it took to make it work:
