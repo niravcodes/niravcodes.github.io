@@ -1,15 +1,16 @@
 ---
+layout: post
 title: On sound and audio generation using Atmega microcontrollers
-date: 2018-12-20 05:28:25 Z
 tags:
 - electronics
 - coding
-layout: post
 feature-img: assets/img/oie_baNTtLXGH28C.jpg
 thumbnail: ''
+date: '2018-12-20T05:28:25.000+00:00'
 excerpt_separator: "<!--more-->"
----
+enableNepali: false
 
+---
 I recently made a circuit to demonstrate audio generation using an atmega32a microcontroller and even though mostly knew the concepts involved, I ended up learning loads.
 
 For one, I learnt that matrix boards are very annoying when dealing with microcontroller pins. I ended up really messing up the circuit's backside because I hadn't planned beforehand (Did I mention that this is my first time using a matrix board?).
