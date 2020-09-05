@@ -59,36 +59,37 @@ The software can be accessed at [nirav.com.np/Animator-inator](https://nirav.com
 I used the same firmware I had written a semester ago. The code itself is straightforward. But I remember it took me a long time to write it, because I didn't have a lot of documentation to consult. So I had to sit there, with the DMD board and it's various pins and wires, and I had to prod this and poke that to figure out how it worked, rather like a puzzle. Thankfully I had worked with the shift registers before, so it took a lot less work than it otherwise would have. This piece of code below is pretty much the only part of the code that counts.
 
 {% highlight c linenos %}
-// Slightly altered from original
-// for readablity
-void clock_selected_lines (char selector){
-for (int i = 0 ; i < (WIDTH/8); i++)
-for (int j = 3; j >= 0; j--)
-clockbyte(display\[j*4 + selector\]\[i\]);
-setselector(selector);
-sendpulse(LATCH);
-}
 
-int main(){
-init();
-OCR0 = 0xff;
-TIMSK = 2;
-TCCR0 = 0X0b;
-sei();
+	// Slightly altered from original
+	// for readablity
+	void clock_selected_lines (char selector){
+	for (int i = 0 ; i < (WIDTH/8); i++)
+	for (int j = 3; j >= 0; j--)
+	  clockbyte(display[j*4 + selector][i]);
+	  setselector(selector);
+	  sendpulse(LATCH);
+	}
 
-int frame = 0;
-while (1){
-cli();
-disableoutput();
-assign_to_display(frame++);
-enableoutput();
-sei();
+	int main(){
+	init();
+	OCR0 = 0xff;
+	TIMSK = 2;
+	TCCR0 = 0X0b;
+	sei();
+
+	int frame = 0;
+	while (1){
+	cli();
+	disableoutput();
+	assign_to_display(frame++);
+	enableoutput();
+	sei();
 
     if (frame >= framecount) frame = 0;
       _delay_ms(10);
 
-}
-}
+	}
+	}
 {% endhighlight %}
 
 The `clock_selected_lines()` function takes a value from 0 to 3, and based on that value, extracts the relevant bits from the `display` bit matrix to send into the DMD. Keep in mind that, at one time, only 4 rows (every fourth row) of the 16 total rows in the DMD can be activated. This is because every group of 4 LEDs, row-wise, is connected to the same pin in the same shift register. Which of the 4 connected LED lights up is controlled by the 2 selector pins A and B. To show a complete picture, we have to cycle between the four SEL pins fast enough that it is below the persistence of vision (10 ms). And each time we switch rows, we also have to clock in the data in those rows. I know it sounds complicated, but if you think about it, this little design ingenuity reduced the part count in the board by a factor of four and minimized the signal propagation delay inherent in such shift registor based system.
@@ -101,10 +102,10 @@ The `main()` function simply sets up a timer which calls the `clock_selected_lin
 
 # Final thoughts
 
-I enjoyed making this. This DMD gave me a much needed break from the extremely formal and dry world of compiler literature which I have been poring over for weeks in order to make the [साक्षर compiler](https://nirav.com.np/2019/05/27/a-nepali-programming-language.html).
+I enjoyed making this. This DMD gave me a much needed break from the extremely formal and dry world of compiler literature which I have been poring over for weeks in order to make the [साक्षर compiler](https://nirav.com.np/2020/02/09/making-mnsa-a-nepali-programming-language.html).
 
 But there is one decision that I regret immensely. In hindsight, it would have been much better if I had written a program to convert any GIF file into a data format suitable for the DMD. It would have been much less glamorous to work on, sure, but it would have given me the free license to work with any pixel based animation software that already exists, and already supports select, move, multi-level undo and all that fancy stuff.
 
-In the next version, I also think it would be awesome if I could implement some form of compression in the animation data. I'm interested in performing some kind of Run-Length Encoding on the delta frames. What I mean is, unless you are animating a moving checkerboard, very little actually changes between a frame and the next. So, if we calculate the delta matrix between every frame and it's successor, we should get a sequence of sparse matrices which we can encode with RLE or some other compression algorighm to achieve good compression on the frames while also being very simple to decompress sequencially. The 2KB RAM on the AVR system should be more than enough.
+In the next version, I also think it would be awesome if I could implement some form of compression in the animation data. I'm interested in performing some kind of Run-Length Encoding on the delta frames. What I mean is, unless you are animating a moving checkerboard, very little actually changes between a frame and the next. So, if we calculate the delta matrix between every frame and it's successor, we should get a sequence of sparse matrices which we can encode with RLE or some other compression algorithm to achieve good compression on the frames while also being very simple to decompress sequentially. The 2KB RAM on the AVR system should be more than enough.
 
 **The whole project is available on my GitHub** [**here**](https://github.com/niravcodes/Animator-inator)
