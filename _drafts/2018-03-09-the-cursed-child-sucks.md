@@ -1,6 +1,6 @@
 ---
 title: The Cursed Child sucks
-date: 2018-03-09 00:00:00 Z
+date: '2018-03-09T00:00:00.000+00:00'
 tags:
 - random
 - thoughts
@@ -9,8 +9,9 @@ layout: post
 feature-img: https://nirav.com.np/assets/img/cursedchild.jpg
 thumbnail: ''
 excerpt_separator: "<!--more-->"
----
+enableNepali: false
 
+---
 It is 2 am in the morning. I have EDC assessments tomorrow (today). I spent the last several hours reading Harry Potter: The cursed child.
 
 I am writing this because I have to say it to someone. And since my roommate, who is listening to a weird song and studying as I type, is not a very good candidate, I am posting here.
