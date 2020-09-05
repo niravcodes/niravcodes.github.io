@@ -1,6 +1,6 @@
 ---
 title: Maybe those really were the good old days
-date: 2019-01-27 18:55:37 Z
+date: 2019-01-27T18:55:37.000+00:00
 tags:
 - writing
 - reading
@@ -10,8 +10,8 @@ excerpt_separator: "<!--more-->"
 layout: post
 feature-img: https://nirav.com.np/assets/img/DT9036.jpg
 thumbnail: ''
----
 
+---
 This line popped in my head yesterday with no context whatsoever. Then I spent the next many hours trying to remember where I'd read it. The answer came just as suddenly. This line is from the book "Hear the Wind Sing" by Haruki Murakami.
 
 <!--more-->
