@@ -1,6 +1,6 @@
 ---
 title: 'Say Hi to >> : The Whitespace Thief '
-date: 2019-02-17 16:36:55 Z
+date: 2019-02-17T16:36:55.000+00:00
 tags:
 - coding
 - random
@@ -9,8 +9,8 @@ excerpt_separator: "<!--more-->"
 layout: post
 feature-img: https://nirav.com.np/assets/img/animal-birds-clouds-62667.jpg
 thumbnail: ''
----
 
+---
 Oh >>. You lovely little monster. You yellow sunshine and soggy cloudburst. You 90° rotation of the nubivagant VV. You avian symbol of death. You ugly angular whitespace eater. You forward-facing time-stealing progressive peckerhead. You race track of nitrous nonsense. You suck! I don't like you anymore. From now onward, I devote my unwavering loyalty to the archaic get(). <!--more-->
 
 What did it do to me, you ask? It ate away my whitespace. But we'll get to that in a moment.
