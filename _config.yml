@@ -2,10 +2,10 @@
 title: Nirav's Blog
 timezone: UTC
 collections:
-  portfolio:
-    title: Portfolio
-    output: true
-    permalink: "/project/:name"
+  #portfolio:
+  #  title: Portfolio
+  # output: true
+  #  permalink: "/project/:name"
   posts:
     title: Posts
     output: true
