@@ -17,7 +17,7 @@ I started making this thing as a one-day experiment: a fun little browser-game I
 
 Before starting, the question was how I would simulate the motion of an octopus in the ocean. So I started with a prototype in javascript. After some trial and error, and some primitive physics, I had the rough behavior of the octopus down.
 
-![GIF of initial game prototype](/img/octo/initOctoGif.gif)
+![GIF of initial game prototype](/assets/img/octo/initOctoGif.gif)
 
 It worked as I'd envisioned but looked rather drab. So I found a placeholder animation on Dribbble by [Narubalie](https://dribbble.com/shots/3492217-Octopus-gif-animation) and put it in. At this stage I had to write an animation-player for the game, because HTML5 canvas can't directly play a gif.
 
@@ -33,7 +33,7 @@ Next up is obviously an angry enemy angler fish. I found a cool animation on Tum
 
 Now I wanted the octopus to be able to explore the ocean outside of the rectangular box it's confined in. So I wrote a camera system that will follow the octopus wherever it goes. I was also experimenting with different speeds at this time so it might seem jumpy in the video.
 
-<video controls muted> <source src="/assets/img/octo/octo3.mp4" type="video/mp4"> </video>
+<video controls muted> <source src="/assets/img/octo/octocamera.mp4" type="video/mp4"> </video>
 
 Then I wrote the level management system and made new components (text, static image, etc) to build the UI of the game with. I found a nice octopus icon made by [FreePik](http://www.freepik.com/) from [flaticon.com](https://www.flaticon.com/) for the title screen.
 
@@ -43,13 +43,13 @@ At some point, I realized that I could decouple the game code from the game engi
 
 Now I wanted to animate my own main character instead of using some random image on the internet. So I studied a lot of videos on octopus motion, and got to work on Piskel app, which is a nice browser-based pixel art software. After laboring over the motion for days, this is what I came up with:
 
-![octopus swimming](/img/octo/octoAnimOne.gif)
+![octopus swimming](/assets/img/octo/octoAnimOne.gif)
 
 You'll notice that this octopus is far more exaggerated in motion than the previous one, which is intentional, and I'm rather proud of this.
 
 Next, I made the animation of the octopus crawling on the floor.
 
-![octopus crawling](/img/octo/octoWalk.gif)
+![octopus crawling](/assets/img/octo/octoWalk.gif)
 
 You might notice that the sprites are lacking colors. That's because I'm not a good artist, and colors are difficult.
 
