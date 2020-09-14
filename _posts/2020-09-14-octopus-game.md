@@ -15,6 +15,8 @@ I started making this thing as a one-day experiment: a fun little browser-game I
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zVu_AQDCDgY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+To play this game in your browser, [click here](https://nirav.com.np/Octopus-Game-JS).
+
 Before starting, the question was how I would simulate the motion of an octopus in the ocean. So I started with a prototype in javascript. After some trial and error, and some primitive physics, I had the rough behavior of the octopus down.
 
 ![GIF of initial game prototype](/assets/img/octo/initOctoGif.gif)
@@ -57,21 +59,21 @@ Next I coded a quick background parallax system and a minimal emitter system to 
 
 <video controls muted> <source src="/assets/img/octo/octo5.mp4" type="video/mp4"> </video>
 
-Then I burned out. And now I can't bring myself to even look at the code. Maybe you can, though. So check out the code on GitHub.
+Then I burned out. And now I can't bring myself to even look at the code. Maybe you can, though. So check out the [code on GitHub](https://github.com/niravcodes/Octopus-Game-JS).
 
 ### Conclusion
 
-I worked on this project without much planning, or a predefined architecture, or even any tangible end goal.
+I worked on this project without much planning, or design.
 So it was interesting to see the abstractions almost form themselves, and to see the architecture emerge spontaneously from beneath
 the insignificant lines of code as I typed them.
 
 Right in front of my eyes, the coordinate-based motion wrapped itself in a physics
-interface and neatly exposed methods like `applyForce (magnitude, angle)`. The `Spritesheet` animation system amalgamated itself
-with `Motion` and `Collider` to from a high level Character object that I could plop anywhere in the scene. Components
+interface and neatly exposed methods like `applyForce (magnitude, angle)`. The `Spritesheet` animation system amalgamated
+with `Motion` and `Collider` to from a high level `Character` object for my benefit. Components
 organised themselves into categories like `drawable`s and `manager`s, which allowed for other interesting experiments
 like [duck-typing-aided composition](https://stackoverflow.com/q/62194995/2735127).
 
 Not to mean that it is perfection, of course. Far from it. On the engine side, the API is painful, there's a lot of vestigial code, scenes are
-not sandboxed (and colliders leak through by default), there is no obvious way to handle instantiation of multiple
+not isolated (and colliders leak through by default), there is no obvious way to handle instantiation of multiple
 objects, and there's a lot of cohesion among components. On the game side, the controls are terrible, the world is incomplete, and
-moving around is clumsy at best. But at least I now have deeper insight into and a greater appreciation for game engines.
+moving around is clumsy at best. The only consolation is that my next game will be easier to make because of this exercise.
