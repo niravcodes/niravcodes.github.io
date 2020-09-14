@@ -37,7 +37,7 @@ Now I wanted the octopus to be able to explore the ocean outside of the rectangu
 
 Then I wrote the level management system and made new components (text, static image, etc) to build the UI of the game with. I found a nice octopus icon made by [FreePik](http://www.freepik.com/) from [flaticon.com](https://www.flaticon.com/) for the title screen.
 
-![Picture of Octupus Game UI](/img/octo/ui.png)
+![Picture of Octupus Game UI](/assets/img/octo/ui.png)
 
 At some point, I realized that I could decouple the game code from the game engine code, so I did. Then, just for kicks, I made a [Flappy Birdclone](https://nirav.com.np/2020/06/09/flappy-millennial-an-html5-canvas-game.html) using only the Engine code, which was rather fun.
 
