@@ -37,9 +37,9 @@ Now I wanted the octopus to be able to explore the ocean outside of the rectangu
 
 Then I wrote the level management system and made new components (text, static image, etc) to build the UI of the game with. I found a nice octopus icon made by [FreePik](http://www.freepik.com/) from [flaticon.com](https://www.flaticon.com/) for the title screen.
 
-![Picture of Octupus Game UI](/assets/img/octo/ui.png)
+![Picture of Octupus Game UI](/assets/img/octo/ui.jpg)
 
-At some point, I realized that I could decouple the game code from the game engine code, so I did. Then, just for kicks, I made a [Flappy Birdclone](https://nirav.com.np/2020/06/09/flappy-millennial-an-html5-canvas-game.html) using only the Engine code, which was rather fun.
+At some point, I realized that I could decouple the game code from the game engine code, so I did. Then, just for kicks, I made a [Flappy Bird clone](https://nirav.com.np/2020/06/09/flappy-millennial-an-html5-canvas-game.html) using only the Engine code, which was rather fun.
 
 Now I wanted to animate my own main character instead of using some random image on the internet. So I studied a lot of videos on octopus motion, and got to work on Piskel app, which is a nice browser-based pixel art software. After laboring over the motion for days, this is what I came up with:
 
@@ -62,7 +62,7 @@ Then I burned out. And now I can't bring myself to even look at the code. Maybe 
 ### Conclusion
 
 I worked on this project without much planning, or a predefined architecture, or even any tangible end goal.
-So it was interesting to see the abstractions almost form themshelves, and to see the architecture emerge spontaneously from beneath
+So it was interesting to see the abstractions almost form themselves, and to see the architecture emerge spontaneously from beneath
 the insignificant lines of code as I typed them.
 
 Right in front of my eyes, the coordinate-based motion wrapped itself in a physics
@@ -74,5 +74,4 @@ like [duck-typing-aided composition](https://stackoverflow.com/q/62194995/273512
 Not to mean that it is perfection, of course. Far from it. On the engine side, the API is painful, there's a lot of vestigial code, scenes are
 not sandboxed (and colliders leak through by default), there is no obvious way to handle instantiation of multiple
 objects, and there's a lot of cohesion among components. On the game side, the controls are terrible, the world is incomplete, and
-moving around is clumsy at best. The bad parts outweigh the good parts. But at least I now have deeper
-insight into and a greater appreciation for game engines.
+moving around is clumsy at best. But at least I now have deeper insight into and a greater appreciation for game engines.
