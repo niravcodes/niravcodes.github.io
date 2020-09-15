@@ -59,7 +59,7 @@ theme_settings:
     wordpress: 
     email: true
   google_analytics: UA-131574406-1
-  disqus_shortname: nirav-2
+  # disqus_shortname: 
   katex: false
   special_page:
     search:
