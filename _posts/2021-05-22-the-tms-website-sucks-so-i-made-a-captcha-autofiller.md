@@ -28,7 +28,7 @@ Even a cursory inspection will show that the implementation of the TMS captcha s
 But you don't have to go that far. The captcha's random text is generated in the browser by a simple JavaScript code, and it's laid over an static image. The css \`user-select\` property is set to \`none\` so you can't just copy the text from over the image and paste it in the captcha field.  
 Which means it should be accessible via the DOM:
 
-![](https://lh5.googleusercontent.com/fXVq_XaLUif5LBcGfE8GS1tl0zggtKnMNln3YxNJngN2bBjAldG9oLmF3r-HABsssdh0CAz2Kp0fYOWLdUfRsOl3rpUD-zQneWwLzgjBP2Q74S0jhQGYQKPeOfMRl1U5Iac-t-dN =364x344)
+![](https://nirav.com.np/assets/img/captcha2.png)
 
 Unsurprisingly, it is.
 
@@ -45,6 +45,8 @@ This piece of code will autofill the captcha input.
 ### A problem arises
 
 An interesting problem that emerges is that when you autofill the captcha input via JavaScript then and hit Login, the website still says "Incorrect Captcha" even when the captcha is actually correct.
+
+![](https://nirav.com.np/assets/img/captcha3.png)
 
 But how could that be? Could the TMS's system be more well thought out than I expected?
 
@@ -126,4 +128,4 @@ You can go there and install that version instead.
 
 Please change the font in the captcha field from sans serif to a serif one if that's the least you do. Thousands of people needlessly confuse \`capital i\` and \`small L\` everyday.
 
-![](https://lh4.googleusercontent.com/H4Wl5NOcUt1NuzOlit_OS_KBxnjTHW5lq-yLgkwWZd6pkwPAsH3Cn9w11vFkfpwChrwE7t_4mFBN2GYV8RgbDE8e1k3cVd1T0Zyu3ugsIRI-CiQNsPODknGFWU8LHJIMKuZEcZ6q =624x121)
+![](https://nirav.com.np/assets/img/serifsans.png)
