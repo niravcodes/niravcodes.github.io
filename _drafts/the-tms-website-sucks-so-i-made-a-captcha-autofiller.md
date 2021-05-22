@@ -18,7 +18,6 @@ The TMS's login captcha is the epitome of this incompetence and negligence.
 
 If you didn't know, a captcha is supposed to be a challenge that only humans can solve in a reasonable time. A malicious computer program which, if unopposed, could execute hundreds of thousands of requests every second testing various username:password combos or security vulnerabilities, or just plain overloading the system so that it becomes unresponsive to legitimate users, is blocked by the captcha.
 
-  
 With that definition, however, the TMS's "captcha" actually turns out to be an _anti-captcha_, the exact opposite. It appears as a challenge to the user, who has to manually type it out every time. **But it is completely transparent to any half-decent computer script**. In fact, when you hit the login button, the captcha is not even sent to the server. It's a purely cosmetic effect. It's like a gate that you have to painstakingly unlock every time, but every burglar can pass through it as if it wasn't even there.
 
 ![](https://lh6.googleusercontent.com/Gb2u0Fx_UPetJyFtK-NQphrDufu2nHuW-_bFAJkcyt16dfFQ6zb-V90VNsSui1nhGSd3GqDUd3xk0QFqevVKQK-hDynH1UwqJswgYNaaJQfi0ovWSv_XGqeOHZW2duunEfbl8v56 =408x402)
@@ -26,14 +25,13 @@ With that definition, however, the TMS's "captcha" actually turns out to be an _
 ## The TMS captcha implementation
 
 Even a cursory inspection will show that the implementation of the TMS captcha system is not an actual captcha. Any OCR like Google Lens can read it readily, making it very cheap to overcome.  
-But you don't have to go that far. The captcha's random text is generated in the browser by a simple JavaScript code, and it's laid over an static image. The css \`user-select\` property is set to \`none\` so you can't just copy the text from over the image and paste it in the captcha field.   
+But you don't have to go that far. The captcha's random text is generated in the browser by a simple JavaScript code, and it's laid over an static image. The css \`user-select\` property is set to \`none\` so you can't just copy the text from over the image and paste it in the captcha field.  
 Which means it should be accessible via the DOM:
 
-![](https://lh4.googleusercontent.com/6tX3zV0oV03d1I1Ej0DjXiWEJ1HSS7Mp7R833CGKUjy29IFJoE3MyBywEMu3CZCJ0bN_FC9QUoHKGLEBmxjIpUzJV-8HIRQ6QhN1CpfyateBVYFXQ_6uKA9pusYmwsYVdJhGevAr =349x329)
+![](https://lh5.googleusercontent.com/fXVq_XaLUif5LBcGfE8GS1tl0zggtKnMNln3YxNJngN2bBjAldG9oLmF3r-HABsssdh0CAz2Kp0fYOWLdUfRsOl3rpUD-zQneWwLzgjBP2Q74S0jhQGYQKPeOfMRl1U5Iac-t-dN =364x344)
 
 Unsurprisingly, it is.
 
-  
 Now, if you can read the text from the DOM, it's not a big deal to write it back to DOM:
 
 {% highlight %}
@@ -104,10 +102,10 @@ Now that I've come this far, I might as well make a chrome extension. so that I 
 
 }
 
-{% end_highlight %}  
-  
-2\. contentScript.js  
-  
+{% end_highlight %}
+
+2\. contentScript.js
+
 {% highlight %}
 
 {  
@@ -136,5 +134,4 @@ You can go there and install that version instead.
 
 Please change the font in the captcha field from sans serif to a serif one if that's the least you do. Thousands of people needlessly confuse \`capital i\` and \`small L\` everyday.
 
-  
 ![](https://lh4.googleusercontent.com/H4Wl5NOcUt1NuzOlit_OS_KBxnjTHW5lq-yLgkwWZd6pkwPAsH3Cn9w11vFkfpwChrwE7t_4mFBN2GYV8RgbDE8e1k3cVd1T0Zyu3ugsIRI-CiQNsPODknGFWU8LHJIMKuZEcZ6q =624x121)
