@@ -34,11 +34,9 @@ Unsurprisingly, it is.
 
 Now, if you can read the text from the DOM, it's not a big deal to write it back to DOM:
 
-\`\`\`javascript
-
+```javascript
 document.getElementById("captchaEnter").value = document.getElementById("randomfield").value;
-
-\`\`\`
+```
 
 This piece of code will autofill the captcha input.
 
@@ -50,16 +48,12 @@ An interesting problem that emerges is that when you autofill the captcha input 
 
 But how could that be? Could the TMS's system be more well thought out than I expected?
 
-You wish! Turns out, they're using a frontend framework (Angular.js). Angular.js internally maintains a state, with the values of all inputs. That state gets altered only when the corresponding input's \`input\` event is fired. But that's easy. Here:
+You wish! Turns out, they're using a frontend framework (Angular.js). Angular.js internally maintains a state, with the values of all inputs. That state gets altered only when the corresponding input's `input` event is fired. But that's easy. Here:
 
 {% highlight javascript %}
-
 const $ = _ => document.getElementById(_)
-
 $("captchaEnter").value = $("randomfield").value
-
 $("captchaEnter").dispatchEvent(new Event("input")) // Fire the event to trigger angular state change
-
 {% endhighlight %}
 
 And with that, the captcha auto-filler works.
@@ -70,41 +64,26 @@ Now that I've come this far, I might as well make a chrome extension. so that I 
 
 1. manifest.json
 
-{% highlight %}
-
+```json
 {
-
-"name": "TMS Captcha Autofiller",
-
-"description": "This extention will autofill TMS captchas. Made by nirav.com.np",
-
-"version": "0.5",
-
-"manifest_version": 3,
-
-"content_scripts": \[
-
-{
-
-"matches": \["https://*.nepsetms.com.np/login"\],
-
-"js": \["contentScript.js"\]
-
+  "name": "TMS Captcha Autofiller",
+  "description": "This extention will autofill TMS captchas. Made by nirav.com.np",
+  "version": "0.5",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+    "matches": \["https://*.nepsetms.com.np/login"\],
+    "js": \["contentScript.js"\]
+    }
+  ]
 }
+```
 
-\]
+2. contentScript.js
 
-}
-
-{% endhighlight %}
-
-2\. contentScript.js
-
-{% highlight %}
-
+```javascript
 {  
 const $ = _ => document.getElementById(_) //aliasing a long fn call
-
 function l() {
 
 $("captchaEnter").value = $("randomfield").value
@@ -116,12 +95,12 @@ $("captchaEnter").dispatchEvent(new Event("input")) // Fire the event to trigger
 window.onload = l;
 
 }
+```
 
-{% endhighlight %}
+Done. Put these two files in a folder and import it from the chrome extension page (`chrome://extensions`).
 
-Done. Put these two files in a folder and import it from the chrome extension page (chrome://extensions).
+A slightly more decorated version is published in my Github: [github.com/niravcodes/TMSCaptchaAutoFiller](https://github.com/niravcodes/TMSCaptchaAutoFiller). 
 
-A slightly more decorated version is published in my Github: github.com/niravcodes/tmscaptchaautofiller  
 You can go there and install that version instead.
 
 **Request to the TMS devs**
