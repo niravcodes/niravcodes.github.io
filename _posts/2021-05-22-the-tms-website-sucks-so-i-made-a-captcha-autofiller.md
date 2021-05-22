@@ -20,7 +20,7 @@ If you didn't know, a captcha is supposed to be a challenge that only humans can
 
 With that definition, however, the TMS's "captcha" actually turns out to be an _anti-captcha_, the exact opposite. It appears as a challenge to the user, who has to manually type it out every time. **But it is completely transparent to any half-decent computer script**. In fact, when you hit the login button, the captcha is not even sent to the server. It's a purely cosmetic effect. It's like a gate that you have to painstakingly unlock every time, but every burglar can pass through it as if it wasn't even there.
 
-![](https://lh6.googleusercontent.com/Gb2u0Fx_UPetJyFtK-NQphrDufu2nHuW-_bFAJkcyt16dfFQ6zb-V90VNsSui1nhGSd3GqDUd3xk0QFqevVKQK-hDynH1UwqJswgYNaaJQfi0ovWSv_XGqeOHZW2duunEfbl8v56 =408x402)
+![](https://nirav.com.np/assets/img/captchagate.png)
 
 ## The TMS captcha implementation
 
@@ -54,7 +54,7 @@ You wish! Turns out, they're using a frontend framework (Angular.js). Angular.js
 
 {% highlight javascript %}
 
-const $ = _ => document.getElementById(_) 
+const $ = _ => document.getElementById(_)
 
 $("captchaEnter").value = $("randomfield").value
 
