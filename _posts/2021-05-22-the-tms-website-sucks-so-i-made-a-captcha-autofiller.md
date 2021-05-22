@@ -4,8 +4,6 @@ layout: post
 title: The TMS website sucks so I made a captcha autofiller
 tags: []
 enableNepali: false
-feature-img: ''
-thumbnail: ''
 
 ---
 In keeping with the spirit of the times, I've started playing in the Nepali Stock Exchange playground. It is a strange, distorted world for someone like me who's used to the determinism of the computer realm. And so far, it has just proved to be a more fashionable way of losing money. But it's addictive!
