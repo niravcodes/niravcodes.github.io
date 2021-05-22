@@ -34,11 +34,11 @@ Unsurprisingly, it is.
 
 Now, if you can read the text from the DOM, it's not a big deal to write it back to DOM:
 
-{% highlight %}
+\`\`\`javascript
 
 document.getElementById("captchaEnter").value = document.getElementById("randomfield").value;
 
-{% end_highlight %}
+\`\`\`
 
 This piece of code will autofill the captcha input.
 
@@ -50,23 +50,15 @@ But how could that be? Could the TMS's system be more well thought out than I ex
 
 You wish! Turns out, they're using a frontend framework (Angular.js). Angular.js internally maintains a state, with the values of all inputs. That state gets altered only when the corresponding input's \`input\` event is fired. But that's easy. Here:
 
-{% highlight %}
+{% highlight javascript %}
 
-{  
-const $ = _ => document.getElementById(_) //aliasing a long fn call
-
-function l() {
+const $ = _ => document.getElementById(_) 
 
 $("captchaEnter").value = $("randomfield").value
 
 $("captchaEnter").dispatchEvent(new Event("input")) // Fire the event to trigger angular state change
 
-}
-
-window.onload = l;  
-}
-
-{% end_highlight %}
+{% endhighlight %}
 
 And with that, the captcha auto-filler works.
 
@@ -102,7 +94,7 @@ Now that I've come this far, I might as well make a chrome extension. so that I 
 
 }
 
-{% end_highlight %}
+{% endhighlight %}
 
 2\. contentScript.js
 
@@ -123,7 +115,7 @@ window.onload = l;
 
 }
 
-{% end_highlight %}
+{% endhighlight %}
 
 Done. Put these two files in a folder and import it from the chrome extension page (chrome://extensions).
 
