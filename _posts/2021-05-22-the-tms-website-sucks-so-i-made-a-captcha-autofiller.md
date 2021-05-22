@@ -4,6 +4,8 @@ layout: post
 title: The TMS website sucks so I made a captcha autofiller
 tags: []
 enableNepali: false
+feature-img: ''
+thumbnail: ''
 
 ---
 In keeping with the spirit of the times, I've started playing in the Nepali Stock Exchange playground. It is a strange, distorted world for someone like me who's used to the determinism of the computer realm. And so far, it has just proved to be a more fashionable way of losing money. But it's addictive!
@@ -50,11 +52,11 @@ But how could that be? Could the TMS's system be more well thought out than I ex
 
 You wish! Turns out, they're using a frontend framework (Angular.js). Angular.js internally maintains a state, with the values of all inputs. That state gets altered only when the corresponding input's `input` event is fired. Otherwise the value change is not registered. But that's easy to fire. Here:
 
-{% highlight javascript %}
+```javascript
 const $ = _ => document.getElementById(_)
 $("captchaEnter").value = $("randomfield").value
 $("captchaEnter").dispatchEvent(new Event("input")) // Fire the event to trigger angular state change
-{% endhighlight %}
+```
 
 And with that, the captcha auto-filler works.
 
@@ -72,8 +74,8 @@ Now that I've come this far, I might as well make a chrome extension. so that I 
   "manifest_version": 3,
   "content_scripts": [
     {
-    "matches": \["https://*.nepsetms.com.np/login"\],
-    "js": \["contentScript.js"\]
+    "matches": ["https://*.nepsetms.com.np/login"],
+    "js": ["contentScript.js"]
     }
   ]
 }
@@ -100,6 +102,6 @@ You can go there and install that version instead.
 
 **Request to the TMS devs**
 
-Please change the font in the captcha field from sans serif to a serif one if that's the least you do. Thousands of people needlessly confuse \`capital i\` and \`small L\` everyday.
+Please change the font in the captcha field from sans serif to a serif one if that's the least you do. Thousands of people needlessly confuse `capital i` and `small L` everyday.
 
 ![](https://nirav.com.np/assets/img/serifsans.png)
