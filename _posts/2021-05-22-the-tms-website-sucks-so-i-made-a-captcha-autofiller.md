@@ -8,7 +8,7 @@ feature-img: ''
 thumbnail: ''
 
 ---
-In keeping with the spirit of the times, I've started playing with the Nepali Stock Exchange. It is a strange, distorted world for someone like me who's used to the determinism of the computer realm. And so far, it has just proved to be a more fashionable way of losing money. But it's addictive!
+In keeping with the spirit of the times, I've started playing in the Nepali Stock Exchange playground. It is a strange, distorted world for someone like me who's used to the determinism of the computer realm. And so far, it has just proved to be a more fashionable way of losing money. But it's addictive!
 
 If you've ever had to use Nepal Stock Exchange's Trade Management System (often called just TMS), you probably hate it.<!--more--> It is at best an incompetently made software with many glaring issues, hosted over a woefully underpowered infrastructure that cannot even handle the most predictable of traffic spikes. On more than one occasion I've oversold or undersold shares because it's UI was out of sync with it's database.
 
@@ -24,8 +24,10 @@ With that definition, however, the TMS's "captcha" actually turns out to be an _
 
 ## The TMS captcha implementation
 
-Even a cursory inspection will show that the implementation of the TMS captcha system is not an actual captcha. Any OCR like Google Lens can read it readily, making it very cheap to overcome.  
-But you don't have to go that far. The captcha's random text is generated in the browser by a simple JavaScript code, and it's laid over an static image. The css \`user-select\` property is set to \`none\` so you can't just copy the text from over the image and paste it in the captcha field.  
+Even a cursory inspection will show that the implementation of the TMS captcha system is not an actual captcha. Any OCR like Google Lens can read it readily, making it very cheap to overcome.
+
+But you don't have to go that far. The captcha's random text is generated in the browser by a simple JavaScript code, and it's laid over an static image. The css `user-select` property is set to `none` so you can't just copy the text from over the image and paste it in the captcha field.
+
 Which means it should be accessible via the DOM:
 
 ![](https://nirav.com.np/assets/img/captcha2.png)
@@ -48,7 +50,7 @@ An interesting problem that emerges is that when you autofill the captcha input 
 
 But how could that be? Could the TMS's system be more well thought out than I expected?
 
-You wish! Turns out, they're using a frontend framework (Angular.js). Angular.js internally maintains a state, with the values of all inputs. That state gets altered only when the corresponding input's `input` event is fired. But that's easy. Here:
+You wish! Turns out, they're using a frontend framework (Angular.js). Angular.js internally maintains a state, with the values of all inputs. That state gets altered only when the corresponding input's `input` event is fired. Otherwise the value change is not registered. But that's easy to fire. Here:
 
 {% highlight javascript %}
 const $ = _ => document.getElementById(_)
@@ -83,17 +85,12 @@ Now that I've come this far, I might as well make a chrome extension. so that I 
 
 ```javascript
 {  
-const $ = _ => document.getElementById(_) //aliasing a long fn call
-function l() {
-
-$("captchaEnter").value = $("randomfield").value
-
-$("captchaEnter").dispatchEvent(new Event("input")) // Fire the event to trigger angular state change
-
-}
-
-window.onload = l;
-
+  const $ = _ => document.getElementById(_) //aliasing a long fn call
+  function l() {
+    $("captchaEnter").value = $("randomfield").value
+    $("captchaEnter").dispatchEvent(new Event("input")) // Fire the event to trigger angular state change
+  }
+  window.onload = l;
 }
 ```
 
