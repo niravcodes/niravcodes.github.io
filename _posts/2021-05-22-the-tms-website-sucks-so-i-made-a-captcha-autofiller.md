@@ -100,6 +100,8 @@ A slightly more decorated version is published in my Github: [github.com/niravco
 
 You can go there and install that version instead.
 
+**Update:** The extension is now available in [Google Extension store](https://chrome.google.com/webstore/detail/tms-captcha-autofiller/bbnmlbcjjojlcigkphmancneeplopmhg). So you can download the app from official Google channel. [Download Here](https://chrome.google.com/webstore/detail/tms-captcha-autofiller/bbnmlbcjjojlcigkphmancneeplopmhg)
+
 **Request to the TMS devs**
 
 Please change the font in the captcha field from sans serif to a serif one if that's the least you do. Thousands of people needlessly confuse `capital i` and `small L` everyday.
