@@ -107,3 +107,8 @@ You can go there and install that version instead.
 Please change the font in the captcha field from sans serif to a serif one if that's the least you do. Thousands of people needlessly confuse `capital i` and `small L` everyday.
 
 ![](https://nirav.com.np/assets/img/serifsans.png)
+
+
+# Update
+
+The websites have been fixed and the captcha font has been changed to a legible one. Thanks devs. Now go fix the other issues.
